@@ -1,0 +1,251 @@
+'\" t
+.\" ** The above line should force tbl to be a preprocessor **
+.\" Man page for EAGLE
+.\"
+.\" Copyright (C) 2014, CadSoft Computer GmbH
+.TH EAGLE 1 "EAGLE Layout Editor" "CadSoft" "PCB Design Tool"
+.SH NAME
+eagle \- Easily Applicable Graphical Layout Editor
+.SH SYNOPSIS
+.B eagle
+[options] [file] [layers]
+.SH DESCRIPTION
+.B EAGLE
+is a printed circuit board (PCB) design tool that combines schematic capture,
+layout editing and autorouting.
+.SH OPTIONS
+Most of the options are intended for use with the CAM Processor in command line
+mode.
+
+Options are either
+.I switches
+that turn a certain feature on or off, or set a certain
+.I parameter
+to a given value.
+.I Switch
+options are followed by a '+'
+or '-' sign, which turns the given option 'on' or 'off', respectively.
+In the following list of all options
+.I switch
+options are shown with their
+default value. If a switch option is 'off' by default, it can be turned 'on'
+by simply using the option character (the '+' sign is implicit).
+
+With
+.I tolerance
+options values that have a positive sign define positive tolerances, negative
+signs define negative tolerances, and values without a sign define 'plus/minus'
+tolerances.
+.TP
+.BI \-A\  name
+Switch to assembly variant
+.I name.
+.TP
+.BI \-C\  command
+Executes the given command in an editor window.
+A file name (board, schematic or library) must be given, so that an editor
+window will be opened in which the command can be executed.
+.TP
+.BI \-D\  tolerance
+Tolerance for draw type apertures (0.1 = 10%).
+
+Default: 0
+.TP
+.BI \-E\  tolerance
+Tolerance for drills (0.1 = 10%).
+
+Default: 0
+.TP
+.BI \-F\  tolerance
+Tolerance for flash type apertures (0.1 = 10%).
+
+Default: 0
+.TP
+.BI \-N
+No command line prompts.
+Turns off the command line message prompts in the CAM Processor. This is mostly
+useful for fully automated CAM batch jobs.
+.TP
+.B \-O+
+Optimize movement for pen plotters, photo plotters and drill stations.
+
+Default: on
+.TP
+.BI \-P\  layer=pen
+For pen plotters this option defines which layer is to be printed with
+which pen (color).
+.I layer
+can range from 1..255,
+.I pen
+can range from 1..255.
+.TP
+.BI \-R\  rackfile
+Drill rack file.
+.TP
+.BI \-S\  scriptfile
+Define a different startup script file name.
+
+Default: eagle.scr
+.TP
+.BI \-U\  name
+Use the file
+.I name
+instead of the default ~/.eaglerc file to store user settings.
+.TP
+.BI \-W\  wheelfile
+Aperture wheel file.
+.TP
+.B \-X-
+Execute the CAM Processor in command line mode.
+.TP
+.B \-a
+obsolete
+.TP
+.B \-c+
+Assert positive coordinates ("auto fit").
+Moves the output data so that everything is located in the
+positive coordinate area.
+
+Default: on
+.TP
+.BI \-d\  device
+CAM Processor output device (\fB-d?\fR for a list of all known devices).
+.TP
+.B \-e-
+Emulate unavailable apertures with smaller ones.
+
+Default: off
+.TP
+.B \-f+
+Fill pads. Defines wehther the drill holes of pads and vias should be
+filles or not.
+
+Default: on
+.TP
+.BI \-h\  pageheight
+Page height (inch) for printers.
+.TP
+.B \-m-
+Mirror output.
+Note that this can cause negative coordinates, so you might want to make sure that the
+.B -c
+option is on.
+
+Default: off
+.TP
+.BI \-o\  outputfile
+Output filename.
+.TP
+.BI \-p\  pendiameter
+Pen diameter (mm) for pen plotters.
+
+Default: 0
+.TP
+.B \-q-
+Quick plot, which draws only the outlines of objects.
+
+Default: off
+.TP
+.B \-r-
+Rotate output by 90 degrees.
+Note that this can cause negative coordinates, so you might want to make sure that the
+.B -c
+option is on.
+
+Default: off
+.TP
+.BI \-s\  scalefactor
+Scale factor for the generated output. Values smaller than 1.0 generate a shrinked
+output. If
+.I scalefactor
+has a negative (integer) value, the actual scale factor will be selected automatically
+so that the drawing will fit on the number of pages given by the absolute value of
+.IR scalefactor .
+
+Default: 1.0
+.TP
+.B \-t
+obsolete
+.TP
+.B \-u-
+Output upside down (i.e. rotate by 180 degrees).
+Note that this can cause negative coordinates, so you might want to make sure that the
+.B -c
+option is on.
+
+Default: off
+.TP
+.BI \-v\  penvelocity
+Pen velocity (in cm/s, for pen plotters that support this feature). The default value of 0
+selects the plotter's default pen velocity.
+
+Default: 0
+.TP
+.BI \-w\  pagewidth
+Page width (inch) for printers.
+.TP
+.BI \-x\  offset
+Offset in x direction (inch).
+
+Default: 0.0
+.TP
+.BI \-y\  offset
+Offset in y direction (inch).
+
+Default: 0.0
+.SH DIRECTORIES
+By default, EAGLE is installed in
+.B /opt/eagle-7.1.0
+(if installed as user 'root'), or
+.B ~/eagle-7.1.0
+(under the user's home directory),
+but you can install it into any other directory you might prefer.
+.PP
+The following subdirectories are located below this directory:
+.TS
+tab (@);
+l l.
+\fBbin\fR@Executable programs
+\fBcam\fR@CAM Processor files
+\fBdoc\fR@Documentation files
+\fBdru\fR@Design Rules files
+\fBlbr\fR@Part library files
+\fBprojects\fR@Example board and schematic files
+\fBscr\fR@Script files
+\fBulp\fR@User Language Programs
+.TE
+.SH HELP SYSTEM
+Context sensitive online help information is provided as an HTML file.
+.PP
+EAGLE implements its own help viewer, but the help file can of course also be viewed
+with any other HTML viewer.
+.SH SIGNALS
+.TP
+.B SIGTERM
+Terminates the program. Any modified files will
+.B not
+be saved.
+.SH EXIT STATUS
+.TP
+.B 0
+Successful program execution.
+.TP
+.B 1
+CAM Processor warning.
+.TP
+.B >1
+An error has occurred.
+.SH FILES
+.TP
+.B ~/.eaglerc
+User specific parameters are stored in the file
+.I .eaglerc
+under the user's home directory.
+.SH VERSION
+This is EAGLE version 7.1.0.
+.SH AUTHOR
+.B
+EAGLE
+is produced by CadSoft Computer GmbH (http://www.cadsoft.de).
+
+Copyright (c) 1988-2014 CadSoft Computer GmbH.

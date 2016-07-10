@@ -1,0 +1,36 @@
+# Configuration Script
+#
+# This file can be used to configure the editor windows.
+#
+# Uncomment this if you want a set of useful default shortcuts!
+#SCRIPT default-assign.scr;
+#
+
+BRD:
+MENU '[designlink22.png] Search and order : Run designlink-order.ulp -general;'\
+     '[pcb-service.png] PCB Service : Run pcb-service.ulp;';
+
+SCH:
+Grid Default;
+Change Width 0.006in;
+MENU '[designlink22.png] Search and order {\
+                                          General : Run designlink-order.ulp -general; |\
+                                          Schematic : Run designlink-order.ulp; \
+                                          }'\
+;
+
+LBR:
+MENU '[designlink22.png] Search and order : Run designlink-order.ulp -general;'\
+;
+
+DEV:
+Grid Default;
+
+SYM:
+Grid Default On;
+Change Width 0.010in;
+
+PAC:
+Grid Default On;
+Change Width 0.005in;
+Change Size 0.050in;

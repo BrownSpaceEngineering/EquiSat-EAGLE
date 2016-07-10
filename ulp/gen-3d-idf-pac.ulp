@@ -1,0 +1,129 @@
+#usage "en:<qt><nobr>Generate 3D data for export <b>generate_3d_data</b>v13.ulp on the current package.</nobr><p>"
+       "<p>"
+       "<author>Author: alf@cadsoft.de</author></qt>"
+       ,
+       "de:<qt><nobr>Erzeuge die Daten für die 3D-Ausgabe des <b>generate_3d_data</b>(v13).ulp</b> in dem geladenen Package.</nobr><p>"
+       "RUN gen-3D-pac-idf <i>high</i> [/G] [/B]<br>"
+       "<i><b>high</b></i> == mm. Die tatsächliche Höhe des Bauteils.<br>"
+       "Beachten Sie auch die interne Auflösung von Eagle V6 (3.125 Nanometer), und dass WIRE immer eine gerade Anzahl von Einheiten brauchen. "
+       "Dadurch ergeben sich WIRE-Breiten mit einem mehrfachen von 6.25 Nanometer.<p>"
+       "<p>"
+       "<author>Author: alf@cadsoft.de</author></qt>"
+
+string Help = "Options:<br>" +
+       "<b>/G</b> copy all actual grouped objects.<br>" +
+       "<b>**</b> All objects are grouped befor run this ulp will copy!" +
+       "<br>";
+
+if (language() == "de") Help =
+       "Optionen:<br>" +
+       "<b>/G</b> Aktuelle GROUP. Es werden alle Objekte die als Gruppe markiert sind kopiert.<br>" +
+       "<b>**</b> Mit dieser Option wir die Gruppe kopiert, so wie sie vor dem Start des ULP " +
+       "mit GROUP selektiert wurde. Achtung: Dadurch können auch Objekte die nicht zum Bestückungsdruck " +
+       "gehören, kopiert werden!<br>" +
+       "Wird diese Option nicht benutzt, werden alle Elemente im Layer 21 & 51 gruppiert.<br>" +
+       "<b>/B</b> = Bottom. Falls das gesamte Bauteil in die Unterseite ragt. Nicht zu verwechseln " +
+       "mit einem gespiegelten Bauteil, daß man mit MIRROR im Board nach unten spiegelt!<p>" +
+       "Das <b>generate_3d_data_v13.ulp</b> von <author>Herrn Naubacher</author> benutzt die Layer 57 und 58, " +
+       "um die Daten für die 3. Dimension (Z-Achse) im .PAC zu hinterlegen.<br>" +
+       "Das <b>generate_3d_data</b>(v13).ulp liest im Board diese Daten (WIRE-Breite) und multipliziert sie mit 1000. " +
+       "Der Trick ist, die Linienbreite der Bestückungsdruck (Layer 57 für Top und Layer 58 für Bottom) " +
+       "in micrometer abzulegen. Diese dünnen Linien stören später die grafische Ansicht nicht, wenn goße Werte " +
+       "für die 3. Dimension (Z-Achse) angegeben werden müssen, und man mit DISPLAY 57 58 die komplette Zeichnung " +
+       "(alle Layer) anzeigt." +
+       "Das ULP überprüft nicht, ob in den Layern 21/51 bzw. 22/52 des Package auch Objekte gezeichnet sind. " +
+       "Sind in den Layern keine Objekte gezeichnet, dann erhalten Sie beim ausführen des PASTE-Befehl die Meldung,<br>" +
+       "\"<i>Zwischenablage ist leer!</i> \"." +
+       "<p>" +
+       "<author>Author: alf@cadsoft.de</author></qt>";
+
+
+string Verison = "1.0.1"; // 2013-01-14 alf@cadsoft.de
+                          // 2013-04-23 now with menu
+
+if (package) {
+  real Z = 0.0;
+  string av[];
+  for (int n = 0; n < argc; n++) {
+   av[n] = argv[n];
+  }
+  if (argc == 1) {
+    int optg, optb;
+    dlgDialog("IDF 3D Package") {
+      dlgLabel(usage);
+      dlgLabel("<hr>");
+      dlgHBoxLayout {
+        dlgGridLayout {
+          dlgCell( 0, 0) dlgLabel("&Z high mm");
+          dlgCell( 0, 1) dlgRealEdit(Z);
+          dlgCell( 0, 2) dlgCheckBox("&Group", optg);
+          dlgCell( 0, 3) dlgCheckBox("&Bottom", optb);
+        }
+        dlgStretch(1);
+      }
+      dlgHBoxLayout {
+        dlgPushButton("+OK") {
+          if (Z) {
+            sprintf(av[1], "%.8f", Z);
+            if (optg) av[2] = "/G";
+            if (optb) av[3] = "/B";
+            dlgAccept();
+          }
+          else {
+            dlgMessageBox("Geben Sie zuerst einen Wert für die Höhe an.", "OK");
+          }
+        }
+        dlgPushButton("-CANCEL") { dlgReject(); exit(0); }
+        dlgStretch(1);
+        dlgPushButton("&HELP") dlgMessageBox(Help, "OK");
+      }
+    };
+  }
+
+  string Group = "GROUP ALL;"; // default
+  if (strupr(av[2]) == "/G" || strupr(av[3]) == "/G") Group =  ""; // use defined group
+
+  string cmd;
+  string cmdl = "";
+  int layer3dt, layer3db;
+
+  library(LIB) LIB.layers(LAY) {
+    if(LAY.number == 57) layer3dt = LAY.number;
+    if(LAY.number == 58) layer3db = LAY.number;
+  }
+  if (!layer3dt && !layer3db) {
+    cmdl = "LAYER 57 t3D; SET COLOR_LAYER 57 6; SET FILL_LAYER 57 5; LAYER 58 b3D; SET COLOR_LAYER 58 5; SET FILL_LAYER 58 4;";
+  }
+
+  if(av[1]) Z = strtod(av[1]) / 1000.0;
+  if (Z < u2mm(2)) {
+    string h, com;
+
+    if (language() != "de") {
+      sprintf(h, "!The calculated value for Z %.9f is < %.8fmm", Z, u2mm(2));
+      com = "CANCEL";
+    }
+    else {
+      sprintf(h, "!Der umgerechnete Wert für Z %.9f ist < %.8fmm", Z, u2mm(2));
+      com = "ABBRUCH";
+    }
+    dlgMessageBox(h, com);
+    exit(-1);
+  }
+  if (strupr(av[2]) == "/B" || strupr(av[3]) == "/B") {
+    sprintf(cmd, "%sdisplay NONE 22 52;%s CUT (>0 0); CHANGE LAYER 58 (>0 0); CHANGE width %.9f (>0 0); paste (0 0); DISPLAY NONE 1 16 17 18 20 22 25 28 58;",
+                  cmdl, Group, Z
+           );
+  }
+  else {
+    sprintf(cmd, "%sdisplay NONE 21 51;%s CUT (>0 0); CHANGE LAYER 57 (>0 0); CHANGE width %.9f (>0 0); paste (0 0); DISPLAY NONE 1 16 17 18 20 23 25 27 57;",
+                  cmdl, Group, Z
+           );
+  }
+  exit(cmd);
+}
+
+else {
+  if (language() == "de") dlgMessageBox("Starten Sie das ULP in einem Package (Bibliothek)", "OK");
+  else dlgMessageBox("Start this ULP in a package (library)", "OK");
+}

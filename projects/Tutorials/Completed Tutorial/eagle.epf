@@ -1,0 +1,21 @@
+[Eagle]
+Version="07 03 00"
+Platform="Mac OS X"
+Serial="730FF6E99C-LSR-WLM-1EP"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="/Users/rizant/Google Drive/Cubesat Technical/ENGN176/Electronics/Eagle/lbr_db/CNTRL_BOARD.lbr"
+UsedLibrary="/Users/rizant/Google Drive/Cubesat Technical/ENGN176/Electronics/Eagle/lbr_db/LED_Driver_Board.lbr"
+UsedLibrary="/Users/rizant/Google Drive/Cubesat Technical/ENGN176/Electronics/Eagle/lbr_db/SAMD21J.lbr"
+UsedLibrary="/Users/rizant/Google Drive/Cubesat Technical/ENGN176/Electronics/Eagle/lbr_db/SolarCell.lbr"
+UsedLibrary="/Users/rizant/Google Drive/Cubesat Technical/ENGN176/Electronics/Eagle/lbr_db/cxm27.lbr"
+UsedLibrary="/Users/rizant/Google Drive/Cubesat Technical/ENGN176/Electronics/Eagle/lbr_db/mram.lbr"
+UsedLibrary="/Users/rizant/Google Drive/Cubesat Technical/ENGN176/Electronics/Eagle/lbr_db/rdio_deploy.lbr"
+UsedLibrary="/Users/rizant/Google Drive/Cubesat Technical/ENGN176/Electronics/Eagle/lbr_db/solarcellnew.lbr"
+UsedLibrary="/Applications/EAGLE-7.3.0/lbr/analog-devices.lbr"
+
+[Desktop]
+Screen="1440 900"
