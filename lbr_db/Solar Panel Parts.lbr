@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -72,7 +72,7 @@
 <library>
 <packages>
 <package name="SOLARCELL2">
-<smd name="CATHODE" x="4.953" y="8.128" dx="6.35" dy="3.81" layer="1" rot="R90"/>
+<smd name="C" x="4.953" y="8.128" dx="6.35" dy="3.81" layer="1" rot="R90"/>
 <polygon width="0.127" layer="22">
 <vertex x="0" y="26.416"/>
 <vertex x="0" y="21.844"/>
@@ -84,7 +84,7 @@
 <vertex x="0.254" y="0" curve="-90"/>
 <vertex x="0" y="0.254"/>
 </polygon>
-<pad name="ANODE" x="7.62" y="-1.27" drill="0.76" shape="square" rot="R180"/>
+<pad name="A" x="7.62" y="-1.27" drill="0.76" shape="square" rot="R180"/>
 <wire x1="10" y1="0" x2="8.89" y2="0" width="0.127" layer="21"/>
 <wire x1="8.89" y1="0" x2="6.35" y2="0" width="0.127" layer="21"/>
 <wire x1="6.35" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
@@ -116,8 +116,8 @@
 <package name="NEWSOLARSYMBOL">
 </package>
 <package name="PHOTODECTORDEVICE2">
-<smd name="PWROUT" x="-0.88" y="0.4" dx="1.45" dy="1" layer="1" rot="R90"/>
-<smd name="GND" x="0.76" y="0.4" dx="1.45" dy="1" layer="1" rot="R90"/>
+<smd name="C" x="-0.88" y="0.4" dx="1.45" dy="1" layer="1" rot="R90"/>
+<smd name="A" x="0.76" y="0.4" dx="1.45" dy="1" layer="1" rot="R90"/>
 <wire x1="-0.7" y1="1.4" x2="-0.5" y2="1.4" width="0.127" layer="21"/>
 <wire x1="-0.5" y1="1.4" x2="0.6" y2="1.4" width="0.127" layer="21"/>
 <wire x1="0.6" y1="1.4" x2="0.6" y2="-0.6" width="0.127" layer="21"/>
@@ -126,6 +126,7 @@
 <wire x1="-0.7" y1="-0.6" x2="-0.7" y2="1.4" width="0.127" layer="21"/>
 <wire x1="-0.5" y1="1.4" x2="-0.5" y2="-0.6" width="0.127" layer="21"/>
 <text x="-2.54" y="1.905" size="1.016" layer="21">&gt;NAME</text>
+<text x="-1.27" y="-1.27" size="0.5" layer="21" ratio="1">C</text>
 </package>
 <package name="PHOTODETECTBOTTOM">
 <smd name="PWROUT" x="-0.88" y="0.4" dx="1.45" dy="1" layer="16" rot="R90"/>
@@ -152,29 +153,25 @@
 <wire x1="-10.16" y1="20.32" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
 </symbol>
 <symbol name="NEWSOLARSYMBOL">
-<circle x="0" y="0" radius="9.1581" width="0.254" layer="94"/>
-<wire x1="7.62" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<pin name="CATHODE" x="0" y="-7.62" length="middle" rot="R270"/>
-<pin name="ANODE" x="0" y="7.62" length="middle" rot="R90"/>
-<wire x1="0" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-7.62" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="7.62" x2="0" y2="2.54" width="0.254" layer="94"/>
-<text x="-7.62" y="10.16" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<wire x1="4.826" y1="3.048" x2="-4.318" y2="3.048" width="0.254" layer="94"/>
+<pin name="C" x="0" y="10.16" length="middle" rot="R270"/>
+<pin name="A" x="0" y="-10.16" length="middle" rot="R90"/>
+<wire x1="2.286" y1="-3.048" x2="-2.286" y2="-3.048" width="0.254" layer="94"/>
+<text x="3.81" y="6.604" size="1.778" layer="95">&gt;NAME</text>
+<circle x="0" y="0" radius="7.62" width="0.254" layer="94"/>
 </symbol>
 <symbol name="PHOTODETECTORSYMBOL">
-<wire x1="-12.7" y1="5.08" x2="-12.7" y2="7.62" width="0.254" layer="95"/>
-<wire x1="-12.7" y1="7.62" x2="-10.16" y2="5.08" width="0.254" layer="95"/>
-<wire x1="-10.16" y1="5.08" x2="-12.7" y2="2.54" width="0.254" layer="95"/>
-<wire x1="-12.7" y1="2.54" x2="-12.7" y2="5.08" width="0.254" layer="95"/>
-<wire x1="-12.7" y1="5.08" x2="-17.78" y2="5.08" width="0.254" layer="95"/>
-<wire x1="-7.62" y1="7.62" x2="-10.16" y2="5.08" width="0.254" layer="95"/>
-<wire x1="-7.62" y1="2.54" x2="-10.16" y2="5.08" width="0.254" layer="95"/>
-<wire x1="-10.16" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="95"/>
-<circle x="-10.16" y="5.08" radius="3.81" width="0.254" layer="95"/>
-<pin name="GND" x="-30.48" y="5.08" length="middle"/>
-<pin name="PWR" x="12.7" y="5.08" length="middle" rot="R180"/>
+<wire x1="-2.54" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="3.81" width="0.254" layer="94"/>
+<pin name="A" x="-10.16" y="0" length="middle"/>
+<pin name="C" x="10.16" y="0" length="middle" rot="R180"/>
+<wire x1="-2.54" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -185,8 +182,8 @@
 <devices>
 <device name="" package="SOLARCELL2">
 <connects>
-<connect gate="G$1" pin="ANODE" pad="ANODE"/>
-<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -201,8 +198,8 @@
 <devices>
 <device name="" package="PHOTODECTORDEVICE2">
 <connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="PWR" pad="PWROUT"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -228,8 +225,8 @@
 <devices>
 <device name="" package="PHOTODETECTBOTTOM">
 <connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="PWR" pad="PWROUT"/>
+<connect gate="G$1" pin="A" pad="GND"/>
+<connect gate="G$1" pin="C" pad="PWROUT"/>
 </connects>
 <technologies>
 <technology name=""/>
