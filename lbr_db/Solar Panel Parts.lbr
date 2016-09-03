@@ -50,7 +50,7 @@
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
@@ -96,10 +96,10 @@
 <hole x="5.34" y="3.77" drill="0.6"/>
 <polygon width="0.127" layer="43">
 <vertex x="-0.035" y="26.705"/>
-<vertex x="3.175" y="24.8"/>
-<vertex x="4.645" y="23.73"/>
+<vertex x="3.175" y="23.53"/>
+<vertex x="7.185" y="19.92"/>
 <vertex x="7.82" y="18.315"/>
-<vertex x="9.425" y="13.905"/>
+<vertex x="9.425" y="10.095"/>
 <vertex x="9.895" y="4.445"/>
 <vertex x="10.195" y="-0.1"/>
 <vertex x="-0.035" y="0"/>

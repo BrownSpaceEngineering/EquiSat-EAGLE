@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -72,7 +72,7 @@
 <library>
 <packages>
 <package name="SOLARCELL2">
-<smd name="CATHODE" x="4.953" y="8.128" dx="6.35" dy="3.81" layer="1" rot="R90"/>
+<smd name="C" x="4.953" y="8.128" dx="6.35" dy="3.81" layer="1" rot="R90"/>
 <polygon width="0.127" layer="22">
 <vertex x="0" y="26.416"/>
 <vertex x="0" y="21.844"/>
@@ -84,7 +84,7 @@
 <vertex x="0.254" y="0" curve="-90"/>
 <vertex x="0" y="0.254"/>
 </polygon>
-<pad name="ANODE" x="7.62" y="-1.27" drill="0.76" shape="square" rot="R180"/>
+<pad name="A" x="7.62" y="-1.27" drill="0.76" shape="square" rot="R180"/>
 <wire x1="10" y1="0" x2="8.89" y2="0" width="0.127" layer="21"/>
 <wire x1="8.89" y1="0" x2="6.35" y2="0" width="0.127" layer="21"/>
 <wire x1="6.35" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
@@ -181,8 +181,8 @@
 <devices>
 <device name="" package="SOLARCELL2">
 <connects>
-<connect gate="G$1" pin="A" pad="ANODE"/>
-<connect gate="G$1" pin="C" pad="CATHODE"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
