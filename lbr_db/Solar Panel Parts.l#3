@@ -142,16 +142,18 @@
 </package>
 <package name="811-004-002-XX-7-22">
 <hole x="0" y="0" drill="12.7"/>
-<hole x="7.62" y="7.62" drill="2.36"/>
-<hole x="-7.62" y="7.62" drill="2.36"/>
-<hole x="-7.62" y="-7.62" drill="2.36"/>
-<hole x="7.62" y="-7.62" drill="2.36"/>
 <polygon width="0.127" layer="40">
 <vertex x="-10.5" y="10.5"/>
 <vertex x="10.5" y="10.5"/>
 <vertex x="10.5" y="-10.5"/>
 <vertex x="-10.5" y="-10.5"/>
 </polygon>
+<pad name="M1" x="-7.62" y="7.62" drill="2.36" shape="square"/>
+<pad name="M2" x="7.62" y="7.62" drill="2.36" shape="square"/>
+<pad name="M3" x="7.62" y="-7.62" drill="2.36" shape="square"/>
+<pad name="M4" x="-7.62" y="-7.62" drill="2.36" shape="square"/>
+<text x="-3.5" y="7" size="1.27" layer="21">&gt;NAME</text>
+<text x="-11" y="2.5" size="1.27" layer="22" rot="MR270">&gt;NAME</text>
 </package>
 </packages>
 <symbols>

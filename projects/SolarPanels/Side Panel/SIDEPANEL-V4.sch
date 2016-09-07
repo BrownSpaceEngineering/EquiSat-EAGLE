@@ -153,9 +153,10 @@
 <libraries>
 <library name="CNTRL_BOARD">
 <packages>
-<package name="MXL90614">
-<text x="-1.985" y="5" size="0.75" layer="25">&gt;NAME</text>
+<package name="MXL90620">
+<text x="-9.2" y="4.5" size="1.27" layer="25">&gt;NAME</text>
 <circle x="0" y="0" radius="4.566" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="2.29" width="0.05" layer="21"/>
 <pad name="SDA" x="0" y="2.294" drill="0.8" diameter="1.2"/>
 <pad name="VDD" x="-2.293" y="0" drill="0.8"/>
 <pad name="VSS" x="0" y="-2.294" drill="0.8"/>
@@ -169,7 +170,7 @@
 <vertex x="3.734" y="-2.794"/>
 <vertex x="3.5" y="-3"/>
 </polygon>
-<text x="-1.825" y="-5.655" size="0.75" layer="21">&gt;VALUE</text>
+<text x="3.175" y="4.445" size="1.27" layer="21">&gt;VALUE</text>
 </package>
 <package name="CAP-PTH-SMALL">
 <wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
@@ -194,11 +195,8 @@
 <wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
 <smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
 <smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<text x="-1.797" y="0.7255" size="0.762" layer="25">&gt;VALUE</text>
-<wire x1="-0.889" y1="0.635" x2="-0.889" y2="-0.6604" width="0.127" layer="21"/>
-<wire x1="-0.889" y1="-0.6604" x2="0.9398" y2="-0.6604" width="0.127" layer="21"/>
-<wire x1="0.9398" y1="-0.6604" x2="0.9398" y2="0.635" width="0.127" layer="21"/>
-<wire x1="0.9398" y1="0.635" x2="-0.889" y2="0.635" width="0.127" layer="21"/>
+<text x="-0.762" y="0.8255" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
 <package name="CAP-PTH-LARGE">
 <wire x1="0" y1="0.635" x2="0" y2="0" width="0.2032" layer="21"/>
@@ -229,21 +227,6 @@
 <text x="0" y="-2" size="0.4064" layer="27" rot="R180">&gt;VALUE</text>
 <rectangle x1="-2.2" y1="-1.6" x2="-1.1" y2="1.6" layer="51"/>
 <rectangle x1="1.1" y1="-1.6" x2="2.2" y2="1.6" layer="51"/>
-</package>
-<package name="0603-CAP">
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="21"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="21"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="21"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="21"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<wire x1="0" y1="0.0305" x2="0" y2="-0.0305" width="0.5588" layer="21"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-2.124" y="1.062" size="0.762" layer="25" font="vector">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
 <package name="0402-CAP">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
@@ -387,6 +370,22 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <circle x="0" y="0" radius="0.40160625" width="0" layer="29"/>
 <circle x="2.54" y="0" radius="0.40160625" width="0" layer="29"/>
 </package>
+<package name="0603-CAP">
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<wire x1="0" y1="0.0305" x2="0" y2="-0.0305" width="0.5588" layer="21"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MXL90620">
@@ -399,7 +398,7 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <text x="1.524" y="5.842" size="1.778" layer="96">&gt;NAME</text>
-<text x="-4.572" y="-7.366" size="1.778" layer="96">MXL90614</text>
+<text x="-4.572" y="-7.366" size="1.778" layer="96">MXL90620</text>
 </symbol>
 <symbol name="CAP">
 <wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>
@@ -418,7 +417,7 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <gate name="G$1" symbol="MXL90620" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MXL90614">
+<device name="" package="MXL90620">
 <connects>
 <connect gate="G$1" pin="GND" pad="VSS"/>
 <connect gate="G$1" pin="SCL" pad="SCL"/>
@@ -573,15 +572,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <package name="SOLARCELL2">
 <smd name="C" x="4.953" y="8.128" dx="6.35" dy="3.81" layer="1" rot="R90"/>
 <polygon width="0.127" layer="22">
-<vertex x="0" y="26.416"/>
 <vertex x="0" y="21.844"/>
 <vertex x="0" y="21.59"/>
-<vertex x="0" y="26.67"/>
-<vertex x="0" y="21.59"/>
-</polygon>
-<polygon width="0.127" layer="22">
-<vertex x="0.254" y="0" curve="-90"/>
-<vertex x="0" y="0.254"/>
 </polygon>
 <pad name="A" x="7.62" y="-1.27" drill="0.76" shape="square" rot="R180"/>
 <wire x1="10" y1="0" x2="8.89" y2="0" width="0.127" layer="21"/>
@@ -595,10 +587,10 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <hole x="5.34" y="3.77" drill="0.6"/>
 <polygon width="0.127" layer="43">
 <vertex x="-0.035" y="26.705"/>
-<vertex x="3.175" y="24.8"/>
-<vertex x="4.645" y="23.73"/>
+<vertex x="3.175" y="23.53"/>
+<vertex x="7.185" y="19.92"/>
 <vertex x="7.82" y="18.315"/>
-<vertex x="9.425" y="13.905"/>
+<vertex x="9.425" y="10.095"/>
 <vertex x="9.895" y="4.445"/>
 <vertex x="10.195" y="-0.1"/>
 <vertex x="-0.035" y="0"/>

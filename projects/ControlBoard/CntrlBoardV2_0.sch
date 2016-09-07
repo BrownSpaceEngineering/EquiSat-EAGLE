@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8242,7 +8242,6 @@ SCL</text>
 <text x="154.94" y="10.16" size="1.778" layer="95">Radio</text>
 <text x="154.94" y="12.7" size="1.778" layer="95">Radio</text>
 <text x="152.4" y="86.36" size="1.778" layer="95">Solar Panels</text>
-<text x="152.4" y="96.52" size="1.778" layer="95">Sensors</text>
 <text x="152.4" y="104.14" size="1.778" layer="95">I2C</text>
 <text x="152.4" y="101.6" size="1.778" layer="95">I2C</text>
 <text x="152.4" y="55.88" size="1.778" layer="95">Programming</text>
@@ -8276,6 +8275,7 @@ SCL</text>
 <text x="63.5" y="68.58" size="1.778" layer="95">NC</text>
 <text x="63.5" y="66.04" size="1.778" layer="95">NC</text>
 <text x="50.8" y="55.88" size="1.778" layer="97">RD_EN</text>
+<text x="187.96" y="91.44" size="1.778" layer="97">CONTAINS ERRORS IN PINNOUT DO NOT COPY</text>
 </plain>
 <instances>
 <instance part="SAMD21J" gate="G$1" x="96.52" y="58.42" smashed="yes">
@@ -8665,13 +8665,6 @@ SCL</text>
 <pinref part="SAMD21J" gate="G$1" pin="PA01"/>
 <wire x1="68.58" y1="109.22" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
 <label x="68.58" y="109.474" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PA12" class="0">
-<segment>
-<pinref part="SAMD21J" gate="G$1" pin="PA12"/>
-<wire x1="149.86" y1="96.52" x2="139.7" y2="96.52" width="0.1524" layer="91"/>
-<label x="144.78" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA24" class="0">
@@ -11241,7 +11234,21 @@ Pull-up ~OE</text>
 <wire x1="-127" y1="7.62" x2="-127" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PA07" class="0">
+<net name="LFE_1_MP_NFLT" class="0">
+<segment>
+<pinref part="CH1-DM" gate="G$1" pin="B4"/>
+<wire x1="78.74" y1="88.9" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
+<label x="58.42" y="88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VIN" class="0">
+<segment>
+<pinref part="CH2-DM" gate="G$1" pin="B5"/>
+<wire x1="180.34" y1="86.36" x2="193.04" y2="86.36" width="0.1524" layer="91"/>
+<label x="185.42" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PB00" class="0">
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="-58.42" y1="33.02" x2="-50.8" y2="33.02" width="0.1524" layer="91"/>
@@ -11278,20 +11285,6 @@ Pull-up ~OE</text>
 <wire x1="-129.54" y1="73.66" x2="-129.54" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-129.54" y1="60.96" x2="-71.12" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-71.12" y1="60.96" x2="-71.12" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="LFE_1_MP_NFLT" class="0">
-<segment>
-<pinref part="CH1-DM" gate="G$1" pin="B4"/>
-<wire x1="78.74" y1="88.9" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
-<label x="58.42" y="88.9" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VIN" class="0">
-<segment>
-<pinref part="CH2-DM" gate="G$1" pin="B5"/>
-<wire x1="180.34" y1="86.36" x2="193.04" y2="86.36" width="0.1524" layer="91"/>
-<label x="185.42" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

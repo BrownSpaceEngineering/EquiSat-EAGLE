@@ -155,22 +155,22 @@
 <wire x1="99.5" y1="0" x2="99.5" y2="82.5" width="0" layer="20"/>
 <wire x1="99.5" y1="82.5" x2="0" y2="82.5" width="0" layer="20"/>
 <wire x1="0" y1="82.5" x2="0" y2="0" width="0" layer="20"/>
-<text x="32.5" y="16.5" size="1.524" layer="22" rot="MR0">PWR-OUT</text>
-<text x="40.5" y="24.5" size="1.524" layer="22" rot="MR270">SDA</text>
-<text x="45" y="24" size="1.524" layer="22" rot="MR270">SCL</text>
-<text x="54" y="12" size="1.524" layer="22" rot="MR0">3V3</text>
-<text x="46" y="19.5" size="1.524" layer="22" rot="MR180">PD-OUT</text>
-<text x="50.5" y="24" size="1.524" layer="22" rot="MR0">GND</text>
-<text x="38" y="50.5" size="1.524" layer="22" rot="MR270">EquiSat: Side Solar Panel V4</text>
-<text x="35.5" y="42" size="1.524" layer="22" rot="MR270">September 2016</text>
-<text x="39" y="14" size="1.524" layer="21" rot="R180">EquiSat: Side Solar Panel V4</text>
-<text x="23" y="16" size="1.524" layer="21">PWR-OUT</text>
-<text x="54" y="13.5" size="1.524" layer="21" rot="R180">3V3</text>
-<text x="43.5" y="24.5" size="1.524" layer="21" rot="R270">SCL</text>
-<text x="41" y="32" size="1.524" layer="21" rot="R270">SDA</text>
-<text x="47.5" y="19" size="1.524" layer="21">PD-OUT</text>
-<text x="46" y="23.5" size="1.524" layer="21">GND</text>
-<text x="33" y="40" size="1.524" layer="22" rot="MR270">Ryan Izant</text>
+<text x="186" y="0.5" size="1.524" layer="22" rot="MR0">PWR-OUT</text>
+<text x="194" y="8.5" size="1.524" layer="22" rot="MR270">SDA</text>
+<text x="198.5" y="8" size="1.524" layer="22" rot="MR270">SCL</text>
+<text x="207.5" y="-4" size="1.524" layer="22" rot="MR0">3V3</text>
+<text x="199.5" y="3.5" size="1.524" layer="22" rot="MR180">PD-OUT</text>
+<text x="204" y="8" size="1.524" layer="22" rot="MR0">GND</text>
+<text x="191.5" y="34.5" size="1.524" layer="22" rot="MR270">EquiSat: Side Solar Panel V4</text>
+<text x="189" y="26" size="1.524" layer="22" rot="MR270">September 2016</text>
+<text x="192.5" y="-2" size="1.524" layer="21" rot="R180">EquiSat: Side Solar Panel V4</text>
+<text x="176.5" y="0" size="1.524" layer="21">PWR-OUT</text>
+<text x="207.5" y="-2.5" size="1.524" layer="21" rot="R180">3V3</text>
+<text x="197" y="8.5" size="1.524" layer="21" rot="R270">SCL</text>
+<text x="194.5" y="16" size="1.524" layer="21" rot="R270">SDA</text>
+<text x="201" y="3" size="1.524" layer="21">PD-OUT</text>
+<text x="199.5" y="7.5" size="1.524" layer="21">GND</text>
+<text x="186.5" y="24" size="1.524" layer="22" rot="MR270">Ryan Izant</text>
 <polygon width="0.4064" layer="30">
 <vertex x="0" y="0"/>
 <vertex x="6.5" y="0"/>
@@ -484,83 +484,83 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="CNTRL_BOARD" package="0805" value="0.1uF" x="49.22" y="13.9" smashed="yes" rot="R270">
-<attribute name="VALUE" x="47.303" y="11.4455" size="0.762" layer="25"/>
+<element name="C1" library="CNTRL_BOARD" package="0805" value="0.1uF" x="202.72" y="-2.1" smashed="yes" rot="R270">
+<attribute name="VALUE" x="200.803" y="-4.5545" size="0.762" layer="25"/>
 </element>
-<element name="IR" library="CNTRL_BOARD" package="MXL90614" value="MXL90620" x="43.14" y="15.71" smashed="yes" rot="R90">
-<attribute name="NAME" x="42.275" y="21.64" size="0.75" layer="25" rot="R180"/>
+<element name="IR" library="CNTRL_BOARD" package="MXL90614" value="MXL90620" x="196.64" y="-0.29" smashed="yes" rot="R90">
+<attribute name="NAME" x="195.775" y="5.64" size="0.75" layer="25" rot="R180"/>
 </element>
-<element name="1D" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="40.22" y="54.88" smashed="yes">
-<attribute name="NAME" x="41.49" y="70.12" size="2.032" layer="25"/>
-<attribute name="NAME" x="46.27" y="79.22" size="1.27" layer="21" rot="R180"/>
+<element name="1D" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-31.28" y="71.38" smashed="yes">
+<attribute name="NAME" x="-30.01" y="86.62" size="2.032" layer="25"/>
+<attribute name="NAME" x="-25.23" y="95.72" size="1.27" layer="21" rot="R180"/>
 </element>
-<element name="1C" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="39.25" y="68.62" smashed="yes" rot="R180">
-<attribute name="NAME" x="37.98" y="53.38" size="2.032" layer="25" rot="R180"/>
-<attribute name="NAME" x="33.73" y="69.75" size="1.27" layer="21"/>
+<element name="1C" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-42.25" y="71.38" smashed="yes">
+<attribute name="NAME" x="-40.98" y="86.62" size="2.032" layer="25"/>
+<attribute name="NAME" x="-36.73" y="70.25" size="1.27" layer="21" rot="R180"/>
 </element>
-<element name="1B" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="20.78" y="42.88" smashed="yes">
-<attribute name="NAME" x="22.05" y="58.12" size="2.032" layer="25"/>
-<attribute name="NAME" x="32.77" y="44.28" size="1.27" layer="21" rot="R180"/>
+<element name="1B" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-55.72" y="70.88" smashed="yes">
+<attribute name="NAME" x="-54.45" y="86.12" size="2.032" layer="25"/>
+<attribute name="NAME" x="-43.73" y="72.28" size="1.27" layer="21" rot="R180"/>
 </element>
-<element name="1A" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="30.62" y="71.81" rot="R90"/>
-<element name="2D" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="96.6" y="58.31" smashed="yes" rot="R90">
-<attribute name="NAME" x="81.36" y="59.58" size="2.032" layer="25" rot="R90"/>
-<attribute name="NAME" x="97.19" y="62.75" size="1.27" layer="21" rot="R270"/>
+<element name="1A" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-66.69" y="71.38"/>
+<element name="2D" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-29.19" y="42.4" smashed="yes">
+<attribute name="NAME" x="-27.92" y="57.64" size="2.032" layer="25"/>
+<attribute name="NAME" x="-24.75" y="41.81" size="1.27" layer="21" rot="R180"/>
 </element>
-<element name="2C" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="71.4" y="81.76" rot="R250"/>
-<element name="2B" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="59.17" y="52.9" smashed="yes">
-<attribute name="NAME" x="60.44" y="68.14" size="2.032" layer="25"/>
-<attribute name="NAME" x="64.75" y="52.67" size="1.27" layer="21" rot="R180"/>
+<element name="2C" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-43.76" y="43.9" rot="R340"/>
+<element name="2B" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-54.83" y="42.4" smashed="yes">
+<attribute name="NAME" x="-53.56" y="57.64" size="2.032" layer="25"/>
+<attribute name="NAME" x="-49.25" y="42.17" size="1.27" layer="21" rot="R180"/>
 </element>
-<element name="2A" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="58.69" y="79.58" smashed="yes" rot="R180">
-<attribute name="NAME" x="57.42" y="64.34" size="2.032" layer="25" rot="R180"/>
-<attribute name="NAME" x="55.77" y="79.69" size="1.27" layer="21"/>
+<element name="2A" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-65.69" y="42.42" smashed="yes">
+<attribute name="NAME" x="-64.42" y="57.66" size="2.032" layer="25"/>
+<attribute name="NAME" x="-62.77" y="42.31" size="1.27" layer="21" rot="R180"/>
 </element>
-<element name="3D" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="38.06" y="21.31" rot="R90"/>
-<element name="3C" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="13.94" y="39.76" rot="R270"/>
-<element name="3B" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="20.33" y="69.06" smashed="yes" rot="R180">
-<attribute name="NAME" x="19.06" y="53.82" size="2.032" layer="25" rot="R180"/>
-<attribute name="NAME" x="14.79" y="69.33" size="1.27" layer="21"/>
+<element name="3D" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-30.69" y="11.44"/>
+<element name="3C" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-42.26" y="11.94"/>
+<element name="3B" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-53.33" y="11.94" smashed="yes">
+<attribute name="NAME" x="-52.06" y="27.18" size="2.032" layer="25"/>
+<attribute name="NAME" x="-47.79" y="11.67" size="1.27" layer="21" rot="R180"/>
 </element>
-<element name="3A" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="2.6" y="40.44"/>
-<element name="4D" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="50.81" y="20.96" smashed="yes">
-<attribute name="NAME" x="52.08" y="36.2" size="2.032" layer="25"/>
-<attribute name="NAME" x="63.19" y="23.81" size="1.27" layer="21" rot="R180"/>
+<element name="3A" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-64.9" y="12.94"/>
+<element name="4D" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-29.69" y="-17.54" smashed="yes">
+<attribute name="NAME" x="-28.42" y="-2.3" size="2.032" layer="25"/>
+<attribute name="NAME" x="-17.31" y="-14.69" size="1.27" layer="21" rot="R180"/>
 </element>
-<element name="4C" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="50.26" y="52.04" smashed="yes" rot="R180">
-<attribute name="NAME" x="48.99" y="36.8" size="2.032" layer="25" rot="R180"/>
-<attribute name="NAME" x="50.81" y="50.76" size="1.27" layer="21"/>
+<element name="4C" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-41.76" y="-17.54" smashed="yes">
+<attribute name="NAME" x="-40.49" y="-2.3" size="2.032" layer="25"/>
+<attribute name="NAME" x="-42.31" y="-16.26" size="1.27" layer="21" rot="R180"/>
 </element>
-<element name="4B" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="11.96" y="10.83" rot="R270"/>
-<element name="4A" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="10.9" y="35.54" rot="R180"/>
-<element name="5D" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="60.48" y="19.69" rot="R270"/>
-<element name="5C" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="57.52" y="1.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="42.28" y="3.01" size="2.032" layer="25" rot="R90"/>
-<attribute name="NAME" x="57.76" y="6.17" size="1.27" layer="21" rot="R270"/>
+<element name="4B" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-53.33" y="-17.54"/>
+<element name="4A" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-64.9" y="-16.54"/>
+<element name="5D" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-28.19" y="-47.02"/>
+<element name="5C" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-40.26" y="-47.52" smashed="yes">
+<attribute name="NAME" x="-38.99" y="-32.28" size="2.032" layer="25"/>
+<attribute name="NAME" x="-35.83" y="-47.76" size="1.27" layer="21" rot="R180"/>
 </element>
-<element name="5B" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="86.02" y="1.17" smashed="yes" rot="R90">
-<attribute name="NAME" x="70.78" y="2.44" size="2.032" layer="25" rot="R90"/>
-<attribute name="NAME" x="86.83" y="5.67" size="1.27" layer="21" rot="R270"/>
+<element name="5B" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-53.83" y="-46.52" smashed="yes">
+<attribute name="NAME" x="-52.56" y="-31.28" size="2.032" layer="25"/>
+<attribute name="NAME" x="-49.33" y="-47.33" size="1.27" layer="21" rot="R180"/>
 </element>
-<element name="5A" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="89.1" y="8.98"/>
-<element name="6D" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="68.69" y="49" smashed="yes" rot="R180">
-<attribute name="NAME" x="67.42" y="33.76" size="2.032" layer="25" rot="R180"/>
-<attribute name="NAME" x="56.85" y="49.19" size="1.27" layer="21"/>
+<element name="5A" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-64.9" y="-45.52"/>
+<element name="6D" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-29.69" y="-76.5" smashed="yes">
+<attribute name="NAME" x="-28.42" y="-61.26" size="2.032" layer="25"/>
+<attribute name="NAME" x="-17.85" y="-76.69" size="1.27" layer="21" rot="R180"/>
 </element>
-<element name="6C" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="69.74" y="22.5" smashed="yes">
-<attribute name="NAME" x="71.01" y="37.74" size="2.032" layer="25"/>
-<attribute name="NAME" x="75.65" y="22.24" size="1.27" layer="21" rot="R180"/>
+<element name="6C" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-40.76" y="-76" smashed="yes">
+<attribute name="NAME" x="-39.49" y="-60.76" size="2.032" layer="25"/>
+<attribute name="NAME" x="-34.85" y="-76.26" size="1.27" layer="21" rot="R180"/>
 </element>
-<element name="6B" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="87.33" y="53" smashed="yes" rot="R180">
-<attribute name="NAME" x="86.06" y="37.76" size="2.032" layer="25" rot="R180"/>
-<attribute name="NAME" x="81.85" y="53.33" size="1.27" layer="21"/>
+<element name="6B" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-52.33" y="-75" smashed="yes">
+<attribute name="NAME" x="-51.06" y="-59.76" size="2.032" layer="25"/>
+<attribute name="NAME" x="-46.85" y="-75.33" size="1.27" layer="21" rot="R180"/>
 </element>
-<element name="6A" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="98.4" y="55" smashed="yes" rot="R180">
-<attribute name="NAME" x="97.13" y="39.76" size="2.032" layer="25" rot="R180"/>
-<attribute name="NAME" x="93.85" y="55.4" size="1.27" layer="21"/>
+<element name="6A" library="Solar Panel Parts" package="SOLARCELL2" value="NEWSOLARPANEL" x="-63.9" y="-74.5" smashed="yes">
+<attribute name="NAME" x="-62.63" y="-59.26" size="2.032" layer="25"/>
+<attribute name="NAME" x="-59.35" y="-74.9" size="1.27" layer="21" rot="R180"/>
 </element>
-<element name="PD" library="Solar Panel Parts" package="PHOTODECTORDEVICE2" value="PHOTODETECTOR" x="51.65" y="15.35" smashed="yes" rot="R180">
-<attribute name="NAME" x="53.255" y="15.74" size="1.016" layer="21" rot="R270"/>
+<element name="PD" library="Solar Panel Parts" package="PHOTODECTORDEVICE2" value="PHOTODETECTOR" x="205.15" y="-0.65" smashed="yes" rot="R180">
+<attribute name="NAME" x="206.755" y="-0.26" size="1.016" layer="21" rot="R270"/>
 </element>
 </elements>
 <signals>
@@ -580,14 +580,14 @@ design rules under a new name.</description>
 <contactref element="3A" pad="A"/>
 <contactref element="2A" pad="A"/>
 <contactref element="1A" pad="A"/>
-<wire x1="51.07" y1="80.85" x2="90.78" y2="56.27" width="0" layer="19" extent="1-1"/>
-<wire x1="31.89" y1="79.43" x2="51.07" y2="80.85" width="0" layer="19" extent="1-1"/>
-<wire x1="10.22" y1="39.17" x2="31.89" y2="79.43" width="0" layer="19" extent="1-1"/>
-<wire x1="3.28" y1="36.81" x2="10.22" y2="39.17" width="0" layer="19" extent="1-1"/>
-<wire x1="45.434" y1="15.71" x2="10.22" y2="39.17" width="0" layer="19" extent="1-1"/>
-<wire x1="49.22" y1="14.8" x2="45.434" y2="15.71" width="0" layer="19" extent="1-1"/>
-<wire x1="50.89" y1="14.95" x2="49.22" y2="14.8" width="0" layer="19" extent="1-1"/>
-<wire x1="96.72" y1="7.71" x2="50.89" y2="14.95" width="0" layer="19" extent="1-1"/>
+<wire x1="-58.07" y1="41.15" x2="-56.28" y2="-75.77" width="0" layer="19" extent="1-1"/>
+<wire x1="-59.07" y1="70.11" x2="-58.07" y2="41.15" width="0" layer="19" extent="1-1"/>
+<wire x1="-57.28" y1="11.67" x2="-59.07" y2="70.11" width="0" layer="19" extent="1-1"/>
+<wire x1="-57.28" y1="-17.81" x2="-57.28" y2="11.67" width="0" layer="19" extent="1-1"/>
+<wire x1="198.934" y1="-0.29" x2="-57.28" y2="11.67" width="0" layer="19" extent="1-1"/>
+<wire x1="202.72" y1="-1.2" x2="198.934" y2="-0.29" width="0" layer="19" extent="1-1"/>
+<wire x1="204.39" y1="-1.05" x2="202.72" y2="-1.2" width="0" layer="19" extent="1-1"/>
+<wire x1="-57.28" y1="-46.79" x2="204.39" y2="-1.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDA">
 <contactref element="IR" pad="SDA"/>
@@ -598,7 +598,7 @@ design rules under a new name.</description>
 <signal name="3V3">
 <contactref element="IR" pad="VDD"/>
 <contactref element="C1" pad="2"/>
-<wire x1="43.14" y1="13.417" x2="49.22" y2="13" width="0" layer="19" extent="1-1"/>
+<wire x1="196.64" y1="-2.583" x2="202.72" y2="-3" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWR-OUT">
 <contactref element="1D" pad="C"/>
@@ -613,101 +613,101 @@ design rules under a new name.</description>
 <vertex x="132.08" y="-10.16"/>
 <vertex x="-7.62" y="-10.16"/>
 </polygon>
-<wire x1="63.737" y1="40.872" x2="88.472" y2="63.263" width="0" layer="19" extent="1-1"/>
-<wire x1="55.763" y1="29.088" x2="63.737" y2="40.872" width="0" layer="19" extent="1-1"/>
-<wire x1="68.608" y1="14.737" x2="55.763" y2="29.088" width="0" layer="19" extent="1-1"/>
-<wire x1="29.932" y1="26.263" x2="55.763" y2="29.088" width="0" layer="19" extent="1-1"/>
-<wire x1="45.173" y1="63.008" x2="63.737" y2="40.872" width="0" layer="19" extent="1-1"/>
+<wire x1="-24.737" y1="-68.372" x2="-24.237" y2="50.528" width="0" layer="19" extent="1-1"/>
+<wire x1="-24.737" y1="-9.412" x2="-24.737" y2="-68.372" width="0" layer="19" extent="1-1"/>
+<wire x1="-23.237" y1="-38.892" x2="-24.737" y2="-9.412" width="0" layer="19" extent="1-1"/>
+<wire x1="-25.737" y1="19.568" x2="-24.737" y2="-9.412" width="0" layer="19" extent="1-1"/>
+<wire x1="-26.327" y1="79.508" x2="-24.737" y2="-68.372" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="1D" pad="A"/>
 <contactref element="1C" pad="C"/>
-<wire x1="34.297" y1="60.492" x2="47.84" y2="53.61" width="0" layer="19" extent="1-1"/>
+<wire x1="-37.297" y1="79.508" x2="-23.66" y2="70.11" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="2D" pad="A"/>
 <contactref element="2C" pad="C"/>
-<wire x1="77.34379375" y1="74.3257625" x2="97.87" y2="65.93" width="0" layer="19" extent="1-1"/>
+<wire x1="-36.3257625" y1="49.84379375" x2="-21.57" y2="41.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="3D" pad="A"/>
 <contactref element="3C" pad="C"/>
-<wire x1="22.068" y1="34.807" x2="39.33" y2="28.93" width="0" layer="19" extent="1-1"/>
+<wire x1="-37.307" y1="20.068" x2="-23.07" y2="10.17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="4D" pad="A"/>
 <contactref element="4C" pad="C"/>
-<wire x1="58.43" y1="19.69" x2="45.307" y2="43.912" width="0" layer="19" extent="1-1"/>
+<wire x1="-22.07" y1="-18.81" x2="-36.807" y2="-9.412" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="5D" pad="A"/>
 <contactref element="5C" pad="C"/>
-<wire x1="49.392" y1="6.693" x2="59.21" y2="12.07" width="0" layer="19" extent="1-1"/>
+<wire x1="-35.307" y1="-39.392" x2="-20.57" y2="-48.29" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="6D" pad="A"/>
 <contactref element="6C" pad="C"/>
-<wire x1="74.693" y1="30.628" x2="61.07" y2="50.27" width="0" layer="19" extent="1-1"/>
+<wire x1="-35.807" y1="-67.872" x2="-22.07" y2="-77.77" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="6C" pad="A"/>
 <contactref element="6B" pad="C"/>
-<wire x1="77.36" y1="21.23" x2="82.377" y2="44.872" width="0" layer="19" extent="1-1"/>
+<wire x1="-33.14" y1="-77.27" x2="-47.377" y2="-66.872" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
 <contactref element="6B" pad="A"/>
 <contactref element="6A" pad="C"/>
-<wire x1="79.71" y1="54.27" x2="93.447" y2="46.872" width="0" layer="19" extent="1-1"/>
+<wire x1="-44.71" y1="-76.27" x2="-58.947" y2="-66.372" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="5C" pad="A"/>
 <contactref element="5B" pad="C"/>
-<wire x1="58.79" y1="9.36" x2="77.892" y2="6.123" width="0" layer="19" extent="1-1"/>
+<wire x1="-32.64" y1="-48.79" x2="-48.877" y2="-38.392" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$10">
 <contactref element="5B" pad="A"/>
 <contactref element="5A" pad="C"/>
-<wire x1="87.29" y1="8.79" x2="94.053" y2="17.108" width="0" layer="19" extent="1-1"/>
+<wire x1="-46.21" y1="-47.79" x2="-59.947" y2="-37.392" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="4B" pad="A"/>
 <contactref element="4A" pad="C"/>
-<wire x1="10.69" y1="3.21" x2="5.947" y2="27.412" width="0" layer="19" extent="1-1"/>
+<wire x1="-45.71" y1="-18.81" x2="-59.947" y2="-8.412" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$12">
 <contactref element="4C" pad="A"/>
 <contactref element="4B" pad="C"/>
-<wire x1="20.088" y1="5.877" x2="42.64" y2="53.31" width="0" layer="19" extent="1-1"/>
+<wire x1="-48.377" y1="-9.412" x2="-34.14" y2="-18.81" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$13">
 <contactref element="3C" pad="A"/>
 <contactref element="3B" pad="C"/>
-<wire x1="12.67" y1="32.14" x2="15.377" y2="60.932" width="0" layer="19" extent="1-1"/>
+<wire x1="-34.64" y1="10.67" x2="-48.377" y2="20.068" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="2C">
 <contactref element="2C" pad="A"/>
 <contactref element="2B" pad="C"/>
-<wire x1="64.123" y1="61.028" x2="67.600396875" y2="75.03390625" width="0" layer="19" extent="1-1"/>
+<wire x1="-49.877" y1="50.528" x2="-37.03390625" y2="40.100396875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15">
 <contactref element="1C" pad="A"/>
 <contactref element="1B" pad="C"/>
-<wire x1="25.733" y1="51.008" x2="31.63" y2="69.89" width="0" layer="19" extent="1-1"/>
+<wire x1="-50.767" y1="79.008" x2="-34.63" y2="70.11" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$16">
 <contactref element="1B" pad="A"/>
 <contactref element="1A" pad="C"/>
-<wire x1="28.4" y1="41.61" x2="22.492" y2="76.763" width="0" layer="19" extent="1-1"/>
+<wire x1="-48.1" y1="69.61" x2="-61.737" y2="79.508" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$17">
 <contactref element="2B" pad="A"/>
 <contactref element="2A" pad="C"/>
-<wire x1="66.79" y1="51.63" x2="53.737" y2="71.452" width="0" layer="19" extent="1-1"/>
+<wire x1="-47.21" y1="41.13" x2="-60.737" y2="50.548" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$18">
 <contactref element="3B" pad="A"/>
 <contactref element="3A" pad="C"/>
-<wire x1="7.553" y1="48.568" x2="12.71" y2="70.33" width="0" layer="19" extent="1-1"/>
+<wire x1="-59.947" y1="21.068" x2="-45.71" y2="10.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PD-OUT">
 <contactref element="PD" pad="C"/>
