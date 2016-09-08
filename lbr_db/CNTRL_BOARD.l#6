@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.005" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1027,8 +1027,7 @@ NS Package M08A</description>
 <smd name="22" x="-0.15" y="1.8" dx="0.7" dy="0.25" layer="1" rot="R270" stop="no" cream="no"/>
 <smd name="23" x="-0.65" y="1.8" dx="0.7" dy="0.25" layer="1" rot="R270" stop="no" cream="no"/>
 <smd name="24" x="-1.15" y="1.8" dx="0.7" dy="0.25" layer="1" rot="R270" stop="no" cream="no"/>
-<smd name="EXP" x="0.1" y="-0.1" dx="2.45" dy="2.45" layer="1" stop="no" cream="no"/>
-<text x="-1.9" y="2.4" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.4" y="-3.4" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="-1.9" y="-3.85" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-2.175" y1="1" x2="-1.425" y2="1.3" layer="29"/>
 <rectangle x1="-2.1" y1="1.05" x2="-1.475" y2="1.25" layer="31"/>
@@ -1092,6 +1091,45 @@ NS Package M08A</description>
 <vertex x="1.1" y="-1.1"/>
 <vertex x="-0.9" y="-1.1"/>
 </polygon>
+<text x="2.5" y="-0.19" size="0.5" layer="21">+X</text>
+<text x="-0.5" y="2.5" size="0.5" layer="21">+Y</text>
+<text x="2.26" y="2.21" size="0.5" layer="21">+Z</text>
+<circle x="2.235" y="2.025" radius="0.25" width="0" layer="51"/>
+</package>
+<package name="QFN-24-3X3">
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<circle x="-1.1" y="1.1" radius="0.4" width="0" layer="21"/>
+<smd name="P" x="0" y="0" dx="1.7" dy="1.54" layer="1"/>
+<smd name="15" x="1.4" y="-0.2" dx="0.25" dy="0.5" layer="1" rot="R90"/>
+<smd name="14" x="1.4" y="-0.6" dx="0.25" dy="0.5" layer="1" rot="R90"/>
+<smd name="16" x="1.4" y="0.2" dx="0.25" dy="0.5" layer="1" rot="R90"/>
+<smd name="17" x="1.4" y="0.6" dx="0.25" dy="0.5" layer="1" rot="R90"/>
+<smd name="20" x="0.6" y="1.4" dx="0.25" dy="0.5" layer="1" rot="R180"/>
+<smd name="21" x="0.2" y="1.4" dx="0.25" dy="0.5" layer="1" rot="R180"/>
+<smd name="22" x="-0.2" y="1.4" dx="0.25" dy="0.5" layer="1" rot="R180"/>
+<smd name="23" x="-0.6" y="1.4" dx="0.25" dy="0.5" layer="1" rot="R180"/>
+<smd name="2" x="-1.4" y="0.6" dx="0.25" dy="0.5" layer="1" rot="R270"/>
+<smd name="3" x="-1.4" y="0.2" dx="0.25" dy="0.5" layer="1" rot="R270"/>
+<smd name="4" x="-1.4" y="-0.2" dx="0.25" dy="0.5" layer="1" rot="R270"/>
+<smd name="5" x="-1.4" y="-0.6" dx="0.25" dy="0.5" layer="1" rot="R270"/>
+<smd name="8" x="-0.6" y="-1.4" dx="0.25" dy="0.5" layer="1"/>
+<smd name="9" x="-0.2" y="-1.4" dx="0.25" dy="0.5" layer="1"/>
+<smd name="10" x="0.2" y="-1.4" dx="0.25" dy="0.5" layer="1"/>
+<smd name="11" x="0.6" y="-1.4" dx="0.25" dy="0.5" layer="1"/>
+<smd name="18" x="1.4" y="1" dx="0.2" dy="0.5" layer="1" roundness="32" rot="R270"/>
+<smd name="13" x="1.4" y="-1" dx="0.2" dy="0.5" layer="1" roundness="32" rot="R270"/>
+<smd name="12" x="1" y="-1.4" dx="0.2" dy="0.5" layer="1" roundness="32"/>
+<smd name="7" x="-1" y="-1.4" dx="0.2" dy="0.5" layer="1" roundness="32"/>
+<smd name="6" x="-1.4" y="-1" dx="0.2" dy="0.5" layer="1" roundness="32" rot="R90"/>
+<smd name="1" x="-1.4" y="1" dx="0.2" dy="0.5" layer="1" roundness="32" rot="R270"/>
+<smd name="24" x="-1" y="1.4" dx="0.2" dy="0.5" layer="1" roundness="32"/>
+<smd name="19" x="1" y="1.4" dx="0.2" dy="0.5" layer="1" roundness="32" rot="R180"/>
+<text x="-1.85" y="-1.55" size="0.7" layer="25" rot="R90">&gt;NAME</text>
+<text x="1.8" y="-0.15" size="0.5" layer="25">+Xag+Ym</text>
+<text x="0.25" y="1.8" size="0.5" layer="25" rot="R90">+Yag+Xm</text>
 </package>
 </packages>
 <symbols>
@@ -2279,6 +2317,31 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <connect gate="G$1" pin="D" pad="5 6 7 8"/>
 <connect gate="G$1" pin="G" pad="4"/>
 <connect gate="G$1" pin="S" pad="1 2 3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ITG-3200">
+<gates>
+<gate name="G$1" symbol="ITG-3200" x="-10.16" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="QFN-24">
+<connects>
+<connect gate="G$1" pin="AD0" pad="9"/>
+<connect gate="G$1" pin="CLKIN" pad="1"/>
+<connect gate="G$1" pin="CPOUT" pad="20"/>
+<connect gate="G$1" pin="GND" pad="18"/>
+<connect gate="G$1" pin="INT" pad="12"/>
+<connect gate="G$1" pin="REGOUT" pad="10"/>
+<connect gate="G$1" pin="RESV-G" pad="11"/>
+<connect gate="G$1" pin="SCL" pad="23"/>
+<connect gate="G$1" pin="SDA" pad="24"/>
+<connect gate="G$1" pin="VDD" pad="13"/>
+<connect gate="G$1" pin="VLOGIC" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
