@@ -8579,7 +8579,8 @@ Mechanically Trimmed</text>
 <pinref part="PMOS" gate="G$1" pin="D"/>
 <wire x1="55.88" y1="157.48" x2="55.88" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="149.86" x2="71.12" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="149.86" x2="119.38" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="149.86" x2="99.06" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="149.86" x2="119.38" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="149.86" x2="119.38" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="IR1" gate="G$1" pin="VDD"/>
 <wire x1="119.38" y1="160.02" x2="116.84" y2="160.02" width="0.1524" layer="91"/>
@@ -8595,6 +8596,8 @@ Mechanically Trimmed</text>
 <junction x="157.48" y="160.02"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <junction x="71.12" y="149.86"/>
+<pinref part="R38" gate="G$1" pin="2"/>
+<junction x="99.06" y="149.86"/>
 </segment>
 </net>
 <net name="SDA" class="0">
