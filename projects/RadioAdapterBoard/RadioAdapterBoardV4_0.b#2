@@ -637,8 +637,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="3V6-REF">
 <contactref element="CNTRLCONN" pad="P$8"/>
-<contactref element="R1" pad="2"/>
 <contactref element="R2" pad="1"/>
+<contactref element="R1" pad="2"/>
 <wire x1="-33.6" y1="-24.5" x2="-35.4" y2="-28.75" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.8752" y1="23.841" x2="-33.6" y2="-24.5" width="0" layer="19" extent="1-1"/>
 </signal>

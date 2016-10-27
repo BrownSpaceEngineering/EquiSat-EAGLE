@@ -505,7 +505,7 @@
 <instance part="AVX" gate="G$1" x="68.58" y="7.62"/>
 <instance part="CNTRLCONN" gate="G$1" x="-2.54" y="15.24"/>
 <instance part="U$1" gate="G$1" x="30.48" y="91.44"/>
-<instance part="R1" gate="R$1" x="5.08" y="78.74" rot="R90"/>
+<instance part="R1" gate="R$1" x="5.08" y="76.2" rot="R90"/>
 <instance part="R2" gate="R$1" x="5.08" y="88.9" rot="R90"/>
 </instances>
 <busses>
@@ -625,11 +625,6 @@
 <wire x1="10.16" y1="22.86" x2="20.32" y2="22.86" width="0.1524" layer="91"/>
 <label x="17.78" y="22.86" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="R1" gate="R$1" pin="1"/>
-<wire x1="5.08" y1="73.66" x2="5.08" y2="71.12" width="0.1524" layer="91"/>
-<label x="5.08" y="68.58" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="3V6" class="0">
 <segment>
@@ -704,8 +699,10 @@
 <segment>
 <pinref part="R2" gate="R$1" pin="1"/>
 <pinref part="R1" gate="R$1" pin="2"/>
-<wire x1="5.08" y1="83.82" x2="15.24" y2="83.82" width="0.1524" layer="91"/>
-<label x="15.24" y="83.82" size="1.778" layer="95"/>
+<wire x1="5.08" y1="81.28" x2="15.24" y2="81.28" width="0.1524" layer="91"/>
+<label x="7.62" y="81.28" size="1.778" layer="95"/>
+<wire x1="5.08" y1="81.28" x2="5.08" y2="83.82" width="0.1524" layer="91"/>
+<junction x="5.08" y="81.28"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -713,6 +710,13 @@
 <pinref part="U$1" gate="G$1" pin="VOUT"/>
 <pinref part="R2" gate="R$1" pin="2"/>
 <wire x1="22.86" y1="93.98" x2="5.08" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R1" gate="R$1" pin="1"/>
+<wire x1="5.08" y1="71.12" x2="5.08" y2="63.5" width="0.1524" layer="91"/>
+<label x="5.08" y="63.5" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>

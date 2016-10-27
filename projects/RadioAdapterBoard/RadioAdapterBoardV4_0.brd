@@ -571,16 +571,18 @@ design rules under a new name.</description>
 <vertex x="4" y="-1.75"/>
 <vertex x="-23" y="-1.25"/>
 </polygon>
-<wire x1="-8.57" y1="24.79" x2="-8.57" y2="25.79" width="0" layer="19" extent="1-1"/>
-<wire x1="-8.57" y1="24.29" x2="-8.57" y2="24.79" width="0" layer="19" extent="1-1"/>
-<wire x1="-8.57" y1="23.79" x2="-8.57" y2="24.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-8.57" y1="21.29" x2="-8.57" y2="23.79" width="0" layer="19" extent="1-1"/>
+<contactref element="R1" pad="1"/>
+<wire x1="-13.27" y1="18.79" x2="-35.4" y2="-24.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.27" y1="20.79" x2="-13.27" y2="18.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.27" y1="21.29" x2="-13.27" y2="20.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.57" y1="21.29" x2="-13.27" y2="21.29" width="0" layer="19" extent="1-1"/>
 <wire x1="-8.57" y1="20.79" x2="-8.57" y2="21.29" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.57" y1="23.79" x2="-8.57" y2="21.29" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.57" y1="24.29" x2="-8.57" y2="23.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.57" y1="24.79" x2="-8.57" y2="24.29" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.57" y1="25.79" x2="-8.57" y2="24.79" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.8752" y1="21.841" x2="-8.57" y2="21.29" width="0" layer="19" extent="1-1"/>
 <wire x1="-2.8752" y1="21.841" x2="-4.8752" y2="21.841" width="0" layer="19" extent="1-1"/>
-<wire x1="-13.27" y1="21.29" x2="-8.57" y2="21.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-13.27" y1="20.79" x2="-13.27" y2="21.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-13.27" y1="18.79" x2="-13.27" y2="20.79" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3V6">
 <contactref element="AVX" pad="27"/>
@@ -644,9 +646,6 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="8"/>
 <contactref element="R2" pad="2"/>
 <wire x1="-29.8625" y1="-20.4" x2="-33.6" y2="-28.75" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$2">
-<contactref element="R1" pad="1"/>
 </signal>
 </signals>
 </board>

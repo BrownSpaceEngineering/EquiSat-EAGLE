@@ -276,6 +276,21 @@ Ryan Izant</text>
 </package>
 </packages>
 </library>
+<library name="BrownSpaceEngineering">
+<description>Parts Used by Brown Space Engineering</description>
+<packages>
+<package name="0805">
+<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<text x="-1.397" y="0.8255" size="0.8" layer="25">&gt;NAME</text>
+<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="-0.7" x2="1.4" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="1.4" y1="-0.7" x2="1.4" y2="0.7" width="0.127" layer="21"/>
+<wire x1="1.4" y1="0.7" x2="-1.4" y2="0.7" width="0.127" layer="21"/>
+<text x="-1.4" y="-1.6" size="0.762" layer="21">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -470,6 +485,8 @@ design rules under a new name.</description>
 </element>
 <element name="CNTRLCONN" library="CNTRL_BOARD" package="HARWIN_DATAMATE_10_F" value="HARWIN_10_F" x="-2.8552" y="19.841" rot="MR90"/>
 <element name="U$1" library="CNTRL_BOARD" package="DHD16" value="" x="-33.5" y="-20.75"/>
+<element name="R1" library="BrownSpaceEngineering" package="0805" value="10K" x="-34.5" y="-24.5"/>
+<element name="R2" library="BrownSpaceEngineering" package="0805" value="10K" x="-34.5" y="-28.75"/>
 </elements>
 <signals>
 <signal name="P12">
@@ -554,6 +571,18 @@ design rules under a new name.</description>
 <vertex x="4" y="-1.75"/>
 <vertex x="-23" y="-1.25"/>
 </polygon>
+<contactref element="R1" pad="1"/>
+<wire x1="-13.27" y1="18.79" x2="-35.4" y2="-24.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.27" y1="20.79" x2="-13.27" y2="18.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.27" y1="21.29" x2="-13.27" y2="20.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.57" y1="21.29" x2="-13.27" y2="21.29" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.57" y1="20.79" x2="-8.57" y2="21.29" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.57" y1="23.79" x2="-8.57" y2="21.29" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.57" y1="24.29" x2="-8.57" y2="23.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.57" y1="24.79" x2="-8.57" y2="24.29" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.57" y1="25.79" x2="-8.57" y2="24.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.8752" y1="21.841" x2="-8.57" y2="21.29" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.8752" y1="21.841" x2="-4.8752" y2="21.841" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3V6">
 <contactref element="AVX" pad="27"/>
@@ -606,6 +635,15 @@ design rules under a new name.</description>
 </signal>
 <signal name="3V6-REF">
 <contactref element="CNTRLCONN" pad="P$8"/>
+<contactref element="R1" pad="2"/>
+<contactref element="R2" pad="1"/>
+<wire x1="-33.6" y1="-24.5" x2="-35.4" y2="-28.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.8752" y1="23.841" x2="-33.6" y2="-24.5" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$3">
+<contactref element="U$1" pad="8"/>
+<contactref element="R2" pad="2"/>
+<wire x1="-29.8625" y1="-20.4" x2="-33.6" y2="-28.75" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

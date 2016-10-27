@@ -625,6 +625,11 @@
 <wire x1="10.16" y1="22.86" x2="20.32" y2="22.86" width="0.1524" layer="91"/>
 <label x="17.78" y="22.86" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R1" gate="R$1" pin="1"/>
+<wire x1="5.08" y1="71.12" x2="5.08" y2="63.5" width="0.1524" layer="91"/>
+<label x="5.08" y="63.5" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="3V6" class="0">
 <segment>
@@ -710,13 +715,6 @@
 <pinref part="U$1" gate="G$1" pin="VOUT"/>
 <pinref part="R2" gate="R$1" pin="2"/>
 <wire x1="22.86" y1="93.98" x2="5.08" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="R1" gate="R$1" pin="1"/>
-<wire x1="5.08" y1="71.12" x2="5.08" y2="63.5" width="0.1524" layer="91"/>
-<label x="5.08" y="63.5" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
