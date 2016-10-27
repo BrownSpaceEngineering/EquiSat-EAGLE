@@ -274,6 +274,20 @@ Ryan Izant</text>
 <text x="-1.27" y="-1.27" size="1.27" layer="21" rot="R90">&gt;NAME</text>
 <text x="6.35" y="-1.27" size="1.27" layer="21" rot="R90">&gt;VALUE</text>
 </package>
+<package name="PLCC-2">
+<smd name="A" x="0" y="0.75" dx="2.6" dy="1.5" layer="1"/>
+<smd name="C" x="0" y="-2.25" dx="2.6" dy="1.5" layer="1"/>
+<wire x1="-1.5" y1="0.95" x2="1.5" y2="0.95" width="0.05" layer="21"/>
+<wire x1="1.5" y1="0.95" x2="1.5" y2="-2.45" width="0.05" layer="21"/>
+<wire x1="1.5" y1="-2.45" x2="-1.5" y2="-2.45" width="0.05" layer="21"/>
+<wire x1="-1.5" y1="-2.45" x2="-1.5" y2="0.95" width="0.05" layer="21"/>
+<polygon width="0.05" layer="21">
+<vertex x="-1.5" y="-2"/>
+<vertex x="-1" y="-2.5"/>
+<vertex x="-1.5" y="-2.5"/>
+</polygon>
+<text x="-1.905" y="-2.54" size="0.762" layer="21" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 </library>
 <library name="BrownSpaceEngineering">
@@ -298,6 +312,9 @@ Ryan Izant</text>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
+</class>
+<class number="1" name="GND" width="0.508" drill="0.254">
+<clearance class="1" value="0.3048"/>
 </class>
 </classes>
 <designrules name="default">
@@ -487,6 +504,21 @@ design rules under a new name.</description>
 <element name="U$1" library="CNTRL_BOARD" package="DHD16" value="" x="-33.5" y="-20.75"/>
 <element name="R1" library="BrownSpaceEngineering" package="0805" value="10K" x="-34.5" y="-24.5"/>
 <element name="R2" library="BrownSpaceEngineering" package="0805" value="10K" x="-34.5" y="-28.75"/>
+<element name="PWR_ON" library="CNTRL_BOARD" package="PLCC-2" value="LT-T673-Q1R2-25-Z" x="-33.5" y="-33">
+<attribute name="MF" value="" x="-38.25" y="-27.75" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-38.25" y="-27.75" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-38.25" y="-27.75" size="1.778" layer="27" display="off"/>
+</element>
+<element name="RET" library="CNTRL_BOARD" package="PLCC-2" value="LT-T673-Q1R2-25-Z" x="-33.5" y="-37.75">
+<attribute name="MF" value="" x="-42.75" y="-27.75" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-42.75" y="-27.75" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-42.75" y="-27.75" size="1.778" layer="27" display="off"/>
+</element>
+<element name="SEND" library="CNTRL_BOARD" package="PLCC-2" value="LT-T673-Q1R2-25-Z" x="-33.5" y="-42.5">
+<attribute name="MF" value="" x="-47.25" y="-27.75" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-47.25" y="-27.75" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-47.25" y="-27.75" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="P12">
@@ -505,6 +537,8 @@ design rules under a new name.</description>
 <via x="-3" y="12.75" extent="1-16" drill="0.6"/>
 <wire x1="-3" y1="12.75" x2="-2.25" y2="12.75" width="0.3048" layer="1"/>
 <wire x1="-2.25" y1="12.75" x2="-1.25" y2="13.75" width="0.3048" layer="1"/>
+<contactref element="PWR_ON" pad="A"/>
+<wire x1="-16.5" y1="12.75" x2="-33.5" y2="-32.25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="P14">
 <contactref element="AVX" pad="14"/>
@@ -539,6 +573,8 @@ design rules under a new name.</description>
 <wire x1="-16" y1="25.75" x2="-16" y2="29" width="0.3" layer="1"/>
 <wire x1="-16" y1="29" x2="-14.5" y2="30.5" width="0.3" layer="1"/>
 <wire x1="-14.5" y1="30.5" x2="-8.939" y2="30.5" width="0.3" layer="1"/>
+<contactref element="SEND" pad="A"/>
+<wire x1="-16" y1="25.75" x2="-33.5" y2="-41.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="P3">
 <contactref element="AVX" pad="3"/>
@@ -552,6 +588,8 @@ design rules under a new name.</description>
 <via x="-18.09" y="25.32" extent="1-16" drill="0.6"/>
 <wire x1="-18.09" y1="25.32" x2="-13.28" y2="25.32" width="0.3" layer="1"/>
 <wire x1="-13.28" y1="25.32" x2="-13.27" y2="25.29" width="0.3" layer="1"/>
+<contactref element="RET" pad="A"/>
+<wire x1="-16.611" y1="23.841" x2="-33.5" y2="-37" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="GND">
 <contactref element="AVX" pad="1"/>
@@ -572,6 +610,12 @@ design rules under a new name.</description>
 <vertex x="-23" y="-1.25"/>
 </polygon>
 <contactref element="R1" pad="1"/>
+<contactref element="SEND" pad="C"/>
+<contactref element="PWR_ON" pad="C"/>
+<contactref element="RET" pad="C"/>
+<wire x1="-33.5" y1="-40" x2="-33.5" y2="-44.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-33.5" y1="-35.25" x2="-33.5" y2="-40" width="0" layer="19" extent="1-1"/>
+<wire x1="-35.4" y1="-24.5" x2="-33.5" y2="-35.25" width="0" layer="19" extent="1-1"/>
 <wire x1="-13.27" y1="18.79" x2="-35.4" y2="-24.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-13.27" y1="20.79" x2="-13.27" y2="18.79" width="0" layer="19" extent="1-1"/>
 <wire x1="-13.27" y1="21.29" x2="-13.27" y2="20.79" width="0" layer="19" extent="1-1"/>

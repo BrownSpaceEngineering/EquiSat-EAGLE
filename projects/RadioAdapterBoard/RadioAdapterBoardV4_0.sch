@@ -243,6 +243,20 @@
 <text x="-1.27" y="-1.27" size="1.27" layer="21" rot="R90">&gt;NAME</text>
 <text x="6.35" y="-1.27" size="1.27" layer="21" rot="R90">&gt;VALUE</text>
 </package>
+<package name="PLCC-2">
+<smd name="A" x="0" y="0.75" dx="2.6" dy="1.5" layer="1"/>
+<smd name="C" x="0" y="-2.25" dx="2.6" dy="1.5" layer="1"/>
+<wire x1="-1.5" y1="0.95" x2="1.5" y2="0.95" width="0.05" layer="21"/>
+<wire x1="1.5" y1="0.95" x2="1.5" y2="-2.45" width="0.05" layer="21"/>
+<wire x1="1.5" y1="-2.45" x2="-1.5" y2="-2.45" width="0.05" layer="21"/>
+<wire x1="-1.5" y1="-2.45" x2="-1.5" y2="0.95" width="0.05" layer="21"/>
+<polygon width="0.05" layer="21">
+<vertex x="-1.5" y="-2"/>
+<vertex x="-1" y="-2.5"/>
+<vertex x="-1.5" y="-2.5"/>
+</polygon>
+<text x="-1.905" y="-2.54" size="0.762" layer="21" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="AVX-24-5046-030-630-829">
@@ -325,6 +339,28 @@
 <wire x1="-2.54" y1="-5.08" x2="-2.54" y2="22.86" width="0.254" layer="94"/>
 <text x="13.97" y="-4.318" size="1.778" layer="95">&gt;NAME</text>
 <text x="-1.016" y="-4.318" size="1.27" layer="95">LTC3112</text>
+</symbol>
+<symbol name="LED">
+<wire x1="0" y1="2.54" x2="3.048" y2="0.508" width="0.254" layer="94"/>
+<wire x1="3.048" y1="0.508" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0" y2="0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="0.254" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="3.048" y1="0.508" x2="8.636" y2="0.508" width="0.254" layer="94"/>
+<wire x1="3.048" y1="3.048" x2="3.048" y2="0.508" width="0.254" layer="94"/>
+<wire x1="3.048" y1="0.508" x2="3.048" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="0.254" x2="0" y2="0.254" width="0.254" layer="94"/>
+<wire x1="2.286" y1="3.048" x2="3.048" y2="3.81" width="0.254" layer="94"/>
+<wire x1="3.048" y1="3.556" x2="3.048" y2="3.81" width="0.254" layer="94"/>
+<wire x1="3.048" y1="3.81" x2="2.794" y2="3.81" width="0.254" layer="94"/>
+<wire x1="1.524" y1="3.302" x2="2.4384" y2="4.2418" width="0.254" layer="94"/>
+<wire x1="2.4384" y1="3.9878" x2="2.4384" y2="4.2418" width="0.254" layer="94"/>
+<wire x1="2.4384" y1="4.2418" x2="2.1844" y2="4.2418" width="0.254" layer="94"/>
+<wire x1="1.016" y1="3.81" x2="1.778" y2="4.572" width="0.254" layer="94"/>
+<wire x1="1.778" y1="4.318" x2="1.778" y2="4.572" width="0.254" layer="94"/>
+<wire x1="1.524" y1="4.572" x2="1.778" y2="4.572" width="0.254" layer="94"/>
+<pin name="A" x="-5.588" y="0.254" length="short"/>
+<pin name="C" x="10.414" y="0.508" length="short" rot="R180"/>
+<text x="-2.54" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -427,6 +463,22 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="LT-T673-Q1R2-25-Z">
+<gates>
+<gate name="G$1" symbol="LED" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="PLCC-2">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="BrownSpaceEngineering">
@@ -489,6 +541,9 @@
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="GND" width="0.508" drill="0.254">
+<clearance class="1" value="0.3048"/>
+</class>
 </classes>
 <parts>
 <part name="AVX" library="CNTRL_BOARD" deviceset="AVX-24-5046-030-630-829" device=""/>
@@ -496,6 +551,21 @@
 <part name="U$1" library="CNTRL_BOARD" deviceset="LTC3112" device=""/>
 <part name="R1" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
 <part name="R2" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
+<part name="PWR_ON" library="CNTRL_BOARD" deviceset="LT-T673-Q1R2-25-Z" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="RET" library="CNTRL_BOARD" deviceset="LT-T673-Q1R2-25-Z" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="SEND" library="CNTRL_BOARD" deviceset="LT-T673-Q1R2-25-Z" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -507,6 +577,24 @@
 <instance part="U$1" gate="G$1" x="30.48" y="91.44"/>
 <instance part="R1" gate="R$1" x="5.08" y="76.2" rot="R90"/>
 <instance part="R2" gate="R$1" x="5.08" y="88.9" rot="R90"/>
+<instance part="PWR_ON" gate="G$1" x="163.068" y="52.832" smashed="yes">
+<attribute name="OC_NEWARK" x="163.068" y="52.832" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="163.068" y="52.832" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="163.068" y="52.832" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="160.528" y="57.912" size="1.778" layer="95"/>
+</instance>
+<instance part="RET" gate="G$1" x="131.826" y="35.306" smashed="yes">
+<attribute name="OC_NEWARK" x="131.826" y="35.306" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="131.826" y="35.306" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="131.826" y="35.306" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="129.286" y="40.386" size="1.778" layer="95"/>
+</instance>
+<instance part="SEND" gate="G$1" x="133.096" y="65.786" smashed="yes">
+<attribute name="OC_NEWARK" x="133.096" y="65.786" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="133.096" y="65.786" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="133.096" y="65.786" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="130.556" y="70.866" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -516,6 +604,11 @@
 <wire x1="45.72" y1="17.78" x2="55.88" y2="17.78" width="0.1524" layer="91"/>
 <label x="45.72" y="17.78" size="1.778" layer="95"/>
 <pinref part="AVX" gate="G$1" pin="P$12"/>
+</segment>
+<segment>
+<pinref part="PWR_ON" gate="G$1" pin="A"/>
+<wire x1="157.48" y1="53.086" x2="157.48" y2="106.68" width="0.1524" layer="91"/>
+<label x="157.48" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P14" class="0">
@@ -549,6 +642,12 @@
 <pinref part="AVX" gate="G$1" pin="P$2"/>
 <junction x="55.88" y="43.18"/>
 </segment>
+<segment>
+<pinref part="SEND" gate="G$1" pin="A"/>
+<wire x1="127.508" y1="66.04" x2="124.46" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="66.04" x2="124.46" y2="116.84" width="0.1524" layer="91"/>
+<label x="124.46" y="116.84" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="P3" class="0">
 <segment>
@@ -567,6 +666,12 @@
 <wire x1="48.26" y1="38.1" x2="55.88" y2="38.1" width="0.1524" layer="91"/>
 <label x="45.72" y="38.1" size="1.778" layer="95"/>
 <pinref part="AVX" gate="G$1" pin="P$4"/>
+</segment>
+<segment>
+<pinref part="RET" gate="G$1" pin="A"/>
+<wire x1="126.238" y1="35.56" x2="119.38" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="35.56" x2="119.38" y2="99.06" width="0.1524" layer="91"/>
+<label x="119.38" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -629,6 +734,18 @@
 <pinref part="R1" gate="R$1" pin="1"/>
 <wire x1="5.08" y1="71.12" x2="5.08" y2="63.5" width="0.1524" layer="91"/>
 <label x="5.08" y="63.5" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="SEND" gate="G$1" pin="C"/>
+<wire x1="143.51" y1="66.294" x2="182.88" y2="66.294" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="66.294" x2="182.88" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="PWR_ON" gate="G$1" pin="C"/>
+<wire x1="182.88" y1="53.34" x2="173.482" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="RET" gate="G$1" pin="C"/>
+<wire x1="142.24" y1="35.814" x2="182.88" y2="35.814" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="35.814" x2="182.88" y2="53.34" width="0.1524" layer="91"/>
+<junction x="182.88" y="53.34"/>
+<label x="185.42" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3V6" class="0">
