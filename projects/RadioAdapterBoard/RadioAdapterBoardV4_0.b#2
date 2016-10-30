@@ -162,7 +162,7 @@
 <text x="-11.25" y="-5.25" size="1.778" layer="20">+Z</text>
 <text x="-11" y="47.75" size="1.778" layer="20">-Z</text>
 <text x="-28.75" y="20.25" size="1.778" layer="20">+X</text>
-<text x="-18.75" y="8.25" size="0.7" layer="21">EquiSat Radio Adapter Board V3.0
+<text x="-18.25" y="4.5" size="0.7" layer="21">EquiSat Radio Adapter Board V3.0
 April 2016
 Ryan Izant</text>
 <text x="-3.25" y="8.25" size="0.7" layer="22" rot="MR0">EquiSat Radio Adapter Board V3.0
@@ -404,7 +404,7 @@ design rules under a new name.</description>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
 <param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
+<param name="Efforts" value="1"/>
 <param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="a"/>
@@ -501,23 +501,23 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-15.34" y="22.74" size="1.27" layer="21" rot="R90"/>
 </element>
 <element name="CNTRLCONN" library="CNTRL_BOARD" package="HARWIN_DATAMATE_10_F" value="HARWIN_10_F" x="-4.8552" y="27.841" rot="MR270"/>
-<element name="U$1" library="CNTRL_BOARD" package="DHD16" value="" x="-33.5" y="-20.75"/>
-<element name="R1" library="BrownSpaceEngineering" package="0805" value="10K" x="-34.5" y="-24.5"/>
-<element name="R2" library="BrownSpaceEngineering" package="0805" value="10K" x="-34.5" y="-28.75"/>
-<element name="PWR_ON" library="CNTRL_BOARD" package="PLCC-2" value="LT-T673-Q1R2-25-Z" x="-33.5" y="-33">
-<attribute name="MF" value="" x="-38.25" y="-27.75" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="-38.25" y="-27.75" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="-38.25" y="-27.75" size="1.778" layer="27" display="off"/>
+<element name="U$1" library="CNTRL_BOARD" package="DHD16" value="" x="-17.75" y="33.5"/>
+<element name="R1" library="BrownSpaceEngineering" package="0805" value="10K" x="-10" y="37"/>
+<element name="R2" library="BrownSpaceEngineering" package="0805" value="10K" x="-10" y="34"/>
+<element name="PWR_ON" library="CNTRL_BOARD" package="PLCC-2" value="LT-T673-Q1R2-25-Z" x="-4.5" y="37.75">
+<attribute name="MF" value="" x="-9.25" y="43" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-9.25" y="43" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-9.25" y="43" size="1.778" layer="27" display="off"/>
 </element>
-<element name="RET" library="CNTRL_BOARD" package="PLCC-2" value="LT-T673-Q1R2-25-Z" x="-33.5" y="-37.75">
-<attribute name="MF" value="" x="-42.75" y="-27.75" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="-42.75" y="-27.75" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="-42.75" y="-27.75" size="1.778" layer="27" display="off"/>
+<element name="RET" library="CNTRL_BOARD" package="PLCC-2" value="LT-T673-Q1R2-25-Z" x="-7" y="10.5">
+<attribute name="MF" value="" x="-16.25" y="20.5" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-16.25" y="20.5" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-16.25" y="20.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SEND" library="CNTRL_BOARD" package="PLCC-2" value="LT-T673-Q1R2-25-Z" x="-33.5" y="-42.5">
-<attribute name="MF" value="" x="-47.25" y="-27.75" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="-47.25" y="-27.75" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="-47.25" y="-27.75" size="1.778" layer="27" display="off"/>
+<element name="SEND" library="CNTRL_BOARD" package="PLCC-2" value="LT-T673-Q1R2-25-Z" x="-16.5" y="10.25">
+<attribute name="MF" value="" x="-30.25" y="25" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-30.25" y="25" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-30.25" y="25" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -527,7 +527,8 @@ design rules under a new name.</description>
 <wire x1="-18.25" y1="23.25" x2="-18.2" y2="23.25" width="0.3" layer="1"/>
 <wire x1="-18.2" y1="23.25" x2="-18.16" y2="23.29" width="0.3" layer="1"/>
 <wire x1="-18.16" y1="23.29" x2="-13.27" y2="23.29" width="0.3" layer="1"/>
-<wire x1="-2.78" y1="23.78" x2="-1.25" y2="21.5" width="0.3" layer="1"/>
+<wire x1="-2.78" y1="23.78" x2="-1.95320625" y2="22.547915625" width="0.3" layer="1"/>
+<wire x1="-1.95320625" y1="22.547915625" x2="-1.25" y2="21.5" width="0.3" layer="1"/>
 <wire x1="-1.25" y1="21.5" x2="-1.25" y2="13.75" width="0.3" layer="1"/>
 <wire x1="-18.5" y1="14.75" x2="-18.5" y2="23" width="0.3" layer="1"/>
 <wire x1="-18.5" y1="14.75" x2="-16.5" y2="12.75" width="0.3048" layer="1"/>
@@ -538,7 +539,14 @@ design rules under a new name.</description>
 <wire x1="-3" y1="12.75" x2="-2.25" y2="12.75" width="0.3048" layer="1"/>
 <wire x1="-2.25" y1="12.75" x2="-1.25" y2="13.75" width="0.3048" layer="1"/>
 <contactref element="PWR_ON" pad="A"/>
-<wire x1="-16.5" y1="12.75" x2="-33.5" y2="-32.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.3434" y1="37.719" x2="-4.3434" y2="38.4048" width="0.254" layer="1"/>
+<wire x1="-3.429" y1="36.8046" x2="-4.3434" y2="37.719" width="0.254" layer="1"/>
+<wire x1="-3.2004" y1="36.8046" x2="-3.429" y2="36.8046" width="0.254" layer="1"/>
+<wire x1="-1.143" y1="34.7472" x2="-3.2004" y2="36.8046" width="0.254" layer="1"/>
+<wire x1="-1.143" y1="23.3172" x2="-1.143" y2="34.7472" width="0.254" layer="1"/>
+<wire x1="-1.8288" y1="22.6314" x2="-1.143" y2="23.3172" width="0.254" layer="1"/>
+<wire x1="-4.3434" y1="38.4048" x2="-4.5" y2="38.5" width="0.254" layer="1"/>
+<wire x1="-1.8288" y1="22.6314" x2="-1.95320625" y2="22.547915625" width="0.254" layer="1"/>
 </signal>
 <signal name="P14">
 <contactref element="AVX" pad="14"/>
@@ -574,22 +582,63 @@ design rules under a new name.</description>
 <wire x1="-16" y1="29" x2="-14.5" y2="30.5" width="0.3" layer="1"/>
 <wire x1="-14.5" y1="30.5" x2="-8.939" y2="30.5" width="0.3" layer="1"/>
 <contactref element="SEND" pad="A"/>
-<wire x1="-16" y1="25.75" x2="-33.5" y2="-41.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.7442" y1="10.9728" x2="-16.4592" y2="10.9728" width="0.254" layer="1"/>
+<wire x1="-9.3726" y1="12.3444" x2="-10.7442" y2="10.9728" width="0.254" layer="1"/>
+<wire x1="-9.3726" y1="13.2588" x2="-9.3726" y2="12.3444" width="0.254" layer="1"/>
+<wire x1="-10.7442" y1="14.6304" x2="-9.3726" y2="13.2588" width="0.254" layer="1"/>
+<wire x1="-12.3444" y1="14.6304" x2="-10.7442" y2="14.6304" width="0.254" layer="1"/>
+<wire x1="-13.0302" y1="15.3162" x2="-12.3444" y2="14.6304" width="0.254" layer="1"/>
+<wire x1="-13.0302" y1="16.6878" x2="-13.0302" y2="15.3162" width="0.254" layer="1"/>
+<wire x1="-11.2014" y1="18.5166" x2="-13.0302" y2="16.6878" width="0.254" layer="1"/>
+<wire x1="-11.2014" y1="24.9174" x2="-11.2014" y2="18.5166" width="0.254" layer="1"/>
+<wire x1="-12.1158" y1="25.8318" x2="-11.2014" y2="24.9174" width="0.254" layer="1"/>
+<wire x1="-13.0302" y1="25.8318" x2="-12.1158" y2="25.8318" width="0.254" layer="1"/>
+<wire x1="-13.2588" y1="26.0604" x2="-13.0302" y2="25.8318" width="0.254" layer="1"/>
+<wire x1="-13.4874" y1="25.8318" x2="-13.2588" y2="26.0604" width="0.254" layer="1"/>
+<wire x1="-16.4592" y1="10.9728" x2="-16.5" y2="11" width="0.254" layer="1"/>
+<wire x1="-13.4874" y1="25.8318" x2="-13.27" y2="25.79" width="0.254" layer="1"/>
 </signal>
 <signal name="P3">
 <contactref element="AVX" pad="3"/>
-<wire x1="-8.57" y1="25.29" x2="-6.831" y2="25.29" width="0.3" layer="1"/>
+<wire x1="-8.57" y1="25.29" x2="-7.0866" y2="25.29" width="0.3" layer="1"/>
 <contactref element="CNTRLCONN" pad="P$6"/>
-<wire x1="-6.831" y1="25.29" x2="-2.8352" y2="19.841" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.0866" y1="25.29" x2="-6.831" y2="25.29" width="0.3" layer="1"/>
+<wire x1="-7.0866" y1="26.0604" x2="-7.0866" y2="25.29" width="0.254" layer="1"/>
+<wire x1="-7.5438" y1="26.5176" x2="-7.0866" y2="26.0604" width="0.254" layer="1"/>
+<wire x1="-10.0584" y1="26.5176" x2="-7.5438" y2="26.5176" width="0.254" layer="1"/>
+<wire x1="-10.7442" y1="25.8318" x2="-10.0584" y2="26.5176" width="0.254" layer="1"/>
+<wire x1="-10.7442" y1="18.288" x2="-10.7442" y2="25.8318" width="0.254" layer="1"/>
+<wire x1="-10.0584" y1="17.6022" x2="-10.7442" y2="18.288" width="0.254" layer="1"/>
+<wire x1="-9.6012" y1="17.6022" x2="-10.0584" y2="17.6022" width="0.254" layer="1"/>
+<wire x1="-9.3726" y1="17.3736" x2="-9.6012" y2="17.6022" width="0.254" layer="1"/>
+<wire x1="-9.3726" y1="16.9164" x2="-9.3726" y2="17.3736" width="0.254" layer="1"/>
+<wire x1="-8.6868" y1="16.2306" x2="-9.3726" y2="16.9164" width="0.254" layer="1"/>
+<wire x1="-7.3152" y1="16.2306" x2="-8.6868" y2="16.2306" width="0.254" layer="1"/>
+<wire x1="-5.9436" y1="17.6022" x2="-7.3152" y2="16.2306" width="0.254" layer="1"/>
+<wire x1="-5.9436" y1="17.8308" x2="-5.9436" y2="17.6022" width="0.254" layer="1"/>
+<wire x1="-5.2578" y1="18.5166" x2="-5.9436" y2="17.8308" width="0.254" layer="1"/>
+<wire x1="-5.0292" y1="18.5166" x2="-5.2578" y2="18.5166" width="0.254" layer="1"/>
+<wire x1="-4.8006" y1="18.7452" x2="-5.0292" y2="18.5166" width="0.254" layer="1"/>
+<wire x1="-4.3434" y1="18.7452" x2="-4.8006" y2="18.7452" width="0.254" layer="1"/>
+<wire x1="-3.429" y1="19.6596" x2="-4.3434" y2="18.7452" width="0.254" layer="1"/>
+<wire x1="-2.9718" y1="19.6596" x2="-3.429" y2="19.6596" width="0.254" layer="1"/>
+<wire x1="-2.9718" y1="19.6596" x2="-2.8352" y2="19.841" width="0.254" layer="1"/>
 </signal>
 <signal name="P4">
 <contactref element="AVX" pad="4"/>
-<wire x1="-16.611" y1="23.841" x2="-18.09" y2="25.32" width="0.3" layer="16"/>
+<wire x1="-16.611" y1="23.841" x2="-16.6161" y2="23.8461" width="0.3" layer="16"/>
 <via x="-18.09" y="25.32" extent="1-16" drill="0.6"/>
+<wire x1="-16.6161" y1="23.8461" x2="-18.09" y2="25.32" width="0.3" layer="16"/>
 <wire x1="-18.09" y1="25.32" x2="-13.28" y2="25.32" width="0.3" layer="1"/>
 <wire x1="-13.28" y1="25.32" x2="-13.27" y2="25.29" width="0.3" layer="1"/>
 <contactref element="RET" pad="A"/>
-<wire x1="-16.611" y1="23.841" x2="-33.5" y2="-37" width="0" layer="19" extent="1-16"/>
+<wire x1="-9.144" y1="11.2014" x2="-7.0866" y2="11.2014" width="0.254" layer="1"/>
+<wire x1="-10.7442" y1="11.2014" x2="-9.144" y2="11.2014" width="0.254" layer="16"/>
+<wire x1="-18.288" y1="18.7452" x2="-10.7442" y2="11.2014" width="0.254" layer="16"/>
+<wire x1="-18.288" y1="22.1742" x2="-18.288" y2="18.7452" width="0.254" layer="16"/>
+<wire x1="-16.6161" y1="23.8461" x2="-18.288" y2="22.1742" width="0.254" layer="16"/>
+<wire x1="-7.0866" y1="11.2014" x2="-7" y2="11.25" width="0.254" layer="1"/>
+<via x="-9.144" y="11.2014" extent="1-16" drill="0.6096"/>
 </signal>
 <signal name="GND">
 <contactref element="AVX" pad="1"/>
@@ -613,20 +662,12 @@ design rules under a new name.</description>
 <contactref element="SEND" pad="C"/>
 <contactref element="PWR_ON" pad="C"/>
 <contactref element="RET" pad="C"/>
-<wire x1="-33.5" y1="-40" x2="-33.5" y2="-44.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-33.5" y1="-35.25" x2="-33.5" y2="-40" width="0" layer="19" extent="1-1"/>
-<wire x1="-35.4" y1="-24.5" x2="-33.5" y2="-35.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-13.27" y1="18.79" x2="-35.4" y2="-24.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-13.27" y1="20.79" x2="-13.27" y2="18.79" width="0" layer="19" extent="1-1"/>
-<wire x1="-13.27" y1="21.29" x2="-13.27" y2="20.79" width="0" layer="19" extent="1-1"/>
-<wire x1="-8.57" y1="21.29" x2="-13.27" y2="21.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-8.57" y1="20.79" x2="-8.57" y2="21.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-8.57" y1="23.79" x2="-8.57" y2="21.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-8.57" y1="24.29" x2="-8.57" y2="23.79" width="0" layer="19" extent="1-1"/>
-<wire x1="-8.57" y1="24.79" x2="-8.57" y2="24.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-8.57" y1="25.79" x2="-8.57" y2="24.79" width="0" layer="19" extent="1-1"/>
-<wire x1="-2.8352" y1="25.841" x2="-8.57" y2="21.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-4.8352" y1="25.841" x2="-2.8352" y2="25.841" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.4582" y1="21.2598" x2="-8.57" y2="21.29" width="0.254" layer="1"/>
+<wire x1="-8.4582" y1="21.2598" x2="-8.521628125" y2="21.2336" width="0.254" layer="1"/>
+<wire x1="-2.8352" y1="25.841" x2="-4.8352" y2="25.841" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.57" y1="20.79" x2="-8.521628125" y2="21.2336" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.27" y1="21.29" x2="-8.57" y2="21.29" width="0" layer="19" extent="1-1"/>
+<wire x1="-16.5" y1="8" x2="-13.27" y2="18.79" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3V6">
 <contactref element="AVX" pad="27"/>
@@ -662,6 +703,7 @@ design rules under a new name.</description>
 <wire x1="-6.28" y1="19.29" x2="-2.8352" y2="27.841" width="0.41" layer="1"/>
 <wire x1="-4.8352" y1="27.841" x2="-5" y2="19.841" width="0.8128" layer="1"/>
 <wire x1="-5" y1="19.841" x2="-5" y2="19.75" width="0.8128" layer="1"/>
+<wire x1="-13.27" y1="20.29" x2="-8.57" y2="20.29" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <wire x1="0" y1="0" x2="-20.25" y2="0" width="0.25" layer="1"/>
@@ -672,24 +714,33 @@ design rules under a new name.</description>
 <signal name="3V6-SNS">
 <contactref element="CNTRLCONN" pad="P$3"/>
 <contactref element="U$1" pad="7"/>
-<wire x1="-4.8352" y1="23.841" x2="-30.375" y2="-20.4" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.6304" y1="33.147" x2="-14.6304" y2="33.8328" width="0.254" layer="1"/>
+<wire x1="-14.1732" y1="32.6898" x2="-14.6304" y2="33.147" width="0.254" layer="1"/>
+<wire x1="-13.716" y1="32.6898" x2="-14.1732" y2="32.6898" width="0.254" layer="16"/>
+<wire x1="-5.0292" y1="24.003" x2="-13.716" y2="32.6898" width="0.254" layer="16"/>
+<wire x1="-14.6304" y1="33.8328" x2="-14.625" y2="33.85" width="0.254" layer="1"/>
+<wire x1="-5.0292" y1="24.003" x2="-4.8352" y2="23.841" width="0.254" layer="16"/>
+<via x="-14.1732" y="32.6898" extent="1-16" drill="0.6096"/>
 </signal>
 <signal name="3V6-EN">
 <contactref element="CNTRLCONN" pad="P$7"/>
 <contactref element="U$1" pad="6"/>
-<wire x1="-2.8352" y1="21.841" x2="-30.8625" y2="-20.4" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.8352" y1="21.841" x2="-15.1125" y2="33.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3V6-REF">
 <contactref element="CNTRLCONN" pad="P$8"/>
 <contactref element="R2" pad="1"/>
 <contactref element="R1" pad="2"/>
-<wire x1="-33.6" y1="-24.5" x2="-35.4" y2="-28.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-2.8352" y1="23.841" x2="-33.6" y2="-24.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.9728" y1="34.7472" x2="-10.9728" y2="34.0614" width="0.254" layer="1"/>
+<wire x1="-8.9154" y1="36.8046" x2="-10.9728" y2="34.7472" width="0.254" layer="1"/>
+<wire x1="-10.9728" y1="34.0614" x2="-10.9" y2="34" width="0.254" layer="1"/>
+<wire x1="-8.9154" y1="36.8046" x2="-9.1" y2="37" width="0.254" layer="1"/>
+<wire x1="-2.8352" y1="23.841" x2="-10.9" y2="34" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="U$1" pad="8"/>
 <contactref element="R2" pad="2"/>
-<wire x1="-29.8625" y1="-20.4" x2="-33.6" y2="-28.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.1125" y1="33.85" x2="-9.1" y2="34" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
