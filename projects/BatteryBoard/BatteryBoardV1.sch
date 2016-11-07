@@ -883,6 +883,7 @@
 <sheet>
 <description>Data and I/O</description>
 <plain>
+<text x="12.7" y="12.7" size="1.778" layer="97">TODO: Data managment and I/O.</text>
 </plain>
 <instances>
 </instances>
@@ -2002,7 +2003,7 @@ LTC4411 ensure default
 <description>LiFePO4 Battery 1 Charging</description>
 <plain>
 <text x="180.34" y="53.34" size="1.778" layer="97">TODO: FUSE, BLOCKING PMOS (X2?) OUTPUTSNS</text>
-<text x="99.06" y="15.24" size="1.778" layer="97">TODO: SWITCHING FOR BALANCING</text>
+<text x="60.96" y="17.78" size="1.778" layer="97">TODO: SWITCHING FOR BALANCING</text>
 </plain>
 <instances>
 <instance part="U5" gate="U$1" x="63.5" y="50.8"/>

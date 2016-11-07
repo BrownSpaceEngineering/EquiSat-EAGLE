@@ -873,8 +873,11 @@
 <part name="C17" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="10uF"/>
 <part name="L3" library="BrownSpaceEngineering" deviceset="IND" device="" technology="1812" value="120uH"/>
 <part name="V15" library="BrownSpaceEngineering" deviceset="VIA" device="" technology="60MIL" value="LIFE_B1_RUNCHG"/>
-<part name="V16" library="BrownSpaceEngineering" deviceset="VIA" device="" technology="60MIL"/>
-<part name="V17" library="BrownSpaceEngineering" deviceset="VIA" device="" technology="60MIL"/>
+<part name="V16" library="BrownSpaceEngineering" deviceset="VIA" device="" technology="60MIL" value="LIFE2"/>
+<part name="V17" library="BrownSpaceEngineering" deviceset="VIA" device="" technology="60MIL" value="LIFE1"/>
+<part name="V18" library="BrownSpaceEngineering" deviceset="VIA" device="" technology="60MIL" value="LIFE_B1_CHGN"/>
+<part name="V19" library="BrownSpaceEngineering" deviceset="VIA" device="" technology="60MIL" value="LIFE_B1_FAULTN"/>
+<part name="C18" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="22uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -1998,13 +2001,15 @@ LTC4411 ensure default
 <sheet>
 <description>LiFePO4 Battery 1 Charging</description>
 <plain>
+<text x="180.34" y="53.34" size="1.778" layer="97">TODO: FUSE, BLOCKING PMOS (X2?) OUTPUTSNS</text>
+<text x="99.06" y="15.24" size="1.778" layer="97">TODO: SWITCHING FOR BALANCING</text>
 </plain>
 <instances>
 <instance part="U5" gate="U$1" x="63.5" y="50.8"/>
 <instance part="LIFEPO1" gate="G$1" x="152.4" y="30.48"/>
 <instance part="LIFEPO2" gate="G$1" x="152.4" y="10.16"/>
 <instance part="R41" gate="R$1" x="152.4" y="-5.08" rot="R90"/>
-<instance part="GND20" gate="1" x="35.56" y="22.86"/>
+<instance part="GND20" gate="1" x="35.56" y="20.32"/>
 <instance part="GND19" gate="1" x="152.4" y="-22.86"/>
 <instance part="R42" gate="R$1" x="93.98" y="66.04" rot="R90"/>
 <instance part="R43" gate="R$1" x="101.6" y="66.04" rot="R90"/>
@@ -2017,7 +2022,10 @@ LTC4411 ensure default
 <instance part="R48" gate="R$1" x="185.42" y="-7.62" rot="R90"/>
 <instance part="R49" gate="R$1" x="170.18" y="35.56"/>
 <instance part="R50" gate="R$1" x="177.8" y="27.94" rot="R90"/>
-<instance part="R51" gate="R$1" x="129.54" y="50.8"/>
+<instance part="R51" gate="R$1" x="129.54" y="50.8" smashed="yes">
+<attribute name="NAME" x="123.444" y="48.006" size="1.905" layer="95"/>
+<attribute name="VALUE" x="131.064" y="47.752" size="1.905" layer="96"/>
+</instance>
 <instance part="GND22" gate="1" x="142.24" y="45.72"/>
 <instance part="R52" gate="R$1" x="101.6" y="45.72" smashed="yes">
 <attribute name="NAME" x="93.98" y="46.736" size="1.905" layer="95"/>
@@ -2029,8 +2037,11 @@ LTC4411 ensure default
 <instance part="C17" gate="G$1" x="-2.54" y="38.1" rot="R180"/>
 <instance part="L3" gate="G$1" x="30.48" y="63.5"/>
 <instance part="V15" gate="G$1" x="53.34" y="83.82"/>
-<instance part="V16" gate="G$1" x="134.62" y="22.86"/>
-<instance part="V17" gate="G$1" x="134.62" y="35.56"/>
+<instance part="V16" gate="G$1" x="137.16" y="22.86"/>
+<instance part="V17" gate="G$1" x="137.16" y="35.56"/>
+<instance part="V18" gate="G$1" x="109.22" y="73.66"/>
+<instance part="V19" gate="G$1" x="109.22" y="66.04"/>
+<instance part="C18" gate="G$1" x="96.52" y="33.02"/>
 </instances>
 <busses>
 </busses>
@@ -2054,6 +2065,7 @@ LTC4411 ensure default
 <segment>
 <pinref part="GND20" gate="1" pin="GND"/>
 <pinref part="U5" gate="U$1" pin="GND"/>
+<wire x1="35.56" y1="22.86" x2="35.56" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="25.4" x2="35.56" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="27.94" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="33.02" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
@@ -2079,6 +2091,10 @@ LTC4411 ensure default
 <pinref part="U5" gate="U$1" pin="FREQ"/>
 <wire x1="50.8" y1="43.18" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
 <junction x="35.56" y="43.18"/>
+<pinref part="C18" gate="G$1" pin="P$2"/>
+<wire x1="35.56" y1="25.4" x2="96.52" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="25.4" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
+<junction x="35.56" y="25.4"/>
 </segment>
 <segment>
 <pinref part="R41" gate="R$1" pin="1"/>
@@ -2133,11 +2149,11 @@ LTC4411 ensure default
 <pinref part="R47" gate="R$1" pin="2"/>
 <wire x1="185.42" y1="12.7" x2="185.42" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="V16" gate="G$1" pin="P$1"/>
-<wire x1="139.7" y1="22.86" x2="152.4" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="22.86" x2="152.4" y2="22.86" width="0.1524" layer="91"/>
 <junction x="152.4" y="22.86"/>
 </segment>
 </net>
-<net name="LIFE_B1" class="0">
+<net name="LIFE1" class="0">
 <segment>
 <pinref part="LIFEPO1" gate="G$1" pin="PLUS"/>
 <pinref part="U5" gate="U$1" pin="BAT"/>
@@ -2145,7 +2161,8 @@ LTC4411 ensure default
 <wire x1="152.4" y1="35.56" x2="152.4" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="40.64" x2="124.46" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="R49" gate="R$1" pin="1"/>
-<wire x1="124.46" y1="40.64" x2="86.36" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="40.64" x2="96.52" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="40.64" x2="86.36" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="35.56" x2="152.4" y2="35.56" width="0.1524" layer="91"/>
 <junction x="152.4" y="35.56"/>
 <pinref part="R53" gate="R$1" pin="2"/>
@@ -2153,7 +2170,12 @@ LTC4411 ensure default
 <wire x1="124.46" y1="45.72" x2="124.46" y2="40.64" width="0.1524" layer="91"/>
 <junction x="124.46" y="40.64"/>
 <pinref part="V17" gate="G$1" pin="P$1"/>
-<wire x1="139.7" y1="35.56" x2="152.4" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="35.56" x2="152.4" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="40.64" x2="218.44" y2="40.64" width="0.1524" layer="91"/>
+<junction x="152.4" y="40.64"/>
+<pinref part="C18" gate="G$1" pin="P$1"/>
+<wire x1="96.52" y1="40.64" x2="96.52" y2="38.1" width="0.1524" layer="91"/>
+<junction x="96.52" y="40.64"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -2171,9 +2193,12 @@ LTC4411 ensure default
 <wire x1="86.36" y1="55.88" x2="101.6" y2="55.88" width="0.1524" layer="91"/>
 <label x="104.14" y="55.88" size="1.778" layer="95"/>
 <pinref part="R43" gate="R$1" pin="1"/>
-<wire x1="101.6" y1="55.88" x2="109.22" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="55.88" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
 <junction x="101.6" y="55.88"/>
+<wire x1="101.6" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="55.88" x2="132.08" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="V19" gate="G$1" pin="P$1"/>
+<wire x1="132.08" y1="66.04" x2="114.3" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LIFE_B1_CHGN" class="0">
@@ -2181,9 +2206,12 @@ LTC4411 ensure default
 <wire x1="86.36" y1="53.34" x2="93.98" y2="53.34" width="0.1524" layer="91"/>
 <label x="104.14" y="53.34" size="1.778" layer="95"/>
 <pinref part="R42" gate="R$1" pin="1"/>
-<wire x1="93.98" y1="53.34" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="53.34" x2="93.98" y2="60.96" width="0.1524" layer="91"/>
 <junction x="93.98" y="53.34"/>
+<wire x1="93.98" y1="53.34" x2="134.62" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="53.34" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="V18" gate="G$1" pin="P$1"/>
+<wire x1="134.62" y1="73.66" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LIFE_B1_RUNCHG" class="0">
