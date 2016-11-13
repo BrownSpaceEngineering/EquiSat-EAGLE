@@ -1603,15 +1603,15 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="unknown" x="2.75" y="27.25" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="2.75" y="27.25" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="RET" library="CNTRL_BOARD" package="PLCC-2" value="LT-T673-Q1R2-25-Z" x="-2.25" y="38" rot="R270">
-<attribute name="MPN" value="" x="2.5" y="65" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="2.5" y="65" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="" x="2.5" y="65" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="RET" library="CNTRL_BOARD" package="PLCC-2" value="LT-T673-Q1R2-25-Z" x="-4.5" y="36.75" rot="R90">
+<attribute name="MPN" value="" x="-9.25" y="9.75" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-9.25" y="9.75" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="-9.25" y="9.75" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="SEND" library="CNTRL_BOARD" package="PLCC-2" value="LT-T673-Q1R2-25-Z" x="-3.75" y="43.25" rot="R90">
-<attribute name="MPN" value="" x="-16.75" y="29.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="-16.75" y="29.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="" x="-16.75" y="29.5" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="SEND" library="CNTRL_BOARD" package="PLCC-2" value="LT-T673-Q1R2-25-Z" x="-4.5" y="41" rot="R90">
+<attribute name="MPN" value="" x="-17.5" y="27.25" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-17.5" y="27.25" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="-17.5" y="27.25" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="LTC3112" library="CNTRL_BOARD" package="DHD16" value="" x="-18.75" y="11.75" rot="R270"/>
 <element name="R5" library="CNTRL_BOARD" package="0805" value="10K" x="-29" y="42.25" smashed="yes" rot="R90">
@@ -1620,25 +1620,25 @@ design rules under a new name.</description>
 <element name="R6" library="CNTRL_BOARD" package="0805" value="150K" x="-29" y="38.75" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-29.7255" y="37.838" size="0.6" layer="25" rot="R90"/>
 </element>
-<element name="R7" library="CNTRL_BOARD" package="0805" value="180K" x="-34.5" y="30.5" rot="R90"/>
+<element name="R7" library="CNTRL_BOARD" package="0805" value="180K" x="-22.5" y="19.75" rot="R90"/>
 <element name="R8" library="CNTRL_BOARD" package="0805" value="33K" x="-31.25" y="35.25" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-31.9755" y="34.088" size="0.6" layer="25" rot="R90"/>
 </element>
 <element name="R9" library="CNTRL_BOARD" package="0805" value="560K" x="-33.5" y="38.75" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-34.2255" y="37.838" size="0.6" layer="25" rot="R90"/>
 </element>
-<element name="R10" library="CNTRL_BOARD" package="0805" value="47K" x="-36.75" y="27" rot="R90"/>
-<element name="R11" library="CNTRL_BOARD" package="0805" value="42.2K" x="-34.75" y="16.5" rot="R90"/>
-<element name="C14" library="CNTRL_BOARD" package="0805" value="680pF" x="-31" y="32.25" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-32.162" y="32.9755" size="0.6" layer="25"/>
+<element name="R10" library="CNTRL_BOARD" package="0805" value="47K" x="-24.75" y="16.25" rot="R90"/>
+<element name="R11" library="CNTRL_BOARD" package="0805" value="42.2K" x="-24" y="10.25"/>
+<element name="C14" library="CNTRL_BOARD" package="0805" value="680pF" x="-28.75" y="34.5" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-29.4755" y="33.338" size="0.6" layer="25" rot="R90"/>
 </element>
 <element name="C15" library="CNTRL_BOARD" package="0805" value="22pF" x="-33.5" y="35.25" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-34.2255" y="34.088" size="0.6" layer="25" rot="R90"/>
 </element>
-<element name="C16" library="CNTRL_BOARD" package="0805" value="10uF" x="-37" y="23.25"/>
-<element name="C17" library="CNTRL_BOARD" package="0805" value="100pF" x="-34.5" y="27" rot="R270"/>
-<element name="C18" library="CNTRL_BOARD" package="0805" value="100pF" x="-34.75" y="19.5" rot="R90"/>
-<element name="C19" library="CNTRL_BOARD" package="0805" value="47uF" x="-55.5" y="7.25" rot="R90"/>
+<element name="C16" library="CNTRL_BOARD" package="0805" value="10uF" x="-24" y="13.75" rot="R180"/>
+<element name="C17" library="CNTRL_BOARD" package="0805" value="100pF" x="-22.5" y="16.25" rot="R270"/>
+<element name="C18" library="CNTRL_BOARD" package="0805" value="100pF" x="-24" y="12" rot="R180"/>
+<element name="C19" library="CNTRL_BOARD" package="0805" value="47uF" x="-13.5" y="36.75" rot="R270"/>
 <element name="C20" library="CNTRL_BOARD" package="0805" value="1uF" x="-9" y="11.5" rot="R180"/>
 <element name="C21" library="CNTRL_BOARD" package="0805" value="0.1uF" x="-18.5" y="7.5" rot="MR90"/>
 <element name="C22" library="CNTRL_BOARD" package="0805" value="0.1uF" x="-14.25" y="7" rot="MR0"/>
@@ -1649,8 +1649,8 @@ design rules under a new name.</description>
 <element name="R12" library="CNTRL_BOARD" package="0805" value="10K" x="-31.25" y="38.75" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-31.9755" y="37.588" size="0.6" layer="25" rot="R90"/>
 </element>
-<element name="R3" library="BrownSpaceEngineering" package="0805" value="10K" x="-51.25" y="-0.75" rot="R90"/>
-<element name="R4" library="BrownSpaceEngineering" package="0805" value="10K" x="-51.25" y="2.5" rot="R90"/>
+<element name="R3" library="BrownSpaceEngineering" package="0805" value="10K" x="-11.25" y="36.75" rot="R270"/>
+<element name="R4" library="BrownSpaceEngineering" package="0805" value="10K" x="-8.75" y="36.75" rot="R90"/>
 </elements>
 <signals>
 <signal name="P12">
@@ -1669,19 +1669,24 @@ design rules under a new name.</description>
 <signal name="P2">
 <contactref element="AVX" pad="2"/>
 <contactref element="SEND" pad="A"/>
-<wire x1="-13.27" y1="25.79" x2="-4.5" y2="43.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.27" y1="25.79" x2="-5.25" y2="41" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="P3">
 <contactref element="AVX" pad="3"/>
 <contactref element="CNTRLCONN" pad="P$6"/>
 <wire x1="-4.8752" y1="27.841" x2="-4.5" y2="27.841" width="0.4064" layer="16"/>
 <wire x1="-4.5" y1="27.841" x2="-4.5" y2="28" width="0.4064" layer="16"/>
-<wire x1="-8.57" y1="25.29" x2="-4.8752" y2="27.841" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.8752" y1="27.841" x2="-5.909" y2="27.841" width="0.3048" layer="1"/>
+<wire x1="-5.909" y1="27.841" x2="-6.5" y2="27.25" width="0.3048" layer="1"/>
+<wire x1="-6.5" y1="27.25" x2="-6.5" y2="26" width="0.3048" layer="1"/>
+<wire x1="-6.5" y1="26" x2="-7.25" y2="25.25" width="0.3048" layer="1"/>
+<wire x1="-7.25" y1="25.25" x2="-8.53" y2="25.25" width="0.3048" layer="1"/>
+<wire x1="-8.53" y1="25.25" x2="-8.57" y2="25.29" width="0.3048" layer="1"/>
 </signal>
 <signal name="P4">
 <contactref element="AVX" pad="4"/>
 <contactref element="RET" pad="A"/>
-<wire x1="-13.27" y1="25.29" x2="-1.5" y2="38" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.27" y1="25.29" x2="-5.25" y2="36.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="AVX" pad="1"/>
@@ -1714,8 +1719,6 @@ design rules under a new name.</description>
 <contactref element="C19" pad="2"/>
 <contactref element="C16" pad="2"/>
 <contactref element="R3" pad="1"/>
-<wire x1="-55.5" y1="8.15" x2="-51.25" y2="-1.65" width="0" layer="19" extent="1-1"/>
-<wire x1="-34.75" y1="15.6" x2="-55.5" y2="8.15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3V6">
 <contactref element="AVX" pad="27"/>
@@ -1744,27 +1747,32 @@ design rules under a new name.</description>
 <wire x1="-32.5" y1="42.75" x2="-32.5" y2="44" width="0.4064" layer="1"/>
 <wire x1="-32.5" y1="44" x2="-31.25" y2="44" width="0.4064" layer="1"/>
 <wire x1="-31.25" y1="44" x2="-31.25" y2="43.15" width="0.4064" layer="1"/>
-<via x="-36.75" y="30.5" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="-34.5" y1="31.4" x2="-34.5" y2="32.25" width="0.4064" layer="1"/>
-<wire x1="-34.5" y1="32.25" x2="-36" y2="32.25" width="0.4064" layer="1"/>
-<wire x1="-36" y1="32.25" x2="-36.75" y2="31.5" width="0.4064" layer="1"/>
-<wire x1="-36.75" y1="31.5" x2="-36.75" y2="30.5" width="0.4064" layer="1"/>
+<via x="-24.75" y="19.75" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="-22.5" y1="20.65" x2="-22.5" y2="21.5" width="0.4064" layer="1"/>
+<wire x1="-22.5" y1="21.5" x2="-24" y2="21.5" width="0.4064" layer="1"/>
+<wire x1="-24" y1="21.5" x2="-24.75" y2="20.75" width="0.4064" layer="1"/>
+<wire x1="-24.75" y1="20.75" x2="-24.75" y2="19.75" width="0.4064" layer="1"/>
 <wire x1="-18.4" y1="8.1125" x2="-23.6125" y2="8.1125" width="0.4064" layer="1"/>
 <wire x1="-23.6125" y1="8.1125" x2="-23.75" y2="8.25" width="0.4064" layer="1"/>
 <via x="-33.25" y="41.5" extent="1-16" drill="0.6" shape="square"/>
 <via x="-16.5" y="21.75" extent="1-16" drill="0.508" shape="square"/>
 <wire x1="-16.5" y1="21.75" x2="-13.31" y2="21.75" width="0.3048" layer="1"/>
 <wire x1="-13.31" y1="21.75" x2="-13.27" y2="21.79" width="0.3048" layer="1"/>
-<wire x1="-51.25" y1="3.4" x2="-55.5" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="-23.75" y1="8.25" x2="-51.25" y2="3.4" width="0" layer="19" extent="1-1"/>
-<wire x1="-13.27" y1="19.29" x2="-18.4" y2="8.1125" width="0" layer="19" extent="1-1"/>
-<wire x1="-13.27" y1="19.79" x2="-13.27" y2="19.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-13.27" y1="20.29" x2="-13.27" y2="19.79" width="0" layer="19" extent="1-1"/>
-<wire x1="-13.31" y1="21.75" x2="-13.27" y2="20.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-33.25" y1="42" x2="-33.25" y2="41.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-8.57" y1="19.29" x2="-13.27" y2="19.29" width="0" layer="19" extent="1-1"/>
+<via x="-15.75" y="37.75" extent="1-16" drill="0.508" shape="square"/>
+<wire x1="-15.75" y1="37.75" x2="-15.75" y2="38.5" width="0.3048" layer="1"/>
+<wire x1="-15.75" y1="38.5" x2="-13.5" y2="38.5" width="0.3048" layer="1"/>
+<wire x1="-13.5" y1="37.65" x2="-13.5" y2="38.5" width="0.3048" layer="1"/>
+<wire x1="-13.5" y1="38.5" x2="-8.75" y2="38.5" width="0.3048" layer="1"/>
+<wire x1="-8.75" y1="38.5" x2="-8.75" y2="37.65" width="0.3048" layer="1"/>
 <wire x1="-8.57" y1="19.79" x2="-8.57" y2="19.29" width="0" layer="19" extent="1-1"/>
 <wire x1="-8.57" y1="20.29" x2="-8.57" y2="19.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.27" y1="19.79" x2="-8.57" y2="19.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.27" y1="20.29" x2="-13.27" y2="19.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.27" y1="19.29" x2="-13.27" y2="19.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.31" y1="21.75" x2="-13.27" y2="20.29" width="0" layer="19" extent="1-1"/>
+<wire x1="-33.25" y1="42" x2="-33.25" y2="41.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-22.5" y1="21.5" x2="-16.5" y2="21.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-23.75" y1="8.25" x2="-24.75" y2="19.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <wire x1="0" y1="0" x2="-40.25" y2="0" width="0.25" layer="1"/>
@@ -1777,9 +1785,11 @@ design rules under a new name.</description>
 <contactref element="R11" pad="2"/>
 <contactref element="LTC3112" pad="7"/>
 <contactref element="CNTRLCONN" pad="P$3"/>
-<wire x1="-34.75" y1="17.4" x2="-34.75" y2="18.6" width="0.4064" layer="1"/>
+<wire x1="-23.1" y1="10.25" x2="-23.1" y2="12" width="0.4064" layer="1"/>
+<wire x1="-23.1" y1="10.25" x2="-22.75" y2="10.25" width="0.3048" layer="1"/>
+<wire x1="-22.75" y1="10.25" x2="-21.125" y2="8.625" width="0.3048" layer="1"/>
+<wire x1="-18.4" y1="8.625" x2="-21.125" y2="8.625" width="0.3048" layer="1"/>
 <wire x1="-18.4" y1="8.625" x2="-2.8752" y2="23.841" width="0" layer="19" extent="1-1"/>
-<wire x1="-34.75" y1="17.4" x2="-18.4" y2="8.625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3V6-EN">
 <contactref element="LTC3112" pad="6"/>
@@ -1790,8 +1800,10 @@ design rules under a new name.</description>
 <contactref element="R4" pad="1"/>
 <contactref element="R3" pad="2"/>
 <contactref element="CNTRLCONN" pad="P$8"/>
-<wire x1="-51.25" y1="0.15" x2="-51.25" y2="1.6" width="0" layer="19" extent="1-1"/>
-<wire x1="-4.8752" y1="23.841" x2="-51.25" y2="1.6" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.25" y1="35.85" x2="-11.25" y2="35" width="0.3048" layer="1"/>
+<wire x1="-11.25" y1="35" x2="-8.75" y2="35" width="0.3048" layer="1"/>
+<wire x1="-8.75" y1="35" x2="-8.75" y2="35.85" width="0.3048" layer="1"/>
+<wire x1="-4.8752" y1="23.841" x2="-8.75" y2="35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VIN">
 <contactref element="LTC3112" pad="16"/>
@@ -1800,20 +1812,26 @@ design rules under a new name.</description>
 <contactref element="C16" pad="1"/>
 <contactref element="CNTRLCONN" pad="P$1"/>
 <contactref element="CNTRLCONN" pad="P$10"/>
+<wire x1="-23.1" y1="13.75" x2="-22.5" y2="13.75" width="0.3048" layer="1"/>
+<wire x1="-22.5" y1="13.75" x2="-22.25" y2="13.5" width="0.3048" layer="1"/>
+<wire x1="-22.25" y1="13.5" x2="-22.25" y2="10.75" width="0.3048" layer="1"/>
+<wire x1="-22.25" y1="10.75" x2="-21.125" y2="9.625" width="0.3048" layer="1"/>
+<wire x1="-21.125" y1="9.625" x2="-18.4" y2="9.625" width="0.3048" layer="1"/>
+<wire x1="-18.4" y1="9.625" x2="-18.4" y2="10.125" width="0.3048" layer="1"/>
 <wire x1="-4.8752" y1="19.841" x2="-2.8752" y2="19.841" width="0" layer="19" extent="1-1"/>
 <wire x1="-14.6" y1="11.625" x2="-4.8752" y2="19.841" width="0" layer="19" extent="1-1"/>
 <wire x1="-18.4" y1="10.125" x2="-14.6" y2="11.625" width="0" layer="19" extent="1-1"/>
-<wire x1="-18.4" y1="9.625" x2="-18.4" y2="10.125" width="0" layer="19" extent="1-1"/>
-<wire x1="-37.9" y1="23.25" x2="-18.4" y2="10.125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="R8" pad="1"/>
 <contactref element="C14" pad="1"/>
 <wire x1="-31.25" y1="34.35" x2="-31.25" y2="33.5" width="0.4064" layer="1"/>
-<wire x1="-31.25" y1="33.5" x2="-29.75" y2="33.5" width="0.4064" layer="1"/>
-<wire x1="-29.75" y1="33.5" x2="-29.25" y2="33" width="0.4064" layer="1"/>
-<wire x1="-29.25" y1="33" x2="-29.25" y2="32.25" width="0.4064" layer="1"/>
-<wire x1="-29.25" y1="32.25" x2="-30.1" y2="32.25" width="0.4064" layer="1"/>
+<wire x1="-31.25" y1="33.5" x2="-30.25" y2="33.5" width="0.4064" layer="1"/>
+<wire x1="-30.25" y1="33.5" x2="-30" y2="33.75" width="0.4064" layer="1"/>
+<wire x1="-30" y1="33.75" x2="-30" y2="35.75" width="0.4064" layer="1"/>
+<wire x1="-30" y1="35.75" x2="-29.5" y2="36.25" width="0.4064" layer="1"/>
+<wire x1="-29.5" y1="36.25" x2="-28.75" y2="36.25" width="0.4064" layer="1"/>
+<wire x1="-28.75" y1="36.25" x2="-28.75" y2="35.4" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="R5" pad="1"/>
@@ -1824,12 +1842,11 @@ design rules under a new name.</description>
 <contactref element="LTC3112" pad="1"/>
 <contactref element="C14" pad="2"/>
 <contactref element="C15" pad="1"/>
-<wire x1="-33.5" y1="34.35" x2="-33.5" y2="33.5" width="0.4064" layer="1"/>
-<wire x1="-33.5" y1="33.5" x2="-33" y2="33.5" width="0.4064" layer="1"/>
-<wire x1="-33" y1="33.5" x2="-32.5" y2="33" width="0.4064" layer="1"/>
-<wire x1="-32.5" y1="33" x2="-32.5" y2="32.25" width="0.4064" layer="1"/>
-<wire x1="-32.5" y1="32.25" x2="-31.9" y2="32.25" width="0.4064" layer="1"/>
-<wire x1="-31.9" y1="32.25" x2="-18.4" y2="11.625" width="0" layer="19" extent="1-1"/>
+<wire x1="-33.5" y1="34.35" x2="-33.5" y2="33" width="0.4064" layer="1"/>
+<wire x1="-33.5" y1="33" x2="-33" y2="32.5" width="0.4064" layer="1"/>
+<wire x1="-33" y1="32.5" x2="-28.75" y2="32.5" width="0.4064" layer="1"/>
+<wire x1="-28.75" y1="32.5" x2="-28.75" y2="33.6" width="0.4064" layer="1"/>
+<wire x1="-28.75" y1="32.5" x2="-18.4" y2="11.625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FB">
 <contactref element="LTC3112" pad="2"/>
@@ -1852,11 +1869,15 @@ design rules under a new name.</description>
 <contactref element="R10" pad="2"/>
 <contactref element="C17" pad="1"/>
 <contactref element="LTC3112" pad="3"/>
-<wire x1="-36.75" y1="27.9" x2="-36.75" y2="28.75" width="0.4064" layer="1"/>
-<wire x1="-36.75" y1="28.75" x2="-34.5" y2="28.75" width="0.4064" layer="1"/>
-<wire x1="-34.5" y1="28.75" x2="-34.5" y2="27.9" width="0.4064" layer="1"/>
-<wire x1="-34.5" y1="27.9" x2="-34.5" y2="29.6" width="0.4064" layer="1"/>
-<wire x1="-34.5" y1="27.9" x2="-18.4" y2="10.625" width="0" layer="19" extent="1-1"/>
+<wire x1="-24.75" y1="17.15" x2="-24.75" y2="18" width="0.4064" layer="1"/>
+<wire x1="-24.75" y1="18" x2="-22.5" y2="18" width="0.4064" layer="1"/>
+<wire x1="-22.5" y1="17.15" x2="-22.5" y2="18" width="0.4064" layer="1"/>
+<wire x1="-22.5" y1="18" x2="-22.5" y2="18.85" width="0.4064" layer="1"/>
+<wire x1="-18.4" y1="10.625" x2="-20.375" y2="10.625" width="0.4064" layer="1"/>
+<wire x1="-20.375" y1="10.625" x2="-21.25" y2="11.5" width="0.4064" layer="1"/>
+<wire x1="-21.25" y1="11.5" x2="-21.25" y2="17.75" width="0.4064" layer="1"/>
+<wire x1="-21.25" y1="17.75" x2="-21.5" y2="18" width="0.4064" layer="1"/>
+<wire x1="-21.5" y1="18" x2="-22.5" y2="18" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$23">
 <contactref element="LTC3112" pad="15"/>
