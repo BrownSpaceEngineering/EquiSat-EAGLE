@@ -350,6 +350,63 @@
 <circle x="-2.2" y="-1.7" radius="0.1" width="0.3" layer="21"/>
 <text x="-2.7" y="-1.9" size="0.8" layer="21" rot="R90">&gt;NAME</text>
 </package>
+<package name="USB-C-RCPT-SMT">
+<smd name="A7" x="0.25" y="0" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A8" x="0.75" y="0" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A9" x="1.25" y="0" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A10" x="1.75" y="0" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A11" x="2.25" y="0" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A12" x="2.75" y="0" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A6" x="-0.25" y="0" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A5" x="-0.75" y="0" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A4" x="-1.25" y="0" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A3" x="-1.75" y="0" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A2" x="-2.25" y="0" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A1" x="-2.75" y="0" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B6" x="0" y="-1.7" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B5" x="0.5" y="-1.7" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B4" x="1" y="-1.7" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B3" x="1.5" y="-1.7" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B2" x="2" y="-1.7" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B1" x="2.5" y="-1.7" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B7" x="-0.5" y="-1.7" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B8" x="-1" y="-1.7" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B9" x="-1.5" y="-1.7" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B10" x="-2" y="-1.7" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B11" x="-2.5" y="-1.7" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B12" x="-3" y="-1.7" dx="0.3" dy="0.7" layer="1"/>
+<pad name="GND@1" x="-4.13" y="-1.91" drill="1.1" diameter="1.27" shape="octagon"/>
+<pad name="GND@2" x="4.13" y="-1.91" drill="1.1" diameter="1.27" shape="octagon"/>
+<pad name="GND@3" x="-4.49" y="-7.86" drill="1.1" diameter="1.27" shape="octagon"/>
+<pad name="GND@4" x="4.49" y="-7.86" drill="1.1" diameter="1.27" shape="octagon"/>
+<wire x1="-4.6" y1="0.56" x2="4.6" y2="0.56" width="0.127" layer="21"/>
+<wire x1="4.6" y1="0.56" x2="4.6" y2="-9.94" width="0.127" layer="21"/>
+<wire x1="4.6" y1="-9.94" x2="-4.6" y2="-9.94" width="0.127" layer="21"/>
+<wire x1="-4.6" y1="-9.94" x2="-4.6" y2="0.56" width="0.127" layer="21"/>
+<hole x="-3.7" y="-0.62" drill="0.65"/>
+<hole x="3.72" y="-0.57" drill="0.65"/>
+<text x="-8.3" y="-7.1" size="1.27" layer="25" rot="R90">&gt;VALUE</text>
+<polygon width="0.127" layer="21">
+<vertex x="-7" y="2"/>
+<vertex x="7" y="2"/>
+<vertex x="7" y="0.7"/>
+<vertex x="7" y="0.9"/>
+<vertex x="-7.1" y="0.9"/>
+<vertex x="-7.1" y="1.9"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="-7.1" y="0.9"/>
+<vertex x="-7.1" y="-10.3"/>
+<vertex x="7" y="-10.3"/>
+<vertex x="7" y="0.9"/>
+<vertex x="4.9" y="0.9"/>
+<vertex x="4.9" y="-10.22"/>
+<vertex x="4.37" y="-10.25"/>
+<vertex x="4.32" y="-10.23"/>
+<vertex x="-4.99" y="-10.23"/>
+<vertex x="-4.99" y="0.9"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="LTC4412">
@@ -365,6 +422,38 @@
 <wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
 <text x="-5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-7.62" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
+<symbol name="USB-C">
+<pin name="A1" x="-15.24" y="10.16" length="middle"/>
+<pin name="A2" x="-15.24" y="7.62" length="middle"/>
+<pin name="A3" x="-15.24" y="5.08" length="middle"/>
+<pin name="A4" x="-15.24" y="2.54" length="middle"/>
+<pin name="A5" x="-15.24" y="0" length="middle"/>
+<pin name="A6" x="-15.24" y="-2.54" length="middle"/>
+<pin name="A7" x="-15.24" y="-5.08" length="middle"/>
+<pin name="A8" x="-15.24" y="-7.62" length="middle"/>
+<pin name="A9" x="-15.24" y="-10.16" length="middle"/>
+<pin name="A10" x="-15.24" y="-12.7" length="middle"/>
+<pin name="A11" x="-15.24" y="-15.24" length="middle"/>
+<pin name="A12" x="-15.24" y="-17.78" length="middle"/>
+<pin name="B1" x="15.24" y="-17.78" length="middle" rot="R180"/>
+<pin name="B2" x="15.24" y="-15.24" length="middle" rot="R180"/>
+<pin name="B3" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="B4" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="B5" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="B6" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="B7" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="B8" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="B9" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="B10" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="B11" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="B12" x="15.24" y="10.16" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-20.32" x2="-10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-20.32" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<text x="-15.24" y="12.7" size="1.778" layer="95">&gt;VALUE</text>
+<pin name="GND" x="0" y="-25.4" length="middle" rot="R90"/>
 </symbol>
 <symbol name="LTC4411">
 <pin name="IN" x="-5.08" y="5.08" length="middle"/>
@@ -805,6 +894,45 @@
 <connect gate="G$1" pin="G2" pad="P$4"/>
 <connect gate="G$1" pin="S1" pad="P$1"/>
 <connect gate="G$1" pin="S2" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EQUISAT-UMBILICAL-CONN">
+<gates>
+<gate name="G$1" symbol="USB-C" x="-7.62" y="12.7"/>
+</gates>
+<devices>
+<device name="" package="USB-C-RCPT-SMT">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="A10" pad="A10"/>
+<connect gate="G$1" pin="A11" pad="A11"/>
+<connect gate="G$1" pin="A12" pad="A12"/>
+<connect gate="G$1" pin="A2" pad="A2"/>
+<connect gate="G$1" pin="A3" pad="A3"/>
+<connect gate="G$1" pin="A4" pad="A4"/>
+<connect gate="G$1" pin="A5" pad="A5"/>
+<connect gate="G$1" pin="A6" pad="A6"/>
+<connect gate="G$1" pin="A7" pad="A7"/>
+<connect gate="G$1" pin="A8" pad="A8"/>
+<connect gate="G$1" pin="A9" pad="A9"/>
+<connect gate="G$1" pin="B1" pad="B1"/>
+<connect gate="G$1" pin="B10" pad="B10"/>
+<connect gate="G$1" pin="B11" pad="B11"/>
+<connect gate="G$1" pin="B12" pad="B12"/>
+<connect gate="G$1" pin="B2" pad="B2"/>
+<connect gate="G$1" pin="B3" pad="B3"/>
+<connect gate="G$1" pin="B4" pad="B4"/>
+<connect gate="G$1" pin="B5" pad="B5"/>
+<connect gate="G$1" pin="B6" pad="B6"/>
+<connect gate="G$1" pin="B7" pad="B7"/>
+<connect gate="G$1" pin="B8" pad="B8"/>
+<connect gate="G$1" pin="B9" pad="B9"/>
+<connect gate="G$1" pin="GND" pad="GND@1 GND@2 GND@3 GND@4"/>
 </connects>
 <technologies>
 <technology name=""/>
