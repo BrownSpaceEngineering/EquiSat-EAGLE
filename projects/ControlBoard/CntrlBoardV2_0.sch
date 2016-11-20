@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8276,6 +8276,7 @@ SCL</text>
 <text x="63.5" y="66.04" size="1.778" layer="95">NC</text>
 <text x="50.8" y="55.88" size="1.778" layer="97">RD_EN</text>
 <text x="187.96" y="91.44" size="1.778" layer="97">CONTAINS ERRORS IN PINNOUT DO NOT COPY</text>
+<text x="86.36" y="137.16" size="2.54" layer="97">µC, Programming, MRAM</text>
 </plain>
 <instances>
 <instance part="SAMD21J" gate="G$1" x="96.52" y="58.42" smashed="yes">
@@ -9015,6 +9016,7 @@ SCL</text>
 <description>Power Regulation</description>
 <plain>
 <text x="-2.54" y="119.38" size="1.27" layer="97">Note (PWM/SYNC) must have voltage greater than 1.5V to ensure PWM mode.</text>
+<text x="40.64" y="127" size="2.54" layer="97">Power Regulation</text>
 </plain>
 <instances>
 <instance part="63001" gate="G$1" x="15.24" y="10.16" smashed="yes">
@@ -9563,6 +9565,7 @@ SCL</text>
 <sheet>
 <description>Sensors</description>
 <plain>
+<text x="30.48" y="71.12" size="2.54" layer="97">Sensors</text>
 </plain>
 <instances>
 <instance part="MAG" gate="G$1" x="27.94" y="45.72" smashed="yes" rot="MR0">
@@ -9731,6 +9734,7 @@ PB02 Send enable
 PA24 Send Data
 PB03 Return Enable
 PA25 Return In</text>
+<text x="-60.96" y="78.74" size="2.54" layer="97">Radio Buffers, LEDs, and Connector</text>
 </plain>
 <instances>
 <instance part="PWR_ON" gate="G$1" x="89.408" y="-20.828" smashed="yes">
@@ -9968,6 +9972,7 @@ PA25 Return In</text>
 <sheet>
 <description>Batteries</description>
 <plain>
+<text x="25.4" y="86.36" size="2.54" layer="97">Battery Board Buffers and Connector</text>
 </plain>
 <instances>
 <instance part="BATTCONN" gate="G$1" x="88.9" y="60.96" smashed="yes">
@@ -10221,6 +10226,7 @@ PA25 Return In</text>
 <description>Solar Panels</description>
 <plain>
 <text x="109.22" y="78.74" size="1.778" layer="97">IR_PMOS</text>
+<text x="35.56" y="101.6" size="2.54" layer="97">Solar Panel Connectors</text>
 </plain>
 <instances>
 <instance part="CONNSIDE1" gate="G$1" x="7.62" y="81.28" smashed="yes">
@@ -10515,6 +10521,7 @@ Pull-up ~OE</text>
 <wire x1="66.04" y1="-15.24" x2="-17.78" y2="-15.24" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="-17.78" y1="-15.24" x2="-17.78" y2="38.1" width="0.1524" layer="97" style="shortdash"/>
 <text x="-10.16" y="35.56" size="1.778" layer="97">Photodiode Conversion Circuit</text>
+<text x="-66.04" y="124.46" size="2.54" layer="97">Signal Multiplexing</text>
 </plain>
 <instances>
 <instance part="GND11" gate="GND" x="-119.38" y="66.04"/>
@@ -11300,6 +11307,7 @@ Pull-up ~OE</text>
 <text x="27.94" y="25.4" size="1.778" layer="97" rot="R270">Test Connection</text>
 <text x="30.48" y="25.4" size="1.778" layer="97" rot="R270">Test Connection</text>
 <text x="121.92" y="76.2" size="1.778" layer="97">LED SHDN_N</text>
+<text x="12.7" y="96.52" size="2.54" layer="97">Driver Board Connector</text>
 </plain>
 <instances>
 <instance part="DRIVECONN" gate="G$1" x="25.4" y="58.42"/>
@@ -11534,6 +11542,7 @@ Pull-up ~OE</text>
 <text x="48.26" y="20.32" size="1.778" layer="97">Charging</text>
 <text x="48.26" y="22.86" size="1.778" layer="97">Charging</text>
 <text x="48.26" y="17.78" size="1.778" layer="97">Umbilical Enable</text>
+<text x="-2.54" y="35.56" size="2.54" layer="97">Umbilical Connector</text>
 </plain>
 <instances>
 <instance part="UMBCONN" gate="G$1" x="2.54" y="2.54"/>
