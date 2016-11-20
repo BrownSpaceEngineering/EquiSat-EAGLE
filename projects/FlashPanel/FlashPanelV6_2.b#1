@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6433,8 +6433,8 @@ Eddie Williams and Ryan Izant</text>
 <vertex x="8.4836" y="-14.4526"/>
 </polygon>
 <hole x="0" y="0" drill="27.9908"/>
-<smd name="ANODE" x="-18.0966" y="11.4808" dx="5.588" dy="7.6" layer="1" rot="R90"/>
-<smd name="CATHODE" x="11.4554" y="-18.2712" dx="7.6" dy="5.8928" layer="1" rot="R90"/>
+<smd name="ANODE" x="-18.0966" y="11.4808" dx="5.588" dy="7.6" layer="16" rot="R90"/>
+<smd name="CATHODE" x="11.4554" y="-18.2712" dx="7.6" dy="5.8928" layer="16" rot="R90"/>
 <polygon width="0.127" layer="29">
 <vertex x="-14.3256" y="14.3764"/>
 <vertex x="-14.3256" y="8.4836"/>
@@ -6497,8 +6497,9 @@ Eddie Williams and Ryan Izant</text>
 <library name="CNTRL_BOARD">
 <packages>
 <package name="MXL90620">
-<text x="-1.985" y="5" size="0.75" layer="25">&gt;NAME</text>
+<text x="-9.2" y="4.5" size="1.27" layer="25">&gt;NAME</text>
 <circle x="0" y="0" radius="4.566" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="2.29" width="0.05" layer="21"/>
 <pad name="SDA" x="0" y="2.294" drill="0.8" diameter="1.2"/>
 <pad name="VDD" x="-2.293" y="0" drill="0.8"/>
 <pad name="VSS" x="0" y="-2.294" drill="0.8"/>
@@ -6512,18 +6513,15 @@ Eddie Williams and Ryan Izant</text>
 <vertex x="3.734" y="-2.794"/>
 <vertex x="3.5" y="-3"/>
 </polygon>
-<text x="-1.825" y="-5.655" size="0.75" layer="21">&gt;VALUE</text>
+<text x="3.175" y="4.445" size="1.27" layer="21">&gt;VALUE</text>
 </package>
 <package name="0805">
 <wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
 <wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
 <smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
 <smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<text x="-1.162" y="0.7255" size="0.6" layer="25">&gt;VALUE</text>
-<wire x1="-0.889" y1="0.635" x2="-0.889" y2="-0.6604" width="0.127" layer="21"/>
-<wire x1="-0.889" y1="-0.6604" x2="0.9398" y2="-0.6604" width="0.127" layer="21"/>
-<wire x1="0.9398" y1="-0.6604" x2="0.9398" y2="0.635" width="0.127" layer="21"/>
-<wire x1="0.9398" y1="0.635" x2="-0.889" y2="0.635" width="0.127" layer="21"/>
+<text x="-0.762" y="0.8255" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
 <package name="AD590TH">
 <pad name="P$1" x="-2.1" y="0" drill="0.7" shape="square"/>
@@ -6532,32 +6530,6 @@ Eddie Williams and Ryan Izant</text>
 <text x="-2.8" y="-1.9" size="0.75" layer="21">AD590</text>
 <text x="-4.445" y="-0.635" size="1.27" layer="21">+</text>
 <text x="1.27" y="-0.635" size="1.27" layer="21">-</text>
-</package>
-<package name="8SOIC">
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-0.765" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-0.765" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-0.765" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-0.765" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-0.765" x2="-2.4" y2="-0.765" width="0.2032" layer="51"/>
-<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<text x="-2.667" y="-1.905" size="1" layer="25" rot="R90">&gt;NAME</text>
-<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
-<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
-<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
-<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
-<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
-<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
 </package>
 </packages>
 </library>
@@ -6765,10 +6737,10 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="LED3" library="cxm27" package="CXM27" value="" x="65.25" y="55" rot="MR180"/>
-<element name="LED2" library="cxm27" package="CXM27" value="" x="22.25" y="23" rot="MR90"/>
-<element name="LED1" library="cxm27" package="CXM27" value="" x="60.25" y="23" rot="MR0"/>
-<element name="LED4" library="cxm27" package="CXM27" value="" x="17.25" y="55" rot="MR270"/>
+<element name="LED3" library="cxm27" package="CXM27" value="" x="65.25" y="55" rot="R270"/>
+<element name="LED2" library="cxm27" package="CXM27" value="" x="22.25" y="23"/>
+<element name="LED1" library="cxm27" package="CXM27" value="" x="60.25" y="23" rot="R90"/>
+<element name="LED4" library="cxm27" package="CXM27" value="" x="17.25" y="55" rot="R180"/>
 <element name="RDIO2" library="rdio_deploy" package="RDIO_DPLY" value="RDIO" x="40.8592" y="71.99" rot="MR90"/>
 <element name="RDIO3" library="rdio_deploy" package="RDIO_DPLY" value="RDIO" x="24.2268" y="75.168" rot="MR270"/>
 <element name="RDIO1" library="rdio_deploy" package="RDIO_DPLY" value="RDIO" x="56.3452" y="78.432" rot="MR90"/>
@@ -6813,10 +6785,6 @@ design rules under a new name.</description>
 <element name="LED1TEMP" library="CNTRL_BOARD" package="AD590TH" value="AD590-TH" x="42.462" y="21.836" rot="MR270"/>
 <element name="LED4TEMP" library="CNTRL_BOARD" package="AD590TH" value="AD590-TH" x="18.9408" y="72.4904" smashed="yes" rot="MR0">
 <attribute name="NAME" x="23.0408" y="73.6904" size="0.75" layer="22" rot="MR0"/>
-</element>
-<element name="AMBTEMP" library="CNTRL_BOARD" package="8SOIC" value="AD590" x="6.5151" y="87.9602" smashed="yes" rot="R90">
-<attribute name="NAME" x="9.5201" y="85.1932" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="8.7032" y="91.8893" size="1" layer="27" rot="R180"/>
 </element>
 </elements>
 <signals>
@@ -7432,28 +7400,6 @@ design rules under a new name.</description>
 <wire x1="28.996" y1="88.67" x2="25.416" y2="85.09" width="0.4064" layer="16"/>
 <wire x1="25.416" y1="85.09" x2="21.204" y2="85.09" width="0.4064" layer="16"/>
 <wire x1="21.204" y1="85.09" x2="21.2" y2="85.27" width="0.4064" layer="16"/>
-</signal>
-<signal name="N$26">
-<contactref element="TEMPCONNM" pad="P5"/>
-<contactref element="AMBTEMP" pad="3"/>
-<wire x1="17.3" y1="86.54" x2="17.28" y2="87.5284" width="0.4064" layer="16"/>
-<wire x1="17.28" y1="87.5284" x2="14.5415" y2="87.4976" width="0.4064" layer="16"/>
-<via x="14.5415" y="87.4976" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="14.5415" y1="87.4976" x2="14.5415" y2="88.5444" width="0.4064" layer="1"/>
-<wire x1="14.5415" y1="88.5444" x2="9.1151" y2="88.5952" width="0.4064" layer="1"/>
-</signal>
-<signal name="N$27">
-<contactref element="AMBTEMP" pad="2"/>
-<contactref element="TEMPCONNM" pad="P6"/>
-<wire x1="21.2" y1="86.54" x2="23.9" y2="86.524" width="0.4064" layer="16"/>
-<wire x1="23.9" y1="86.524" x2="24.5237" y2="87.0077" width="0.4064" layer="16"/>
-<via x="24.5237" y="87.0077" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="24.5237" y1="87.0077" x2="18.4658" y2="87.0077" width="0.4064" layer="1"/>
-<wire x1="18.4658" y1="87.0077" x2="16.7005" y2="85.2424" width="0.4064" layer="1"/>
-<wire x1="16.7005" y1="85.2424" x2="13.0576" y2="85.2424" width="0.4064" layer="1"/>
-<wire x1="13.0576" y1="85.2424" x2="11" y2="87.3" width="0.4064" layer="1"/>
-<wire x1="11" y1="87.3" x2="9.1403" y2="87.3" width="0.4064" layer="1"/>
-<wire x1="9.1403" y1="87.3" x2="9.1151" y2="87.3252" width="0.4064" layer="1"/>
 </signal>
 <signal name="TEST">
 <contactref element="CONN13M" pad="P9"/>
