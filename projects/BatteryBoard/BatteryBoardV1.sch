@@ -179,22 +179,6 @@
 <wire x1="-0.6" y1="2.8" x2="2.5" y2="2.8" width="0.2" layer="21"/>
 <text x="-0.9" y="-0.6" size="0.8" layer="21" rot="R90">&gt;NAME</text>
 </package>
-<package name="PG-DSO-8">
-<smd name="P$1" x="-1.905" y="-2.9" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<smd name="P$2" x="-0.635" y="-2.9" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<smd name="P$3" x="0.635" y="-2.9" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<smd name="P$4" x="1.905" y="-2.9" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<smd name="P$5" x="1.905" y="2.9" dx="1.5" dy="0.7" layer="1" rot="R270"/>
-<smd name="P$6" x="0.635" y="2.9" dx="1.5" dy="0.7" layer="1" rot="R270"/>
-<smd name="P$7" x="-0.635" y="2.9" dx="1.5" dy="0.7" layer="1" rot="R270"/>
-<smd name="P$8" x="-1.905" y="2.9" dx="1.5" dy="0.7" layer="1" rot="R270"/>
-<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
-<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
-<circle x="-1.9" y="-1.4" radius="0.2" width="0.4" layer="21"/>
-<text x="-2.9" y="-3" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-</package>
 <package name="TO-263">
 <smd name="PAD" x="0" y="3.6" dx="6.2" dy="7.2" layer="1" rot="R180"/>
 <smd name="P$1" x="-2.54" y="-7.8" dx="1.25" dy="3" layer="1"/>
@@ -572,7 +556,7 @@
 <gate name="M$1" symbol="PMOS" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="" package="PG-DSO-8">
+<device name="" package="SO-8">
 <connects>
 <connect gate="M$1" pin="D" pad="P$5 P$6 P$7 P$8"/>
 <connect gate="M$1" pin="G" pad="P$4"/>
@@ -2059,10 +2043,11 @@ LTC4411 ensure default
 <sheet>
 <description>LiFePO4 Battery 1 Charging</description>
 <plain>
-<text x="180.34" y="53.34" size="1.778" layer="97">TODO: FUSE, BLOCKING PMOS (X2?) OUTPUTSNS</text>
+<text x="180.34" y="53.34" size="1.778" layer="97">TODO:  BLOCKING PMOS (X2?) OUTPUTSNS</text>
 <text x="60.96" y="93.98" size="2.54" layer="97">LiFePO4 Battery 1 Charging</text>
 <text x="55.88" y="2.54" size="1.778" layer="97">External Pull-downs</text>
 <text x="96.52" y="0" size="1.778" layer="97">Dual Protected NMOS for balancing</text>
+<text x="170.18" y="60.96" size="1.778" layer="97">Consider PTC fuse instead - unsure which is a better option right now</text>
 </plain>
 <instances>
 <instance part="U5" gate="U$1" x="63.5" y="50.8"/>
@@ -2268,7 +2253,7 @@ LTC4411 ensure default
 <junction x="124.46" y="40.64"/>
 <pinref part="V17" gate="G$1" pin="P$1"/>
 <wire x1="142.24" y1="35.56" x2="152.4" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="40.64" x2="218.44" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="40.64" x2="203.2" y2="40.64" width="0.1524" layer="91"/>
 <junction x="152.4" y="40.64"/>
 <pinref part="C18" gate="G$1" pin="P$1"/>
 <wire x1="96.52" y1="40.64" x2="96.52" y2="38.1" width="0.1524" layer="91"/>
@@ -2465,6 +2450,11 @@ LTC4411 ensure default
 <wire x1="81.28" y1="17.78" x2="73.66" y2="17.78" width="0.1524" layer="91"/>
 <junction x="81.28" y="17.78"/>
 <label x="73.66" y="17.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<wire x1="218.44" y1="40.64" x2="228.6" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

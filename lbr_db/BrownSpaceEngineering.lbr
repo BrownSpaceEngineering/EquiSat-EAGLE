@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -407,6 +407,19 @@
 <vertex x="-4.99" y="0.9"/>
 </polygon>
 </package>
+<package name="3912">
+<smd name="P$1" x="-4.705" y="0" dx="3.81" dy="4.06" layer="1"/>
+<smd name="P$2" x="4.705" y="0" dx="3.81" dy="4.06" layer="1"/>
+<wire x1="-4.9" y1="1.5" x2="4.9" y2="1.5" width="0.127" layer="21"/>
+<wire x1="4.9" y1="1.5" x2="4.9" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="4.9" y1="-1.5" x2="-4.9" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="-1.5" x2="-4.9" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-6.9" y1="2.3" x2="6.9" y2="2.3" width="0.127" layer="21"/>
+<wire x1="6.9" y1="2.3" x2="6.9" y2="-2.3" width="0.127" layer="21"/>
+<wire x1="6.9" y1="-2.3" x2="-6.9" y2="-2.3" width="0.127" layer="21"/>
+<wire x1="-6.9" y1="-2.3" x2="-6.9" y2="2.3" width="0.127" layer="21"/>
+<text x="-2.6" y="2.4" size="1.27" layer="21">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LTC4412">
@@ -627,6 +640,16 @@
 <wire x1="-5.08" y1="10.16" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
 <text x="-2.54" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-10.16" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
+<symbol name="FUSE">
+<circle x="-5.08" y="0" radius="1.27" width="0.254" layer="94"/>
+<pin name="P$1" x="-7.62" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="P$2" x="7.62" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<wire x1="-5.08" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="180"/>
+<circle x="5.08" y="0" radius="1.27" width="0.254" layer="94"/>
+<text x="-5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-5.08" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -933,6 +956,22 @@
 <connect gate="G$1" pin="B8" pad="B8"/>
 <connect gate="G$1" pin="B9" pad="B9"/>
 <connect gate="G$1" pin="GND" pad="GND@1 GND@2 GND@3 GND@4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="0678L9300" prefix="F">
+<gates>
+<gate name="G$1" symbol="FUSE" x="-7.62" y="0"/>
+</gates>
+<devices>
+<device name="" package="3912">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
