@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -69,8 +69,8 @@
 <vertex x="8.4836" y="-14.4526"/>
 </polygon>
 <hole x="0" y="0" drill="27.9908"/>
-<smd name="ANODE" x="-18.0966" y="11.4808" dx="5.588" dy="7.6" layer="1" rot="R90"/>
-<smd name="CATHODE" x="11.4554" y="-18.2712" dx="7.6" dy="5.8928" layer="1" rot="R90"/>
+<smd name="ANODE" x="-18.0966" y="11.4808" dx="5.588" dy="7.6" layer="16" rot="R90"/>
+<smd name="CATHODE" x="11.4554" y="-18.2712" dx="7.6" dy="5.8928" layer="16" rot="R90"/>
 <polygon width="0.127" layer="29">
 <vertex x="-14.3256" y="14.3764"/>
 <vertex x="-14.3256" y="8.4836"/>

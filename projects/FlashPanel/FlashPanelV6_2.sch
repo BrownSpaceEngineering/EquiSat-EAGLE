@@ -376,12 +376,14 @@
 <text x="-1.27" y="-2.54" size="0.6096" layer="27">&gt;Value</text>
 </package>
 <package name="0805">
-<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
-<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
 <smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
 <smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<text x="-0.762" y="0.8255" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
+<text x="-1.397" y="0.8255" size="0.635" layer="25">&gt;NAME</text>
+<text x="-1.651" y="-1.397" size="0.635" layer="27">&gt;VALUE</text>
+<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="-0.7" x2="1.4" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="1.4" y1="-0.7" x2="1.4" y2="0.7" width="0.127" layer="21"/>
+<wire x1="1.4" y1="0.7" x2="-1.4" y2="0.7" width="0.127" layer="21"/>
 </package>
 <package name="CAP-PTH-LARGE">
 <wire x1="0" y1="0.635" x2="0" y2="0" width="0.2032" layer="21"/>
@@ -564,10 +566,6 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <text x="1.27" y="-0.635" size="1.27" layer="21">-</text>
 </package>
 <package name="0603-CAP">
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
 <wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
 <wire x1="0" y1="0.0305" x2="0" y2="-0.0305" width="0.5588" layer="21"/>
@@ -575,8 +573,8 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="21"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="21"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
 </packages>
@@ -591,7 +589,7 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <text x="1.524" y="5.842" size="1.778" layer="96">&gt;NAME</text>
-<text x="-4.572" y="-7.366" size="1.778" layer="96">MXL90620</text>
+<text x="-4.572" y="-7.366" size="1.778" layer="96">MLX90614</text>
 </symbol>
 <symbol name="CAP">
 <wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>
@@ -615,7 +613,7 @@ It has reduced top mask to make it harder to put the component on the wrong side
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MXL90620">
+<deviceset name="MXL90614">
 <gates>
 <gate name="G$1" symbol="MXL90620" x="0" y="0"/>
 </gates>
@@ -859,7 +857,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="LED1+M" library="cxm27" deviceset="10PINMALE" device=""/>
 <part name="LED4+M" library="cxm27" deviceset="10PINMALE" device=""/>
 <part name="LED4-M" library="cxm27" deviceset="10PINMALE" device=""/>
-<part name="U$1" library="CNTRL_BOARD" deviceset="MXL90620" device=""/>
+<part name="U$1" library="CNTRL_BOARD" deviceset="MXL90614" device=""/>
 <part name="ANTDEP1M" library="cxm27" deviceset="10PINMALE" device=""/>
 <part name="ANTDEP2M" library="cxm27" deviceset="10PINMALE" device=""/>
 <part name="ANTDEP3M" library="cxm27" deviceset="10PINMALE" device=""/>
