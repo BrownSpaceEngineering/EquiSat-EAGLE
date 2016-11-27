@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -159,12 +159,12 @@
 <hole x="76.15" y="3.2512" drill="3.348"/>
 <hole x="6.35" y="96.2488" drill="3.348"/>
 <hole x="76.15" y="96.2488" drill="3.348"/>
-<circle x="41.25" y="11.811" radius="2.73" width="0.254" layer="49"/>
-<circle x="14.732" y="75.819" radius="2.73" width="0.254" layer="49"/>
-<circle x="67.768" y="75.819" radius="2.73" width="0.254" layer="49"/>
+<circle x="41.25" y="11.811" radius="4.7625" width="0.254" layer="49"/>
+<circle x="14.732" y="75.819" radius="4.7625" width="0.254" layer="49"/>
+<circle x="67.768" y="75.819" radius="4.7625" width="0.254" layer="49"/>
 <hole x="41.25" y="87" drill="8"/>
 <text x="10.5" y="97.5" size="1" layer="48">Brown University CubeSat: EquiSat</text>
-<text x="53" y="96" size="1" layer="48">LED Driver Board: V1.1
+<text x="53" y="96" size="1" layer="48">LED Driver Board: V1.2
 Designer: Kyle Erf '16</text>
 <polygon width="0.4064" layer="30">
 <vertex x="10" y="99"/>
@@ -4204,10 +4204,10 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <wire x1="52.5" y1="55.5" x2="52.5" y2="80" width="0.254" layer="1"/>
 <contactref element="DRIVECONN2" pad="10"/>
 <wire x1="52.5" y1="80" x2="66" y2="80" width="0.254" layer="1"/>
-<wire x1="66" y1="80" x2="66.5" y2="80.5" width="0.254" layer="1"/>
-<via x="66.5" y="80.5" extent="1-16" drill="0.5"/>
-<wire x1="66.5" y1="80.5" x2="64.5" y2="80.5" width="0.254" layer="16"/>
-<wire x1="64.5" y1="80.5" x2="62.5" y2="82.5" width="0.254" layer="16"/>
+<wire x1="66" y1="80" x2="67.5" y2="81.5" width="0.254" layer="1"/>
+<via x="67.5" y="81.5" extent="1-16" drill="0.5"/>
+<wire x1="67.5" y1="81.5" x2="63.5" y2="81.5" width="0.254" layer="16"/>
+<wire x1="63.5" y1="81.5" x2="62.5" y2="82.5" width="0.254" layer="16"/>
 <wire x1="62.5" y1="82.5" x2="62.5" y2="84.75" width="0.254" layer="16"/>
 </signal>
 <signal name="LED_SENSE_1">
@@ -4310,13 +4310,12 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <wire x1="8.29" y1="75.8" x2="8.5" y2="76.01" width="0.254" layer="1"/>
 <wire x1="8.5" y1="76.01" x2="8.5" y2="78.5" width="0.254" layer="1"/>
 <via x="8.5" y="78.5" extent="1-16" drill="0.5"/>
-<via x="11.5" y="79.5" extent="1-16" drill="0.5"/>
+<via x="10.5" y="80.5" extent="1-16" drill="0.5"/>
 <contactref element="DRIVECONN1" pad="9"/>
 <via x="26" y="83" extent="1-16" drill="0.5"/>
 <wire x1="26" y1="83" x2="26" y2="84.75" width="0.254" layer="16"/>
-<wire x1="11.5" y1="79.5" x2="9.5" y2="79.5" width="0.254" layer="16"/>
-<wire x1="9.5" y1="79.5" x2="8.5" y2="78.5" width="0.254" layer="16"/>
-<wire x1="11.5" y1="79.5" x2="13" y2="78" width="0.254" layer="1"/>
+<wire x1="10.5" y1="80.5" x2="8.5" y2="78.5" width="0.254" layer="16"/>
+<wire x1="10.5" y1="80.5" x2="13" y2="78" width="0.254" layer="1"/>
 <wire x1="13" y1="78" x2="24.5" y2="78" width="0.254" layer="1"/>
 <wire x1="24.5" y1="78" x2="26" y2="79.5" width="0.254" layer="1"/>
 <wire x1="26" y1="79.5" x2="26" y2="83" width="0.254" layer="1"/>
