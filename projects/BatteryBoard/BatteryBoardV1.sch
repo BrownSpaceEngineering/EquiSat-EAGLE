@@ -283,9 +283,9 @@
 <wire x1="-7.112" y1="-35.052" x2="-7.112" y2="35.052" width="0.127" layer="21" style="shortdash"/>
 </package>
 <package name="TSOT23-5">
-<wire x1="-1.544" y1="0.713" x2="1.544" y2="0.713" width="0.1524" layer="51"/>
+<wire x1="-1.544" y1="0.713" x2="1.544" y2="0.713" width="0.1524" layer="21"/>
 <wire x1="1.544" y1="0.713" x2="1.544" y2="-0.712" width="0.1524" layer="21"/>
-<wire x1="1.544" y1="-0.712" x2="-1.544" y2="-0.712" width="0.1524" layer="51"/>
+<wire x1="1.544" y1="-0.712" x2="-1.544" y2="-0.712" width="0.1524" layer="21"/>
 <wire x1="-1.544" y1="-0.712" x2="-1.544" y2="0.713" width="0.1524" layer="21"/>
 <smd name="P$5" x="-0.95" y="1.306" dx="0.6" dy="1.2" layer="1"/>
 <smd name="P$4" x="0.95" y="1.306" dx="0.6" dy="1.2" layer="1"/>
@@ -293,11 +293,11 @@
 <smd name="P$2" x="0" y="-1.306" dx="0.6" dy="1.2" layer="1"/>
 <smd name="P$3" x="0.95" y="-1.306" dx="0.6" dy="1.2" layer="1"/>
 <text x="-1.778" y="-1.778" size="0.762" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<rectangle x1="-1.1875" y1="0.7126" x2="-0.7125" y2="1.5439" layer="51"/>
-<rectangle x1="0.7125" y1="0.7126" x2="1.1875" y2="1.5439" layer="51"/>
-<rectangle x1="-1.1875" y1="-1.5437" x2="-0.7125" y2="-0.7124" layer="51"/>
-<rectangle x1="-0.2375" y1="-1.5437" x2="0.2375" y2="-0.7124" layer="51"/>
-<rectangle x1="0.7125" y1="-1.5437" x2="1.1875" y2="-0.7124" layer="51"/>
+<rectangle x1="-1.1875" y1="0.7126" x2="-0.7125" y2="1.5439" layer="21"/>
+<rectangle x1="0.7125" y1="0.7126" x2="1.1875" y2="1.5439" layer="21"/>
+<rectangle x1="-1.1875" y1="-1.5437" x2="-0.7125" y2="-0.7124" layer="21"/>
+<rectangle x1="-0.2375" y1="-1.5437" x2="0.2375" y2="-0.7124" layer="21"/>
+<rectangle x1="0.7125" y1="-1.5437" x2="1.1875" y2="-0.7124" layer="21"/>
 </package>
 <package name="1210">
 <smd name="P$1" x="-1.71" y="0" dx="1.52" dy="2.54" layer="1"/>
@@ -1345,7 +1345,7 @@
 <wire x1="7.62" y1="2.54" x2="-12.7" y2="2.54" width="0.1524" layer="97" style="dashdot"/>
 <wire x1="-12.7" y1="2.54" x2="-12.7" y2="27.94" width="0.1524" layer="97" style="dashdot"/>
 <wire x1="-12.7" y1="27.94" x2="7.62" y2="27.94" width="0.1524" layer="97" style="dashdot"/>
-<text x="20.32" y="91.44" size="1.778" layer="97">Short Dash has vias to go out of board
+<text x="45.72" y="78.74" size="1.778" layer="97">Short Dash has vias to go out of board
 Dash-dot is taken care of on board through an ADC or GPIO</text>
 <wire x1="142.24" y1="63.5" x2="119.38" y2="63.5" width="0.1524" layer="97" style="dashdot"/>
 <wire x1="119.38" y1="63.5" x2="119.38" y2="35.56" width="0.1524" layer="97" style="dashdot"/>
@@ -1913,6 +1913,10 @@ Dash-dot is taken care of on board through an ADC or GPIO</text>
 <wire x1="-109.22" y1="66.04" x2="-109.22" y2="63.5" width="0.1524" layer="91"/>
 <junction x="-109.22" y="63.5"/>
 </segment>
+<segment>
+<wire x1="129.54" y1="15.24" x2="114.3" y2="15.24" width="0.1524" layer="91"/>
+<label x="116.84" y="15.24" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LF_B1_TT" class="0">
 <segment>
@@ -1929,6 +1933,24 @@ Dash-dot is taken care of on board through an ADC or GPIO</text>
 <segment>
 <wire x1="12.7" y1="20.32" x2="33.02" y2="20.32" width="0.1524" layer="91"/>
 <label x="15.24" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="L_OUT" class="0">
+<segment>
+<wire x1="96.52" y1="12.7" x2="114.3" y2="12.7" width="0.1524" layer="91"/>
+<label x="99.06" y="12.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LF_B1" class="0">
+<segment>
+<wire x1="96.52" y1="10.16" x2="114.3" y2="10.16" width="0.1524" layer="91"/>
+<label x="99.06" y="10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LF_B2" class="0">
+<segment>
+<wire x1="96.52" y1="7.62" x2="114.3" y2="7.62" width="0.1524" layer="91"/>
+<label x="99.06" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -3694,9 +3716,6 @@ R58 senses current</text>
 <text x="12.7" y="93.98" size="2.54" layer="97">LiFePO4 Bank 2 Charging</text>
 <text x="7.62" y="2.54" size="1.778" layer="97">External Pull-downs</text>
 <text x="48.26" y="0" size="1.778" layer="97">Dual Protected NMOS for balancing</text>
-<text x="121.92" y="60.96" size="1.778" layer="97">Backup option is a fuse and pmos + nmos (for driving)
-
-Consider PTC fuse instead - unsure which is a better option right now.</text>
 <text x="137.16" y="45.72" size="1.778" layer="97"></text>
 </plain>
 <instances>
