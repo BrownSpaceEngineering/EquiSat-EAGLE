@@ -768,9 +768,9 @@
 <wire x1="9.6" y1="35" x2="9.6" y2="-35" width="0.127" layer="21"/>
 <wire x1="9.6" y1="-35" x2="-9.6" y2="-35" width="0.127" layer="21"/>
 <wire x1="-9.6" y1="-35" x2="-9.6" y2="35" width="0.127" layer="21"/>
-<text x="-3.4" y="28.8" size="8" layer="21">+</text>
+<text x="-3.4" y="24.99" size="8" layer="21">+</text>
 <text x="-11.4" y="22.15" size="2" layer="21">+</text>
-<text x="-4" y="-31.1" size="10" layer="21">_</text>
+<text x="-4" y="-28.56" size="10" layer="21">_</text>
 <text x="10" y="-23.08" size="3" layer="21">-</text>
 <pad name="MINUS" x="9.6" y="-24.98" drill="3.5"/>
 <pad name="PLUS" x="-9.6" y="26.25" drill="3.5"/>

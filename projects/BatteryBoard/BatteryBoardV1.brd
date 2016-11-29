@@ -168,9 +168,7 @@
 <wire x1="3.7" y1="15" x2="-6.4" y2="15" width="0.4064" layer="20"/>
 <wire x1="-6.4" y1="15" x2="-6.4" y2="84.6" width="0.4064" layer="20"/>
 <text x="-5.1" y="33.2" size="2" layer="51">+Z</text>
-<text x="39.9" y="-8.4" size="2" layer="51">+X</text>
-<text x="8.4" y="94" size="1.778" layer="49">Circular Vias are functional
-Square Vias are for debugging and test</text>
+<text x="40.6" y="10.8" size="2" layer="51">+X</text>
 <wire x1="46.2" y1="84.1" x2="42.3" y2="84.1" width="0.1" layer="25"/>
 <wire x1="42.3" y1="84.1" x2="42.3" y2="89.3" width="0.1" layer="25"/>
 <wire x1="46.1" y1="84.2" x2="46.1" y2="89.5" width="0.1" layer="25"/>
@@ -522,9 +520,9 @@ Ryan Izant</text>
 <wire x1="9.6" y1="35" x2="9.6" y2="-35" width="0.127" layer="21"/>
 <wire x1="9.6" y1="-35" x2="-9.6" y2="-35" width="0.127" layer="21"/>
 <wire x1="-9.6" y1="-35" x2="-9.6" y2="35" width="0.127" layer="21"/>
-<text x="-3.4" y="28.8" size="8" layer="21">+</text>
+<text x="-3.4" y="24.99" size="8" layer="21">+</text>
 <text x="-11.4" y="22.15" size="2" layer="21">+</text>
-<text x="-4" y="-31.1" size="10" layer="21">_</text>
+<text x="-4" y="-28.56" size="10" layer="21">_</text>
 <text x="10" y="-23.08" size="3" layer="21">-</text>
 <pad name="MINUS" x="9.6" y="-24.98" drill="3.5"/>
 <pad name="PLUS" x="-9.6" y="26.25" drill="3.5"/>
