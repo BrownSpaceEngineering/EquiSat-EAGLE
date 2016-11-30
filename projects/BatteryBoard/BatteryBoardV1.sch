@@ -1258,7 +1258,7 @@
 <part name="C27" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="10nF"/>
 <part name="C28" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="150nF"/>
 <part name="GND33" library="supply1" deviceset="GND" device=""/>
-<part name="R83" library="BrownSpaceEngineering" deviceset="RES" device="0805"/>
+<part name="R83" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="470K"/>
 <part name="D7" library="BrownSpaceEngineering" deviceset="DFLS130L" device="" value="DFLS130L"/>
 <part name="V13" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL" value="GND"/>
 <part name="V22" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL" value="GND"/>
