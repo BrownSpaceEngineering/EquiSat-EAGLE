@@ -182,11 +182,11 @@
 <smd name="P$3" x="0" y="1" dx="1.5" dy="1" layer="1" rot="R270"/>
 <smd name="P$4" x="2" y="1" dx="1.5" dy="1" layer="1" rot="R90"/>
 <smd name="P$5" x="4" y="1" dx="1.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$6" x="-4" y="-1.5" dx="1.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$7" x="-2" y="-1.5" dx="1.5" dy="1" layer="1" rot="R90"/>
+<smd name="P$10" x="-4" y="-1.5" dx="1.5" dy="1" layer="1" rot="R90"/>
+<smd name="P$9" x="-2" y="-1.5" dx="1.5" dy="1" layer="1" rot="R90"/>
 <smd name="P$8" x="0" y="-1.5" dx="1.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$9" x="2" y="-1.5" dx="1.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$10" x="4" y="-1.5" dx="1.5" dy="1" layer="1" rot="R90"/>
+<smd name="P$7" x="2" y="-1.5" dx="1.5" dy="1" layer="1" rot="R90"/>
+<smd name="P$6" x="4" y="-1.5" dx="1.5" dy="1" layer="1" rot="R90"/>
 <wire x1="-15" y1="1.8" x2="-15" y2="-3.6" width="0.127" layer="21"/>
 <wire x1="-15" y1="-3.6" x2="-15" y2="-13.2" width="0.127" layer="21"/>
 <wire x1="-15" y1="-13.2" x2="15" y2="-13.2" width="0.127" layer="21"/>
