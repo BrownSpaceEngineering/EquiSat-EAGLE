@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2517,6 +2517,15 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </package>
 </packages>
 </library>
+<library name="BrownSpaceEngineering">
+<description>Parts Used by Brown Space Engineering</description>
+<packages>
+<package name="VIA-120MIL">
+<pad name="P$1" x="0" y="0" drill="3.048"/>
+<text x="-2.54" y="2.54" size="0.762" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2839,8 +2848,8 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <attribute name="NAME" x="69.365" y="48.635" size="1.27" layer="25"/>
 <attribute name="VALUE" x="62.365" y="47.095" size="1.27" layer="27"/>
 </element>
-<element name="L1_3" library="Cubesat" package="SRP1245A" value="1.5u" x="53.25" y="70.75" smashed="yes" rot="R180">
-<attribute name="NAME" x="56.25" y="78.25" size="1.27" layer="21"/>
+<element name="L1_3" library="Cubesat" package="SRP1245A" value="1.5u" x="54.75" y="77.75" smashed="yes" rot="R180">
+<attribute name="NAME" x="57.75" y="85.25" size="1.27" layer="21"/>
 </element>
 <element name="D1_3" library="Cubesat" package="SMC(Z5-T)" value="" x="67" y="63" smashed="yes" rot="R270">
 <attribute name="NAME" x="63" y="66.75" size="1.27" layer="21"/>
@@ -2938,7 +2947,7 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <attribute name="NAME" x="1" y="38.75" size="1.27" layer="21"/>
 </element>
 <element name="VOUT_3" library="LED_Driver_Board" package="10PINFEMALE" value="" x="76.75" y="74" smashed="yes">
-<attribute name="NAME" x="73.5" y="77.75" size="1.27" layer="21"/>
+<attribute name="NAME" x="73.5" y="77.75" size="1.27" layer="22" rot="MR0"/>
 </element>
 <element name="LED_MINUS_3" library="LED_Driver_Board" package="10PINFEMALE" value="" x="46.25" y="43.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="42.5" y="37.25" size="1.27" layer="21" rot="R90"/>
@@ -2949,8 +2958,8 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <element name="LED_MINUS_4" library="LED_Driver_Board" package="10PINFEMALE" value="" x="5.75" y="74" smashed="yes">
 <attribute name="NAME" x="9.25" y="71" size="1.27" layer="21"/>
 </element>
-<element name="ANTDEP1F" library="LED_Driver_Board" package="10PINFEMALE" value="" x="62" y="83.5" smashed="yes">
-<attribute name="NAME" x="58" y="80" size="1.27" layer="21" rot="R90"/>
+<element name="ANTDEP1F" library="LED_Driver_Board" package="10PINFEMALE" value="" x="65" y="83.5" smashed="yes">
+<attribute name="NAME" x="61" y="80" size="1.27" layer="21" rot="R90"/>
 </element>
 <element name="TEMPCONN" library="LED_Driver_Board" package="10PINFEMALE" value="" x="19.25" y="84" smashed="yes" rot="R90">
 <attribute name="NAME" x="15" y="88.25" size="1.27" layer="21"/>
@@ -2973,8 +2982,8 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <element name="ANTDEP3F" library="LED_Driver_Board" package="10PINFEMALE" value="" x="32.25" y="84" smashed="yes" rot="R270">
 <attribute name="NAME" x="29.25" y="96.5" size="1.27" layer="21" rot="R270"/>
 </element>
-<element name="CONN13F" library="LED_Driver_Board" package="10PINFEMALE" value="" x="50.5" y="87.75" smashed="yes" rot="R180">
-<attribute name="NAME" x="44.5" y="91.25" size="1.27" layer="21"/>
+<element name="CONN13F" library="LED_Driver_Board" package="10PINFEMALE" value="" x="76" y="87.75" smashed="yes" rot="R180">
+<attribute name="NAME" x="70" y="91.25" size="1.27" layer="21"/>
 </element>
 <element name="RSHDN" library="resistor" package="R0603" value="1k" x="1.5" y="82.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.865" y="80.865" size="1.27" layer="25" rot="R90"/>
@@ -2998,15 +3007,20 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <element name="ANT3ACT" library="LED_Driver_Board" package="DFN3.3X3.3" value="AON7292" x="33.5" y="90" smashed="yes" rot="R180">
 <attribute name="NAME" x="31.6" y="92" size="0.8" layer="25"/>
 </element>
-<element name="ANT1ACT" library="LED_Driver_Board" package="DFN3.3X3.3" value="AON7292" x="64.5" y="89.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="62.1" y="86.75" size="0.8" layer="25"/>
+<element name="ANT1ACT" library="LED_Driver_Board" package="DFN3.3X3.3" value="AON7292" x="67.5" y="89.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="65.1" y="86.75" size="0.8" layer="25"/>
 </element>
 <element name="DRIVECONN1" library="LED_Driver_Board" package="14PINMALE_SMD" value="HARWIN_14_HORIZONTAL_SMD" x="22" y="86" rot="MR180"/>
-<element name="DRIVECONN2" library="LED_Driver_Board" package="14PINMALE_SMD" value="HARWIN_14_HORIZONTAL_SMD" x="60.5" y="86" rot="MR180"/>
+<element name="DRIVECONN2" library="LED_Driver_Board" package="14PINMALE_SMD" value="HARWIN_14_HORIZONTAL_SMD" x="63.5" y="86" rot="MR180"/>
 <element name="R1" library="CNTRL_BOARD" package="0805" value="1M" x="42" y="74"/>
 <element name="R2" library="CNTRL_BOARD" package="0805" value="1M" x="32" y="79.5" rot="R180"/>
+<<<<<<< HEAD
+<element name="R3" library="CNTRL_BOARD" package="0805" value="1M" x="59.5" y="83.5" rot="R270"/>
+<element name="V1" library="BrownSpaceEngineering" package="VIA-120MIL" value="" x="46.5" y="34"/>
+=======
 <element name="R3" library="CNTRL_BOARD" package="0805" value="1M" x="56.5" y="83.5" rot="R270"/>
 <element name="DRIVECONN2A" library="LED_Driver_Board" package="10PINFEMALE" value="HARWIN_10_HORIZONTAL_SMD" x="-30" y="-6"/>
+>>>>>>> 8f3a370eaea86b5ed8334936b70bad26614e5971
 </elements>
 <signals>
 <signal name="N$3">
@@ -3605,14 +3619,14 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <via x="7.5" y="5" extent="1-16" drill="0.6"/>
 <via x="36.5" y="83.25" extent="1-16" drill="0.6"/>
 <via x="36.5" y="85" extent="1-16" drill="0.6"/>
-<via x="65" y="94" extent="1-16" drill="0.6"/>
-<via x="67" y="92.25" extent="1-16" drill="0.6"/>
-<via x="65" y="92.25" extent="1-16" drill="0.6"/>
+<via x="68" y="94" extent="1-16" drill="0.6"/>
+<via x="70" y="92.25" extent="1-16" drill="0.6"/>
+<via x="68" y="92.25" extent="1-16" drill="0.6"/>
 <polygon width="0.254" layer="1" thermals="no">
-<vertex x="64" y="90.75"/>
-<vertex x="64" y="94.75"/>
-<vertex x="68" y="94.75"/>
-<vertex x="68" y="90.75"/>
+<vertex x="67" y="90.75"/>
+<vertex x="67" y="94.75"/>
+<vertex x="71" y="94.75"/>
+<vertex x="71" y="90.75"/>
 </polygon>
 <via x="6" y="5" extent="1-16" drill="0.6"/>
 <via x="9.75" y="28" extent="1-16" drill="0.6"/>
@@ -3620,7 +3634,7 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <via x="6.75" y="26.5" extent="1-16" drill="0.6"/>
 <via x="75" y="43.5" extent="1-16" drill="0.6"/>
 <contactref element="DRIVECONN1" pad="14"/>
-<via x="67" y="94" extent="1-16" drill="0.6"/>
+<via x="70" y="94" extent="1-16" drill="0.6"/>
 <via x="51" y="45" extent="1-16" drill="0.6"/>
 <via x="52.5" y="45" extent="1-16" drill="0.6"/>
 <via x="55.5" y="42" extent="1-16" drill="0.6"/>
@@ -4220,6 +4234,14 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <via x="52.5" y="55.5" extent="1-16" drill="0.5"/>
 <wire x1="52.5" y1="55.5" x2="52.5" y2="80" width="0.254" layer="1"/>
 <contactref element="DRIVECONN2" pad="10"/>
+<<<<<<< HEAD
+<wire x1="52.5" y1="80" x2="69" y2="80" width="0.254" layer="1"/>
+<wire x1="69" y1="80" x2="70.5" y2="81.5" width="0.254" layer="1"/>
+<via x="70.5" y="81.5" extent="1-16" drill="0.5"/>
+<wire x1="70.5" y1="81.5" x2="66.5" y2="81.5" width="0.254" layer="16"/>
+<wire x1="66.5" y1="81.5" x2="65.5" y2="82.5" width="0.254" layer="16"/>
+<wire x1="65.5" y1="82.5" x2="65.5" y2="84.75" width="0.254" layer="16"/>
+=======
 <wire x1="52.5" y1="80" x2="66" y2="80" width="0.254" layer="1"/>
 <wire x1="66" y1="80" x2="67.5" y2="81.5" width="0.254" layer="1"/>
 <via x="67.5" y="81.5" extent="1-16" drill="0.5"/>
@@ -4246,6 +4268,7 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <wire x1="48.05" y1="43.5" x2="48.05" y2="44.77" width="0" layer="19" extent="1-1"/>
 <wire x1="48.05" y1="42.23" x2="48.05" y2="43.5" width="0" layer="19" extent="1-1"/>
 <wire x1="48.05" y1="40.96" x2="48.05" y2="42.23" width="0" layer="19" extent="1-1"/>
+>>>>>>> 8f3a370eaea86b5ed8334936b70bad26614e5971
 </signal>
 <signal name="LED_SENSE_1">
 <contactref element="LED_MINUS_1" pad="8"/>
@@ -4411,10 +4434,10 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <contactref element="ANTDEP3F" pad="7"/>
 <contactref element="ANTDEP3F" pad="10"/>
 <polygon width="0.254" layer="1" thermals="no">
-<vertex x="55.4" y="83"/>
-<vertex x="55.4" y="80.7"/>
-<vertex x="65.5" y="80.5"/>
-<vertex x="65.5" y="83"/>
+<vertex x="58.4" y="83"/>
+<vertex x="58.4" y="80.7"/>
+<vertex x="68.5" y="80.5"/>
+<vertex x="68.5" y="83"/>
 </polygon>
 <polygon width="0.254" layer="1" thermals="no">
 <vertex x="29.5" y="87"/>
@@ -4422,10 +4445,10 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <vertex x="31.5" y="75.5"/>
 <vertex x="31.5" y="87"/>
 </polygon>
-<wire x1="49.5" y1="78.5" x2="43.8" y2="78.5" width="1.016" layer="1"/>
-<wire x1="49.5" y1="78.5" x2="52" y2="81" width="1.016" layer="1"/>
-<wire x1="52" y1="81" x2="58.76" y2="81" width="1.2" layer="1"/>
-<wire x1="58.76" y1="81" x2="59.46" y2="81.7" width="1.016" layer="1"/>
+<wire x1="44" y1="80.5" x2="43.8" y2="78.5" width="1.016" layer="1"/>
+<wire x1="44" y1="80.5" x2="46.5" y2="83" width="1.016" layer="1"/>
+<wire x1="46.5" y1="83" x2="61.76" y2="81" width="1.2" layer="1"/>
+<wire x1="61.76" y1="81" x2="62.46" y2="81.7" width="1.016" layer="1"/>
 <contactref element="R3" pad="2"/>
 <contactref element="R1" pad="2"/>
 <contactref element="R2" pad="2"/>
@@ -4499,10 +4522,10 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <contactref element="ANTDEP1F" pad="2"/>
 <contactref element="ANTDEP1F" pad="1"/>
 <polygon width="0.254" layer="1" thermals="no">
-<vertex x="65.5" y="84"/>
-<vertex x="58.5" y="84"/>
-<vertex x="58.5" y="87"/>
-<vertex x="65.5" y="87"/>
+<vertex x="68.5" y="84"/>
+<vertex x="61.5" y="84"/>
+<vertex x="61.5" y="87"/>
+<vertex x="68.5" y="87"/>
 </polygon>
 <contactref element="ANT1ACT" pad="D1"/>
 <contactref element="ANT1ACT" pad="D3"/>
@@ -4510,18 +4533,18 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <contactref element="ANT1ACT" pad="D5"/>
 <contactref element="ANT1ACT" pad="D4"/>
 <polygon width="0.254" layer="1" thermals="no">
-<vertex x="61.5" y="90"/>
+<vertex x="64.5" y="90"/>
+<vertex x="64.5" y="87"/>
 <vertex x="61.5" y="87"/>
-<vertex x="58.5" y="87"/>
-<vertex x="58.5" y="84"/>
-<vertex x="66.5" y="84"/>
-<vertex x="66.5" y="90"/>
+<vertex x="61.5" y="84"/>
+<vertex x="69.5" y="84"/>
+<vertex x="69.5" y="90"/>
 </polygon>
 <contactref element="R3" pad="1"/>
-<wire x1="56.5" y1="84.4" x2="59" y2="84.4" width="1.016" layer="1"/>
-<wire x1="59" y1="84.4" x2="59" y2="84.5" width="1.016" layer="1"/>
-<wire x1="59" y1="84.5" x2="62" y2="84.5" width="1.016" layer="1"/>
-<wire x1="62" y1="84.5" x2="62" y2="85.3" width="1.016" layer="1"/>
+<wire x1="59.5" y1="84.4" x2="62" y2="84.4" width="1.016" layer="1"/>
+<wire x1="62" y1="84.4" x2="62" y2="84.5" width="1.016" layer="1"/>
+<wire x1="62" y1="84.5" x2="65" y2="84.5" width="1.016" layer="1"/>
+<wire x1="65" y1="84.5" x2="65" y2="85.3" width="1.016" layer="1"/>
 </signal>
 <signal name="5V_1">
 <contactref element="TEMPCONN" pad="7"/>
@@ -4547,9 +4570,12 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <via x="22" y="79.5" extent="1-16" drill="0.5"/>
 <wire x1="22" y1="79.5" x2="21.65" y2="79.5" width="0.254" layer="1"/>
 <wire x1="21.65" y1="79.5" x2="21.05" y2="80.1" width="0.254" layer="1"/>
+<<<<<<< HEAD
+=======
 <wire x1="22" y1="84.75" x2="21.05" y2="85.27" width="0" layer="19" extent="1-16"/>
 <wire x1="21.05" y1="84" x2="22" y2="84.75" width="0" layer="19" extent="1-16"/>
 <wire x1="21.05" y1="82.73" x2="21.05" y2="81.46" width="0" layer="19" extent="1-1"/>
+>>>>>>> 8f3a370eaea86b5ed8334936b70bad26614e5971
 </signal>
 <signal name="G_ANT2">
 <contactref element="ANT2ACT" pad="G"/>
@@ -4576,13 +4602,13 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <signal name="G_ANT1">
 <contactref element="ANT1ACT" pad="G"/>
 <contactref element="DRIVECONN2" pad="4"/>
-<wire x1="63.525" y1="90.92" x2="63.525" y2="91.475" width="0.254" layer="1"/>
-<wire x1="63.525" y1="91.475" x2="63" y2="92" width="0.254" layer="1"/>
-<wire x1="63" y1="92" x2="61.5" y2="92" width="0.254" layer="1"/>
-<wire x1="61.5" y1="92" x2="60.5" y2="91" width="0.254" layer="1"/>
-<wire x1="60.5" y1="91" x2="60.5" y2="89.5" width="0.254" layer="1"/>
-<via x="60.5" y="89.5" extent="1-16" drill="0.5"/>
-<wire x1="60.5" y1="89.5" x2="60.5" y2="87.25" width="0.254" layer="16"/>
+<wire x1="66.525" y1="90.92" x2="66.525" y2="91.475" width="0.254" layer="1"/>
+<wire x1="66.525" y1="91.475" x2="66" y2="92" width="0.254" layer="1"/>
+<wire x1="66" y1="92" x2="64.5" y2="92" width="0.254" layer="1"/>
+<wire x1="64.5" y1="92" x2="63.5" y2="91" width="0.254" layer="1"/>
+<wire x1="63.5" y1="91" x2="63.5" y2="89.5" width="0.254" layer="1"/>
+<via x="63.5" y="89.5" extent="1-16" drill="0.5"/>
+<wire x1="63.5" y1="89.5" x2="63.5" y2="87.25" width="0.254" layer="16"/>
 </signal>
 <signal name="LED4TEMP-">
 <contactref element="TEMPCONN" pad="1"/>
@@ -4638,55 +4664,83 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <signal name="PHOTODIODE_RETURN">
 <contactref element="CONN13F" pad="1"/>
 <contactref element="DRIVECONN2" pad="14"/>
-<wire x1="53.04" y1="85.95" x2="53" y2="85.95" width="0.254" layer="1"/>
-<wire x1="53" y1="85.95" x2="53" y2="83.5" width="0.254" layer="1"/>
-<via x="53" y="83.5" extent="1-16" drill="0.5"/>
-<wire x1="53" y1="83.5" x2="54" y2="83.5" width="0.254" layer="16"/>
-<wire x1="54" y1="83.5" x2="54.5" y2="84" width="0.254" layer="16"/>
-<wire x1="54.5" y1="84" x2="54.5" y2="84.75" width="0.254" layer="16"/>
+<wire x1="78.54" y1="85.95" x2="78.5" y2="83.45" width="0.254" layer="1"/>
+<wire x1="78.5" y1="83.45" x2="79.5" y2="82" width="0.254" layer="1"/>
+<via x="79.5" y="82" extent="1-16" drill="0.5"/>
+<wire x1="79.5" y1="82" x2="75" y2="79.5" width="0.254" layer="16"/>
+<wire x1="75" y1="79.5" x2="59.5" y2="79.5" width="0.254" layer="16"/>
+<wire x1="59.5" y1="79.5" x2="57.5" y2="81.5" width="0.254" layer="16"/>
+<wire x1="57.5" y1="81.5" x2="57.5" y2="84.75" width="0.254" layer="16"/>
 </signal>
 <signal name="IR_SDA">
 <contactref element="CONN13F" pad="2"/>
 <contactref element="DRIVECONN2" pad="13"/>
-<wire x1="51.77" y1="85.95" x2="51.75" y2="85.95" width="0.254" layer="1"/>
-<wire x1="51.75" y1="85.95" x2="51.75" y2="83" width="0.254" layer="1"/>
-<via x="51.75" y="83" extent="1-16" drill="0.5"/>
-<wire x1="56.5" y1="83.5" x2="56.5" y2="84.75" width="0.254" layer="16"/>
-<wire x1="51.75" y1="83" x2="51.75" y2="82.75" width="0.254" layer="16"/>
-<wire x1="51.75" y1="82.75" x2="52" y2="82.5" width="0.254" layer="16"/>
-<wire x1="52" y1="82.5" x2="55.5" y2="82.5" width="0.254" layer="16"/>
-<wire x1="55.5" y1="82.5" x2="56.5" y2="83.5" width="0.254" layer="16"/>
+<wire x1="77.27" y1="85.95" x2="77.25" y2="84.45" width="0.254" layer="1"/>
+<wire x1="77.25" y1="84.45" x2="77.75" y2="82.5" width="0.254" layer="1"/>
+<via x="77.75" y="82.5" extent="1-16" drill="0.5"/>
+<wire x1="61" y1="80" x2="59.5" y2="81.5" width="0.254" layer="16"/>
+<wire x1="59.5" y1="81.5" x2="59.5" y2="84.75" width="0.254" layer="16"/>
+<wire x1="77.75" y1="82.5" x2="77.25" y2="82.25" width="0.254" layer="16"/>
+<wire x1="77.25" y1="82.25" x2="76.75" y2="81.75" width="0.254" layer="16"/>
+<wire x1="76.75" y1="81.75" x2="74.5" y2="80" width="0.254" layer="16"/>
+<wire x1="74.5" y1="80" x2="61" y2="80" width="0.254" layer="16"/>
 </signal>
 <signal name="IR_SCL">
 <contactref element="CONN13F" pad="3"/>
 <contactref element="DRIVECONN2" pad="12"/>
-<wire x1="50.5" y1="85.95" x2="50.5" y2="83.5" width="0.254" layer="1"/>
-<via x="50.5" y="83.5" extent="1-16" drill="0.5"/>
-<wire x1="58.5" y1="83.5" x2="58.5" y2="84.75" width="0.254" layer="16"/>
-<wire x1="50.5" y1="83.5" x2="50.5" y2="82" width="0.254" layer="16"/>
-<wire x1="50.5" y1="82" x2="51" y2="81.5" width="0.254" layer="16"/>
-<wire x1="51" y1="81.5" x2="56.5" y2="81.5" width="0.254" layer="16"/>
-<wire x1="56.5" y1="81.5" x2="58.5" y2="83.5" width="0.254" layer="16"/>
+<wire x1="76" y1="85.95" x2="76.5" y2="83.5" width="0.254" layer="1"/>
+<via x="76.5" y="83.5" extent="1-16" drill="0.5"/>
+<wire x1="76.5" y1="83.5" x2="76.5" y2="83" width="0.254" layer="16"/>
+<wire x1="76.5" y1="83" x2="74" y2="80.5" width="0.254" layer="16"/>
+<wire x1="74" y1="80.5" x2="64" y2="80.5" width="0.254" layer="16"/>
+<wire x1="64" y1="80.5" x2="61.5" y2="81.5" width="0.254" layer="16"/>
+<wire x1="61.5" y1="81.5" x2="61.5" y2="84.75" width="0.254" layer="16"/>
 </signal>
 <signal name="IR_VDD">
 <contactref element="CONN13F" pad="4"/>
 <contactref element="DRIVECONN2" pad="11"/>
-<wire x1="49.23" y1="85.95" x2="49.25" y2="85.95" width="0.254" layer="1"/>
-<wire x1="49.25" y1="85.95" x2="49.25" y2="83" width="0.254" layer="1"/>
-<via x="49.25" y="83" extent="1-16" drill="0.5"/>
-<wire x1="60.5" y1="83.5" x2="60.5" y2="84.75" width="0.254" layer="16"/>
-<wire x1="49.25" y1="83" x2="49.25" y2="81.25" width="0.254" layer="16"/>
-<wire x1="49.25" y1="81.25" x2="50" y2="80.5" width="0.254" layer="16"/>
-<wire x1="50" y1="80.5" x2="57.5" y2="80.5" width="0.254" layer="16"/>
-<wire x1="57.5" y1="80.5" x2="60.5" y2="83.5" width="0.254" layer="16"/>
+<wire x1="74.73" y1="85.95" x2="74.75" y2="85.95" width="0.254" layer="1"/>
+<wire x1="74.75" y1="85.95" x2="74.75" y2="84" width="0.254" layer="1"/>
+<via x="74.75" y="84" extent="1-16" drill="0.5"/>
+<wire x1="74.75" y1="84" x2="74.75" y2="82.25" width="0.254" layer="16"/>
+<wire x1="74.75" y1="82.25" x2="73.5" y2="81" width="0.254" layer="16"/>
+<wire x1="73.5" y1="81" x2="65.5" y2="81" width="0.254" layer="16"/>
+<wire x1="65.5" y1="81" x2="64.5" y2="82" width="0.254" layer="16"/>
+<wire x1="64.5" y1="82" x2="63.5" y2="84.75" width="0.254" layer="16"/>
 </signal>
+<<<<<<< HEAD
+<signal name="N$14">
+<contactref element="CONN13F" pad="8"/>
+<contactref element="DRIVECONN2" pad="1"/>
+<wire x1="76" y1="89.55" x2="76" y2="93" width="0.254" layer="1"/>
+<wire x1="76" y1="93" x2="74.5" y2="94" width="0.254" layer="1"/>
+<via x="74.5" y="94" extent="1-16" drill="0.5"/>
+<wire x1="74.5" y1="94" x2="62" y2="94" width="0.254" layer="16"/>
+<wire x1="62" y1="94" x2="57.5" y2="89.5" width="0.254" layer="16"/>
+<wire x1="57.5" y1="89.5" x2="57.5" y2="87.25" width="0.254" layer="16"/>
+</signal>
+<signal name="N$15">
+<contactref element="CONN13F" pad="9"/>
+<contactref element="DRIVECONN2" pad="2"/>
+<wire x1="77.27" y1="89.55" x2="77.27" y2="90.27" width="0.254" layer="1"/>
+<via x="77.5" y="93.5" extent="1-16" drill="0.5"/>
+<wire x1="77.5" y1="93.5" x2="62" y2="93" width="0.254" layer="16"/>
+<wire x1="62" y1="93" x2="59.5" y2="90.5" width="0.254" layer="16"/>
+<wire x1="59.5" y1="90.5" x2="59.5" y2="87.25" width="0.254" layer="16"/>
+<wire x1="77.27" y1="90.27" x2="77.5" y2="91" width="0.254" layer="1"/>
+<wire x1="77.5" y1="91" x2="77.5" y2="93.5" width="0.254" layer="1"/>
+</signal>
+=======
+>>>>>>> 8f3a370eaea86b5ed8334936b70bad26614e5971
 <signal name="N$17">
 <contactref element="CONN13F" pad="10"/>
 <contactref element="DRIVECONN2" pad="3"/>
-<wire x1="53.04" y1="89.55" x2="58.45" y2="89.55" width="0.254" layer="1"/>
-<wire x1="58.45" y1="89.55" x2="58.5" y2="89.5" width="0.254" layer="1"/>
-<via x="58.5" y="89.5" extent="1-16" drill="0.5"/>
-<wire x1="58.5" y1="89.5" x2="58.5" y2="87.25" width="0.254" layer="16"/>
+<wire x1="78.54" y1="89.55" x2="78.45" y2="92.05" width="0.254" layer="1"/>
+<wire x1="78.45" y1="92.05" x2="78.5" y2="92" width="0.254" layer="1"/>
+<via x="78.5" y="92" extent="1-16" drill="0.5"/>
+<wire x1="61.5" y1="87.25" x2="61.5" y2="91" width="0.254" layer="16"/>
+<wire x1="61.5" y1="91" x2="62.5" y2="92" width="0.254" layer="16"/>
+<wire x1="62.5" y1="92" x2="78.5" y2="92" width="0.254" layer="16"/>
 </signal>
 <signal name="N$18">
 <wire x1="0" y1="0" x2="82.5" y2="0" width="0.25" layer="1"/>
