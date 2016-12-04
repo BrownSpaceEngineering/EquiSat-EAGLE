@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6415,8 +6415,8 @@ Eddie Williams and Ryan Izant</text>
 <rectangle x1="43.64515" y1="49.89625" x2="44.45795" y2="49.90895" layer="200" rot="R180"/>
 <rectangle x1="43.70865" y1="49.90895" x2="44.17855" y2="49.92165" layer="200" rot="R180"/>
 <rectangle x1="43.77215" y1="49.92165" x2="44.11505" y2="49.93435" layer="200" rot="R180"/>
-<text x="26.3" y="98.5" size="1.778" layer="51" rot="R180">EquiSat</text>
-<text x="33.9" y="96.3" size="1.778" layer="51" rot="R180">Brown CubeSat Team</text>
+<text x="24" y="91.2" size="1.778" layer="51" rot="R180">EquiSat</text>
+<text x="32.6" y="88.4" size="1.778" layer="51" rot="R180">Brown Space Engineering</text>
 </plain>
 <libraries>
 <library name="cxm27">
@@ -6516,12 +6516,14 @@ Eddie Williams and Ryan Izant</text>
 <text x="3.175" y="4.445" size="1.27" layer="21">&gt;VALUE</text>
 </package>
 <package name="0805">
-<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
-<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
 <smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
 <smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<text x="-0.762" y="0.8255" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
+<text x="-1.397" y="0.8255" size="0.635" layer="25">&gt;NAME</text>
+<text x="-1.651" y="-1.397" size="0.635" layer="27">&gt;VALUE</text>
+<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="-0.7" x2="1.4" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="1.4" y1="-0.7" x2="1.4" y2="0.7" width="0.127" layer="21"/>
+<wire x1="1.4" y1="0.7" x2="-1.4" y2="0.7" width="0.127" layer="21"/>
 </package>
 <package name="AD590TH">
 <pad name="P$1" x="-2.1" y="0" drill="0.7" shape="square"/>
@@ -6530,32 +6532,6 @@ Eddie Williams and Ryan Izant</text>
 <text x="-2.8" y="-1.9" size="0.75" layer="21">AD590</text>
 <text x="-4.445" y="-0.635" size="1.27" layer="21">+</text>
 <text x="1.27" y="-0.635" size="1.27" layer="21">-</text>
-</package>
-<package name="8SOIC">
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-0.765" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-0.765" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-0.765" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-0.765" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-0.765" x2="-2.4" y2="-0.765" width="0.2032" layer="51"/>
-<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<text x="-2.667" y="-1.905" size="1" layer="25" rot="R90">&gt;NAME</text>
-<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
-<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
-<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
-<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
-<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
-<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
 </package>
 </packages>
 </library>
@@ -6792,7 +6768,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="1.59" y="77.69" size="1.016" layer="22" rot="MR270"/>
 </element>
 <element name="LED4-M" library="cxm27" package="10PINMALE" value="" x="36.25" y="43.5" rot="MR90"/>
-<element name="U$1" library="CNTRL_BOARD" package="MXL90620" value="MXL90620" x="41.25" y="55" smashed="yes" rot="R90">
+<element name="U$1" library="CNTRL_BOARD" package="MXL90620" value="MXL90614" x="41.25" y="55" smashed="yes" rot="R90">
 <attribute name="VALUE" x="37.525" y="60.305" size="1.27" layer="21"/>
 </element>
 <element name="ANTDEP1M" library="cxm27" package="10PINMALE" value="" x="62" y="83.5" smashed="yes" rot="MR180">
@@ -6811,10 +6787,6 @@ design rules under a new name.</description>
 <element name="LED1TEMP" library="CNTRL_BOARD" package="AD590TH" value="AD590-TH" x="42.462" y="21.836" rot="MR270"/>
 <element name="LED4TEMP" library="CNTRL_BOARD" package="AD590TH" value="AD590-TH" x="18.9408" y="72.4904" smashed="yes" rot="MR0">
 <attribute name="NAME" x="23.0408" y="73.6904" size="0.75" layer="22" rot="MR0"/>
-</element>
-<element name="AMBTEMP" library="CNTRL_BOARD" package="8SOIC" value="AD590" x="6.5151" y="87.9602" smashed="yes" rot="R90">
-<attribute name="NAME" x="9.5201" y="85.1932" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="8.7032" y="91.8893" size="1" layer="27" rot="R180"/>
 </element>
 </elements>
 <signals>
@@ -7443,6 +7415,7 @@ design rules under a new name.</description>
 <wire x1="25.416" y1="85.09" x2="21.204" y2="85.09" width="0.4064" layer="16"/>
 <wire x1="21.204" y1="85.09" x2="21.2" y2="85.27" width="0.4064" layer="16"/>
 </signal>
+<<<<<<< HEAD
 <signal name="N$26">
 <contactref element="TEMPCONNM" pad="P5"/>
 <contactref element="AMBTEMP" pad="3"/>
@@ -7470,6 +7443,8 @@ design rules under a new name.</description>
 <contactref element="CONN13M" pad="P8"/>
 <wire x1="77.27" y1="89.7" x2="76" y2="89.7" width="0.4064" layer="16"/>
 </signal>
+=======
+>>>>>>> 8f3a370eaea86b5ed8334936b70bad26614e5971
 </signals>
 </board>
 </drawing>

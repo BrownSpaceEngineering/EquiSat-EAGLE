@@ -3126,11 +3126,11 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <instances>
 <instance part="AVX" gate="G$1" x="68.58" y="7.62"/>
 <instance part="CNTRLCONN" gate="G$1" x="-2.54" y="15.24"/>
-<instance part="PWR_ON" gate="G$1" x="135.128" y="27.432" smashed="yes">
-<attribute name="OC_NEWARK" x="135.128" y="27.432" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="135.128" y="27.432" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="135.128" y="27.432" size="1.778" layer="96" display="off"/>
-<attribute name="NAME" x="132.588" y="32.512" size="1.778" layer="95"/>
+<instance part="PWR_ON" gate="G$1" x="132.588" y="27.432" smashed="yes">
+<attribute name="OC_NEWARK" x="132.588" y="27.432" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="132.588" y="27.432" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="132.588" y="27.432" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="130.048" y="32.512" size="1.778" layer="95"/>
 </instance>
 <instance part="RET" gate="G$1" x="131.826" y="17.526" smashed="yes">
 <attribute name="OC_NEWARK" x="131.826" y="17.526" size="1.778" layer="96" display="off"/>
@@ -3177,10 +3177,8 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <pinref part="AVX" gate="G$1" pin="P$12"/>
 </segment>
 <segment>
-<label x="114.3" y="27.94" size="1.778" layer="95"/>
-<pinref part="PWR_ON" gate="G$1" pin="A"/>
 <wire x1="127" y1="27.94" x2="114.3" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="127" y1="27.94" x2="129.54" y2="27.686" width="0.1524" layer="91"/>
+<label x="114.3" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P14" class="0">
@@ -3305,7 +3303,7 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="143.51" y1="38.354" x2="152.4" y2="38.354" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="38.354" x2="152.4" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="PWR_ON" gate="G$1" pin="C"/>
-<wire x1="152.4" y1="27.94" x2="145.542" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="27.94" x2="143.002" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="RET" gate="G$1" pin="C"/>
 <wire x1="142.24" y1="18.034" x2="152.4" y2="18.034" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="18.034" x2="152.4" y2="27.94" width="0.1524" layer="91"/>

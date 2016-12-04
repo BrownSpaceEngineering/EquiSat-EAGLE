@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -376,12 +376,14 @@
 <text x="-1.27" y="-2.54" size="0.6096" layer="27">&gt;Value</text>
 </package>
 <package name="0805">
-<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
-<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
 <smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
 <smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<text x="-0.762" y="0.8255" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
+<text x="-1.397" y="0.8255" size="0.635" layer="25">&gt;NAME</text>
+<text x="-1.651" y="-1.397" size="0.635" layer="27">&gt;VALUE</text>
+<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="-0.7" x2="1.4" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="1.4" y1="-0.7" x2="1.4" y2="0.7" width="0.127" layer="21"/>
+<wire x1="1.4" y1="0.7" x2="-1.4" y2="0.7" width="0.127" layer="21"/>
 </package>
 <package name="CAP-PTH-LARGE">
 <wire x1="0" y1="0.635" x2="0" y2="0" width="0.2032" layer="21"/>
@@ -563,37 +565,7 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <text x="-4.445" y="-0.635" size="1.27" layer="21">+</text>
 <text x="1.27" y="-0.635" size="1.27" layer="21">-</text>
 </package>
-<package name="8SOIC">
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-0.765" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-0.765" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-0.765" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-0.765" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-0.765" x2="-2.4" y2="-0.765" width="0.2032" layer="51"/>
-<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<text x="-2.667" y="-1.905" size="1" layer="25" rot="R90">&gt;NAME</text>
-<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
-<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
-<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
-<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
-<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
-<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
-</package>
 <package name="0603-CAP">
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
 <wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
 <wire x1="0" y1="0.0305" x2="0" y2="-0.0305" width="0.5588" layer="21"/>
@@ -601,8 +573,8 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="21"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="21"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
 </packages>
@@ -617,7 +589,7 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <text x="1.524" y="5.842" size="1.778" layer="96">&gt;NAME</text>
-<text x="-4.572" y="-7.366" size="1.778" layer="96">MXL90620</text>
+<text x="-4.572" y="-7.366" size="1.778" layer="96">MLX90614</text>
 </symbol>
 <symbol name="CAP">
 <wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>
@@ -641,7 +613,7 @@ It has reduced top mask to make it harder to put the component on the wrong side
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MXL90620">
+<deviceset name="MXL90614">
 <gates>
 <gate name="G$1" symbol="MXL90620" x="0" y="0"/>
 </gates>
@@ -810,22 +782,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="AD590-SOIC-8">
-<gates>
-<gate name="G$1" symbol="AD590" x="0" y="10.16"/>
-</gates>
-<devices>
-<device name="" package="8SOIC">
-<connects>
-<connect gate="G$1" pin="V+" pad="2"/>
-<connect gate="G$1" pin="V-" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 <library name="solarcellnew">
@@ -901,7 +857,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="LED1+M" library="cxm27" deviceset="10PINMALE" device=""/>
 <part name="LED4+M" library="cxm27" deviceset="10PINMALE" device=""/>
 <part name="LED4-M" library="cxm27" deviceset="10PINMALE" device=""/>
-<part name="U$1" library="CNTRL_BOARD" deviceset="MXL90620" device=""/>
+<part name="U$1" library="CNTRL_BOARD" deviceset="MXL90614" device=""/>
 <part name="ANTDEP1M" library="cxm27" deviceset="10PINMALE" device=""/>
 <part name="ANTDEP2M" library="cxm27" deviceset="10PINMALE" device=""/>
 <part name="ANTDEP3M" library="cxm27" deviceset="10PINMALE" device=""/>
@@ -913,7 +869,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="LED2TEMP" library="CNTRL_BOARD" deviceset="AD590-TH" device=""/>
 <part name="LED1TEMP" library="CNTRL_BOARD" deviceset="AD590-TH" device=""/>
 <part name="LED4TEMP" library="CNTRL_BOARD" deviceset="AD590-TH" device=""/>
-<part name="AMBTEMP" library="CNTRL_BOARD" deviceset="AD590-SOIC-8" device="" value="AD590"/>
 </parts>
 <sheets>
 <sheet>
@@ -947,7 +902,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="LED2TEMP" gate="G$1" x="304.8" y="43.18" rot="R270"/>
 <instance part="LED1TEMP" gate="G$1" x="320.04" y="43.18" rot="R270"/>
 <instance part="LED4TEMP" gate="G$1" x="335.28" y="43.18" rot="R270"/>
-<instance part="AMBTEMP" gate="G$1" x="355.6" y="43.18" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -1443,35 +1397,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="279.4" y1="45.72" x2="279.4" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="LED3TEMP" gate="G$1" pin="V+"/>
 <wire x1="279.4" y1="55.88" x2="289.56" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="TEMPCONNM" gate="G$1" pin="5"/>
-<wire x1="261.62" y1="40.64" x2="276.86" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="40.64" x2="276.86" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="27.94" x2="355.6" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="AMBTEMP" gate="G$1" pin="V-"/>
-<wire x1="355.6" y1="27.94" x2="355.6" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$27" class="0">
-<segment>
-<pinref part="AMBTEMP" gate="G$1" pin="V+"/>
-<wire x1="355.6" y1="55.88" x2="355.6" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="66.04" x2="281.94" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="66.04" x2="281.94" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="TEMPCONNM" gate="G$1" pin="6"/>
-<wire x1="281.94" y1="43.18" x2="261.62" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="TEST" class="0">
-<segment>
-<pinref part="CONN13M" gate="G$1" pin="9"/>
-<wire x1="180.34" y1="50.8" x2="182.88" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="50.8" x2="182.88" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="CONN13M" gate="G$1" pin="8"/>
-<wire x1="182.88" y1="48.26" x2="180.34" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
