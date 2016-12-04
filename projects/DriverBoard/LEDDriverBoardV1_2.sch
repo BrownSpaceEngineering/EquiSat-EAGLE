@@ -7556,6 +7556,65 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="BrownSpaceEngineering">
+<description>Parts Used by Brown Space Engineering</description>
+<packages>
+<package name="VIA-120MIL">
+<pad name="P$1" x="0" y="0" drill="3.048"/>
+<text x="-2.54" y="2.54" size="0.762" layer="27">&gt;VALUE</text>
+</package>
+<package name="VIA-60MIL">
+<pad name="P$1" x="0" y="0" drill="1.524"/>
+<text x="-1.27" y="1.27" size="0.762" layer="27">&gt;VALUE</text>
+</package>
+<package name="VIA-60MIL-SQ">
+<pad name="P$1" x="0" y="0" drill="1.524" shape="square"/>
+<text x="-2.54" y="1.27" size="1" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="VIA">
+<circle x="0" y="0" radius="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<pin name="P$1" x="5.08" y="0" visible="off" length="middle" rot="R180"/>
+<text x="1.778" y="0.762" size="1.778" layer="95">VIA</text>
+<text x="1.778" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="VIA" prefix="V" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="VIA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-120MIL" package="VIA-120MIL">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-60MIL" package="VIA-60MIL">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="60MIL-SQ" package="VIA-60MIL-SQ">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7678,6 +7737,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="R1" library="CNTRL_BOARD" deviceset="RESISTOR" device="" value="1M"/>
 <part name="R2" library="CNTRL_BOARD" deviceset="RESISTOR" device="" value="1M"/>
 <part name="R3" library="CNTRL_BOARD" deviceset="RESISTOR" device="" value="1M"/>
+<part name="V1" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL"/>
 </parts>
 <sheets>
 <sheet>
@@ -7816,6 +7876,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="M2" gate="G$1" x="320.04" y="215.9"/>
 <instance part="M3" gate="G$1" x="109.22" y="109.22"/>
 <instance part="M4" gate="G$1" x="320.04" y="109.22"/>
+<instance part="V1" gate="G$1" x="154.94" y="30.48"/>
 </instances>
 <busses>
 </busses>
