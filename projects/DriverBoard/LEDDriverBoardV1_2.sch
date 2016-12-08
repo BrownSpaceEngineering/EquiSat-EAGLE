@@ -7289,36 +7289,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-12" y1="8" x2="-12" y2="2.5" width="0.4064" layer="21"/>
 <circle x="-7.25" y="-1.25" radius="0.25" width="0.4064" layer="21"/>
 </package>
-<package name="M80-532XXXX(20PIN)">
-<smd name="P$1" x="0" y="0" dx="1.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$2" x="2" y="0" dx="1.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$3" x="4" y="0" dx="1.5" dy="1" layer="1" rot="R270"/>
-<smd name="P$4" x="6" y="0" dx="1.5" dy="1" layer="1" rot="R270"/>
-<smd name="P$5" x="8" y="0" dx="1.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$6" x="10" y="0" dx="1.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$7" x="12" y="0" dx="1.5" dy="1" layer="1" rot="R270"/>
-<smd name="P$8" x="14" y="0" dx="1.5" dy="1" layer="1" rot="R270"/>
-<smd name="P$9" x="16" y="0" dx="1.5" dy="1" layer="1" rot="R270"/>
-<smd name="P$10" x="18" y="0" dx="1.5" dy="1" layer="1" rot="R270"/>
-<smd name="P$11" x="18" y="-2.5" dx="1.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$12" x="16" y="-2.5" dx="1.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$13" x="14" y="-2.5" dx="1.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$14" x="12" y="-2.5" dx="1.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$15" x="10" y="-2.5" dx="1.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$16" x="8" y="-2.5" dx="1.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$17" x="6" y="-2.5" dx="1.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$18" x="4" y="-2.5" dx="1.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$19" x="2" y="-2.5" dx="1.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$20" x="0" y="-2.5" dx="1.5" dy="1" layer="1" rot="R90"/>
-<wire x1="-6" y1="0.835" x2="24" y2="0.835" width="0.127" layer="21"/>
-<wire x1="24" y1="0.835" x2="24" y2="-4.765" width="0.127" layer="21"/>
-<wire x1="24" y1="-4.765" x2="24" y2="-9.165" width="0.127" layer="21"/>
-<wire x1="24" y1="-9.165" x2="-6" y2="-9.165" width="0.127" layer="21"/>
-<wire x1="-6" y1="-9.165" x2="-6" y2="-4.765" width="0.127" layer="21"/>
-<wire x1="-6" y1="-4.765" x2="-6" y2="0.835" width="0.127" layer="21"/>
-<wire x1="-6" y1="-4.765" x2="24" y2="-4.765" width="0.127" layer="21"/>
-<text x="-6" y="1" size="1.27" layer="21">&gt;NAME</text>
-</package>
 </packages>
 <symbols>
 <symbol name="LT3757">
@@ -7339,7 +7309,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pin name="GATE" x="17.78" y="7.62" visible="pin" length="middle" rot="R180"/>
 <text x="-12.446" y="17.018" size="1.778" layer="94">&gt;NAME</text>
 </symbol>
-<symbol name="10PIN-CONN">
+<symbol name="10PINFEMALE">
 <wire x1="-2.54" y1="12.7" x2="-2.54" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-15.24" x2="2.54" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-15.24" x2="2.54" y2="12.7" width="0.254" layer="94"/>
@@ -7421,33 +7391,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pin name="13" x="7.62" y="12.7" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="14" x="7.62" y="15.24" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="20PIN-CONN">
-<wire x1="-5.08" y1="-33.02" x2="0" y2="-33.02" width="0.254" layer="94"/>
-<wire x1="0" y1="-33.02" x2="0" y2="20.32" width="0.254" layer="94"/>
-<wire x1="0" y1="20.32" x2="-5.08" y2="20.32" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="20.32" x2="-5.08" y2="-33.02" width="0.254" layer="94"/>
-<pin name="P$1" x="-10.16" y="17.78" length="middle"/>
-<pin name="P$2" x="-10.16" y="15.24" length="middle"/>
-<pin name="P$3" x="-10.16" y="12.7" length="middle"/>
-<pin name="P$4" x="-10.16" y="10.16" length="middle"/>
-<pin name="P$5" x="-10.16" y="7.62" length="middle"/>
-<pin name="P$6" x="-10.16" y="5.08" length="middle"/>
-<pin name="P$7" x="-10.16" y="2.54" length="middle"/>
-<pin name="P$8" x="-10.16" y="0" length="middle"/>
-<pin name="P$9" x="-10.16" y="-2.54" length="middle"/>
-<pin name="P$10" x="-10.16" y="-5.08" length="middle"/>
-<pin name="P$11" x="-10.16" y="-7.62" length="middle"/>
-<pin name="P$12" x="-10.16" y="-10.16" length="middle"/>
-<pin name="P$13" x="-10.16" y="-12.7" length="middle"/>
-<pin name="P$14" x="-10.16" y="-15.24" length="middle"/>
-<pin name="P$15" x="-10.16" y="-17.78" length="middle"/>
-<pin name="P$16" x="-10.16" y="-20.32" length="middle"/>
-<pin name="P$17" x="-10.16" y="-22.86" length="middle"/>
-<pin name="P$18" x="-10.16" y="-25.4" length="middle"/>
-<pin name="P$19" x="-10.16" y="-27.94" length="middle"/>
-<pin name="P$20" x="-10.16" y="-30.48" length="middle"/>
-<text x="-5.08" y="22.86" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LT3757" prefix="U" uservalue="yes">
@@ -7477,7 +7420,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 <deviceset name="M50-3120545" prefix="J" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="10PIN-CONN" x="0" y="0"/>
+<gate name="G$1" symbol="10PINFEMALE" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="10PINFEMALE">
@@ -7554,40 +7497,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="M80-532">
-<gates>
-<gate name="G$1" symbol="20PIN-CONN" x="2.54" y="7.62"/>
-</gates>
-<devices>
-<device name="2042" package="M80-532XXXX(20PIN)">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$10" pad="P$10"/>
-<connect gate="G$1" pin="P$11" pad="P$11"/>
-<connect gate="G$1" pin="P$12" pad="P$12"/>
-<connect gate="G$1" pin="P$13" pad="P$13"/>
-<connect gate="G$1" pin="P$14" pad="P$14"/>
-<connect gate="G$1" pin="P$15" pad="P$15"/>
-<connect gate="G$1" pin="P$16" pad="P$16"/>
-<connect gate="G$1" pin="P$17" pad="P$17"/>
-<connect gate="G$1" pin="P$18" pad="P$18"/>
-<connect gate="G$1" pin="P$19" pad="P$19"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-<connect gate="G$1" pin="P$20" pad="P$20"/>
-<connect gate="G$1" pin="P$3" pad="P$3"/>
-<connect gate="G$1" pin="P$4" pad="P$4"/>
-<connect gate="G$1" pin="P$5" pad="P$5"/>
-<connect gate="G$1" pin="P$6" pad="P$6"/>
-<connect gate="G$1" pin="P$7" pad="P$7"/>
-<connect gate="G$1" pin="P$8" pad="P$8"/>
-<connect gate="G$1" pin="P$9" pad="P$9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7829,7 +7738,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="R2" library="CNTRL_BOARD" deviceset="RESISTOR" device="" value="1M"/>
 <part name="R3" library="CNTRL_BOARD" deviceset="RESISTOR" device="" value="1M"/>
 <part name="V1" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL"/>
-<part name="HARWIN_20_HORIZONTAL_SMD" library="LED_Driver_Board" deviceset="M80-532" device="2042"/>
 </parts>
 <sheets>
 <sheet>
@@ -9065,7 +8973,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="R1" gate="G$1" x="53.34" y="91.44" rot="R90"/>
 <instance part="R2" gate="G$1" x="53.34" y="40.64" rot="R90"/>
 <instance part="R3" gate="G$1" x="53.34" y="142.24" rot="R90"/>
-<instance part="HARWIN_20_HORIZONTAL_SMD" gate="G$1" x="162.56" y="76.2"/>
 </instances>
 <busses>
 </busses>
