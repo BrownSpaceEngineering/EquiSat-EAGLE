@@ -4716,6 +4716,7 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <wire x1="77.27" y1="90.27" x2="77.5" y2="91" width="0.254" layer="1"/>
 <wire x1="77.5" y1="91" x2="77.5" y2="93.5" width="0.254" layer="1"/>
 </signal>
+>>>>>>> 8f3a370eaea86b5ed8334936b70bad26614e5971
 </signals>
 </board>
 </drawing>
