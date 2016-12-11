@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -884,15 +884,35 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="-1.4" y1="-0.7" x2="1.4" y2="-0.7" width="0.127" layer="21"/>
 <wire x1="1.4" y1="-0.7" x2="1.4" y2="0.7" width="0.127" layer="21"/>
 <wire x1="1.4" y1="0.7" x2="-1.4" y2="0.7" width="0.127" layer="21"/>
-<text x="-1.4" y="-1.6" size="0.762" layer="21">&gt;VALUE</text>
+</package>
+<package name="VIA-120MIL">
+<pad name="P$1" x="0" y="0" drill="3.048"/>
+<text x="-2.54" y="2.54" size="0.762" layer="27">&gt;VALUE</text>
+</package>
+<package name="VIA-60MIL">
+<pad name="P$1" x="0" y="0" drill="1.524"/>
+<text x="-1.27" y="1.27" size="0.762" layer="27">&gt;VALUE</text>
+</package>
+<package name="VIA-60MIL-SQ">
+<pad name="P$1" x="0" y="0" drill="1.524" shape="square"/>
+<text x="-2.54" y="1.27" size="1" layer="27">&gt;VALUE</text>
+</package>
+<package name="1210">
+<smd name="P$1" x="-1.71" y="0" dx="1.52" dy="2.54" layer="1"/>
+<smd name="P$2" x="1.71" y="0" dx="1.51" dy="2.54" layer="1"/>
+<wire x1="-1.6" y1="1.3" x2="1.6" y2="1.3" width="0.127" layer="21"/>
+<wire x1="1.6" y1="1.3" x2="1.6" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-1.3" x2="-1.6" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-1.3" x2="-1.6" y2="1.3" width="0.127" layer="21"/>
+<text x="-1.7" y="1.5" size="0.8" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<text x="-5.08" y="2.54" size="1.905" layer="96">&gt;NAME</text>
-<text x="-5.08" y="-3.81" size="1.905" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="1.016" size="1.905" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-2.794" size="1.905" layer="96">&gt;VALUE</text>
 <wire x1="-2.54" y1="0" x2="-2.286" y2="0.762" width="0.1778" layer="94"/>
 <wire x1="-2.286" y1="0.762" x2="-1.778" y2="-0.762" width="0.1778" layer="94"/>
 <wire x1="-1.778" y1="-0.762" x2="-1.27" y2="0.762" width="0.1778" layer="94"/>
@@ -905,6 +925,13 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="1.778" y1="0.762" x2="2.286" y2="-0.762" width="0.1778" layer="94"/>
 <wire x1="2.286" y1="-0.762" x2="2.54" y2="0" width="0.1778" layer="94"/>
 </symbol>
+<symbol name="VIA">
+<circle x="0" y="0" radius="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<pin name="P$1" x="5.08" y="0" visible="off" length="middle" rot="R180"/>
+<text x="1.778" y="0.762" size="1.778" layer="95">VIA</text>
+<text x="1.778" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="RES" prefix="R" uservalue="yes">
@@ -916,6 +943,46 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <connects>
 <connect gate="R$1" pin="1" pad="1"/>
 <connect gate="R$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1210" package="1210">
+<connects>
+<connect gate="R$1" pin="1" pad="P$1"/>
+<connect gate="R$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VIA" prefix="V" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="VIA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-120MIL" package="VIA-120MIL">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-60MIL" package="VIA-60MIL">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="60MIL-SQ" package="VIA-60MIL-SQ">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3118,6 +3185,12 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <part name="R12" library="CNTRL_BOARD" deviceset="RESISTOR" device="" value="10K"/>
 <part name="R3" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
 <part name="R4" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
+<part name="V1" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="VIN"/>
+<part name="V2" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="3V6-SNS"/>
+<part name="V3" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
+<part name="V4" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
+<part name="V5" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="3V6"/>
+<part name="V6" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="3V6-EN"/>
 </parts>
 <sheets>
 <sheet>
@@ -3166,6 +3239,12 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <instance part="R12" gate="G$1" x="15.24" y="134.62" rot="R90"/>
 <instance part="R3" gate="R$1" x="83.82" y="73.66" rot="R90"/>
 <instance part="R4" gate="R$1" x="83.82" y="86.36" rot="R90"/>
+<instance part="V1" gate="G$1" x="30.48" y="43.18" rot="R180"/>
+<instance part="V2" gate="G$1" x="40.64" y="38.1" rot="R180"/>
+<instance part="V3" gate="G$1" x="35.56" y="22.86" rot="R180"/>
+<instance part="V4" gate="G$1" x="104.14" y="45.72" rot="R180"/>
+<instance part="V5" gate="G$1" x="15.24" y="167.64" rot="R270"/>
+<instance part="V6" gate="G$1" x="40.64" y="27.94" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -3271,9 +3350,10 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <pinref part="AVX" gate="G$1" pin="P$22"/>
 </segment>
 <segment>
-<wire x1="81.28" y1="45.72" x2="88.9" y2="45.72" width="0.1524" layer="91"/>
 <label x="86.36" y="45.72" size="1.778" layer="95"/>
 <pinref part="AVX" gate="G$1" pin="P$30"/>
+<pinref part="V4" gate="G$1" pin="P$1"/>
+<wire x1="81.28" y1="45.72" x2="99.06" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="55.88" y1="35.56" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
@@ -3297,8 +3377,9 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </segment>
 <segment>
 <pinref part="CNTRLCONN" gate="G$1" pin="9"/>
-<wire x1="10.16" y1="22.86" x2="20.32" y2="22.86" width="0.1524" layer="91"/>
 <label x="17.78" y="22.86" size="1.778" layer="95"/>
+<pinref part="V3" gate="G$1" pin="P$1"/>
+<wire x1="10.16" y1="22.86" x2="30.48" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SEND" gate="G$1" pin="C"/>
@@ -3388,6 +3469,7 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <junction x="93.98" y="33.02"/>
 <junction x="93.98" y="35.56"/>
 <junction x="93.98" y="38.1"/>
+<label x="96.52" y="33.02" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
@@ -3402,6 +3484,7 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <label x="66.04" y="99.06" size="1.778" layer="95" rot="R270"/>
 <pinref part="R4" gate="R$1" pin="2"/>
 <wire x1="66.04" y1="91.44" x2="83.82" y2="91.44" width="0.1524" layer="91"/>
+<junction x="66.04" y="91.44"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
@@ -3410,8 +3493,9 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </segment>
 <segment>
 <pinref part="C23" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="152.4" x2="15.24" y2="157.48" width="0.1524" layer="91"/>
-<label x="17.78" y="154.94" size="1.778" layer="95"/>
+<label x="17.78" y="154.94" size="1.778" layer="95" rot="R90"/>
+<pinref part="V5" gate="G$1" pin="P$1"/>
+<wire x1="15.24" y1="152.4" x2="15.24" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3V6-SNS" class="0">
@@ -3429,11 +3513,13 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="60.96" y1="109.22" x2="66.04" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="109.22" x2="60.96" y2="101.6" width="0.1524" layer="91"/>
 <label x="60.96" y="99.06" size="1.778" layer="95" rot="R90"/>
+<junction x="60.96" y="109.22"/>
 </segment>
 <segment>
 <pinref part="CNTRLCONN" gate="G$1" pin="3"/>
-<wire x1="10.16" y1="38.1" x2="20.32" y2="38.1" width="0.1524" layer="91"/>
 <label x="17.78" y="38.1" size="1.778" layer="95"/>
+<pinref part="V2" gate="G$1" pin="P$1"/>
+<wire x1="10.16" y1="38.1" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3V6-EN" class="0">
@@ -3444,8 +3530,9 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </segment>
 <segment>
 <pinref part="CNTRLCONN" gate="G$1" pin="7"/>
-<wire x1="10.16" y1="27.94" x2="20.32" y2="27.94" width="0.1524" layer="91"/>
 <label x="17.78" y="27.94" size="1.778" layer="95"/>
+<pinref part="V6" gate="G$1" pin="P$1"/>
+<wire x1="10.16" y1="27.94" x2="35.56" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3V6-REF" class="0">
@@ -3483,8 +3570,9 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </segment>
 <segment>
 <pinref part="CNTRLCONN" gate="G$1" pin="1"/>
-<wire x1="10.16" y1="43.18" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
 <label x="17.78" y="43.18" size="1.778" layer="95"/>
+<pinref part="V1" gate="G$1" pin="P$1"/>
+<wire x1="10.16" y1="43.18" x2="25.4" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CNTRLCONN" gate="G$1" pin="10"/>
@@ -3638,6 +3726,9 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,83.82,113.03,LTC3112,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
