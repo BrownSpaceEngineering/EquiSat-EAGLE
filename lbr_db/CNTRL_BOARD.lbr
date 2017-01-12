@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -155,11 +155,10 @@
 <smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
 <smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
 <text x="-1.397" y="0.8255" size="0.635" layer="25">&gt;NAME</text>
-<text x="-1.651" y="-1.397" size="0.635" layer="27">&gt;VALUE</text>
-<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="-1.4" y1="-0.7" x2="1.4" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="1.4" y1="-0.7" x2="1.4" y2="0.7" width="0.127" layer="21"/>
-<wire x1="1.4" y1="0.7" x2="-1.4" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-1.527" y1="0.827" x2="-1.527" y2="-0.827" width="0.127" layer="21"/>
+<wire x1="-1.527" y1="-0.827" x2="1.527" y2="-0.827" width="0.127" layer="21"/>
+<wire x1="1.527" y1="-0.827" x2="1.527" y2="0.827" width="0.127" layer="21"/>
+<wire x1="1.527" y1="0.827" x2="-1.527" y2="0.827" width="0.127" layer="21"/>
 </package>
 <package name="SC-89">
 <smd name="D" x="0" y="0.5842" dx="0.508" dy="0.6604" layer="1"/>
@@ -881,7 +880,7 @@ NS Package M08A</description>
 <text x="0" y="3.81" size="0.635" layer="21">&gt;NAME</text>
 </package>
 <package name="MXL90620">
-<text x="-9.2" y="4.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4.12" y="4.5" size="1.27" layer="25">&gt;NAME</text>
 <circle x="0" y="0" radius="4.566" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="2.29" width="0.05" layer="21"/>
 <pad name="SDA" x="0" y="2.294" drill="0.8" diameter="1.2"/>
@@ -897,7 +896,7 @@ NS Package M08A</description>
 <vertex x="3.734" y="-2.794"/>
 <vertex x="3.5" y="-3"/>
 </polygon>
-<text x="3.175" y="4.445" size="1.27" layer="21">&gt;VALUE</text>
+<text x="-5.08" y="-3.81" size="1.27" layer="21" rot="R90">&gt;VALUE</text>
 </package>
 <package name="DHD16">
 <smd name="1" x="0.125" y="0.35" dx="0.7" dy="0.25" layer="1" rot="R90"/>
