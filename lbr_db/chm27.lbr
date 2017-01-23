@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -58,35 +58,25 @@
 <library>
 <packages>
 <package name="CXM27">
-<polygon width="0.127" layer="1">
+<polygon width="0.127" layer="16">
 <vertex x="-14.3256" y="14.3764"/>
 <vertex x="-14.3256" y="8.4836"/>
 <vertex x="-8.4328" y="14.3764"/>
 </polygon>
-<polygon width="0.127" layer="1">
+<polygon width="0.127" layer="16">
 <vertex x="14.3764" y="-14.4526"/>
 <vertex x="14.3764" y="-8.5598"/>
 <vertex x="8.4836" y="-14.4526"/>
 </polygon>
 <hole x="0" y="0" drill="27.9908"/>
-<smd name="ANODE" x="-18.0966" y="11.4808" dx="5.588" dy="7.6" layer="16" rot="R90"/>
-<smd name="CATHODE" x="11.4554" y="-18.2712" dx="7.6" dy="5.8928" layer="16" rot="R90"/>
-<polygon width="0.127" layer="29">
+<smd name="CATHODE" x="-13.0166" y="11.4808" dx="1.27" dy="1.27" layer="16" rot="R90"/>
+<smd name="ANODE" x="12.7254" y="-13.1912" dx="1.27" dy="1.27" layer="16" rot="R90"/>
+<polygon width="0.127" layer="30">
 <vertex x="-14.3256" y="14.3764"/>
 <vertex x="-14.3256" y="8.4836"/>
 <vertex x="-8.4328" y="14.3764"/>
 </polygon>
-<polygon width="0.127" layer="31">
-<vertex x="-14.3256" y="14.3764"/>
-<vertex x="-14.3256" y="8.4836"/>
-<vertex x="-8.4328" y="14.3764"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="14.3764" y="-14.4526"/>
-<vertex x="14.3764" y="-8.5598"/>
-<vertex x="8.4836" y="-14.4526"/>
-</polygon>
-<polygon width="0.127" layer="31">
+<polygon width="0.127" layer="30">
 <vertex x="14.3764" y="-14.4526"/>
 <vertex x="14.3764" y="-8.5598"/>
 <vertex x="8.4836" y="-14.4526"/>
@@ -97,6 +87,8 @@
 <wire x1="-15.748" y1="15.748" x2="-15.748" y2="-15.748" width="0.127" layer="21"/>
 <hole x="13.95" y="13.95" drill="2.4"/>
 <hole x="-13.95" y="-13.95" drill="2.4"/>
+<text x="6.35" y="-15.24" size="2.54" layer="22" rot="MR90">+</text>
+<text x="-6.35" y="13.97" size="2.54" layer="22" rot="MR0">-</text>
 </package>
 <package name="10PINMALE">
 <smd name="P3" x="0" y="-1.95" dx="2.4" dy="0.74" layer="1" rot="R90"/>
@@ -159,6 +151,7 @@
 <pin name="8" x="-7.62" y="-7.62" length="middle"/>
 <pin name="9" x="-7.62" y="-10.16" length="middle"/>
 <pin name="10" x="-7.62" y="-12.7" length="middle"/>
+<text x="-2.54" y="15.24" size="1.778" layer="96">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
