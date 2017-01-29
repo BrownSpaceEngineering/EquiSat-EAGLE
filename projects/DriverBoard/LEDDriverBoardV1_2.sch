@@ -8994,6 +8994,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="132.08" y1="53.34" x2="132.08" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<pinref part="CONN13F" gate="G$1" pin="10"/>
+<wire x1="195.58" y1="96.52" x2="203.2" y2="96.52" width="0.1524" layer="91"/>
+<label x="198.12" y="96.52" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VIN_BATT_3" class="0">
 <segment>
@@ -9307,6 +9312,32 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="V4" gate="G$1" pin="P$1"/>
 <wire x1="63.5" y1="157.48" x2="45.72" y2="157.48" width="0.1524" layer="91"/>
 <junction x="45.72" y="157.48"/>
+</segment>
+</net>
+<net name="DEP_SEND" class="0">
+<segment>
+<pinref part="CONN13F" gate="G$1" pin="5"/>
+<wire x1="195.58" y1="83.82" x2="203.2" y2="83.82" width="0.1524" layer="91"/>
+<label x="198.12" y="83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TEMPCONN" gate="G$1" pin="5"/>
+<wire x1="96.52" y1="76.2" x2="106.68" y2="76.2" width="0.1524" layer="91"/>
+<label x="99.06" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DEP_RTN2" class="0">
+<segment>
+<pinref part="CONN13F" gate="G$1" pin="6"/>
+<wire x1="195.58" y1="86.36" x2="203.2" y2="86.36" width="0.1524" layer="91"/>
+<label x="198.12" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DEP_RTN1" class="0">
+<segment>
+<pinref part="TEMPCONN" gate="G$1" pin="6"/>
+<wire x1="96.52" y1="73.66" x2="106.68" y2="73.66" width="0.1524" layer="91"/>
+<label x="99.06" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
