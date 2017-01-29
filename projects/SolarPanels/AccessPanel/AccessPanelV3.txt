@@ -1,0 +1,20 @@
+Partlist exported from C:/Users/julia/Documents/GitHub/EquiSat-EAGLE/projects/SolarPanels/AccessPanel/AccessPanelV3.sch at 1/29/2017 2:46 PM
+
+Qty Value                  Device                 Package        Parts                                                                                                                          Description 
+1   0.1uF                  CAP0805                0805           C1                                                                                                                             Capacitor   
+1   3V3                    VIA-60MIL              VIA-60MIL      V9                                                                                                                                         
+1   3V3-IR                 VIA-60MIL              VIA-60MIL      V3                                                                                                                                         
+1   EQUISAT-UMBILICAL-CONN EQUISAT-UMBILICAL-CONN USB-C-RCPT-SMT UMB-CONN                                                                                                                                   
+2   GND                    VIA-60MIL              VIA-60MIL      V2, V4                                                                                                                                     
+1   MXL90614               MXL90614               MXL90620       IR                                                                                                                                         
+1   PD-OUT                 VIA-60MIL              VIA-60MIL      V6                                                                                                                                         
+1   RESETN                 VIA-60MIL              VIA-60MIL      V8                                                                                                                                         
+1   SCL                    VIA-60MIL              VIA-60MIL      SCL                                                                                                                                        
+1   SDA                    VIA-60MIL              VIA-60MIL      SDA                                                                                                                                        
+32  SOLARCELLV3            SOLARCELLV3            TRISOLX-V3     1A, 1B, 1C, 1D, 2A, 2B, 2C, 2D, 3A, 3B, 3C, 3D, 4A, 4B, 4C, 4D, 5A, 5B, 5C, 5D, 6A, 6B, 6C, 6D, 7A, 7B, 7C, 7D, 8A, 8B, 8C, 8D             
+1   SP-PWR                 VIA-60MIL              VIA-60MIL      V1                                                                                                                                         
+1   SWCLK                  VIA-60MIL              VIA-60MIL      V10                                                                                                                                        
+1   SWDIO                  VIA-60MIL              VIA-60MIL      V11                                                                                                                                        
+1   TEMD6200               TEMD6200               TEMD6200       PD                                                                                                                                         
+1   UMB-CHG                VIA-60MIL              VIA-60MIL      V5                                                                                                                                         
+1   VIN-EXT                VIA-60MIL              VIA-60MIL      V7                                                                                                                                         
