@@ -653,12 +653,11 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <text x="-1.27" y="0" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="13.97" y="0" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <polygon width="0.127" layer="43">
-<vertex x="0" y="0"/>
-<vertex x="4.572" y="5.334"/>
-<vertex x="9.906" y="7.366"/>
-<vertex x="26.416" y="7.366"/>
-<vertex x="26.416" y="0.254"/>
-<vertex x="26.416" y="0"/>
+<vertex x="-13.97" y="-2.54"/>
+<vertex x="-9.398" y="2.794"/>
+<vertex x="-4.064" y="4.826"/>
+<vertex x="12.446" y="4.826"/>
+<vertex x="12.446" y="-2.54"/>
 </polygon>
 <wire x1="12.43" y1="-0.54" x2="14.63" y2="-0.54" width="0.127" layer="21"/>
 <wire x1="14.63" y1="-0.54" x2="14.63" y2="-2.54" width="0.127" layer="21"/>

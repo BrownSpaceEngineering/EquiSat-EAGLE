@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -133,16 +133,6 @@
 <wire x1="3.35" y1="1.55" x2="-3.35" y2="1.55" width="0.254" layer="21"/>
 <wire x1="3.35" y1="-1.55" x2="3.35" y2="1.55" width="0.254" layer="21"/>
 <wire x1="-3.35" y1="-1.55" x2="-3.35" y2="1.55" width="0.254" layer="21"/>
-<circle x="2.54" y="0.635" radius="0.25" width="0.15" layer="21"/>
-<circle x="1.27" y="0.635" radius="0.25" width="0.15" layer="21"/>
-<circle x="0" y="0.635" radius="0.25" width="0.15" layer="21"/>
-<circle x="2.54" y="-0.635" radius="0.25" width="0.15" layer="21"/>
-<circle x="1.27" y="-0.635" radius="0.25" width="0.15" layer="21"/>
-<circle x="0" y="-0.635" radius="0.25" width="0.15" layer="21"/>
-<circle x="-1.27" y="-0.635" radius="0.25" width="0.15" layer="21"/>
-<circle x="-2.54" y="-0.635" radius="0.25" width="0.15" layer="21"/>
-<circle x="-1.27" y="0.635" radius="0.25" width="0.15" layer="21"/>
-<circle x="-2.54" y="0.635" radius="0.25" width="0.15" layer="21"/>
 <wire x1="-2.75" y1="1.45" x2="-3.25" y2="0.9" width="0.4064" layer="21"/>
 <text x="3" y="-3" size="1.27" layer="21" rot="R180">&gt;NAME</text>
 </package>
@@ -163,7 +153,7 @@
 <wire x1="1.7" y1="-1.7" x2="-1.7" y2="-1.7" width="0.07" layer="21"/>
 <wire x1="-1.7" y1="-1.7" x2="-1.7" y2="1.7" width="0.07" layer="21"/>
 <wire x1="-1.7" y1="1.7" x2="1.7" y2="1.7" width="0.07" layer="21"/>
-<circle x="-1.5" y="-1.5" radius="0.1" width="0.07" layer="21"/>
+<circle x="-1.5" y="-1.5" radius="0.1" width="0.254" layer="21"/>
 <smd name="D1" x="0" y="0.385" dx="2.45" dy="1.93" layer="1"/>
 <smd name="D5" x="-1" y="1.525" dx="0.4" dy="0.35" layer="1"/>
 <smd name="D4" x="-0.35" y="1.525" dx="0.4" dy="0.35" layer="1"/>
