@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.064516" unitdist="mm" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.02" altunitdist="mm" altunit="mm"/>
+<grid distance="0.064516" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="0.02" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -155,10 +155,10 @@
 <wire x1="82.5" y1="0" x2="82.5" y2="99.5" width="0" layer="20"/>
 <wire x1="82.5" y1="99.5" x2="0" y2="99.5" width="0" layer="20"/>
 <wire x1="0" y1="99.5" x2="0" y2="0" width="0" layer="20"/>
-<hole x="6.35" y="2.2512" drill="3.348"/>
-<hole x="76.15" y="3.2512" drill="3.348"/>
-<hole x="6.35" y="96.2488" drill="3.348"/>
-<hole x="76.15" y="96.2488" drill="3.348"/>
+<hole x="6.35" y="3.25" drill="3.348"/>
+<hole x="76.15" y="3.25" drill="3.348"/>
+<hole x="6.35" y="96.25" drill="3.348"/>
+<hole x="76.15" y="96.25" drill="3.348"/>
 <hole x="41.25" y="87" drill="8"/>
 <text x="9.2" y="94.1" size="1" layer="25">LED Driver Board: V1.2
 BSE: EquiSat
@@ -3664,10 +3664,10 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <vertex x="38" y="79.75"/>
 </polygon>
 <via x="36.5" y="81.5" extent="1-16" drill="0.6"/>
-<via x="7.5" y="5" extent="1-16" drill="0.6"/>
+<wire x1="6.080646875" y1="-0.87095625" x2="6.080646875" y2="-0.87095625" width="0" layer="19" extent="1-16"/>
 <via x="36.5" y="83.25" extent="1-16" drill="0.6"/>
 <via x="36.5" y="85" extent="1-16" drill="0.6"/>
-<via x="6" y="5" extent="1-16" drill="0.6"/>
+<wire x1="3.9354875" y1="2.677425" x2="3.9354875" y2="2.677425" width="0" layer="19" extent="1-16"/>
 <via x="9.75" y="28" extent="1-16" drill="0.6"/>
 <via x="9.75" y="29.5" extent="1-16" drill="0.6"/>
 <via x="6.75" y="26.5" extent="1-16" drill="0.6"/>
