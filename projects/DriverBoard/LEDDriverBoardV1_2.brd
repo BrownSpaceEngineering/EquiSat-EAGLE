@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="0.02" altunitdist="mm" altunit="mm"/>
+<grid distance="3.93700787" unitdist="mil" unit="mil" style="lines" multiple="2" display="yes" altdistance="0.787401575" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2607,15 +2607,15 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="10mil"/>
-<param name="mdWirePad" value="10mil"/>
-<param name="mdWireVia" value="10mil"/>
-<param name="mdPadPad" value="10mil"/>
-<param name="mdPadVia" value="10mil"/>
-<param name="mdViaVia" value="10mil"/>
-<param name="mdSmdPad" value="10mil"/>
-<param name="mdSmdVia" value="10mil"/>
-<param name="mdSmdSmd" value="10mil"/>
+<param name="mdWireWire" value="8mil"/>
+<param name="mdWirePad" value="8mil"/>
+<param name="mdWireVia" value="8mil"/>
+<param name="mdPadPad" value="8mil"/>
+<param name="mdPadVia" value="8mil"/>
+<param name="mdViaVia" value="8mil"/>
+<param name="mdSmdPad" value="8mil"/>
+<param name="mdSmdVia" value="8mil"/>
+<param name="mdSmdSmd" value="8mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
 <param name="mdCopperDimension" value="10mil"/>
@@ -4739,10 +4739,10 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <wire x1="14.73139375" y1="87.37" x2="17.15" y2="87.37" width="0.254" layer="1"/>
 </signal>
 <signal name="N$5">
-<wire x1="0" y1="99.5" x2="82.5" y2="99.5" width="0.4064" layer="1"/>
-<wire x1="82.5" y1="99.5" x2="82.5" y2="0.1" width="0.4064" layer="1"/>
-<wire x1="82.5" y1="0.1" x2="0" y2="0.1" width="0.4064" layer="1"/>
-<wire x1="0" y1="0.1" x2="0" y2="99.5" width="0.4064" layer="1"/>
+<wire x1="0" y1="99.5" x2="82.5" y2="99.5" width="0.2032" layer="1"/>
+<wire x1="82.5" y1="99.5" x2="82.5" y2="0.1" width="0.2032" layer="1"/>
+<wire x1="82.5" y1="0.1" x2="0" y2="0.1" width="0.2032" layer="1"/>
+<wire x1="0" y1="0.1" x2="0" y2="99.5" width="0.2032" layer="1"/>
 </signal>
 </signals>
 </board>
