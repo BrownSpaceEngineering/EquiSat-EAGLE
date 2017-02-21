@@ -4156,6 +4156,12 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
 <part name="C34" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="J7" library="BrownSpaceEngineering" deviceset="M83-LMT1M2N36" device=""/>
+<part name="R42" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
+<part name="R43" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
+<part name="+3V25" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND31" library="supply1" deviceset="GND" device=""/>
+<part name="R44" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
+<part name="R45" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -4800,13 +4806,13 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <label x="-30.48" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TEMP-OUT" class="0">
+<net name="TEMP_OUT" class="0">
 <segment>
 <wire x1="-7.62" y1="88.9" x2="-33.02" y2="88.9" width="0.1524" layer="91"/>
 <label x="-30.48" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PD-OUT" class="0">
+<net name="PD_OUT" class="0">
 <segment>
 <wire x1="-7.62" y1="86.36" x2="-33.02" y2="86.36" width="0.1524" layer="91"/>
 <label x="-30.48" y="86.36" size="1.778" layer="95"/>
@@ -6056,6 +6062,9 @@ Only solder one of R26 or R28 and R27 or R29.</text>
 Only solder one of R30 or R32 and R31 or R33.</text>
 <text x="116.84" y="5.08" size="1.778" layer="97">Photodiode Sensor Demux</text>
 <text x="287.02" y="78.74" size="1.778" layer="97">Temperature Conversion Circuit</text>
+<text x="226.06" y="2.54" size="1.778" layer="97">Resistors to set PD Voltage Bias
+Only Solder one of R42 and R43</text>
+<text x="10.16" y="58.42" size="1.778" layer="97">Remote ADC</text>
 </plain>
 <instances>
 <instance part="U7" gate="G$1" x="15.24" y="40.64"/>
@@ -6100,6 +6109,12 @@ Only solder one of R30 or R32 and R31 or R33.</text>
 <instance part="GND29" gate="1" x="304.8" y="-45.72"/>
 <instance part="GND30" gate="1" x="320.04" y="-17.78"/>
 <instance part="C34" gate="G$1" x="312.42" y="-12.7" rot="R90"/>
+<instance part="R42" gate="R$1" x="241.3" y="-15.24" rot="R90"/>
+<instance part="R43" gate="R$1" x="241.3" y="-33.02" rot="R90"/>
+<instance part="+3V25" gate="G$1" x="241.3" y="-2.54"/>
+<instance part="GND31" gate="1" x="241.3" y="-53.34"/>
+<instance part="R44" gate="R$1" x="261.62" y="-40.64" rot="R90"/>
+<instance part="R45" gate="R$1" x="292.1" y="-58.42" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -6217,6 +6232,11 @@ Only solder one of R30 or R32 and R31 or R33.</text>
 <wire x1="304.8" y1="-12.7" x2="307.34" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="304.8" y="-12.7"/>
 </segment>
+<segment>
+<pinref part="R42" gate="R$1" pin="2"/>
+<wire x1="241.3" y1="-10.16" x2="241.3" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="+3V25" gate="G$1" pin="+3V3"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -6323,6 +6343,16 @@ Only solder one of R30 or R32 and R31 or R33.</text>
 <wire x1="314.96" y1="-12.7" x2="320.04" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="GND30" gate="1" pin="GND"/>
 <wire x1="320.04" y1="-15.24" x2="320.04" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R43" gate="R$1" pin="1"/>
+<wire x1="241.3" y1="-38.1" x2="241.3" y2="-48.26" width="0.1524" layer="91"/>
+<pinref part="GND31" gate="1" pin="GND"/>
+<pinref part="R44" gate="R$1" pin="1"/>
+<wire x1="241.3" y1="-48.26" x2="241.3" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="-45.72" x2="261.62" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="-48.26" x2="241.3" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="241.3" y="-48.26"/>
 </segment>
 </net>
 <net name="3V3REF" class="0">
@@ -6495,6 +6525,16 @@ Only solder one of R30 or R32 and R31 or R33.</text>
 <wire x1="144.78" y1="-20.32" x2="154.94" y2="-20.32" width="0.1524" layer="91"/>
 <label x="147.32" y="-20.32" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U11" gate="G$1" pin="A-"/>
+<wire x1="276.86" y1="-17.78" x2="266.7" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="266.7" y1="-17.78" x2="254" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="0" x2="266.7" y2="0" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="0" x2="266.7" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="266.7" y="-17.78"/>
+<label x="256.54" y="-17.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PD_FLASH" class="0">
 <segment>
@@ -6593,6 +6633,57 @@ Only solder one of R30 or R32 and R31 or R33.</text>
 <wire x1="347.98" y1="40.64" x2="347.98" y2="45.72" width="0.1524" layer="91"/>
 <junction x="347.98" y="45.72"/>
 <label x="350.52" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="292.1" y1="0" x2="330.2" y2="0" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="0" x2="330.2" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="-22.86" x2="302.26" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="-22.86" x2="302.26" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="U11" gate="G$1" pin="OUTA"/>
+<wire x1="302.26" y1="-20.32" x2="299.72" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="U11" gate="G$1" pin="B+"/>
+<wire x1="276.86" y1="-38.1" x2="271.78" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="-38.1" x2="271.78" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="-50.8" x2="330.2" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="-50.8" x2="330.2" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="330.2" y="-22.86"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="U11" gate="G$1" pin="A+"/>
+<wire x1="276.86" y1="-22.86" x2="241.3" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="R42" gate="R$1" pin="1"/>
+<wire x1="241.3" y1="-20.32" x2="241.3" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="R43" gate="R$1" pin="2"/>
+<wire x1="241.3" y1="-27.94" x2="241.3" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="241.3" y="-22.86"/>
+</segment>
+</net>
+<net name="PD_OUT" class="0">
+<segment>
+<pinref part="U11" gate="G$1" pin="OUTB"/>
+<wire x1="299.72" y1="-35.56" x2="314.96" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="R45" gate="R$1" pin="1"/>
+<wire x1="297.18" y1="-58.42" x2="314.96" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="-58.42" x2="314.96" y2="-35.56" width="0.1524" layer="91"/>
+<label x="304.8" y="-35.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="U11" gate="G$1" pin="B-"/>
+<pinref part="R44" gate="R$1" pin="2"/>
+<wire x1="276.86" y1="-33.02" x2="269.24" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-33.02" x2="261.62" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="-33.02" x2="261.62" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="R45" gate="R$1" pin="2"/>
+<wire x1="287.02" y1="-58.42" x2="269.24" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-58.42" x2="269.24" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="269.24" y="-33.02"/>
 </segment>
 </net>
 </nets>
