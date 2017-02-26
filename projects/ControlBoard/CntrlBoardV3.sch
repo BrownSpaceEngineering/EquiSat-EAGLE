@@ -4482,6 +4482,7 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="D5" library="BrownSpaceEngineering" deviceset="TVS" device="" technology="MSP" value="MSP3V3"/>
+<part name="D6" library="BrownSpaceEngineering" deviceset="TVS" device="" technology="MSP" value="MSP5.0A"/>
 </parts>
 <sheets>
 <sheet>
@@ -5402,7 +5403,7 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <instance part="C10" gate="G$1" x="-5.08" y="48.26"/>
 <instance part="C11" gate="G$1" x="134.62" y="55.88"/>
 <instance part="C12" gate="G$1" x="63.5" y="50.8"/>
-<instance part="C13" gate="G$1" x="213.36" y="55.88"/>
+<instance part="C13" gate="G$1" x="205.74" y="55.88"/>
 <instance part="R9" gate="R$1" x="2.54" y="53.34" rot="R90"/>
 <instance part="R10" gate="R$1" x="147.32" y="60.96" rot="R90"/>
 <instance part="C14" gate="G$1" x="2.54" y="38.1"/>
@@ -5413,6 +5414,7 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <instance part="R48" gate="R$1" x="226.06" y="68.58"/>
 <instance part="R49" gate="R$1" x="238.76" y="58.42" rot="R90"/>
 <instance part="D5" gate="G$1" x="73.66" y="50.8"/>
+<instance part="D6" gate="G$1" x="218.44" y="55.88"/>
 </instances>
 <busses>
 </busses>
@@ -5483,8 +5485,8 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <pinref part="U13" gate="G$1" pin="VOUT"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="187.96" y1="68.58" x2="195.58" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="68.58" x2="213.36" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="68.58" x2="215.9" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="68.58" x2="205.74" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="68.58" x2="215.9" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="68.58" x2="215.9" y2="83.82" width="0.1524" layer="91"/>
 <label x="210.82" y="68.58" size="1.778" layer="95"/>
 <pinref part="U13" gate="G$1" pin="FB"/>
@@ -5492,11 +5494,15 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="195.58" y1="60.96" x2="195.58" y2="68.58" width="0.1524" layer="91"/>
 <junction x="195.58" y="68.58"/>
 <pinref part="C13" gate="G$1" pin="P$1"/>
-<wire x1="213.36" y1="60.96" x2="213.36" y2="68.58" width="0.1524" layer="91"/>
-<junction x="213.36" y="68.58"/>
+<wire x1="205.74" y1="60.96" x2="205.74" y2="68.58" width="0.1524" layer="91"/>
+<junction x="205.74" y="68.58"/>
 <pinref part="R48" gate="R$1" pin="1"/>
-<wire x1="220.98" y1="68.58" x2="215.9" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="68.58" x2="218.44" y2="68.58" width="0.1524" layer="91"/>
 <junction x="215.9" y="68.58"/>
+<pinref part="D6" gate="G$1" pin="C"/>
+<wire x1="218.44" y1="68.58" x2="215.9" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="60.96" x2="218.44" y2="68.58" width="0.1524" layer="91"/>
+<junction x="218.44" y="68.58"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -5607,13 +5613,17 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="187.96" y1="48.26" x2="198.12" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="48.26" x2="198.12" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="C13" gate="G$1" pin="P$2"/>
-<wire x1="198.12" y1="48.26" x2="213.36" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="48.26" x2="213.36" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="48.26" x2="205.74" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="48.26" x2="205.74" y2="53.34" width="0.1524" layer="91"/>
 <junction x="198.12" y="48.26"/>
 <pinref part="R49" gate="R$1" pin="1"/>
-<wire x1="213.36" y1="48.26" x2="238.76" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="48.26" x2="218.44" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="48.26" x2="238.76" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="48.26" x2="238.76" y2="53.34" width="0.1524" layer="91"/>
-<junction x="213.36" y="48.26"/>
+<junction x="205.74" y="48.26"/>
+<pinref part="D6" gate="G$1" pin="A"/>
+<wire x1="218.44" y1="53.34" x2="218.44" y2="48.26" width="0.1524" layer="91"/>
+<junction x="218.44" y="48.26"/>
 </segment>
 </net>
 <net name="N$10" class="0">
