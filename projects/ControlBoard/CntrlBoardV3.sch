@@ -4595,6 +4595,8 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <part name="J7" library="BrownSpaceEngineering" deviceset="M83-LMT1M2N27" device=""/>
 <part name="+3V27" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND40" library="supply1" deviceset="GND" device=""/>
+<part name="GND41" library="supply1" deviceset="GND" device=""/>
+<part name="GND42" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5177,9 +5179,9 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </net>
 <net name="RAD_PWR_RUN" class="0">
 <segment>
-<label x="55.88" y="71.12" size="1.778" layer="95"/>
-<wire x1="76.2" y1="71.12" x2="50.8" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="UC1" gate="G$1" pin="PA22"/>
+<wire x1="76.2" y1="66.04" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
+<label x="55.88" y="66.04" size="1.778" layer="95"/>
+<pinref part="UC1" gate="G$1" pin="PA20"/>
 </segment>
 </net>
 <net name="LF_B1_OUTEN" class="0">
@@ -5257,27 +5259,6 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="76.2" y1="33.02" x2="50.8" y2="33.02" width="0.1524" layer="91"/>
 <label x="55.88" y="33.02" size="1.778" layer="95"/>
 <pinref part="UC1" gate="G$1" pin="PA14"/>
-</segment>
-</net>
-<net name="!RAD_SHDN!" class="0">
-<segment>
-<pinref part="UC1" gate="G$1" pin="PA23"/>
-<wire x1="50.8" y1="73.66" x2="76.2" y2="73.66" width="0.1524" layer="91"/>
-<label x="55.88" y="73.66" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="TX_EN" class="0">
-<segment>
-<wire x1="76.2" y1="66.04" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
-<label x="55.88" y="66.04" size="1.778" layer="95"/>
-<pinref part="UC1" gate="G$1" pin="PA20"/>
-</segment>
-</net>
-<net name="RX_EN" class="0">
-<segment>
-<wire x1="76.2" y1="68.58" x2="50.8" y2="68.58" width="0.1524" layer="91"/>
-<label x="55.88" y="68.58" size="1.778" layer="95"/>
-<pinref part="UC1" gate="G$1" pin="PA21"/>
 </segment>
 </net>
 <net name="TX_DATA" class="0">
@@ -5475,6 +5456,27 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <pinref part="UC1" gate="G$1" pin="PA06"/>
 <wire x1="-7.62" y1="88.9" x2="-33.02" y2="88.9" width="0.1524" layer="91"/>
 <label x="-30.48" y="88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="!RAD_SHDN!" class="0">
+<segment>
+<wire x1="76.2" y1="68.58" x2="50.8" y2="68.58" width="0.1524" layer="91"/>
+<label x="55.88" y="68.58" size="1.778" layer="95"/>
+<pinref part="UC1" gate="G$1" pin="PA21"/>
+</segment>
+</net>
+<net name="TX_EN" class="0">
+<segment>
+<pinref part="UC1" gate="G$1" pin="PA23"/>
+<wire x1="50.8" y1="73.66" x2="76.2" y2="73.66" width="0.1524" layer="91"/>
+<label x="55.88" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RX_EN" class="0">
+<segment>
+<label x="55.88" y="71.12" size="1.778" layer="95"/>
+<wire x1="76.2" y1="71.12" x2="50.8" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="UC1" gate="G$1" pin="PA22"/>
 </segment>
 </net>
 </nets>
@@ -6442,19 +6444,19 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <label x="12.7" y="38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="68.58" y1="73.66" x2="53.34" y2="73.66" width="0.1524" layer="91"/>
-<label x="55.88" y="73.66" size="1.778" layer="95"/>
-<pinref part="J5" gate="G$1" pin="P$2"/>
-</segment>
-<segment>
-<pinref part="J4" gate="G$1" pin="P$2"/>
-<wire x1="71.12" y1="27.94" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
-<label x="55.88" y="27.94" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="10.16" y1="12.7" x2="25.4" y2="12.7" width="0.1524" layer="91"/>
 <label x="12.7" y="12.7" size="1.778" layer="95"/>
 <pinref part="J3" gate="G$1" pin="P$3"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="68.58" x2="53.34" y2="68.58" width="0.1524" layer="91"/>
+<label x="55.88" y="68.58" size="1.778" layer="95"/>
+<pinref part="J5" gate="G$1" pin="P$4"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="P$4"/>
+<wire x1="71.12" y1="22.86" x2="53.34" y2="22.86" width="0.1524" layer="91"/>
+<label x="55.88" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -6469,11 +6471,6 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <label x="12.7" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="68.58" y1="71.12" x2="53.34" y2="71.12" width="0.1524" layer="91"/>
-<label x="55.88" y="71.12" size="1.778" layer="95"/>
-<pinref part="J5" gate="G$1" pin="P$3"/>
-</segment>
-<segment>
 <pinref part="J4" gate="G$1" pin="P$3"/>
 <wire x1="71.12" y1="25.4" x2="53.34" y2="25.4" width="0.1524" layer="91"/>
 <label x="55.88" y="25.4" size="1.778" layer="95"/>
@@ -6482,6 +6479,11 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="10.16" y1="10.16" x2="25.4" y2="10.16" width="0.1524" layer="91"/>
 <label x="12.7" y="10.16" size="1.778" layer="95"/>
 <pinref part="J3" gate="G$1" pin="P$2"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="71.12" x2="53.34" y2="71.12" width="0.1524" layer="91"/>
+<label x="55.88" y="71.12" size="1.778" layer="95"/>
+<pinref part="J5" gate="G$1" pin="P$3"/>
 </segment>
 </net>
 <net name="IRVDD" class="0">
@@ -6501,14 +6503,14 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <pinref part="J3" gate="G$1" pin="P$4"/>
 </segment>
 <segment>
-<wire x1="68.58" y1="68.58" x2="53.34" y2="68.58" width="0.1524" layer="91"/>
-<label x="55.88" y="68.58" size="1.778" layer="95"/>
-<pinref part="J5" gate="G$1" pin="P$4"/>
+<wire x1="68.58" y1="73.66" x2="53.34" y2="73.66" width="0.1524" layer="91"/>
+<label x="55.88" y="73.66" size="1.778" layer="95"/>
+<pinref part="J5" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="P$4"/>
-<wire x1="71.12" y1="22.86" x2="53.34" y2="22.86" width="0.1524" layer="91"/>
-<label x="55.88" y="22.86" size="1.778" layer="95"/>
+<pinref part="J4" gate="G$1" pin="P$6"/>
+<wire x1="96.52" y1="20.32" x2="111.76" y2="20.32" width="0.1524" layer="91"/>
+<label x="99.06" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -6619,13 +6621,6 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <pinref part="J3" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="!RESET!" class="0">
-<segment>
-<pinref part="J4" gate="G$1" pin="P$6"/>
-<wire x1="96.52" y1="20.32" x2="111.76" y2="20.32" width="0.1524" layer="91"/>
-<label x="99.06" y="20.32" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="SWDCLK" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="P$7"/>
@@ -6672,6 +6667,13 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <label x="55.88" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="!RESET!" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="P$2"/>
+<wire x1="71.12" y1="27.94" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
+<label x="55.88" y="27.94" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -6694,6 +6696,8 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </instance>
 <instance part="J6" gate="G$1" x="144.78" y="53.34"/>
 <instance part="P+3" gate="1" x="182.88" y="63.5"/>
+<instance part="GND41" gate="1" x="91.44" y="48.26"/>
+<instance part="GND42" gate="1" x="182.88" y="45.72"/>
 </instances>
 <busses>
 </busses>
@@ -6714,14 +6718,18 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <junction x="58.42" y="22.86"/>
 </segment>
 <segment>
-<pinref part="J6" gate="G$1" pin="P$16"/>
-<wire x1="152.4" y1="53.34" x2="170.18" y2="53.34" width="0.1524" layer="91"/>
-<label x="157.48" y="53.34" size="1.778" layer="95"/>
+<pinref part="J6" gate="G$1" pin="P$5"/>
+<wire x1="124.46" y1="53.34" x2="91.44" y2="53.34" width="0.1524" layer="91"/>
+<label x="106.68" y="53.34" size="1.778" layer="95"/>
+<pinref part="GND41" gate="1" pin="GND"/>
+<wire x1="91.44" y1="53.34" x2="91.44" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J6" gate="G$1" pin="P$6"/>
-<wire x1="124.46" y1="50.8" x2="106.68" y2="50.8" width="0.1524" layer="91"/>
-<label x="106.68" y="50.8" size="1.778" layer="95"/>
+<pinref part="GND42" gate="1" pin="GND"/>
+<wire x1="182.88" y1="48.26" x2="182.88" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="J6" gate="G$1" pin="P$16"/>
+<wire x1="152.4" y1="53.34" x2="182.88" y2="53.34" width="0.1524" layer="91"/>
+<label x="157.48" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -6855,9 +6863,9 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </net>
 <net name="PD_FLASH" class="0">
 <segment>
-<pinref part="J6" gate="G$1" pin="P$8"/>
-<wire x1="124.46" y1="45.72" x2="106.68" y2="45.72" width="0.1524" layer="91"/>
-<label x="106.68" y="45.72" size="1.778" layer="95"/>
+<pinref part="J6" gate="G$1" pin="P$10"/>
+<wire x1="124.46" y1="40.64" x2="106.68" y2="40.64" width="0.1524" layer="91"/>
+<label x="106.68" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ANT_DRV1" class="0">
@@ -6867,46 +6875,18 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <label x="106.68" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ANT_DRV2" class="0">
-<segment>
-<pinref part="J6" gate="G$1" pin="P$10"/>
-<wire x1="124.46" y1="40.64" x2="106.68" y2="40.64" width="0.1524" layer="91"/>
-<label x="106.68" y="40.64" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="ANT_DRV3" class="0">
-<segment>
-<pinref part="J6" gate="G$1" pin="P$11"/>
-<wire x1="152.4" y1="40.64" x2="170.18" y2="40.64" width="0.1524" layer="91"/>
-<label x="157.48" y="40.64" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LED1SNS" class="0">
-<segment>
-<pinref part="J6" gate="G$1" pin="P$12"/>
-<wire x1="152.4" y1="43.18" x2="170.18" y2="43.18" width="0.1524" layer="91"/>
-<label x="157.48" y="43.18" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LED2SNS" class="0">
+<net name="LED3SNS" class="0">
 <segment>
 <pinref part="J6" gate="G$1" pin="P$13"/>
 <wire x1="152.4" y1="45.72" x2="170.18" y2="45.72" width="0.1524" layer="91"/>
 <label x="157.48" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LED3SNS" class="0">
-<segment>
-<pinref part="J6" gate="G$1" pin="P$14"/>
-<wire x1="152.4" y1="48.26" x2="170.18" y2="48.26" width="0.1524" layer="91"/>
-<label x="157.48" y="48.26" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="LED4SNS" class="0">
 <segment>
-<pinref part="J6" gate="G$1" pin="P$15"/>
-<wire x1="152.4" y1="50.8" x2="170.18" y2="50.8" width="0.1524" layer="91"/>
-<label x="157.48" y="50.8" size="1.778" layer="95"/>
+<pinref part="J6" gate="G$1" pin="P$12"/>
+<wire x1="152.4" y1="43.18" x2="170.18" y2="43.18" width="0.1524" layer="91"/>
+<label x="157.48" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED_SHDN" class="0">
@@ -6916,9 +6896,9 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <label x="7.62" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J6" gate="G$1" pin="P$5"/>
-<wire x1="124.46" y1="53.34" x2="106.68" y2="53.34" width="0.1524" layer="91"/>
-<label x="106.68" y="53.34" size="1.778" layer="95"/>
+<pinref part="J6" gate="G$1" pin="P$11"/>
+<wire x1="152.4" y1="40.64" x2="170.18" y2="40.64" width="0.1524" layer="91"/>
+<label x="157.48" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -6932,9 +6912,37 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </net>
 <net name="DET_RTN" class="0">
 <segment>
+<pinref part="J6" gate="G$1" pin="P$6"/>
+<wire x1="124.46" y1="50.8" x2="106.68" y2="50.8" width="0.1524" layer="91"/>
+<label x="106.68" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ANT_DRV2" class="0">
+<segment>
+<pinref part="J6" gate="G$1" pin="P$8"/>
+<wire x1="124.46" y1="45.72" x2="106.68" y2="45.72" width="0.1524" layer="91"/>
+<label x="106.68" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ANT_DRV3" class="0">
+<segment>
 <pinref part="J6" gate="G$1" pin="P$7"/>
 <wire x1="124.46" y1="48.26" x2="106.68" y2="48.26" width="0.1524" layer="91"/>
 <label x="106.68" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED2SNS" class="0">
+<segment>
+<pinref part="J6" gate="G$1" pin="P$14"/>
+<wire x1="152.4" y1="48.26" x2="170.18" y2="48.26" width="0.1524" layer="91"/>
+<label x="157.48" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED1SNS" class="0">
+<segment>
+<pinref part="J6" gate="G$1" pin="P$15"/>
+<wire x1="152.4" y1="50.8" x2="170.18" y2="50.8" width="0.1524" layer="91"/>
+<label x="157.48" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
