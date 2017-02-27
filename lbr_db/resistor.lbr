@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="8.0.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1916,8 +1916,8 @@ molded</description>
 <wire x1="1.651" y1="0.94" x2="1.651" y2="-0.94" width="0.1524" layer="51"/>
 <smd name="1" x="-1.4" y="0" dx="1.6" dy="2.2" layer="1"/>
 <smd name="2" x="1.4" y="0" dx="1.6" dy="2.2" layer="1"/>
-<text x="-1.905" y="-2.54" size="0.762" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.3" y1="-1" x2="0.3" y2="1" layer="35"/>
+<text x="-1.27" y="1.905" size="0.7112" layer="25">&gt;NAME</text>
 </package>
 <package name="L3230M">
 <description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;

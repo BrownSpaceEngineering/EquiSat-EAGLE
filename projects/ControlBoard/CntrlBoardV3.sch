@@ -297,9 +297,9 @@
 <rectangle x1="-4.9925" y1="-4.4975" x2="-4.8825" y2="-3.4975" layer="51" rot="R90"/>
 <rectangle x1="-4.9925" y1="-3.4975" x2="-4.8825" y2="-2.4975" layer="51" rot="R90"/>
 <circle x="-3.69" y="3.4" radius="0.24083125" width="0.127" layer="21"/>
-<circle x="-3.68" y="3.4" radius="0.131528125" width="0.127" layer="21"/>
-<circle x="-3.68" y="3.4" radius="0.031621875" width="0.127" layer="21"/>
-<text x="-7.3" y="4.75" size="0.6096" layer="25" ratio="4">&gt;NAME</text>
+<circle x="-3.68" y="3.4" radius="0.131528125" width="0.508" layer="21"/>
+<circle x="-3.68" y="3.4" radius="0.127" width="1.016" layer="21"/>
+<text x="-6.655" y="0.955" size="0.6096" layer="25" ratio="4" rot="R90">&gt;NAME</text>
 </package>
 <package name="0805">
 <smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
@@ -449,7 +449,7 @@
 <wire x1="0.4" y1="0.4" x2="0.4" y2="0.3" width="0.127" layer="21"/>
 <wire x1="0.4" y1="0.3" x2="-0.4" y2="0.3" width="0.127" layer="21"/>
 <wire x1="-0.4" y1="0.3" x2="-0.4" y2="0.4" width="0.127" layer="21"/>
-<text x="0.6" y="0.3" size="0.7" layer="21">C</text>
+<text x="-0.2255" y="1.824" size="0.7" layer="21">C</text>
 <text x="-0.6" y="-1.3" size="0.7" layer="21" rot="R90">&gt;NAME</text>
 </package>
 <package name="SOT-23-8">
@@ -1921,7 +1921,7 @@
 <circle x="-0.2" y="0.9" radius="0.14141875" width="0.2" layer="25"/>
 <circle x="-0.2" y="0.9" radius="0.1" width="0.3" layer="25"/>
 <wire x1="-0.4" y1="1" x2="-0.2" y2="0.9" width="0.127" layer="25" curve="-180"/>
-<text x="-0.1" y="4" size="0.7" layer="49">&gt;NAME</text>
+<text x="-0.1" y="4" size="0.7112" layer="25">&gt;NAME</text>
 <smd name="P$10" x="0.139190625" y="3.55803125" dx="0.4064" dy="0.2032" layer="1" rot="R90"/>
 <smd name="P$9" x="0.6405875" y="3.5552375" dx="0.4064" dy="0.2032" layer="1" rot="R90"/>
 <smd name="P$8" x="1.139190625" y="3.5552375" dx="0.4064" dy="0.2032" layer="1" rot="R90"/>
@@ -1944,12 +1944,12 @@
 <package name="SO08">
 <description>&lt;b&gt;Small Outline Package 8&lt;/b&gt;&lt;br&gt;
 NS Package M08A</description>
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="21"/>
 <smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
@@ -1967,7 +1967,7 @@ NS Package M08A</description>
 <rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
 <rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
-<circle x="-1.737359375" y="-0.82041875" radius="0.13141875" width="0.254" layer="21"/>
+<circle x="-1.737359375" y="-0.82041875" radius="0.13141875" width="0.762" layer="21"/>
 </package>
 <package name="HARWIN_DATAMATE_6">
 <pad name="P$1" x="-2" y="-1" drill="0.7" shape="square"/>
@@ -3387,8 +3387,8 @@ molded</description>
 <wire x1="1.651" y1="0.94" x2="1.651" y2="-0.94" width="0.1524" layer="51"/>
 <smd name="1" x="-1.4" y="0" dx="1.6" dy="2.2" layer="1"/>
 <smd name="2" x="1.4" y="0" dx="1.6" dy="2.2" layer="1"/>
-<text x="-1.905" y="-2.54" size="0.762" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.3" y1="-1" x2="0.3" y2="1" layer="35"/>
+<text x="-1.27" y="1.905" size="0.7112" layer="25">&gt;NAME</text>
 </package>
 <package name="L3225P">
 <description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
@@ -7403,46 +7403,32 @@ Only Solder one of R42 and R43</text>
 <label x="256.54" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PD_FLASH" class="0">
-<segment>
-<pinref part="U9" gate="G$1" pin="S0"/>
-<wire x1="116.84" y1="-2.54" x2="96.52" y2="-2.54" width="0.1524" layer="91"/>
-<label x="99.06" y="-2.54" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PD_XP" class="0">
+<net name="PD_XN" class="0">
 <segment>
 <pinref part="U9" gate="G$1" pin="S1"/>
 <wire x1="116.84" y1="-5.08" x2="96.52" y2="-5.08" width="0.1524" layer="91"/>
 <label x="99.06" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PD_XN" class="0">
+<net name="PD_YN" class="0">
 <segment>
 <pinref part="U9" gate="G$1" pin="S2"/>
 <wire x1="116.84" y1="-7.62" x2="96.52" y2="-7.62" width="0.1524" layer="91"/>
 <label x="99.06" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PD_YN" class="0">
-<segment>
-<pinref part="U9" gate="G$1" pin="S3"/>
-<wire x1="116.84" y1="-10.16" x2="96.52" y2="-10.16" width="0.1524" layer="91"/>
-<label x="99.06" y="-10.16" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="PD_ZP" class="0">
 <segment>
-<pinref part="U9" gate="G$1" pin="S4"/>
-<wire x1="116.84" y1="-12.7" x2="96.52" y2="-12.7" width="0.1524" layer="91"/>
-<label x="99.06" y="-12.7" size="1.778" layer="95"/>
+<pinref part="U9" gate="G$1" pin="S0"/>
+<wire x1="116.84" y1="-2.54" x2="96.52" y2="-2.54" width="0.1524" layer="91"/>
+<label x="99.06" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PD_ZN" class="0">
 <segment>
-<pinref part="U9" gate="G$1" pin="S5"/>
-<wire x1="116.84" y1="-15.24" x2="96.52" y2="-15.24" width="0.1524" layer="91"/>
-<label x="99.06" y="-15.24" size="1.778" layer="95"/>
+<pinref part="U9" gate="G$1" pin="S4"/>
+<wire x1="116.84" y1="-12.7" x2="96.52" y2="-12.7" width="0.1524" layer="91"/>
+<label x="99.06" y="-12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -7579,6 +7565,20 @@ Only Solder one of R42 and R43</text>
 <pinref part="U8" gate="G$1" pin="S7"/>
 <wire x1="116.84" y1="35.56" x2="96.52" y2="35.56" width="0.1524" layer="91"/>
 <label x="99.06" y="35.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PD_FLASH" class="0">
+<segment>
+<pinref part="U9" gate="G$1" pin="S3"/>
+<wire x1="116.84" y1="-10.16" x2="96.52" y2="-10.16" width="0.1524" layer="91"/>
+<label x="99.06" y="-10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PD_XP" class="0">
+<segment>
+<pinref part="U9" gate="G$1" pin="S5"/>
+<wire x1="116.84" y1="-15.24" x2="96.52" y2="-15.24" width="0.1524" layer="91"/>
+<label x="99.06" y="-15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

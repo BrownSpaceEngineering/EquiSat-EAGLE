@@ -730,7 +730,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD745.pdf</descr
 <circle x="-0.2" y="0.9" radius="0.14141875" width="0.2" layer="25"/>
 <circle x="-0.2" y="0.9" radius="0.1" width="0.3" layer="25"/>
 <wire x1="-0.4" y1="1" x2="-0.2" y2="0.9" width="0.127" layer="25" curve="-180"/>
-<text x="-0.1" y="4" size="0.7" layer="49">&gt;NAME</text>
+<text x="-0.1" y="4" size="0.7112" layer="25">&gt;NAME</text>
 <smd name="P$10" x="0.139190625" y="3.55803125" dx="0.4064" dy="0.2032" layer="1" rot="R90"/>
 <smd name="P$9" x="0.6405875" y="3.5552375" dx="0.4064" dy="0.2032" layer="1" rot="R90"/>
 <smd name="P$8" x="1.139190625" y="3.5552375" dx="0.4064" dy="0.2032" layer="1" rot="R90"/>
@@ -833,12 +833,12 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD745.pdf</descr
 <package name="SO08">
 <description>&lt;b&gt;Small Outline Package 8&lt;/b&gt;&lt;br&gt;
 NS Package M08A</description>
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="21"/>
 <smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
@@ -856,7 +856,7 @@ NS Package M08A</description>
 <rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
 <rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
-<circle x="-1.737359375" y="-0.82041875" radius="0.13141875" width="0.254" layer="21"/>
+<circle x="-1.737359375" y="-0.82041875" radius="0.13141875" width="0.762" layer="21"/>
 </package>
 <package name="HMC5883L">
 <wire x1="0" y1="0" x2="0" y2="3" width="0.05" layer="21"/>
