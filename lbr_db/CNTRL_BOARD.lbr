@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -783,7 +783,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD745.pdf</descr
 <pad name="P$6" x="-2" y="1" drill="0.7"/>
 <hole x="-5.5" y="0" drill="2.2"/>
 <hole x="5.5" y="0" drill="2.2"/>
-<text x="-1.94" y="3.44" size="0.7112" layer="21">&gt;NAME</text>
+<text x="-1.74" y="3.64" size="0.7112" layer="21">&gt;NAME</text>
 <wire x1="-8" y1="2.8" x2="-3.9" y2="2.8" width="0.127" layer="21"/>
 <wire x1="-3.9" y1="2.8" x2="-3.2" y2="2.8" width="0.127" layer="21"/>
 <wire x1="-3.2" y1="2.8" x2="3.3" y2="2.8" width="0.127" layer="21"/>
@@ -792,10 +792,10 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD745.pdf</descr
 <wire x1="8" y1="2.8" x2="8" y2="-2.8" width="0.127" layer="21"/>
 <wire x1="8" y1="-2.8" x2="-8" y2="-2.8" width="0.127" layer="21"/>
 <wire x1="-8" y1="-2.8" x2="-8" y2="2.8" width="0.127" layer="21"/>
-<text x="-3.81" y="-1.465" size="0.7" layer="21">1</text>
-<text x="3.51" y="-1.465" size="0.7" layer="21">3</text>
-<text x="-3.81" y="0.83" size="0.7" layer="21">6</text>
-<text x="3.61" y="0.63" size="0.7" layer="21">4</text>
+<text x="-3.58" y="-3.765" size="0.7" layer="21">1</text>
+<text x="0.64" y="-3.765" size="0.7" layer="21">3</text>
+<text x="-2.61" y="3.03" size="0.7" layer="21">6</text>
+<text x="2.01" y="3.03" size="0.7" layer="21">4</text>
 <wire x1="-3.9" y1="2.8" x2="-3.9" y2="3.4" width="0.127" layer="21"/>
 <wire x1="-3.9" y1="3.4" x2="-3.2" y2="3.4" width="0.127" layer="21"/>
 <wire x1="-3.2" y1="3.4" x2="-3.2" y2="2.8" width="0.127" layer="21"/>
@@ -2256,7 +2256,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="HMC5883L">
+<deviceset name="HMC5883L" prefix="U">
 <gates>
 <gate name="G$1" symbol="HMC5583L" x="-5.08" y="-2.54"/>
 </gates>
