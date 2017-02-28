@@ -1981,7 +1981,6 @@
 <smd name="11" x="2.775" y="1.75" dx="0.45" dy="0.3" layer="1"/>
 <smd name="10" x="2.775" y="1.25" dx="0.45" dy="0.3" layer="1"/>
 <smd name="9" x="2.775" y="0.75" dx="0.45" dy="0.3" layer="1"/>
-<text x="-0.6" y="-0.2" size="0.15" layer="25">HMC5883L</text>
 <text x="0" y="3.81" size="0.635" layer="21">&gt;NAME</text>
 </package>
 <package name="QFN10_POWERPAD">
@@ -4746,11 +4745,11 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <text x="180.34" y="66.04" size="1.778" layer="97">MRAM</text>
 <text x="137.16" y="25.4" size="1.778" layer="97">I2C Memory</text>
 <text x="124.46" y="20.32" size="1.778" layer="97">I2C</text>
-<text x="-53.34" y="114.3" size="1.778" layer="97">Battery Board</text>
-<text x="-53.34" y="81.28" size="1.778" layer="97">Battery Board</text>
-<text x="-71.12" y="88.9" size="1.778" layer="97">Temperature Conversion Circuit</text>
-<text x="-71.12" y="86.36" size="1.778" layer="97">Photodiode Conversion Circuit</text>
-<text x="78.74" y="109.22" size="1.778" layer="97">Battery Board</text>
+<text x="-53.34" y="109.22" size="1.778" layer="97">Battery Board</text>
+<text x="-53.34" y="86.36" size="1.778" layer="97">Battery Board</text>
+<text x="-68.58" y="99.06" size="1.778" layer="97">Temperature Conversion Circuit</text>
+<text x="-68.58" y="116.84" size="1.778" layer="97">Photodiode Conversion Circuit</text>
+<text x="78.74" y="104.14" size="1.778" layer="97">Battery Board</text>
 <text x="78.74" y="76.2" size="1.778" layer="97">Radio USART</text>
 <text x="78.74" y="63.5" size="1.778" layer="97">IR Power Enable</text>
 <text x="78.74" y="68.58" size="1.778" layer="97">Radio Enables</text>
@@ -4764,7 +4763,9 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <text x="165.1" y="17.78" size="1.778" layer="97">Only connect one of R17 or R18</text>
 <text x="193.04" y="12.7" size="1.778" layer="97">I2C EEPROM</text>
 <text x="132.08" y="127" size="1.778" layer="97">IR Power Control</text>
-<text x="78.74" y="88.9" size="1.778" layer="97">Driver Board</text>
+<text x="78.74" y="111.76" size="1.778" layer="97">Driver Board</text>
+<text x="78.74" y="12.7" size="1.778" layer="97">Battery Board</text>
+<text x="-53.34" y="121.92" size="1.778" layer="97">Battery Board</text>
 </plain>
 <instances>
 <instance part="UC1" gate="G$1" x="22.86" y="76.2"/>
@@ -5323,9 +5324,9 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </net>
 <net name="LF3REF" class="0">
 <segment>
-<wire x1="-7.62" y1="101.6" x2="-33.02" y2="101.6" width="0.1524" layer="91"/>
-<label x="-30.48" y="101.6" size="1.778" layer="95"/>
-<pinref part="UC1" gate="G$1" pin="PB07"/>
+<pinref part="UC1" gate="G$1" pin="PB09"/>
+<wire x1="-7.62" y1="96.52" x2="-33.02" y2="96.52" width="0.1524" layer="91"/>
+<label x="-30.48" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LFB2SNS" class="0">
@@ -5365,44 +5366,44 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </net>
 <net name="LF_B1_OUTEN" class="0">
 <segment>
-<pinref part="UC1" gate="G$1" pin="PA00"/>
-<wire x1="-7.62" y1="121.92" x2="-33.02" y2="121.92" width="0.1524" layer="91"/>
-<label x="-30.48" y="121.92" size="1.778" layer="95"/>
+<pinref part="UC1" gate="G$1" pin="PB06"/>
+<wire x1="-7.62" y1="104.14" x2="-33.02" y2="104.14" width="0.1524" layer="91"/>
+<label x="-30.48" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LF_B2_OUTEN" class="0">
 <segment>
-<wire x1="-7.62" y1="119.38" x2="-33.02" y2="119.38" width="0.1524" layer="91"/>
-<label x="-30.48" y="119.38" size="1.778" layer="95"/>
-<pinref part="UC1" gate="G$1" pin="PA01"/>
+<wire x1="-7.62" y1="101.6" x2="-33.02" y2="101.6" width="0.1524" layer="91"/>
+<label x="-30.48" y="101.6" size="1.778" layer="95"/>
+<pinref part="UC1" gate="G$1" pin="PB07"/>
 </segment>
 </net>
 <net name="LF1REF" class="0">
+<segment>
+<pinref part="UC1" gate="G$1" pin="PA06"/>
+<wire x1="-7.62" y1="88.9" x2="-33.02" y2="88.9" width="0.1524" layer="91"/>
+<label x="-30.48" y="88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LF2REF" class="0">
 <segment>
 <pinref part="UC1" gate="G$1" pin="PA05"/>
 <wire x1="-7.62" y1="91.44" x2="-33.02" y2="91.44" width="0.1524" layer="91"/>
 <label x="-30.48" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LF2REF" class="0">
+<net name="LF4REF" class="0">
 <segment>
 <wire x1="-7.62" y1="93.98" x2="-33.02" y2="93.98" width="0.1524" layer="91"/>
 <label x="-30.48" y="93.98" size="1.778" layer="95"/>
 <pinref part="UC1" gate="G$1" pin="PA04"/>
 </segment>
 </net>
-<net name="LF4REF" class="0">
+<net name="TEMP_OUT" class="0">
 <segment>
 <pinref part="UC1" gate="G$1" pin="PB08"/>
 <wire x1="-7.62" y1="99.06" x2="-33.02" y2="99.06" width="0.1524" layer="91"/>
 <label x="-30.48" y="99.06" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="TEMP_OUT" class="0">
-<segment>
-<pinref part="UC1" gate="G$1" pin="PA03"/>
-<wire x1="-7.62" y1="114.3" x2="-33.02" y2="114.3" width="0.1524" layer="91"/>
-<label x="-30.48" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PD_OUT" class="0">
@@ -5447,46 +5448,11 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <pinref part="UC1" gate="G$1" pin="PA24"/>
 </segment>
 </net>
-<net name="LF_B2_RUNCHG" class="0">
+<net name="LED3SNS" class="0">
 <segment>
 <wire x1="76.2" y1="109.22" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
 <label x="55.88" y="109.22" size="1.778" layer="95"/>
 <pinref part="UC1" gate="G$1" pin="PB01"/>
-</segment>
-</net>
-<net name="LED3SNS" class="0">
-<segment>
-<wire x1="76.2" y1="86.36" x2="50.8" y2="86.36" width="0.1524" layer="91"/>
-<label x="55.88" y="86.36" size="1.778" layer="95"/>
-<pinref part="UC1" gate="G$1" pin="PB23"/>
-</segment>
-</net>
-<net name="L2_RUN_CHG" class="0">
-<segment>
-<wire x1="76.2" y1="111.76" x2="50.8" y2="111.76" width="0.1524" layer="91"/>
-<label x="55.88" y="111.76" size="1.778" layer="95"/>
-<pinref part="UC1" gate="G$1" pin="PB02"/>
-</segment>
-</net>
-<net name="LF_B1_RUNCHG" class="0">
-<segment>
-<wire x1="76.2" y1="114.3" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
-<label x="55.88" y="114.3" size="1.778" layer="95"/>
-<pinref part="UC1" gate="G$1" pin="PB03"/>
-</segment>
-</net>
-<net name="L1_DISG" class="0">
-<segment>
-<wire x1="76.2" y1="101.6" x2="50.8" y2="101.6" width="0.1524" layer="91"/>
-<label x="55.88" y="101.6" size="1.778" layer="95"/>
-<pinref part="UC1" gate="G$1" pin="PB30"/>
-</segment>
-</net>
-<net name="L2_DISG" class="0">
-<segment>
-<wire x1="76.2" y1="104.14" x2="50.8" y2="104.14" width="0.1524" layer="91"/>
-<label x="55.88" y="104.14" size="1.778" layer="95"/>
-<pinref part="UC1" gate="G$1" pin="PB31"/>
 </segment>
 </net>
 <net name="LFB1OSNS" class="0">
@@ -5583,23 +5549,23 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </net>
 <net name="LED1SNS" class="0">
 <segment>
-<wire x1="76.2" y1="93.98" x2="50.8" y2="93.98" width="0.1524" layer="91"/>
-<label x="55.88" y="93.98" size="1.778" layer="95"/>
-<pinref part="UC1" gate="G$1" pin="PA28"/>
+<wire x1="76.2" y1="114.3" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
+<label x="55.88" y="114.3" size="1.778" layer="95"/>
+<pinref part="UC1" gate="G$1" pin="PB03"/>
 </segment>
 </net>
 <net name="LED2SNS" class="0">
 <segment>
-<wire x1="76.2" y1="88.9" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
-<label x="55.88" y="88.9" size="1.778" layer="95"/>
-<pinref part="UC1" gate="G$1" pin="PA27"/>
+<wire x1="76.2" y1="111.76" x2="50.8" y2="111.76" width="0.1524" layer="91"/>
+<label x="55.88" y="111.76" size="1.778" layer="95"/>
+<pinref part="UC1" gate="G$1" pin="PB02"/>
 </segment>
 </net>
 <net name="LED4SNS" class="0">
 <segment>
-<wire x1="76.2" y1="83.82" x2="50.8" y2="83.82" width="0.1524" layer="91"/>
-<label x="55.88" y="83.82" size="1.778" layer="95"/>
-<pinref part="UC1" gate="G$1" pin="PB22"/>
+<wire x1="76.2" y1="106.68" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
+<label x="55.88" y="106.68" size="1.778" layer="95"/>
+<pinref part="UC1" gate="G$1" pin="PB00"/>
 </segment>
 </net>
 <net name="IR_PWR_CMD" class="0">
@@ -5620,23 +5586,16 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </net>
 <net name="L1_REF" class="0">
 <segment>
-<pinref part="UC1" gate="G$1" pin="PA07"/>
-<wire x1="-7.62" y1="86.36" x2="-33.02" y2="86.36" width="0.1524" layer="91"/>
-<label x="-30.48" y="86.36" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="L1_RUN_CHG" class="0">
-<segment>
-<wire x1="76.2" y1="106.68" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
-<label x="55.88" y="106.68" size="1.778" layer="95"/>
-<pinref part="UC1" gate="G$1" pin="PB00"/>
+<pinref part="UC1" gate="G$1" pin="PA03"/>
+<wire x1="-7.62" y1="114.3" x2="-33.02" y2="114.3" width="0.1524" layer="91"/>
+<label x="-30.48" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="L2_REF" class="0">
 <segment>
-<pinref part="UC1" gate="G$1" pin="PA06"/>
-<wire x1="-7.62" y1="88.9" x2="-33.02" y2="88.9" width="0.1524" layer="91"/>
-<label x="-30.48" y="88.9" size="1.778" layer="95"/>
+<pinref part="UC1" gate="G$1" pin="PA07"/>
+<wire x1="-7.62" y1="86.36" x2="-33.02" y2="86.36" width="0.1524" layer="91"/>
+<label x="-30.48" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!RAD_SHDN!" class="0">
@@ -5665,6 +5624,48 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <pinref part="D7" gate="G$1" pin="A"/>
 <pinref part="R53" gate="R$1" pin="1"/>
 <wire x1="177.8" y1="101.6" x2="177.8" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LF_B2_RUNCHG" class="0">
+<segment>
+<pinref part="UC1" gate="G$1" pin="PB10"/>
+<wire x1="50.8" y1="12.7" x2="76.2" y2="12.7" width="0.1524" layer="91"/>
+<label x="55.88" y="12.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="L1_RUN_CHG" class="0">
+<segment>
+<wire x1="-7.62" y1="119.38" x2="-33.02" y2="119.38" width="0.1524" layer="91"/>
+<label x="-30.48" y="119.38" size="1.778" layer="95"/>
+<pinref part="UC1" gate="G$1" pin="PA01"/>
+</segment>
+</net>
+<net name="LF_B1_RUNCHG" class="0">
+<segment>
+<pinref part="UC1" gate="G$1" pin="PB05"/>
+<wire x1="-7.62" y1="109.22" x2="-33.02" y2="109.22" width="0.1524" layer="91"/>
+<label x="-30.48" y="109.22" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="L2_RUN_CHG" class="0">
+<segment>
+<pinref part="UC1" gate="G$1" pin="PB04"/>
+<wire x1="-7.62" y1="111.76" x2="-33.02" y2="111.76" width="0.1524" layer="91"/>
+<label x="-30.48" y="111.76" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="L2_DISG" class="0">
+<segment>
+<pinref part="UC1" gate="G$1" pin="PA00"/>
+<wire x1="-7.62" y1="121.92" x2="-33.02" y2="121.92" width="0.1524" layer="91"/>
+<label x="-30.48" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="L1_DISG" class="0">
+<segment>
+<pinref part="UC1" gate="G$1" pin="PB31"/>
+<wire x1="50.8" y1="104.14" x2="76.2" y2="104.14" width="0.1524" layer="91"/>
+<label x="55.88" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -6483,9 +6484,9 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </net>
 <net name="L1_REF" class="0">
 <segment>
-<pinref part="J7" gate="G$1" pin="P$11"/>
-<wire x1="30.48" y1="63.5" x2="7.62" y2="63.5" width="0.1524" layer="91"/>
-<label x="10.16" y="63.5" size="1.778" layer="95"/>
+<pinref part="J7" gate="G$1" pin="P$20"/>
+<wire x1="58.42" y1="71.12" x2="78.74" y2="71.12" width="0.1524" layer="91"/>
+<label x="63.5" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="L2_REF" class="0">
@@ -6586,13 +6587,6 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <label x="63.5" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LF_B2_RUNCHG" class="0">
-<segment>
-<pinref part="J7" gate="G$1" pin="P$20"/>
-<wire x1="58.42" y1="71.12" x2="78.74" y2="71.12" width="0.1524" layer="91"/>
-<label x="63.5" y="71.12" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="LF_B2_OUTEN" class="0">
 <segment>
 <pinref part="J7" gate="G$1" pin="P$14"/>
@@ -6623,6 +6617,13 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="58.42" y1="88.9" x2="78.74" y2="88.9" width="0.1524" layer="91"/>
 <label x="63.5" y="88.9" size="1.778" layer="95"/>
 <pinref part="J7" gate="G$1" pin="P$27"/>
+</segment>
+</net>
+<net name="LF_B2_RUNCHG" class="0">
+<segment>
+<pinref part="J7" gate="G$1" pin="P$11"/>
+<wire x1="30.48" y1="63.5" x2="7.62" y2="63.5" width="0.1524" layer="91"/>
+<label x="10.16" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
