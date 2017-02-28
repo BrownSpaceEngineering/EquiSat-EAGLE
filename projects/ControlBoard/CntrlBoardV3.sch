@@ -4593,11 +4593,11 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="C23" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="0.1uF"/>
-<part name="R17" library="BrownSpaceEngineering" deviceset="RES" device="0805"/>
-<part name="R18" library="BrownSpaceEngineering" deviceset="RES" device="0805"/>
+<part name="R17" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
+<part name="R18" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
 <part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
-<part name="R19" library="BrownSpaceEngineering" deviceset="RES" device="0805"/>
+<part name="R19" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="U3" library="BrownSpaceEngineering" deviceset="SN74LVC1G125" device=""/>
 <part name="U4" library="BrownSpaceEngineering" deviceset="SN74LVC1G125" device=""/>
