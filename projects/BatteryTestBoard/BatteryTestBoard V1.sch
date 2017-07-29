@@ -766,20 +766,22 @@
 <text x="-3.02" y="2.07" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.02" y="-3.43" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="SOT23-3">
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
-<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
-<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
-<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
-<text x="-0.8255" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
+<package name="DO214AA">
+<description>&lt;b&gt;DIODE&lt;/b&gt;</description>
+<wire x1="-2.4" y1="1.1" x2="2.4" y2="1.1" width="0.254" layer="51"/>
+<wire x1="2.4" y1="1.1" x2="2.4" y2="-1.1" width="0.254" layer="51"/>
+<wire x1="2.4" y1="-1.1" x2="-2.4" y2="-1.1" width="0.254" layer="51"/>
+<wire x1="-2.4" y1="-1.1" x2="-2.4" y2="1.1" width="0.254" layer="51"/>
+<wire x1="-1.2" y1="0" x2="0.05" y2="0.7" width="0.254" layer="21"/>
+<wire x1="0.05" y1="0.7" x2="0.05" y2="-0.7" width="0.254" layer="21"/>
+<wire x1="0.05" y1="-0.7" x2="-1.2" y2="0" width="0.254" layer="21"/>
+<smd name="C" x="-2.55" y="0" dx="1.8" dy="2.2" layer="1"/>
+<smd name="A" x="2.55" y="0" dx="1.8" dy="2.2" layer="1"/>
+<text x="-2.64" y="1.436" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.64" y="-2.706" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-2.75" y1="-0.7" x2="-2.5" y2="0.65" layer="51"/>
+<rectangle x1="2.5" y1="-0.7" x2="2.75" y2="0.65" layer="51"/>
+<rectangle x1="-1.4" y1="-1.05" x2="-1.1" y2="1.05" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -906,15 +908,15 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="BZX84C7V5LT1G" prefix="D">
+<deviceset name="SMBJ5343B" prefix="D">
 <gates>
 <gate name="G$1" symbol="D-ZENER" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT23-3">
+<device name="" package="DO214AA">
 <connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1092,10 +1094,10 @@
 <part name="R13" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
 <part name="R14" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
 <part name="R16" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
-<part name="D1" library="BattBoard" deviceset="BZX84C7V5LT1G" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="V75" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="SP_OUT"/>
 <part name="V76" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="SP_OUT"/>
+<part name="D1" library="BattBoard" deviceset="SMBJ5343B" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1300,10 +1302,10 @@ R58 senses current</text>
 <instance part="R13" gate="R$1" x="269.24" y="66.04"/>
 <instance part="R14" gate="R$1" x="147.32" y="-30.48"/>
 <instance part="R16" gate="R$1" x="147.32" y="-35.56"/>
-<instance part="D1" gate="G$1" x="38.1" y="-50.8" rot="R90"/>
 <instance part="GND4" gate="1" x="38.1" y="-58.42"/>
 <instance part="V75" gate="G$1" x="-101.6" y="-33.02"/>
 <instance part="V76" gate="G$1" x="-101.6" y="-43.18"/>
+<instance part="D1" gate="G$1" x="38.1" y="-50.8" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1522,9 +1524,9 @@ R58 senses current</text>
 <pinref part="U3" gate="G$1" pin="-IN"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="A"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="38.1" y1="-53.34" x2="38.1" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="LIONCHRG" class="0">
@@ -1850,9 +1852,9 @@ R58 senses current</text>
 <junction x="134.62" y="-35.56"/>
 <pinref part="R14" gate="R$1" pin="1"/>
 <wire x1="134.62" y1="-30.48" x2="142.24" y2="-30.48" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="38.1" y1="-48.26" x2="38.1" y2="-45.72" width="0.1524" layer="91"/>
 <junction x="38.1" y="-45.72"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="V63" gate="G$1" pin="P$1"/>
