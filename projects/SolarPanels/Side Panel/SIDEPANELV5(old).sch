@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -191,13 +191,12 @@
 <text x="-1.27" y="-2.54" size="0.6096" layer="27">&gt;Value</text>
 </package>
 <package name="0805">
+<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
 <smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
 <smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<text x="-1.397" y="0.8255" size="0.635" layer="25">&gt;NAME</text>
-<wire x1="-1.527" y1="0.827" x2="-1.527" y2="-0.827" width="0.127" layer="21"/>
-<wire x1="-1.527" y1="-0.827" x2="1.527" y2="-0.827" width="0.127" layer="21"/>
-<wire x1="1.527" y1="-0.827" x2="1.527" y2="0.827" width="0.127" layer="21"/>
-<wire x1="1.527" y1="0.827" x2="-1.527" y2="0.827" width="0.127" layer="21"/>
+<text x="-0.762" y="0.8255" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
 <package name="CAP-PTH-LARGE">
 <wire x1="0" y1="0.635" x2="0" y2="0" width="0.2032" layer="21"/>
@@ -372,6 +371,10 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <circle x="2.54" y="0" radius="0.40160625" width="0" layer="29"/>
 </package>
 <package name="0603-CAP">
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
 <wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
 <wire x1="0" y1="0.0305" x2="0" y2="-0.0305" width="0.5588" layer="21"/>
@@ -379,8 +382,8 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="21"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="21"/>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
 </packages>
@@ -569,24 +572,15 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <package name="PHOTODECTORDEVICE2">
 <smd name="C" x="-0.88" y="0.4" dx="1.45" dy="1" layer="1" rot="R90"/>
 <smd name="A" x="0.76" y="0.4" dx="1.45" dy="1" layer="1" rot="R90"/>
-<wire x1="-1.7" y1="1.4" x2="-1.6" y2="1.4" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="1.4" x2="1.5" y2="1.4" width="0.127" layer="21"/>
-<wire x1="1.5" y1="1.4" x2="1.5" y2="-0.6" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-0.6" x2="-1.6" y2="-0.6" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="-0.6" x2="-1.7" y2="-0.6" width="0.127" layer="21"/>
-<wire x1="-1.7" y1="-0.6" x2="-1.7" y2="1.4" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="1.4" x2="-1.6" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-0.7" y1="1.4" x2="-0.5" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="1.4" x2="0.6" y2="1.4" width="0.127" layer="21"/>
+<wire x1="0.6" y1="1.4" x2="0.6" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0.6" y1="-0.6" x2="-0.5" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-0.6" x2="-0.7" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-0.7" y1="-0.6" x2="-0.7" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="1.4" x2="-0.5" y2="-0.6" width="0.127" layer="21"/>
 <text x="-2.54" y="1.905" size="1.016" layer="21">&gt;NAME</text>
 <text x="-1.27" y="-1.27" size="0.5" layer="21" ratio="1">C</text>
-<wire x1="-1.7" y1="-0.6" x2="-1.7" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="-1.7" y1="-0.8" x2="-1.6" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="-0.8" x2="-1.6" y2="1.6" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="1.6" x2="-1.7" y2="1.6" width="0.127" layer="21"/>
-<wire x1="-1.7" y1="1.6" x2="-1.7" y2="-1" width="0.127" layer="21"/>
-<wire x1="-1.7" y1="-1" x2="-1.6" y2="-1" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="-1" x2="-1.6" y2="1.7" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="1.7" x2="-1.7" y2="1.7" width="0.127" layer="21"/>
-<wire x1="-1.7" y1="1.7" x2="-1.7" y2="1.6" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -751,10 +745,10 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="6B" gate="G$1" x="17.78" y="0"/>
 <instance part="6A" gate="G$1" x="17.78" y="-25.4"/>
 <instance part="PD" gate="G$1" x="-33.02" y="106.68"/>
-<instance part="7D" gate="G$1" x="43.18" y="45.72"/>
-<instance part="7C" gate="G$1" x="43.18" y="22.86"/>
-<instance part="7B" gate="G$1" x="43.18" y="0"/>
-<instance part="7A" gate="G$1" x="43.18" y="-25.4"/>
+<instance part="7D" gate="G$1" x="38.1" y="45.72"/>
+<instance part="7C" gate="G$1" x="38.1" y="22.86"/>
+<instance part="7B" gate="G$1" x="38.1" y="0"/>
+<instance part="7A" gate="G$1" x="38.1" y="-25.4"/>
 </instances>
 <busses>
 </busses>
@@ -794,8 +788,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="1A" gate="G$1" pin="A"/>
 <wire x1="-116.84" y1="-35.56" x2="-116.84" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="7A" gate="G$1" pin="A"/>
-<wire x1="17.78" y1="-40.64" x2="43.18" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-35.56" x2="43.18" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-35.56" x2="38.1" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-40.64" x2="17.78" y2="-40.64" width="0.1524" layer="91"/>
 <junction x="17.78" y="-40.64"/>
 </segment>
 </net>
@@ -850,10 +844,10 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="3D" gate="G$1" pin="C"/>
 <wire x1="-60.96" y1="55.88" x2="-60.96" y2="60.96" width="0.1524" layer="91"/>
 <junction x="-60.96" y="60.96"/>
-<wire x1="17.78" y1="60.96" x2="43.18" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="7D" gate="G$1" pin="C"/>
-<wire x1="43.18" y1="55.88" x2="43.18" y2="60.96" width="0.1524" layer="91"/>
 <junction x="17.78" y="60.96"/>
+<wire x1="17.78" y1="60.96" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="60.96" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="7D" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -993,21 +987,21 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <segment>
 <pinref part="7D" gate="G$1" pin="A"/>
 <pinref part="7C" gate="G$1" pin="C"/>
-<wire x1="43.18" y1="35.56" x2="43.18" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="35.56" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="7C" gate="G$1" pin="A"/>
 <pinref part="7B" gate="G$1" pin="C"/>
-<wire x1="43.18" y1="12.7" x2="43.18" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="12.7" x2="38.1" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="7B" gate="G$1" pin="A"/>
 <pinref part="7A" gate="G$1" pin="C"/>
-<wire x1="43.18" y1="-10.16" x2="43.18" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-10.16" x2="38.1" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

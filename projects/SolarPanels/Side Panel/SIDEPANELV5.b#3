@@ -531,6 +531,10 @@ design rules under a new name.</description>
 <element name="PD" library="Solar Panel Parts" package="PHOTODECTORDEVICE2" value="PHOTODETECTOR" x="51.65" y="15.35" smashed="yes" rot="R180">
 <attribute name="NAME" x="53.255" y="15.74" size="1.016" layer="21" rot="R270"/>
 </element>
+<element name="7D" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="6.5" y="-17"/>
+<element name="7C" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="6.5" y="-32"/>
+<element name="7B" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="6.5" y="-47"/>
+<element name="7A" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="73.5" y="34"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -560,6 +564,7 @@ design rules under a new name.</description>
 <via x="4" y="3.25" extent="1-16" drill="3.26"/>
 <via x="95.5" y="3.25" extent="1-16" drill="3.26"/>
 <via x="95.5" y="79.25" extent="1-16" drill="3.26"/>
+<contactref element="7A" pad="ANODE"/>
 </signal>
 <signal name="SDA">
 <contactref element="IR" pad="SDA"/>
@@ -596,6 +601,8 @@ design rules under a new name.</description>
 <vertex x="-7.62" y="-10.16"/>
 </polygon>
 <via x="53" y="22.5" extent="1-16" drill="1.5" shape="square"/>
+<contactref element="7D" pad="CATHODE"/>
+<wire x1="28.53" y1="22.42" x2="10.72" y2="-16.04" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="1D" pad="ANODE"/>
@@ -742,6 +749,21 @@ design rules under a new name.</description>
 <wire x1="0" y1="0" x2="99.5" y2="0" width="0.3048" layer="1"/>
 <wire x1="99.5" y1="0" x2="99.5" y2="82.5" width="0.3048" layer="1"/>
 <wire x1="99.5" y1="82.5" x2="0" y2="82.5" width="0.3048" layer="1"/>
+</signal>
+<signal name="N$19">
+<contactref element="7D" pad="ANODE"/>
+<contactref element="7C" pad="CATHODE"/>
+<wire x1="20.03" y1="-18.54" x2="10.72" y2="-31.04" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$20">
+<contactref element="7C" pad="ANODE"/>
+<contactref element="7B" pad="CATHODE"/>
+<wire x1="20.03" y1="-33.54" x2="10.72" y2="-46.04" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$21">
+<contactref element="7B" pad="ANODE"/>
+<contactref element="7A" pad="CATHODE"/>
+<wire x1="20.03" y1="-48.54" x2="77.72" y2="34.96" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
