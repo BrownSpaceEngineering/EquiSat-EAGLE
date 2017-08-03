@@ -660,6 +660,44 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pad name="P$1" x="0" y="0" drill="1.524" shape="square"/>
 <text x="-2.54" y="1.27" size="1" layer="27">&gt;VALUE</text>
 </package>
+<package name="PWRDI-123">
+<smd name="C" x="-1.1" y="0" dx="2.2" dy="1.4" layer="1"/>
+<smd name="A" x="1.45" y="0" dx="0.9" dy="1.4" layer="1"/>
+<wire x1="1.4" y1="1" x2="1.4" y2="-1" width="0.127" layer="21"/>
+<wire x1="1.4" y1="-1" x2="-0.9" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1" x2="-1.6" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-1" x2="-1.6" y2="1" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="1" x2="-1" y2="1" width="0.127" layer="21"/>
+<wire x1="-1" y1="1" x2="-0.9" y2="1" width="0.127" layer="21"/>
+<wire x1="-0.9" y1="1" x2="1.4" y2="1" width="0.127" layer="21"/>
+<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1" x2="-0.9" y2="-1" width="0.127" layer="21"/>
+<wire x1="-0.9" y1="-1" x2="-0.9" y2="1" width="0.127" layer="21"/>
+<wire x1="-0.9" y1="1" x2="-0.9" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-0.9" y1="1.4" x2="-1" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-1" y1="1.4" x2="-1" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1.4" x2="-0.9" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-0.9" y1="-1.4" x2="-0.9" y2="-1" width="0.127" layer="21"/>
+<text x="-1.7" y="1.6" size="0.7" layer="25">&gt;NAME</text>
+</package>
+<package name="0805">
+<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<text x="-1.531659375" y="1.0308875" size="0.7112" layer="25">&gt;NAME</text>
+<wire x1="-1.56585625" y1="0.865571875" x2="-1.5657" y2="-0.866175" width="0.127" layer="21"/>
+<wire x1="-1.5657" y1="-0.866175" x2="1.565440625" y2="-0.8653375" width="0.127" layer="21"/>
+<wire x1="1.565440625" y1="-0.8653375" x2="1.566309375" y2="0.865740625" width="0.127" layer="21"/>
+<wire x1="1.566309375" y1="0.865740625" x2="-1.56585625" y2="0.865571875" width="0.127" layer="21"/>
+</package>
+<package name="1210">
+<smd name="P$1" x="-1.71" y="0" dx="1.52" dy="2.54" layer="1"/>
+<smd name="P$2" x="1.71" y="0" dx="1.51" dy="2.54" layer="1"/>
+<wire x1="-1.6" y1="1.3" x2="1.6" y2="1.3" width="0.127" layer="21"/>
+<wire x1="1.6" y1="1.3" x2="1.6" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-1.3" x2="-1.6" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-1.3" x2="-1.6" y2="1.3" width="0.127" layer="21"/>
+<text x="-1.7" y="1.5" size="0.8" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SOLAR-CELL">
@@ -676,6 +714,33 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pin name="P$1" x="5.08" y="0" visible="off" length="middle" rot="R180"/>
 <text x="1.778" y="0.762" size="1.778" layer="95">VIA</text>
 <text x="1.778" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="DIODE">
+<pin name="A" x="-2.54" y="0" visible="off" length="short"/>
+<pin name="C" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<text x="0" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="RESISTOR">
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<text x="-2.54" y="1.016" size="1.905" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-2.794" size="1.905" layer="96">&gt;VALUE</text>
+<wire x1="-2.54" y1="0" x2="-2.286" y2="0.762" width="0.1778" layer="94"/>
+<wire x1="-2.286" y1="0.762" x2="-1.778" y2="-0.762" width="0.1778" layer="94"/>
+<wire x1="-1.778" y1="-0.762" x2="-1.27" y2="0.762" width="0.1778" layer="94"/>
+<wire x1="-1.27" y1="0.762" x2="-0.762" y2="-0.762" width="0.1778" layer="94"/>
+<wire x1="-0.762" y1="-0.762" x2="-0.254" y2="0.762" width="0.1778" layer="94"/>
+<wire x1="-0.254" y1="0.762" x2="0.254" y2="-0.762" width="0.1778" layer="94"/>
+<wire x1="0.254" y1="-0.762" x2="0.762" y2="0.762" width="0.1778" layer="94"/>
+<wire x1="0.762" y1="0.762" x2="1.27" y2="-0.762" width="0.1778" layer="94"/>
+<wire x1="1.27" y1="-0.762" x2="1.778" y2="0.762" width="0.1778" layer="94"/>
+<wire x1="1.778" y1="0.762" x2="2.286" y2="-0.762" width="0.1778" layer="94"/>
+<wire x1="2.286" y1="-0.762" x2="2.54" y2="0" width="0.1778" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -719,6 +784,47 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <device name="60MIL-SQ" package="VIA-60MIL-SQ">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DFLS130L" prefix="D" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="DIODE" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="PWRDI-123">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RES" prefix="R" uservalue="yes">
+<gates>
+<gate name="R$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0805" package="0805">
+<connects>
+<connect gate="R$1" pin="1" pad="1"/>
+<connect gate="R$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1210" package="1210">
+<connects>
+<connect gate="R$1" pin="1" pad="P$1"/>
+<connect gate="R$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -779,6 +885,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="3V3" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ"/>
 <part name="PWR-OUT" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ"/>
 <part name="GND" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ"/>
+<part name="D1" library="BrownSpaceEngineering" deviceset="DFLS130L" device="" value="DFLS130L"/>
+<part name="R1" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
 </parts>
 <sheets>
 <sheet>
@@ -824,8 +932,12 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="SDA" gate="G$1" x="-109.22" y="101.6"/>
 <instance part="PD-OUT" gate="G$1" x="-7.62" y="106.68" rot="R180"/>
 <instance part="3V3" gate="G$1" x="-60.96" y="88.9" rot="R90"/>
-<instance part="PWR-OUT" gate="G$1" x="-144.78" y="76.2" rot="R270"/>
+<instance part="PWR-OUT" gate="G$1" x="-144.78" y="101.6" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-147.32" y="99.822" size="1.778" layer="96" rot="R270"/>
+</instance>
 <instance part="GND" gate="G$1" x="-144.78" y="-53.34" rot="R90"/>
+<instance part="D1" gate="G$1" x="-139.7" y="76.2" rot="R90"/>
+<instance part="R1" gate="R$1" x="-149.86" y="76.2" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1083,7 +1195,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="-20.32" y1="-10.16" x2="-20.32" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PWR-OUT" class="0">
+<net name="CELL-OUT" class="0">
 <segment>
 <pinref part="7D" gate="G$1" pin="C"/>
 <wire x1="-38.1" y1="55.88" x2="-38.1" y2="63.5" width="0.1524" layer="91"/>
@@ -1101,7 +1213,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="-127" y1="55.88" x2="-127" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="1D" gate="G$1" pin="C"/>
 <wire x1="-144.78" y1="55.88" x2="-144.78" y2="63.5" width="0.1524" layer="91"/>
-<label x="-147.32" y="71.12" size="1.778" layer="95" rot="R270"/>
 <wire x1="-127" y1="63.5" x2="-144.78" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="-109.22" y1="63.5" x2="-127" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="63.5" x2="-38.1" y2="63.5" width="0.1524" layer="91"/>
@@ -1115,9 +1226,30 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <junction x="-73.66" y="63.5"/>
 <junction x="-55.88" y="63.5"/>
 <junction x="-38.1" y="63.5"/>
-<wire x1="-144.78" y1="63.5" x2="-144.78" y2="71.12" width="0.1524" layer="91"/>
 <junction x="-144.78" y="63.5"/>
+<wire x1="-144.78" y1="63.5" x2="-144.78" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="-144.78" y1="68.58" x2="-139.7" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-139.7" y1="68.58" x2="-139.7" y2="73.66" width="0.1524" layer="91"/>
+<junction x="-144.78" y="68.58"/>
+<pinref part="R1" gate="R$1" pin="1"/>
+<wire x1="-144.78" y1="68.58" x2="-149.86" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-149.86" y1="68.58" x2="-149.86" y2="71.12" width="0.1524" layer="91"/>
+<label x="-142.24" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWR-OUT" class="0">
+<segment>
+<pinref part="R1" gate="R$1" pin="2"/>
+<wire x1="-149.86" y1="81.28" x2="-149.86" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="-139.7" y1="81.28" x2="-139.7" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-139.7" y1="83.82" x2="-144.78" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="PWR-OUT" gate="G$1" pin="P$1"/>
+<wire x1="-144.78" y1="83.82" x2="-149.86" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-144.78" y1="83.82" x2="-144.78" y2="96.52" width="0.1524" layer="91"/>
+<junction x="-144.78" y="83.82"/>
+<label x="-144.78" y="86.36" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
