@@ -190,6 +190,10 @@ Caelan Ritter</text>
 <rectangle x1="8.5" y1="20.5" x2="18" y2="26.5" layer="30"/>
 <rectangle x1="81.5" y1="20.5" x2="91" y2="26.5" layer="30"/>
 <text x="97.75" y="65.75" size="1.4224" layer="21" rot="R90">August 2017</text>
+<text x="89.5" y="70.75" size="2.54" layer="21">+Z</text>
+<text x="6.25" y="73.5" size="2.54" layer="21" rot="R180">-Z</text>
+<text x="10.75" y="49" size="2.54" layer="22" rot="MR180">-Z</text>
+<text x="89.75" y="45" size="2.54" layer="22" rot="MR0">+Z</text>
 </plain>
 <libraries>
 <library name="CNTRL_BOARD">
