@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,19 +53,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -1018,14 +1018,10 @@
 <part name="LI-ION1" library="BrownSpaceEngineering" deviceset="LI-ION" device="" value="~4.1V"/>
 <part name="R33" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="150K"/>
 <part name="R34" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
-<part name="V10" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="L1_CHG"/>
 <part name="V25" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="L1_REF"/>
 <part name="V40" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="L1_CHG"/>
-<part name="V41" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="L1_FAULTN"/>
-<part name="V42" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="L1_CHGN"/>
 <part name="V43" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="L1_SNS"/>
 <part name="V44" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="L1_REF"/>
-<part name="V45" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LION1"/>
 <part name="U5" library="BrownSpaceEngineering" deviceset="LTC4121" device=""/>
 <part name="LIFEPO1" library="BrownSpaceEngineering" deviceset="LIFEPO4" device="VA" value="~3.5V"/>
 <part name="LIFEPO2" library="BrownSpaceEngineering" deviceset="LIFEPO4" device="VB" value="~3.5V"/>
@@ -1037,7 +1033,7 @@
 <part name="R44" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
 <part name="R45" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="330K"/>
 <part name="R46" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="43K"/>
-<part name="V14" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LIFEB1SNS"/>
+<part name="V14" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIFEB1SNS"/>
 <part name="R47" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="95K"/>
 <part name="R48" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
 <part name="R49" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="287K"/>
@@ -1050,11 +1046,11 @@
 <part name="C16" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="22nF"/>
 <part name="C17" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="10uF"/>
 <part name="L3" library="BrownSpaceEngineering" deviceset="IND" device="" technology="1812" value="47uH"/>
-<part name="V15" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B1_CHG"/>
+<part name="V15" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_CHG"/>
 <part name="V16" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIFE2"/>
 <part name="V17" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIFE1"/>
-<part name="V18" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B1_CHGN"/>
-<part name="V19" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B1_FAULTN"/>
+<part name="V18" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_CHGN"/>
+<part name="V19" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_FAULTN"/>
 <part name="C18" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="22uF"/>
 <part name="U$3" library="BrownSpaceEngineering" deviceset="VNS3NV04DP-E" device=""/>
 <part name="R54" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="34.8R@1W"/>
@@ -1073,43 +1069,38 @@
 <part name="C24" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="10nF"/>
 <part name="C25" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="150nF"/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
-<part name="V20" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B1_OUTEN"/>
-<part name="V31" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B1_OSNS"/>
+<part name="V20" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_OUTEN"/>
+<part name="V31" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_OSNS"/>
 <part name="V26" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL" value="LF_B1"/>
-<part name="V58" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF1_REF"/>
-<part name="V59" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF2_REF"/>
+<part name="V58" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF1_REF"/>
+<part name="V59" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF2_REF"/>
 <part name="U$1" library="BrownSpaceEngineering" deviceset="LTC4121-4.2" device=""/>
-<part name="V1" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LION1"/>
 <part name="V2" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="L1_SNS"/>
-<part name="V3" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="L1_FAULTN"/>
-<part name="V4" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="L1_CHGN"/>
 <part name="V5" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
 <part name="V6" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
 <part name="V7" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
 <part name="V8" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
-<part name="V9" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B1_OSNS"/>
-<part name="V11" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B1_OUTEN"/>
-<part name="V12" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF2_REF"/>
-<part name="V13" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LIFEB1SNS"/>
+<part name="V9" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_OSNS"/>
+<part name="V11" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_OUTEN"/>
+<part name="V12" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF2_REF"/>
+<part name="V13" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIFEB1SNS"/>
 <part name="V22" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIFE2"/>
 <part name="V23" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIFE1"/>
-<part name="V24" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B1_CHGN"/>
-<part name="V27" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B1_FAULTN"/>
-<part name="V28" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B1_CHG"/>
-<part name="V29" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B1_TT"/>
-<part name="V30" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B1_TT"/>
-<part name="V32" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B1_BT"/>
-<part name="V33" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B1_BT"/>
-<part name="V34" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LIONIN"/>
+<part name="V24" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_CHGN"/>
+<part name="V27" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_FAULTN"/>
+<part name="V28" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_CHG"/>
+<part name="V29" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_TT"/>
+<part name="V30" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_TT"/>
+<part name="V32" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_BT"/>
+<part name="V33" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_BT"/>
+<part name="V34" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIONIN"/>
 <part name="V35" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIONIN"/>
 <part name="C1" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="100nF"/>
 <part name="R1" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="390R"/>
 <part name="R2" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="2.7K"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="R4" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="0R"/>
-<part name="R5" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="0R"/>
-<part name="R6" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="0R"/>
-<part name="R7" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="0R"/>
+<part name="R6" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
+<part name="R7" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
 <part name="R8" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="0.025R"/>
 <part name="R9" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="230K"/>
 <part name="R10" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="101.5K"/>
@@ -1119,19 +1110,17 @@
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="F1" library="BattBoard" deviceset="PTCFUSE" device="1206"/>
 <part name="V36" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIONBOOST"/>
-<part name="V37" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIONIN"/>
 <part name="V38" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIONSW"/>
 <part name="V39" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIONMPPT"/>
 <part name="V46" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIONCHGSNS"/>
 <part name="V47" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIONFREQ"/>
 <part name="V48" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIONBAT"/>
-<part name="V50" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIONPOG"/>
+<part name="V50" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIONPROG"/>
 <part name="V51" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIONCHRG"/>
 <part name="V52" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIONFAULT"/>
 <part name="V53" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIONRUN"/>
 <part name="V55" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIONINTVCC"/>
 <part name="V54" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPOBOOST"/>
-<part name="V56" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPOIN"/>
 <part name="V57" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPOSW"/>
 <part name="V60" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPOMPPT"/>
 <part name="V61" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPOCHGSNS"/>
@@ -1156,7 +1145,7 @@
 <part name="R14" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
 <part name="R16" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="V75" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LFPOIN"/>
+<part name="V75" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPOIN"/>
 <part name="V76" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPOIN"/>
 <part name="D1" library="BattBoard" deviceset="SMBJ5343B" device=""/>
 <part name="R3" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
@@ -1166,6 +1155,10 @@
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="R21" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="1K"/>
 <part name="U4" library="BattBoard" deviceset="LC05111C13MTTTG" device=""/>
+<part name="V1" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL" value="LION1"/>
+<part name="V37" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL" value="LION1"/>
+<part name="R4" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
+<part name="R5" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
 </parts>
 <sheets>
 <sheet>
@@ -1219,14 +1212,10 @@ R58 senses current</text>
 <instance part="LI-ION1" gate="G$1" x="236.22" y="96.52"/>
 <instance part="R33" gate="R$1" x="149.86" y="93.98" rot="R90"/>
 <instance part="R34" gate="R$1" x="149.86" y="78.74" rot="R90"/>
-<instance part="V10" gate="G$1" x="86.36" y="137.16"/>
 <instance part="V25" gate="G$1" x="124.46" y="71.12"/>
 <instance part="V40" gate="G$1" x="86.36" y="144.78"/>
-<instance part="V41" gate="G$1" x="182.88" y="137.16" rot="R180"/>
-<instance part="V42" gate="G$1" x="182.88" y="129.54" rot="R180"/>
 <instance part="V43" gate="G$1" x="304.8" y="50.8" rot="R90"/>
 <instance part="V44" gate="G$1" x="124.46" y="76.2"/>
-<instance part="V45" gate="G$1" x="322.58" y="101.6" rot="R180"/>
 <instance part="U5" gate="U$1" x="-7.62" y="-35.56"/>
 <instance part="LIFEPO1" gate="G$1" x="81.28" y="-55.88"/>
 <instance part="LIFEPO2" gate="G$1" x="81.28" y="-76.2"/>
@@ -1292,10 +1281,7 @@ R58 senses current</text>
 <instance part="V58" gate="G$1" x="119.38" y="-66.04" rot="R90"/>
 <instance part="V59" gate="G$1" x="127" y="-106.68" rot="R90"/>
 <instance part="U$1" gate="G$1" x="86.36" y="111.76"/>
-<instance part="V1" gate="G$1" x="322.58" y="93.98" rot="R180"/>
 <instance part="V2" gate="G$1" x="312.42" y="50.8" rot="R90"/>
-<instance part="V3" gate="G$1" x="182.88" y="144.78" rot="R180"/>
-<instance part="V4" gate="G$1" x="182.88" y="124.46" rot="R180"/>
 <instance part="V5" gate="G$1" x="248.92" y="17.78" rot="R180"/>
 <instance part="V6" gate="G$1" x="248.92" y="12.7" rot="R180"/>
 <instance part="V7" gate="G$1" x="248.92" y="7.62" rot="R180"/>
@@ -1319,8 +1305,6 @@ R58 senses current</text>
 <instance part="R1" gate="R$1" x="223.52" y="96.52" rot="R90"/>
 <instance part="R2" gate="R$1" x="172.72" y="78.74" rot="R180"/>
 <instance part="GND1" gate="1" x="165.1" y="68.58"/>
-<instance part="R4" gate="R$1" x="50.8" y="81.28" rot="R90"/>
-<instance part="R5" gate="R$1" x="40.64" y="88.9" rot="R180"/>
 <instance part="R6" gate="R$1" x="-50.8" y="-78.74" rot="R90"/>
 <instance part="R7" gate="R$1" x="-55.88" y="-68.58" rot="R180"/>
 <instance part="R8" gate="R$1" x="236.22" y="81.28" rot="R90"/>
@@ -1332,7 +1316,6 @@ R58 senses current</text>
 <instance part="GND3" gate="1" x="170.18" y="-165.1"/>
 <instance part="F1" gate="G$1" x="269.24" y="101.6"/>
 <instance part="V36" gate="G$1" x="426.72" y="119.38" rot="R180"/>
-<instance part="V37" gate="G$1" x="426.72" y="111.76" rot="R180"/>
 <instance part="V38" gate="G$1" x="426.72" y="104.14" rot="R180"/>
 <instance part="V39" gate="G$1" x="426.72" y="96.52" rot="R180"/>
 <instance part="V46" gate="G$1" x="426.72" y="88.9" rot="R180"/>
@@ -1344,7 +1327,6 @@ R58 senses current</text>
 <instance part="V53" gate="G$1" x="426.72" y="35.56" rot="R180"/>
 <instance part="V55" gate="G$1" x="426.72" y="127" rot="R180"/>
 <instance part="V54" gate="G$1" x="426.72" y="-55.88" rot="R180"/>
-<instance part="V56" gate="G$1" x="426.72" y="-63.5" rot="R180"/>
 <instance part="V57" gate="G$1" x="426.72" y="-71.12" rot="R180"/>
 <instance part="V60" gate="G$1" x="426.72" y="-78.74" rot="R180"/>
 <instance part="V61" gate="G$1" x="426.72" y="-86.36" rot="R180"/>
@@ -1379,6 +1361,10 @@ R58 senses current</text>
 <instance part="GND5" gate="1" x="167.64" y="33.02"/>
 <instance part="R21" gate="R$1" x="172.72" y="45.72" rot="R90"/>
 <instance part="U4" gate="G$1" x="195.58" y="53.34"/>
+<instance part="V1" gate="G$1" x="322.58" y="101.6" rot="R180"/>
+<instance part="V37" gate="G$1" x="322.58" y="93.98" rot="R180"/>
+<instance part="R4" gate="R$1" x="50.8" y="81.28" rot="R90"/>
+<instance part="R5" gate="R$1" x="40.64" y="88.9" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -1407,11 +1393,6 @@ R58 senses current</text>
 <pinref part="U$1" gate="G$1" pin="IN"/>
 <wire x1="-2.54" y1="106.68" x2="-2.54" y2="114.3" width="0.1524" layer="91"/>
 <junction x="-2.54" y="114.3"/>
-</segment>
-<segment>
-<pinref part="V37" gate="G$1" pin="P$1"/>
-<wire x1="421.64" y1="111.76" x2="391.16" y2="111.76" width="0.1524" layer="91"/>
-<label x="391.16" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LIONBAT" class="0">
@@ -1609,7 +1590,6 @@ R58 senses current</text>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="50.8" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="R4" gate="R$1" pin="1"/>
 <wire x1="50.8" y1="76.2" x2="50.8" y2="73.66" width="0.1524" layer="91"/>
 <junction x="50.8" y="73.66"/>
 <pinref part="C6" gate="G$1" pin="P$2"/>
@@ -1629,6 +1609,7 @@ R58 senses current</text>
 <wire x1="68.58" y1="73.66" x2="68.58" y2="93.98" width="0.1524" layer="91"/>
 <junction x="68.58" y="73.66"/>
 <junction x="68.58" y="93.98"/>
+<pinref part="R4" gate="R$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U5" gate="U$1" pin="GND"/>
@@ -1672,16 +1653,10 @@ R58 senses current</text>
 <pinref part="R17" gate="R$1" pin="1"/>
 <wire x1="129.54" y1="114.3" x2="129.54" y2="121.92" width="0.1524" layer="91"/>
 <junction x="129.54" y="114.3"/>
-<wire x1="129.54" y1="114.3" x2="147.32" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="114.3" x2="147.32" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="114.3" x2="149.86" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="114.3" x2="149.86" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="~CHRG"/>
-<wire x1="165.1" y1="129.54" x2="147.32" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="V4" gate="G$1" pin="P$1"/>
-<wire x1="177.8" y1="124.46" x2="165.1" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="124.46" x2="165.1" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="V42" gate="G$1" pin="P$1"/>
-<wire x1="177.8" y1="129.54" x2="165.1" y2="129.54" width="0.1524" layer="91"/>
-<junction x="165.1" y="129.54"/>
+<wire x1="177.8" y1="129.54" x2="149.86" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="V51" gate="G$1" pin="P$1"/>
@@ -1696,16 +1671,10 @@ R58 senses current</text>
 <pinref part="R18" gate="R$1" pin="1"/>
 <wire x1="137.16" y1="116.84" x2="137.16" y2="121.92" width="0.1524" layer="91"/>
 <junction x="137.16" y="116.84"/>
-<pinref part="V41" gate="G$1" pin="P$1"/>
-<wire x1="177.8" y1="137.16" x2="165.1" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="137.16" x2="144.78" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="137.16" x2="144.78" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="116.84" x2="144.78" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="116.84" x2="144.78" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="~FAULT"/>
-<pinref part="V3" gate="G$1" pin="P$1"/>
-<wire x1="177.8" y1="144.78" x2="165.1" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="144.78" x2="165.1" y2="137.16" width="0.1524" layer="91"/>
-<junction x="165.1" y="137.16"/>
 </segment>
 <segment>
 <pinref part="V52" gate="G$1" pin="P$1"/>
@@ -1720,12 +1689,8 @@ R58 senses current</text>
 <wire x1="111.76" y1="129.54" x2="38.1" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="R15" gate="R$1" pin="2"/>
 <label x="71.12" y="129.54" size="1.778" layer="95"/>
-<pinref part="V10" gate="G$1" pin="P$1"/>
-<wire x1="91.44" y1="137.16" x2="111.76" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="137.16" x2="111.76" y2="129.54" width="0.1524" layer="91"/>
 <junction x="111.76" y="129.54"/>
-<wire x1="111.76" y1="137.16" x2="111.76" y2="144.78" width="0.1524" layer="91"/>
-<junction x="111.76" y="137.16"/>
+<wire x1="111.76" y1="129.54" x2="111.76" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="V40" gate="G$1" pin="P$1"/>
 <wire x1="111.76" y1="144.78" x2="91.44" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="RUN"/>
@@ -1776,10 +1741,10 @@ R58 senses current</text>
 <label x="187.96" y="-134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R5" gate="R$1" pin="2"/>
 <wire x1="35.56" y1="88.9" x2="33.02" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="88.9" x2="33.02" y2="91.44" width="0.1524" layer="91"/>
 <label x="30.48" y="91.44" size="1.778" layer="95"/>
+<pinref part="R5" gate="R$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="R7" gate="R$1" pin="2"/>
@@ -2363,14 +2328,14 @@ R58 senses current</text>
 <net name="LIONFREQ" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="FREQ"/>
-<pinref part="R4" gate="R$1" pin="2"/>
 <wire x1="73.66" y1="104.14" x2="50.8" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="104.14" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
+<label x="53.34" y="104.14" size="1.778" layer="95"/>
+<pinref part="R4" gate="R$1" pin="2"/>
 <pinref part="R5" gate="R$1" pin="1"/>
 <wire x1="50.8" y1="88.9" x2="50.8" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="88.9" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
 <junction x="50.8" y="88.9"/>
-<label x="53.34" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="V47" gate="G$1" pin="P$1"/>
@@ -2457,9 +2422,7 @@ R58 senses current</text>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="V45" gate="G$1" pin="P$1"/>
 <wire x1="317.5" y1="101.6" x2="304.8" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="V1" gate="G$1" pin="P$1"/>
 <wire x1="317.5" y1="93.98" x2="304.8" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="93.98" x2="304.8" y2="101.6" width="0.1524" layer="91"/>
 <junction x="304.8" y="101.6"/>
@@ -2470,6 +2433,8 @@ R58 senses current</text>
 <wire x1="279.4" y1="111.76" x2="279.4" y2="101.6" width="0.1524" layer="91"/>
 <junction x="279.4" y="101.6"/>
 <pinref part="R13" gate="R$1" pin="2"/>
+<pinref part="V1" gate="G$1" pin="P$1"/>
+<pinref part="V37" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="LFPOIN" class="0">
@@ -2490,11 +2455,6 @@ R58 senses current</text>
 <junction x="-73.66" y="-43.18"/>
 <pinref part="V75" gate="G$1" pin="P$1"/>
 <wire x1="-73.66" y1="-33.02" x2="-96.52" y2="-33.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="V56" gate="G$1" pin="P$1"/>
-<wire x1="421.64" y1="-63.5" x2="391.16" y2="-63.5" width="0.1524" layer="91"/>
-<label x="391.16" y="-63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LFPOFREQ" class="0">
