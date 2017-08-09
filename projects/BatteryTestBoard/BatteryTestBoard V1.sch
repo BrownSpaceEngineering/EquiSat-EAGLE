@@ -1069,7 +1069,6 @@
 <part name="V58" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF1_REF"/>
 <part name="V59" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF2_REF"/>
 <part name="U$1" library="BrownSpaceEngineering" deviceset="LTC4121-4.2" device=""/>
-<part name="V2" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="L1_SNS"/>
 <part name="V5" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
 <part name="V6" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
 <part name="V7" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
@@ -1264,7 +1263,6 @@ R58 senses current</text>
 <instance part="V58" gate="G$1" x="119.38" y="-66.04" rot="R90"/>
 <instance part="V59" gate="G$1" x="127" y="-106.68" rot="R90"/>
 <instance part="U$1" gate="G$1" x="86.36" y="111.76"/>
-<instance part="V2" gate="G$1" x="312.42" y="50.8" rot="R90"/>
 <instance part="V5" gate="G$1" x="248.92" y="17.78" rot="R180"/>
 <instance part="V6" gate="G$1" x="248.92" y="12.7" rot="R180"/>
 <instance part="V7" gate="G$1" x="248.92" y="7.62" rot="R180"/>
@@ -1865,11 +1863,7 @@ R58 senses current</text>
 <segment>
 <pinref part="V43" gate="G$1" pin="P$1"/>
 <wire x1="304.8" y1="55.88" x2="304.8" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="V2" gate="G$1" pin="P$1"/>
-<wire x1="304.8" y1="66.04" x2="312.42" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="66.04" x2="312.42" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="66.04" x2="294.64" y2="66.04" width="0.1524" layer="91"/>
-<junction x="304.8" y="66.04"/>
 <pinref part="U2" gate="G$1" pin="OUT"/>
 </segment>
 </net>

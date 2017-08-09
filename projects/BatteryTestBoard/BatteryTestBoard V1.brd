@@ -159,6 +159,28 @@
 <hole x="145.034" y="165.354" drill="3.347975"/>
 <hole x="2.286" y="165.354" drill="3.347975"/>
 <hole x="2.286" y="2.286" drill="3.347975"/>
+<text x="24.892" y="14.986" size="1.778" layer="21">Lithium-ion out</text>
+<text x="52.832" y="31.496" size="1.016" layer="21">3A PTC fuse
+Bypass with 2 0R
+1210 resistors if needed</text>
+<text x="38.354" y="117.094" size="1.016" layer="21">Solder only one of U1 and U4
+Bypass with 0R R3 if needed</text>
+<text x="109.982" y="29.972" size="1.016" layer="21">PTC fuses capable of withstanding 60A temporarily</text>
+<text x="109.982" y="28.194" size="1.016" layer="21">Solder only one, or bypass with 2 0R 1210 resistors</text>
+<text x="114.808" y="14.986" size="1.778" layer="21">LiFePo4 out</text>
+<text x="109.474" y="121.158" size="1.016" layer="21">Use 0R resistor to set
+LFPOFREQ to GND or 3.3V</text>
+<text x="122.682" y="125.222" size="1.016" layer="21">3.3V</text>
+<text x="108.966" y="127.254" size="1.016" layer="21">GND</text>
+<text x="41.402" y="137.922" size="1.016" layer="21">Use 0R resistor to set
+LFPOFREQ to GND or 3.3V</text>
+<text x="52.07" y="141.732" size="1.016" layer="21">3.3V</text>
+<text x="52.07" y="148.336" size="1.016" layer="21">GND</text>
+<text x="43.942" y="157.226" size="1.778" layer="21">Li-ion in</text>
+<text x="66.802" y="157.226" size="1.778" layer="21">LiFePo4 in</text>
+<text x="43.18" y="84.836" size="1.9304" layer="21">Brown Space Engineering
+Battery Test Board V1
+August 2017</text>
 </plain>
 <libraries>
 <library name="BrownSpaceEngineering">
@@ -627,7 +649,9 @@ design rules under a new name.</description>
 <element name="R1" library="BrownSpaceEngineering" package="0805" value="390R" x="40.132" y="126.492" rot="MR90"/>
 <element name="R10" library="BrownSpaceEngineering" package="0805" value="101.5K" x="12.954" y="34.544" rot="R270"/>
 <element name="R11" library="BrownSpaceEngineering" package="0805" value="230K" x="88.138" y="37.084"/>
-<element name="R12" library="BrownSpaceEngineering" package="0805" value="101.5K" x="89.916" y="39.624" rot="R180"/>
+<element name="R12" library="BrownSpaceEngineering" package="0805" value="101.5K" x="89.916" y="39.624" smashed="yes" rot="R180">
+<attribute name="NAME" x="90.685659375" y="41.3871125" size="0.7112" layer="25" rot="R180"/>
+</element>
 <element name="R13" library="BrownSpaceEngineering" package="1210" value="0R" x="44.196" y="33.274" rot="R270"/>
 <element name="R14" library="BrownSpaceEngineering" package="1210" value="0R" x="129.032" y="34.29" rot="R90"/>
 <element name="R15" library="BrownSpaceEngineering" package="0805" value="100K" x="18.542" y="152.4" rot="R90"/>
@@ -668,73 +692,170 @@ design rules under a new name.</description>
 <element name="SW1" library="BrownSpaceEngineering" package="TO-263-7-8" value="BTS50015-1TAD" x="96.266" y="20.574"/>
 <element name="U$1" library="BrownSpaceEngineering" package="QFN-16-PAD" value="LTC4121-4.2" x="31.75" y="145.034"/>
 <element name="U$3" library="BrownSpaceEngineering" package="SO-8" value="VNS3NV04DP-E" x="85.09" y="129.54"/>
-<element name="U1" library="BattBoard" package="U-DFN2030-6" value="AP9211SA-AG-HAC-7" x="46.482" y="125.222" rot="R270"/>
+<element name="U1" library="BattBoard" package="U-DFN2030-6" value="AP9211SA-AG-HAC-7" x="46.482" y="125.222" smashed="yes" rot="R270">
+<attribute name="NAME" x="45.494" y="126.784" size="1.27" layer="25"/>
+<attribute name="VALUE" x="38.128" y="122.3" size="1.27" layer="27"/>
+</element>
 <element name="U2" library="BattBoard" package="MSOP-8" value="AD8418" x="17.78" y="34.798" rot="R270"/>
 <element name="U3" library="BattBoard" package="MSOP-8" value="AD8418" x="87.122" y="29.464" rot="R270"/>
 <element name="U5" library="BrownSpaceEngineering" package="QFN-16-PAD" value="LTC4121" x="102.616" y="145.034"/>
-<element name="V13" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIFEB1SNS" x="87.884" y="7.62"/>
-<element name="V16" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIFE2" x="137.922" y="48.26"/>
-<element name="V17" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIFE1" x="137.922" y="57.15"/>
-<element name="V2" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="L1_SNS" x="17.526" y="7.62"/>
-<element name="V20" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LF_B1_OUTEN" x="97.536" y="7.62"/>
-<element name="V21" library="BrownSpaceEngineering" package="VIA-120MIL" value="LF_B1" x="126.492" y="19.812"/>
-<element name="V26" library="BrownSpaceEngineering" package="VIA-120MIL" value="LF_B1" x="116.332" y="19.812"/>
-<element name="V29" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LF_B1_TT" x="85.852" y="161.036"/>
-<element name="V31" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LF_B1_OSNS" x="114.554" y="7.62"/>
-<element name="V32" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LF_B1_BT" x="95.504" y="161.036"/>
-<element name="V34" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONIN" x="44.45" y="161.036"/>
-<element name="V35" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONIN" x="52.324" y="161.036"/>
-<element name="V36" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONBOOST" x="9.398" y="110.744"/>
-<element name="V38" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONSW" x="9.652" y="92.456"/>
-<element name="V39" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONMPPT" x="9.398" y="128.27"/>
-<element name="V43" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="L1_SNS" x="24.13" y="7.62"/>
-<element name="V44" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="L1_REF" x="9.652" y="83.82"/>
-<element name="V46" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONCHGSNS" x="9.398" y="146.05"/>
-<element name="V47" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONFREQ" x="9.398" y="119.38"/>
-<element name="V48" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONBAT" x="9.652" y="101.6"/>
-<element name="V5" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="GND" x="57.658" y="54.356"/>
-<element name="V50" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONPROG" x="9.398" y="137.16"/>
-<element name="V51" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONCHRG" x="35.56" y="161.036"/>
-<element name="V52" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONFAULT" x="25.4" y="161.036"/>
-<element name="V53" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONRUN" x="15.24" y="161.036"/>
-<element name="V54" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOBOOST" x="137.922" y="119.38"/>
-<element name="V55" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONINTVCC" x="9.652" y="74.93"/>
-<element name="V57" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOSW" x="137.922" y="101.6"/>
-<element name="V58" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LF1_REF" x="137.922" y="83.82"/>
-<element name="V59" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LF2_REF" x="137.922" y="74.93"/>
-<element name="V6" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="GND" x="58.166" y="146.558"/>
-<element name="V60" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOMPPT" x="137.922" y="137.16"/>
-<element name="V61" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOCHGSNS" x="134.62" y="161.036"/>
-<element name="V62" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOFREQ" x="137.922" y="128.27"/>
-<element name="V63" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOBAT" x="137.922" y="110.49"/>
-<element name="V65" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOPROG" x="137.922" y="146.05"/>
-<element name="V66" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOCHRG" x="124.46" y="161.036"/>
-<element name="V67" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOFAULT" x="114.046" y="161.036"/>
-<element name="V68" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPORUN" x="104.394" y="161.036"/>
-<element name="V69" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOINTVCC" x="137.922" y="92.71"/>
-<element name="V7" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="GND" x="9.652" y="66.04"/>
-<element name="V70" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOFB" x="137.922" y="66.04"/>
-<element name="V71" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="3V3" x="52.324" y="153.924"/>
-<element name="V72" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="3V3" x="63.246" y="153.924"/>
-<element name="V73" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="3V3" x="52.324" y="46.482"/>
-<element name="V74" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="3V3" x="62.992" y="46.482"/>
-<element name="V75" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOIN" x="68.58" y="161.036"/>
-<element name="V8" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="GND" x="72.644" y="7.62"/>
+<element name="V13" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIFEB1SNS" x="87.884" y="7.62" smashed="yes">
+<attribute name="VALUE" x="84.328" y="4.826" size="1" layer="27"/>
+</element>
+<element name="V16" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIFE2" x="137.922" y="48.26" smashed="yes">
+<attribute name="VALUE" x="136.144" y="45.466" size="1" layer="27"/>
+</element>
+<element name="V17" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIFE1" x="137.922" y="57.15" smashed="yes">
+<attribute name="VALUE" x="136.144" y="54.356" size="1" layer="27"/>
+</element>
+<element name="V20" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LF_B1_OUTEN" x="97.536" y="7.62" smashed="yes">
+<attribute name="VALUE" x="93.218" y="4.826" size="1" layer="27"/>
+</element>
+<element name="V21" library="BrownSpaceEngineering" package="VIA-120MIL" value="LF_B1" x="126.492" y="19.812" smashed="yes"/>
+<element name="V26" library="BrownSpaceEngineering" package="VIA-120MIL" value="LF_B1" x="116.332" y="19.812" smashed="yes"/>
+<element name="V29" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LF_B1_TT" x="85.852" y="161.036" smashed="yes">
+<attribute name="VALUE" x="83.312" y="162.306" size="1" layer="27"/>
+</element>
+<element name="V31" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LF_B1_OSNS" x="114.554" y="7.62" smashed="yes">
+<attribute name="VALUE" x="110.49" y="4.826" size="1" layer="27"/>
+</element>
+<element name="V32" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LF_B1_BT" x="95.504" y="161.036" smashed="yes">
+<attribute name="VALUE" x="92.964" y="162.306" size="1" layer="27"/>
+</element>
+<element name="V34" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONIN" x="44.45" y="161.036" smashed="yes"/>
+<element name="V35" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONIN" x="52.324" y="161.036" smashed="yes"/>
+<element name="V36" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONBOOST" x="9.398" y="110.744" smashed="yes">
+<attribute name="VALUE" x="5.588" y="107.95" size="1" layer="27"/>
+</element>
+<element name="V38" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONSW" x="9.652" y="92.456" smashed="yes">
+<attribute name="VALUE" x="7.366" y="89.662" size="1" layer="27"/>
+</element>
+<element name="V39" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONMPPT" x="9.398" y="128.27" smashed="yes">
+<attribute name="VALUE" x="5.842" y="125.476" size="1" layer="27"/>
+</element>
+<element name="V43" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="L1_SNS" x="24.13" y="7.62" smashed="yes">
+<attribute name="VALUE" x="21.844" y="4.826" size="1" layer="27"/>
+</element>
+<element name="V44" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="L1_REF" x="9.652" y="83.82" smashed="yes">
+<attribute name="VALUE" x="7.62" y="81.026" size="1" layer="27"/>
+</element>
+<element name="V46" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONCHGSNS" x="9.398" y="146.05" smashed="yes">
+<attribute name="VALUE" x="4.826" y="143.256" size="1" layer="27"/>
+</element>
+<element name="V47" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONFREQ" x="9.398" y="119.38" smashed="yes">
+<attribute name="VALUE" x="6.096" y="116.586" size="1" layer="27"/>
+</element>
+<element name="V48" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONBAT" x="9.652" y="101.6" smashed="yes">
+<attribute name="VALUE" x="7.112" y="98.806" size="1" layer="27"/>
+</element>
+<element name="V5" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="GND" x="57.658" y="54.356" smashed="yes">
+<attribute name="VALUE" x="56.134" y="51.308" size="1" layer="27"/>
+</element>
+<element name="V50" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONPROG" x="9.398" y="137.16" smashed="yes">
+<attribute name="VALUE" x="5.588" y="134.366" size="1" layer="27"/>
+</element>
+<element name="V51" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONCHRG" x="35.56" y="161.036" smashed="yes">
+<attribute name="VALUE" x="32.004" y="158.242" size="1" layer="27"/>
+</element>
+<element name="V52" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONFAULT" x="25.4" y="161.036" smashed="yes">
+<attribute name="VALUE" x="21.844" y="158.242" size="1" layer="27"/>
+</element>
+<element name="V53" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONRUN" x="15.24" y="161.036" smashed="yes">
+<attribute name="VALUE" x="12.446" y="158.242" size="1" layer="27"/>
+</element>
+<element name="V54" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOBOOST" x="137.922" y="119.38" smashed="yes">
+<attribute name="VALUE" x="133.858" y="116.586" size="1" layer="27"/>
+</element>
+<element name="V55" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LIONINTVCC" x="9.652" y="74.93" smashed="yes">
+<attribute name="VALUE" x="6.096" y="72.136" size="1" layer="27"/>
+</element>
+<element name="V57" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOSW" x="137.922" y="101.6" smashed="yes">
+<attribute name="VALUE" x="134.874" y="98.806" size="1" layer="27"/>
+</element>
+<element name="V58" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LF1_REF" x="137.922" y="83.82" smashed="yes">
+<attribute name="VALUE" x="134.874" y="81.026" size="1" layer="27"/>
+</element>
+<element name="V59" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LF2_REF" x="137.922" y="74.93" smashed="yes">
+<attribute name="VALUE" x="134.874" y="72.136" size="1" layer="27"/>
+</element>
+<element name="V6" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="GND" x="58.166" y="146.558" smashed="yes">
+<attribute name="VALUE" x="56.642" y="143.51" size="1" layer="27"/>
+</element>
+<element name="V60" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOMPPT" x="137.922" y="137.16" smashed="yes">
+<attribute name="VALUE" x="134.366" y="134.366" size="1" layer="27"/>
+</element>
+<element name="V61" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOCHGSNS" x="134.62" y="161.036" smashed="yes">
+<attribute name="VALUE" x="130.048" y="158.242" size="1" layer="27"/>
+</element>
+<element name="V62" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOFREQ" x="137.922" y="128.27" smashed="yes">
+<attribute name="VALUE" x="134.112" y="125.476" size="1" layer="27"/>
+</element>
+<element name="V63" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOBAT" x="137.922" y="110.49" smashed="yes">
+<attribute name="VALUE" x="134.874" y="107.696" size="1" layer="27"/>
+</element>
+<element name="V65" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOPROG" x="137.922" y="146.05" smashed="yes">
+<attribute name="VALUE" x="134.366" y="143.256" size="1" layer="27"/>
+</element>
+<element name="V66" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOCHRG" x="124.46" y="161.036" smashed="yes">
+<attribute name="VALUE" x="120.904" y="158.242" size="1" layer="27"/>
+</element>
+<element name="V67" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOFAULT" x="114.046" y="161.036" smashed="yes">
+<attribute name="VALUE" x="110.49" y="158.242" size="1" layer="27"/>
+</element>
+<element name="V68" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPORUN" x="104.394" y="161.036" smashed="yes">
+<attribute name="VALUE" x="101.092" y="158.242" size="1" layer="27"/>
+</element>
+<element name="V69" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOINTVCC" x="137.922" y="92.71" smashed="yes">
+<attribute name="VALUE" x="133.604" y="89.916" size="1" layer="27"/>
+</element>
+<element name="V7" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="GND" x="9.652" y="66.04" smashed="yes">
+<attribute name="VALUE" x="8.128" y="63.246" size="1" layer="27"/>
+</element>
+<element name="V70" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOFB" x="137.922" y="66.04" smashed="yes">
+<attribute name="VALUE" x="135.382" y="63.246" size="1" layer="27"/>
+</element>
+<element name="V71" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="3V3" x="52.324" y="153.924" smashed="yes">
+<attribute name="VALUE" x="51.054" y="151.13" size="1" layer="27"/>
+</element>
+<element name="V72" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="3V3" x="63.246" y="153.924" smashed="yes">
+<attribute name="VALUE" x="61.976" y="151.13" size="1" layer="27"/>
+</element>
+<element name="V73" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="3V3" x="52.324" y="46.482" smashed="yes">
+<attribute name="VALUE" x="51.054" y="43.434" size="1" layer="27"/>
+</element>
+<element name="V74" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="3V3" x="62.992" y="46.482" smashed="yes">
+<attribute name="VALUE" x="61.976" y="43.434" size="1" layer="27"/>
+</element>
+<element name="V75" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOIN" x="68.58" y="161.036" smashed="yes"/>
+<element name="V8" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="GND" x="72.644" y="7.62" smashed="yes">
+<attribute name="VALUE" x="71.12" y="4.572" size="1" layer="27"/>
+</element>
 <element name="R19" library="BrownSpaceEngineering" package="0805" value="0.00083333R" x="94.488" y="40.132" rot="R180"/>
 <element name="R20" library="BrownSpaceEngineering" package="0805" value="680R" x="18.542" y="133.858" rot="MR0"/>
 <element name="C2" library="BrownSpaceEngineering" package="0805" value="100nF" x="20.32" y="130.302" rot="MR180"/>
 <element name="R21" library="BrownSpaceEngineering" package="0805" value="1K" x="29.464" y="127.254" rot="MR90"/>
-<element name="U4" library="BattBoard" package="WDFN6" value="LC05111C13MTTTG" x="21.082" y="125.222" rot="R90"/>
-<element name="V1" library="BrownSpaceEngineering" package="VIA-120MIL" value="LION1" x="27.432" y="19.812"/>
-<element name="V37" library="BrownSpaceEngineering" package="VIA-120MIL" value="LION1" x="38.354" y="19.812"/>
+<element name="U4" library="BattBoard" package="WDFN6" value="LC05111C13MTTTG" x="21.082" y="125.222" smashed="yes" rot="R90">
+<attribute name="NAME" x="23.368" y="128.27" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="29.21" y="122.936" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="V1" library="BrownSpaceEngineering" package="VIA-120MIL" value="LION1" x="27.432" y="19.812" smashed="yes"/>
+<element name="V37" library="BrownSpaceEngineering" package="VIA-120MIL" value="LION1" x="38.354" y="19.812" smashed="yes"/>
 <element name="R4" library="BrownSpaceEngineering" package="1210" value="0R" x="49.022" y="148.59"/>
 <element name="R5" library="BrownSpaceEngineering" package="1210" value="0R" x="49.022" y="142.24"/>
-<element name="V3" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="GND" x="9.398" y="154.94"/>
-<element name="V4" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="GND" x="137.922" y="154.94"/>
-<element name="V10" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="GND" x="57.912" y="99.568"/>
-<element name="V41" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="GND" x="137.922" y="39.37"/>
+<element name="V3" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="GND" x="9.398" y="154.94" smashed="yes">
+<attribute name="VALUE" x="7.874" y="151.892" size="1" layer="27"/>
+</element>
+<element name="V4" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="GND" x="137.922" y="154.94" smashed="yes">
+<attribute name="VALUE" x="136.398" y="151.892" size="1" layer="27"/>
+</element>
+<element name="V10" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="GND" x="57.912" y="99.568" smashed="yes">
+<attribute name="VALUE" x="56.388" y="96.52" size="1" layer="27"/>
+</element>
+<element name="V41" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="GND" x="137.922" y="39.37" smashed="yes">
+<attribute name="VALUE" x="136.398" y="36.576" size="1" layer="27"/>
+</element>
 <element name="R22" library="BrownSpaceEngineering" package="1210" value="0R" x="49.276" y="33.274" rot="R270"/>
-<element name="V9" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOIN" x="76.454" y="161.036"/>
+<element name="V9" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="LFPOIN" x="76.454" y="161.036" smashed="yes"/>
 </elements>
 <signals>
 <signal name="LIONIN">
@@ -1206,12 +1327,10 @@ design rules under a new name.</description>
 </signal>
 <signal name="L1_SNS">
 <contactref element="V43" pad="P$1"/>
-<contactref element="V2" pad="P$1"/>
 <contactref element="U2" pad="P$5"/>
 <wire x1="21.99" y1="32.848" x2="21.99" y2="14.078" width="0.508" layer="1"/>
 <wire x1="21.99" y1="14.078" x2="24.13" y2="11.938" width="0.508" layer="1"/>
 <wire x1="24.13" y1="11.938" x2="24.13" y2="7.62" width="0.508" layer="1"/>
-<wire x1="24.13" y1="7.62" x2="17.526" y2="7.62" width="0.508" layer="1"/>
 </signal>
 <signal name="L1_REF">
 <contactref element="R33" pad="1"/>
@@ -1961,4 +2080,10 @@ design rules under a new name.</description>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
