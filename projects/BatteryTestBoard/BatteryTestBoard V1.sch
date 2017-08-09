@@ -279,7 +279,7 @@
 <wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
 <circle x="-1.9" y="-1.4" radius="0.2" width="0.4" layer="21"/>
-<text x="-2.9" y="-3" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-2.9" y="-3" size="0.7112" layer="25" rot="R90">&gt;NAME</text>
 </package>
 <package name="TO-263-7-8">
 <smd name="P$1" x="0" y="0.7" dx="0.75" dy="2.6" layer="1"/>
@@ -653,19 +653,19 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="LTC4121-4.2">
+<deviceset name="LTC4121-4.2" prefix="U">
 <gates>
 <gate name="G$1" symbol="LTC4121-4.2" x="-5.08" y="0"/>
 </gates>
 <devices>
 <device name="" package="QFN-16-PAD">
 <connects>
-<connect gate="G$1" pin="BAT" pad="P$9"/>
+<connect gate="G$1" pin="BAT" pad="P$9" route="any"/>
 <connect gate="G$1" pin="BATSNS" pad="P$10"/>
 <connect gate="G$1" pin="BOOST" pad="P$2"/>
 <connect gate="G$1" pin="CHGSNS" pad="P$8"/>
 <connect gate="G$1" pin="FREQ" pad="P$7"/>
-<connect gate="G$1" pin="GND" pad="P$5"/>
+<connect gate="G$1" pin="GND" pad="P$5 P$17"/>
 <connect gate="G$1" pin="IN" pad="P$3"/>
 <connect gate="G$1" pin="INTVCC" pad="P$1"/>
 <connect gate="G$1" pin="MPPT" pad="P$6"/>
@@ -800,12 +800,12 @@
 <package name="WDFN6">
 <smd name="PAD1" x="-0.54" y="0" dx="1.42" dy="2.5" layer="1"/>
 <smd name="PAD2" x="0.85" y="0" dx="2.5" dy="0.62" layer="1" rot="R90"/>
-<smd name="VCC" x="-0.01" y="1.91" dx="0.4" dy="0.4" layer="1"/>
-<smd name="VSS" x="0.64" y="1.91" dx="0.4" dy="0.4" layer="1"/>
-<smd name="S1" x="-0.66" y="1.91" dx="0.4" dy="0.4" layer="1"/>
-<smd name="CS" x="-0.01" y="-1.89" dx="0.4" dy="0.4" layer="1"/>
-<smd name="TST" x="0.64" y="-1.89" dx="0.4" dy="0.4" layer="1"/>
-<smd name="S2" x="-0.66" y="-1.89" dx="0.4" dy="0.4" layer="1"/>
+<smd name="CS" x="-0.01" y="1.91" dx="0.4" dy="0.4" layer="1"/>
+<smd name="TST" x="0.64" y="1.91" dx="0.4" dy="0.4" layer="1"/>
+<smd name="S2" x="-0.66" y="1.91" dx="0.4" dy="0.4" layer="1"/>
+<smd name="VCC" x="-0.01" y="-1.89" dx="0.4" dy="0.4" layer="1"/>
+<smd name="VSS" x="0.64" y="-1.89" dx="0.4" dy="0.4" layer="1"/>
+<smd name="S1" x="-0.66" y="-1.89" dx="0.4" dy="0.4" layer="1"/>
 <text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 <text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 <wire x1="-1.52" y1="2.39" x2="1.47" y2="2.39" width="0.127" layer="21"/>
