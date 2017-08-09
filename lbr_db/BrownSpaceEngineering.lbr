@@ -3446,19 +3446,19 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="LTC4121-4.2">
+<deviceset name="LTC4121-4.2" prefix="U">
 <gates>
 <gate name="G$1" symbol="LTC4121-4.2" x="-5.08" y="0"/>
 </gates>
 <devices>
 <device name="" package="QFN-16-PAD">
 <connects>
-<connect gate="G$1" pin="BAT" pad="P$9"/>
+<connect gate="G$1" pin="BAT" pad="P$9" route="any"/>
 <connect gate="G$1" pin="BATSNS" pad="P$10"/>
 <connect gate="G$1" pin="BOOST" pad="P$2"/>
 <connect gate="G$1" pin="CHGSNS" pad="P$8"/>
 <connect gate="G$1" pin="FREQ" pad="P$7"/>
-<connect gate="G$1" pin="GND" pad="P$5"/>
+<connect gate="G$1" pin="GND" pad="P$5 P$17"/>
 <connect gate="G$1" pin="IN" pad="P$3"/>
 <connect gate="G$1" pin="INTVCC" pad="P$1"/>
 <connect gate="G$1" pin="MPPT" pad="P$6"/>
