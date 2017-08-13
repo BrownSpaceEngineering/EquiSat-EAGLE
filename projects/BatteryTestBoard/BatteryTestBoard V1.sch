@@ -1227,11 +1227,11 @@ TS-005</description>
 <part name="R6" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
 <part name="R7" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
 <part name="R8" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0.025R"/>
-<part name="R9" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="230K"/>
-<part name="R10" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="101.5K"/>
+<part name="R9" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="220K"/>
+<part name="R10" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="R11" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="230K"/>
-<part name="R12" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="101.5K"/>
+<part name="R11" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="220K"/>
+<part name="R12" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="F1" library="BattBoard" deviceset="1206L150THWR" device=""/>
 <part name="V36" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIONBOOST"/>
@@ -1294,6 +1294,8 @@ TS-005</description>
 <part name="M2" library="BattBoard" deviceset="IPB120P04P4L03ATMA1" device=""/>
 <part name="D2" library="BattBoard" deviceset="SMBJ5343B" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="R23" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="68K"/>
+<part name="R24" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
 </parts>
 <sheets>
 <sheet>
@@ -1511,6 +1513,8 @@ load protection</text>
 </instance>
 <instance part="D2" gate="G$1" x="185.42" y="-55.88" rot="R90"/>
 <instance part="GND10" gate="1" x="185.42" y="-66.04"/>
+<instance part="R23" gate="R$1" x="226.06" y="-58.42" rot="R180"/>
+<instance part="R24" gate="R$1" x="228.6" y="27.94" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1691,8 +1695,9 @@ load protection</text>
 <wire x1="236.22" y1="22.86" x2="236.22" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="17.78" x2="236.22" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="12.7" x2="236.22" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="22.86" x2="236.22" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="22.86" x2="228.6" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="V7" gate="G$1" pin="P$1"/>
+<wire x1="228.6" y1="22.86" x2="236.22" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="7.62" x2="243.84" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="V6" gate="G$1" pin="P$1"/>
 <wire x1="243.84" y1="12.7" x2="236.22" y2="12.7" width="0.1524" layer="91"/>
@@ -1721,6 +1726,8 @@ load protection</text>
 <pinref part="V3" gate="G$1" pin="P$1"/>
 <wire x1="243.84" y1="2.54" x2="236.22" y2="2.54" width="0.1524" layer="91"/>
 <junction x="236.22" y="2.54"/>
+<pinref part="R24" gate="R$1" pin="1"/>
+<junction x="228.6" y="22.86"/>
 </segment>
 <segment>
 <wire x1="264.16" y1="81.28" x2="256.54" y2="81.28" width="0.1524" layer="91"/>
@@ -2599,11 +2606,16 @@ load protection</text>
 <junction x="172.72" y="-45.72"/>
 <pinref part="M2" gate="G$1" pin="D"/>
 <wire x1="185.42" y1="-45.72" x2="172.72" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="-45.72" x2="238.76" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="-45.72" x2="208.28" y2="-45.72" width="0.1524" layer="91"/>
 <junction x="195.58" y="-45.72"/>
 <pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="208.28" y1="-45.72" x2="238.76" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="-53.34" x2="185.42" y2="-45.72" width="0.1524" layer="91"/>
 <junction x="185.42" y="-45.72"/>
+<pinref part="R23" gate="R$1" pin="2"/>
+<wire x1="220.98" y1="-58.42" x2="208.28" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="-58.42" x2="208.28" y2="-45.72" width="0.1524" layer="91"/>
+<junction x="208.28" y="-45.72"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -2649,8 +2661,9 @@ load protection</text>
 <junction x="236.22" y="73.66"/>
 <pinref part="C2" gate="G$1" pin="P$2"/>
 <wire x1="220.98" y1="38.1" x2="220.98" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="35.56" x2="236.22" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="35.56" x2="228.6" y2="35.56" width="0.1524" layer="91"/>
 <junction x="236.22" y="35.56"/>
+<wire x1="228.6" y1="35.56" x2="236.22" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="35.56" x2="220.98" y2="35.56" width="0.1524" layer="91"/>
 <junction x="220.98" y="35.56"/>
 <wire x1="208.28" y1="50.8" x2="210.82" y2="50.8" width="0.1524" layer="91"/>
@@ -2664,6 +2677,9 @@ load protection</text>
 <pinref part="U4" gate="G$1" pin="TST"/>
 <pinref part="U4" gate="G$1" pin="S1"/>
 <pinref part="U4" gate="G$1" pin="VSS"/>
+<pinref part="R24" gate="R$1" pin="2"/>
+<wire x1="228.6" y1="33.02" x2="228.6" y2="35.56" width="0.1524" layer="91"/>
+<junction x="228.6" y="35.56"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -2703,7 +2719,11 @@ load protection</text>
 <segment>
 <pinref part="M1" gate="G$1" pin="D"/>
 <pinref part="M2" gate="G$1" pin="G"/>
-<wire x1="243.84" y1="-66.04" x2="243.84" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="-66.04" x2="243.84" y2="-58.42" width="0.1524" layer="91"/>
+<pinref part="R23" gate="R$1" pin="1"/>
+<wire x1="243.84" y1="-58.42" x2="243.84" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="-58.42" x2="243.84" y2="-58.42" width="0.1524" layer="91"/>
+<junction x="243.84" y="-58.42"/>
 </segment>
 </net>
 </nets>
