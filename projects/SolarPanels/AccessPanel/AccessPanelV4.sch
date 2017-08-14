@@ -904,6 +904,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="D1" library="BrownSpaceEngineering" deviceset="DFLS130L" device="" value="DFLS130L"/>
 <part name="R1" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
+<part name="V2" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="GND"/>
+<part name="V5" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="GND"/>
 </parts>
 <sheets>
 <sheet>
@@ -953,6 +955,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="GND2" gate="1" x="-63.5" y="66.04"/>
 <instance part="D1" gate="G$1" x="172.72" y="40.64"/>
 <instance part="R1" gate="R$1" x="175.26" y="30.48"/>
+<instance part="V2" gate="G$1" x="-60.96" y="-93.98"/>
+<instance part="V5" gate="G$1" x="-60.96" y="-101.6"/>
 </instances>
 <busses>
 </busses>
@@ -1158,11 +1162,20 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <junction x="96.52" y="-86.36"/>
 <junction x="127" y="-86.36"/>
 <pinref part="V4" gate="G$1" pin="P$1"/>
-<wire x1="-55.88" y1="-86.36" x2="-27.94" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="-86.36" x2="-40.64" y2="-86.36" width="0.1524" layer="91"/>
 <junction x="-27.94" y="-86.36"/>
 <pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="-40.64" y1="-86.36" x2="-27.94" y2="-86.36" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="-93.98" x2="-17.78" y2="-86.36" width="0.1524" layer="91"/>
 <junction x="-17.78" y="-86.36"/>
+<pinref part="V5" gate="G$1" pin="P$1"/>
+<wire x1="-55.88" y1="-101.6" x2="-40.64" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="-101.6" x2="-40.64" y2="-93.98" width="0.1524" layer="91"/>
+<junction x="-40.64" y="-86.36"/>
+<pinref part="V2" gate="G$1" pin="P$1"/>
+<wire x1="-40.64" y1="-93.98" x2="-40.64" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="-93.98" x2="-40.64" y2="-93.98" width="0.1524" layer="91"/>
+<junction x="-40.64" y="-93.98"/>
 </segment>
 <segment>
 <pinref part="IR" gate="G$1" pin="GND"/>
