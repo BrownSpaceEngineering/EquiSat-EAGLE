@@ -651,6 +651,46 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="-1.6" y1="-1.3" x2="-1.6" y2="1.3" width="0.127" layer="21"/>
 <text x="-1.7" y="1.5" size="0.8" layer="25">&gt;NAME</text>
 </package>
+<package name="68611614422">
+<smd name="P$1" x="0" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="P$2" x="1" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="P$3" x="2" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="P$4" x="3" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="P$5" x="4" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="P$6" x="5" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="P$7" x="6" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="P$8" x="7" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="P$9" x="8" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="P$10" x="9" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="P$11" x="10" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="P$12" x="11" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="P$13" x="12" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="P$14" x="13" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="P$15" x="14" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="P$16" x="15" y="0" dx="0.6" dy="2.2" layer="1"/>
+<smd name="P$17" x="17.6" y="-2.4" dx="1.8" dy="2.6" layer="1"/>
+<smd name="P$18" x="-2.6" y="-2.4" dx="1.8" dy="2.6" layer="1"/>
+<wire x1="-0.5" y1="1.3" x2="-0.5" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-0.6" x2="-4" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-4" y1="-0.6" x2="-4" y2="-6" width="0.127" layer="21"/>
+<wire x1="-4" y1="-6" x2="19" y2="-6" width="0.127" layer="21"/>
+<wire x1="19" y1="-6" x2="19" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="19" y1="-0.6" x2="15.5" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="15.5" y1="-0.6" x2="15.5" y2="1.3" width="0.127" layer="21"/>
+<wire x1="15.5" y1="1.3" x2="-0.5" y2="1.3" width="0.127" layer="21"/>
+<text x="5.3" y="1.6" size="0.7" layer="21">&gt;NAME</text>
+<circle x="-1.4" y="0.2" radius="0.1" width="1" layer="21"/>
+<text x="-1.3" y="1" size="0.7" layer="21">1</text>
+<text x="15.7" y="1.1" size="0.7" layer="21">16</text>
+<polygon width="0.127" layer="43">
+<vertex x="-3.9" y="-6"/>
+<vertex x="18.9" y="-6"/>
+<vertex x="18.9" y="-0.9"/>
+<vertex x="-4" y="-0.9"/>
+<vertex x="-4" y="-5.9"/>
+<vertex x="-4" y="-6"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="VIA">
@@ -709,6 +749,31 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="1.27" y1="-0.762" x2="1.778" y2="0.762" width="0.1778" layer="94"/>
 <wire x1="1.778" y1="0.762" x2="2.286" y2="-0.762" width="0.1778" layer="94"/>
 <wire x1="2.286" y1="-0.762" x2="2.54" y2="0" width="0.1778" layer="94"/>
+</symbol>
+<symbol name="CONN-16">
+<pin name="P$1" x="-12.7" y="5.08" length="middle"/>
+<pin name="P$2" x="-12.7" y="2.54" length="middle"/>
+<pin name="P$3" x="-12.7" y="0" length="middle"/>
+<pin name="P$4" x="-12.7" y="-2.54" length="middle"/>
+<pin name="P$5" x="-12.7" y="-5.08" length="middle"/>
+<pin name="P$6" x="-12.7" y="-7.62" length="middle"/>
+<pin name="P$7" x="-12.7" y="-10.16" length="middle"/>
+<pin name="P$8" x="-12.7" y="-12.7" length="middle"/>
+<pin name="P$9" x="17.78" y="-12.7" length="middle" rot="R180"/>
+<pin name="P$10" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="-7.62" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-20.32" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-2.54" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<pin name="P$11" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="P$12" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="P$13" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="P$14" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="P$15" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="P$16" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="P$17" x="0" y="-25.4" length="middle" rot="R90"/>
+<pin name="P$18" x="5.08" y="-25.4" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -816,6 +881,38 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="FFC-16" prefix="J">
+<gates>
+<gate name="G$1" symbol="CONN-16" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="68611614422">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$10" pad="P$10"/>
+<connect gate="G$1" pin="P$11" pad="P$11"/>
+<connect gate="G$1" pin="P$12" pad="P$12"/>
+<connect gate="G$1" pin="P$13" pad="P$13"/>
+<connect gate="G$1" pin="P$14" pad="P$14"/>
+<connect gate="G$1" pin="P$15" pad="P$15"/>
+<connect gate="G$1" pin="P$16" pad="P$16"/>
+<connect gate="G$1" pin="P$17" pad="P$17"/>
+<connect gate="G$1" pin="P$18" pad="P$18"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
+<connect gate="G$1" pin="P$7" pad="P$7"/>
+<connect gate="G$1" pin="P$8" pad="P$8"/>
+<connect gate="G$1" pin="P$9" pad="P$9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1">
@@ -906,6 +1003,17 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="R1" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
 <part name="V2" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="GND"/>
 <part name="V5" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="GND"/>
+<part name="V7" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="UMB-CHG"/>
+<part name="V8" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="VIN-EXT"/>
+<part name="V9" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="SWDIO"/>
+<part name="V10" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="SWDCLK"/>
+<part name="V11" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="RESETN"/>
+<part name="V14" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="USART_RX"/>
+<part name="V15" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="USART_TX"/>
+<part name="V16" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="3V3"/>
+<part name="J1" library="BrownSpaceEngineering" deviceset="FFC-16" device=""/>
+<part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="GND4" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -957,6 +1065,17 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="R1" gate="R$1" x="175.26" y="30.48"/>
 <instance part="V2" gate="G$1" x="-60.96" y="-93.98"/>
 <instance part="V5" gate="G$1" x="-60.96" y="-101.6"/>
+<instance part="V7" gate="G$1" x="-193.04" y="40.64"/>
+<instance part="V8" gate="G$1" x="-193.04" y="33.02"/>
+<instance part="V9" gate="G$1" x="-193.04" y="25.4"/>
+<instance part="V10" gate="G$1" x="-193.04" y="17.78"/>
+<instance part="V11" gate="G$1" x="-193.04" y="10.16"/>
+<instance part="V14" gate="G$1" x="-193.04" y="-7.62"/>
+<instance part="V15" gate="G$1" x="-193.04" y="-15.24"/>
+<instance part="V16" gate="G$1" x="-193.04" y="2.54"/>
+<instance part="J1" gate="G$1" x="-106.68" y="22.86"/>
+<instance part="GND3" gate="1" x="-104.14" y="-22.86"/>
+<instance part="GND4" gate="1" x="-68.58" y="22.86"/>
 </instances>
 <busses>
 </busses>
@@ -1191,6 +1310,41 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="-63.5" y1="76.2" x2="-63.5" y2="68.58" width="0.1524" layer="91"/>
 <junction x="-63.5" y="76.2"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="P$17"/>
+<wire x1="-106.68" y1="-2.54" x2="-106.68" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="-10.16" x2="-104.14" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="P$18"/>
+<wire x1="-104.14" y1="-10.16" x2="-101.6" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="-10.16" x2="-101.6" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="-10.16" x2="-104.14" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="-104.14" y="-10.16"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="P$16"/>
+<wire x1="-88.9" y1="27.94" x2="-83.82" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="27.94" x2="-68.58" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="27.94" x2="-68.58" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="P$15"/>
+<wire x1="-88.9" y1="25.4" x2="-83.82" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="25.4" x2="-83.82" y2="27.94" width="0.1524" layer="91"/>
+<junction x="-83.82" y="27.94"/>
+<pinref part="J1" gate="G$1" pin="P$14"/>
+<wire x1="-88.9" y1="22.86" x2="-83.82" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="22.86" x2="-83.82" y2="25.4" width="0.1524" layer="91"/>
+<junction x="-83.82" y="25.4"/>
+<pinref part="J1" gate="G$1" pin="P$13"/>
+<wire x1="-88.9" y1="20.32" x2="-83.82" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="20.32" x2="-83.82" y2="22.86" width="0.1524" layer="91"/>
+<junction x="-83.82" y="22.86"/>
+<pinref part="J1" gate="G$1" pin="P$12"/>
+<wire x1="-88.9" y1="17.78" x2="-83.82" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="17.78" x2="-83.82" y2="20.32" width="0.1524" layer="91"/>
+<junction x="-83.82" y="20.32"/>
+<label x="-78.74" y="27.94" size="1.778" layer="95"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="SP-PWR" class="0">
 <segment>
@@ -1256,6 +1410,116 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="177.8" y1="40.64" x2="190.5" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="40.64" x2="190.5" y2="33.02" width="0.1524" layer="91"/>
 <junction x="190.5" y="33.02"/>
+</segment>
+</net>
+<net name="UMB-CHG" class="0">
+<segment>
+<pinref part="V7" gate="G$1" pin="P$1"/>
+<wire x1="-187.96" y1="40.64" x2="-162.56" y2="40.64" width="0.1524" layer="91"/>
+<label x="-175.26" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="P$1"/>
+<wire x1="-119.38" y1="27.94" x2="-124.46" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="P$2"/>
+<wire x1="-124.46" y1="27.94" x2="-139.7" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="25.4" x2="-124.46" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-124.46" y1="25.4" x2="-124.46" y2="27.94" width="0.1524" layer="91"/>
+<junction x="-124.46" y="27.94"/>
+<label x="-139.7" y="27.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VIN-EXT" class="0">
+<segment>
+<pinref part="V8" gate="G$1" pin="P$1"/>
+<wire x1="-187.96" y1="33.02" x2="-162.56" y2="33.02" width="0.1524" layer="91"/>
+<label x="-175.26" y="33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="P$9"/>
+<wire x1="-88.9" y1="10.16" x2="-83.82" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="P$10"/>
+<wire x1="-83.82" y1="10.16" x2="-68.58" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="12.7" x2="-83.82" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="12.7" x2="-83.82" y2="10.16" width="0.1524" layer="91"/>
+<junction x="-83.82" y="10.16"/>
+<pinref part="J1" gate="G$1" pin="P$11"/>
+<wire x1="-88.9" y1="15.24" x2="-83.82" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="15.24" x2="-83.82" y2="12.7" width="0.1524" layer="91"/>
+<junction x="-83.82" y="12.7"/>
+<label x="-78.74" y="10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SWDIO" class="0">
+<segment>
+<pinref part="V9" gate="G$1" pin="P$1"/>
+<wire x1="-187.96" y1="25.4" x2="-162.56" y2="25.4" width="0.1524" layer="91"/>
+<label x="-175.26" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="P$7"/>
+<wire x1="-119.38" y1="12.7" x2="-139.7" y2="12.7" width="0.1524" layer="91"/>
+<label x="-139.7" y="12.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SWDCLK" class="0">
+<segment>
+<pinref part="V10" gate="G$1" pin="P$1"/>
+<wire x1="-187.96" y1="17.78" x2="-162.56" y2="17.78" width="0.1524" layer="91"/>
+<label x="-175.26" y="17.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="P$6"/>
+<wire x1="-119.38" y1="15.24" x2="-139.7" y2="15.24" width="0.1524" layer="91"/>
+<label x="-139.7" y="15.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RESETN" class="0">
+<segment>
+<pinref part="V11" gate="G$1" pin="P$1"/>
+<wire x1="-187.96" y1="10.16" x2="-162.56" y2="10.16" width="0.1524" layer="91"/>
+<label x="-175.26" y="10.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="P$5"/>
+<wire x1="-119.38" y1="17.78" x2="-139.7" y2="17.78" width="0.1524" layer="91"/>
+<label x="-139.7" y="17.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="USART_RX" class="0">
+<segment>
+<pinref part="V14" gate="G$1" pin="P$1"/>
+<wire x1="-187.96" y1="-7.62" x2="-162.56" y2="-7.62" width="0.1524" layer="91"/>
+<label x="-175.26" y="-7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="P$4"/>
+<wire x1="-119.38" y1="20.32" x2="-139.7" y2="20.32" width="0.1524" layer="91"/>
+<label x="-139.7" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="USART_TX" class="0">
+<segment>
+<pinref part="V15" gate="G$1" pin="P$1"/>
+<wire x1="-187.96" y1="-15.24" x2="-162.56" y2="-15.24" width="0.1524" layer="91"/>
+<label x="-175.26" y="-15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="P$3"/>
+<wire x1="-119.38" y1="22.86" x2="-139.7" y2="22.86" width="0.1524" layer="91"/>
+<label x="-139.7" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="3V3" class="0">
+<segment>
+<pinref part="V16" gate="G$1" pin="P$1"/>
+<wire x1="-187.96" y1="2.54" x2="-162.56" y2="2.54" width="0.1524" layer="91"/>
+<label x="-175.26" y="2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="P$8"/>
+<wire x1="-119.38" y1="10.16" x2="-139.7" y2="10.16" width="0.1524" layer="91"/>
+<label x="-139.7" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
