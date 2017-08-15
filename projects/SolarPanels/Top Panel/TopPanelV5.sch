@@ -582,7 +582,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="-1.8" y1="-0.6" x2="-1.8" y2="1.4" width="0.127" layer="21"/>
 <wire x1="-1.7" y1="1.4" x2="-1.7" y2="-0.6" width="0.5" layer="21"/>
 <text x="-2.54" y="1.905" size="1.016" layer="21">&gt;NAME</text>
-<text x="-1.27" y="-1.27" size="0.5" layer="21" ratio="1">C</text>
+<text x="-1.651" y="-1.778" size="0.7" layer="21" ratio="1">C</text>
 </package>
 <package name="TRISOLX-V3">
 <wire x1="-13.97" y1="-2.54" x2="12.41" y2="-2.54" width="0.127" layer="21"/>
@@ -908,6 +908,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="D1" library="BrownSpaceEngineering" deviceset="DFLS130L" device="" value="DFLS130L"/>
 <part name="R1" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
+<part name="V2" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="GND"/>
 </parts>
 <sheets>
 <sheet>
@@ -961,6 +962,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="GND2" gate="1" x="-63.5" y="66.04"/>
 <instance part="D1" gate="G$1" x="172.72" y="40.64"/>
 <instance part="R1" gate="R$1" x="175.26" y="30.48"/>
+<instance part="V2" gate="G$1" x="-93.98" y="-78.74"/>
 </instances>
 <busses>
 </busses>
@@ -1191,11 +1193,16 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <junction x="96.52" y="-86.36"/>
 <junction x="127" y="-86.36"/>
 <pinref part="V4" gate="G$1" pin="P$1"/>
-<wire x1="-88.9" y1="-86.36" x2="-60.96" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="-86.36" x2="-81.28" y2="-86.36" width="0.1524" layer="91"/>
 <junction x="-60.96" y="-86.36"/>
 <pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="-81.28" y1="-86.36" x2="-60.96" y2="-86.36" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="-93.98" x2="-17.78" y2="-86.36" width="0.1524" layer="91"/>
 <junction x="-17.78" y="-86.36"/>
+<pinref part="V2" gate="G$1" pin="P$1"/>
+<wire x1="-88.9" y1="-78.74" x2="-81.28" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="-78.74" x2="-81.28" y2="-86.36" width="0.1524" layer="91"/>
+<junction x="-81.28" y="-86.36"/>
 </segment>
 <segment>
 <pinref part="IR" gate="G$1" pin="GND"/>

@@ -165,20 +165,20 @@
 <vertex x="0" y="91.5"/>
 </polygon>
 <polygon width="0.254" layer="21">
-<vertex x="28.6" y="23.5"/>
-<vertex x="34.2" y="23.5"/>
-<vertex x="34.2" y="18.6"/>
-<vertex x="28.6" y="18.6"/>
+<vertex x="19.1" y="23.5"/>
+<vertex x="25.7" y="23.5"/>
+<vertex x="25.7" y="18.6"/>
+<vertex x="19.1" y="18.6"/>
 </polygon>
 <polygon width="0.254" layer="22">
-<vertex x="20.1" y="48.9"/>
-<vertex x="20.1" y="44.6"/>
-<vertex x="10.6" y="44.6"/>
-<vertex x="10.6" y="50.6"/>
-<vertex x="20.1" y="50.6"/>
-<vertex x="20.1" y="48.8"/>
+<vertex x="30.6" y="44.9"/>
+<vertex x="30.6" y="40.1"/>
+<vertex x="20.6" y="40.1"/>
+<vertex x="20.6" y="46.1"/>
+<vertex x="30.6" y="46.1"/>
+<vertex x="30.6" y="40.8"/>
 </polygon>
-<text x="47.3" y="71.9" size="1.778" layer="25">+Y</text>
+<text x="53.8" y="81.4" size="1.778" layer="25">+Y</text>
 <polygon width="0.1524" layer="30">
 <vertex x="0.5" y="7.5"/>
 <vertex x="80.5" y="7.5"/>
@@ -213,17 +213,21 @@
 <vertex x="-5.2" y="33"/>
 <vertex x="-5.2" y="30.5"/>
 </polygon>
-<text x="18" y="21.5" size="0.9" layer="25">BSE: EQUiSat</text>
-<text x="18" y="19.5" size="0.9" layer="25">Top Panel V5</text>
-<text x="26" y="19.5" size="0.9" layer="25">SN:</text>
-<text x="7.5" y="19" size="0.9" layer="25">August 2017</text>
-<text x="48.8" y="72.9" size="1.778" layer="26" rot="MR0">+Y</text>
+<text x="-6.5" y="19" size="0.9" layer="25">BSE: EQUiSat</text>
+<text x="3" y="19" size="0.9" layer="25">Top Panel V5</text>
+<text x="16" y="21" size="0.9" layer="25">SN:</text>
+<text x="11.5" y="19" size="0.9" layer="25">August 2017</text>
+<text x="46.8" y="73.4" size="1.778" layer="26" rot="MR0">+Y</text>
 <text x="22.8" y="9.4" size="1.778" layer="25">-Y</text>
 <text x="40.3" y="8.9" size="1.778" layer="26" rot="MR0">-Y</text>
-<text x="21" y="50.5" size="0.9" layer="26" rot="MR180">Brown Space Engineering: EQUiSat</text>
-<text x="33" y="48.5" size="0.9" layer="26" rot="MR180">Top Panel V5</text>
-<text x="40" y="45.5" size="0.9" layer="26" rot="MR0">August 2017</text>
-<text x="22.5" y="46.5" size="0.9" layer="26" rot="MR0">SN:</text>
+<text x="18.5" y="49" size="0.9" layer="26" rot="MR180">Brown Space Engineering: EQUiSat</text>
+<text x="31" y="47.5" size="0.9" layer="26" rot="MR180">Top Panel V5</text>
+<text x="38.5" y="45" size="0.9" layer="26" rot="MR0">August 2017</text>
+<text x="33.5" y="43" size="0.9" layer="26" rot="MR0">SN:</text>
+<text x="-7.7" y="49.9" size="1.778" layer="25">-X</text>
+<text x="4.8" y="50.4" size="1.778" layer="26" rot="MR0">-X</text>
+<text x="85.3" y="43.4" size="1.778" layer="25">+X</text>
+<text x="76.8" y="42.4" size="1.778" layer="26" rot="MR0">+X</text>
 </plain>
 <libraries>
 <library name="CNTRL_BOARD">
@@ -276,7 +280,7 @@
 <wire x1="-1.8" y1="-0.6" x2="-1.8" y2="1.4" width="0.127" layer="21"/>
 <wire x1="-1.7" y1="1.4" x2="-1.7" y2="-0.6" width="0.5" layer="21"/>
 <text x="-2.54" y="1.905" size="1.016" layer="21">&gt;NAME</text>
-<text x="-1.27" y="-1.27" size="0.5" layer="21" ratio="1">C</text>
+<text x="-1.651" y="-1.778" size="0.7" layer="21" ratio="1">C</text>
 </package>
 <package name="TRISOLX-V3">
 <wire x1="-13.97" y1="-2.54" x2="12.41" y2="-2.54" width="0.127" layer="21"/>
@@ -519,17 +523,17 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="CNTRL_BOARD" package="0805" value="0.1uF" x="53.49635625" y="25.9249625" smashed="yes" rot="MR180">
-<attribute name="NAME" x="53.09935625" y="27.6994625" size="0.635" layer="26" rot="MR180"/>
+<element name="C1" library="CNTRL_BOARD" package="0805" value="0.1uF" x="52.50364375" y="20.5750375" smashed="yes" rot="MR0">
+<attribute name="NAME" x="52.90064375" y="18.8005375" size="0.635" layer="26" rot="MR0"/>
 </element>
 <element name="IR" library="CNTRL_BOARD" package="MXL90620" value="MXL90614" x="48.8582875" y="23.30568125" smashed="yes" rot="R90">
-<attribute name="NAME" x="50.51431875" y="29.2582875" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="55.01431875" y="20.7582875" size="1.27" layer="25" rot="R180"/>
 </element>
-<element name="PD" library="BrownSpaceEngineering" package="TEMD6200" value="TEMD6200" x="39.206775" y="25.88814375" rot="R90"/>
-<element name="SCL" library="BrownSpaceEngineering" package="VIA-60MIL" value="SCL" x="42.5585125" y="23.99001875" rot="R90"/>
-<element name="SDA" library="BrownSpaceEngineering" package="VIA-60MIL" value="SDA" x="42.52685625" y="19.74306875" rot="R90"/>
-<element name="V3" library="BrownSpaceEngineering" package="VIA-60MIL" value="3V3-IR" x="54.572765625" y="20.904178125" rot="R180"/>
-<element name="V6" library="BrownSpaceEngineering" package="VIA-60MIL" value="PD-OUT" x="37.78884375" y="21.063603125" rot="R180"/>
+<element name="PD" library="BrownSpaceEngineering" package="TEMD6200" value="TEMD6200" x="39.38814375" y="24.293225"/>
+<element name="SCL" library="BrownSpaceEngineering" package="VIA-60MIL" value="SCL" x="32.52998125" y="20.1185125" rot="R180"/>
+<element name="SDA" library="BrownSpaceEngineering" package="VIA-60MIL" value="SDA" x="37.28693125" y="20.86685625" rot="R180"/>
+<element name="V3" library="BrownSpaceEngineering" package="VIA-60MIL" value="3V3-IR" x="42.072765625" y="20.904178125" rot="R180"/>
+<element name="V6" library="BrownSpaceEngineering" package="VIA-60MIL" value="PD-OUT" x="31.28884375" y="24.063603125" rot="R180"/>
 <element name="1D" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="6.008" y="55.17" smashed="yes">
 <attribute name="NAME" x="4.738" y="55.17" size="1.27" layer="25" rot="R90"/>
 <attribute name="NAME" x="-5.522" y="56.17" size="1.27" layer="25" rot="R90"/>
@@ -553,9 +557,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-5.53" y="65" size="1.27" layer="25" rot="R90"/>
 </element>
 <element name="2C" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="5.708" y="39.71"/>
-<element name="3C" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="43.692" y="7.57" smashed="yes" rot="R180">
-<attribute name="NAME" x="44.962" y="7.57" size="1.27" layer="25" rot="R270"/>
-<attribute name="NAME" x="29.722" y="7.57" size="1.27" layer="25" rot="R270"/>
+<element name="3C" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="43.192" y="7.57" smashed="yes" rot="R180">
+<attribute name="NAME" x="44.462" y="7.57" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="29.222" y="7.57" size="1.27" layer="25" rot="R270"/>
 </element>
 <element name="4C" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="74.792" y="23.55" rot="R180"/>
 <element name="5C" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="74.792" y="39.33" rot="R180"/>
@@ -571,14 +575,14 @@ design rules under a new name.</description>
 <attribute name="NAME" x="4.856" y="31.71" size="1.27" layer="25" rot="R90"/>
 <attribute name="NAME" x="20.096" y="31.71" size="1.27" layer="25" rot="R90"/>
 </element>
-<element name="3B" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="16.892" y="15.67" rot="R180"/>
+<element name="3B" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="15.892" y="15.67" rot="R180"/>
 <element name="4B" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="67.374" y="15.47" smashed="yes" rot="R180">
 <attribute name="NAME" x="68.644" y="15.47" size="1.27" layer="25" rot="R270"/>
 <attribute name="NAME" x="79.596" y="12.03" size="1.27" layer="25" rot="R90"/>
 </element>
 <element name="5B" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="74.892" y="47.65" rot="R180"/>
 <element name="6B" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="74.474" y="71.75" rot="R180"/>
-<element name="1A" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="16.292" y="81.13" rot="R180"/>
+<element name="1A" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="15.292" y="81.13" rot="R180"/>
 <element name="2A" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="7.174" y="25.63" smashed="yes" rot="R180">
 <attribute name="NAME" x="8.444" y="25.63" size="1.27" layer="25" rot="R270"/>
 <attribute name="NAME" x="-6.796" y="25.63" size="1.27" layer="25" rot="R270"/>
@@ -601,13 +605,14 @@ design rules under a new name.</description>
 <element name="7B" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="38.3" y="78.8"/>
 <element name="7A" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="66.6" y="77.5"/>
 <element name="8D" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="49.2" y="42.4" rot="R90"/>
-<element name="8C" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="41.6" y="38.8" rot="R90"/>
+<element name="8C" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="41.4" y="38.8" rot="R90"/>
 <element name="8B" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="33.4" y="37.2" rot="R90"/>
 <element name="8A" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="25.6" y="36.9" rot="R90"/>
 <element name="V1" library="BrownSpaceEngineering" package="VIA-60MIL" value="SP-PWR-OUT" x="48.5" y="64.5" rot="R270"/>
-<element name="V4" library="BrownSpaceEngineering" package="VIA-60MIL" value="GND" x="47" y="30.2" rot="R180"/>
+<element name="V4" library="BrownSpaceEngineering" package="VIA-60MIL" value="GND" x="46" y="30.2" rot="R180"/>
 <element name="D1" library="BrownSpaceEngineering" package="PWRDI-123" value="DFLS130L" x="39.9" y="61.1" rot="MR270"/>
 <element name="R1" library="BrownSpaceEngineering" package="1210" value="0R" x="45.3" y="58.5" rot="MR180"/>
+<element name="V2" library="BrownSpaceEngineering" package="VIA-60MIL" value="GND" x="48.5" y="70"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -635,32 +640,36 @@ design rules under a new name.</description>
 <contactref element="C1" pad="1"/>
 <contactref element="PD" pad="A"/>
 <contactref element="V4" pad="P$1"/>
-<via x="-3.75" y="13.5" extent="1-16" drill="3.26" shape="octagon"/>
-<via x="84.75" y="13.5" extent="1-16" drill="3.26" shape="octagon"/>
-<via x="84.75" y="81.5" extent="1-16" drill="3.26" shape="octagon"/>
-<via x="-3.75" y="81.5" extent="1-16" drill="3.26" shape="octagon"/>
-<wire x1="47" y1="30.2" x2="46.8" y2="30" width="0.3" layer="1"/>
-<wire x1="46.8" y1="30" x2="41" y2="30" width="0.3" layer="1"/>
-<wire x1="41" y1="30" x2="38.806775" y2="27.806775" width="0.3" layer="1"/>
-<wire x1="38.806775" y1="27.806775" x2="38.806775" y2="26.64814375" width="0.3" layer="1"/>
+<via x="-5.25" y="13.5" extent="1-16" drill="3.26" shape="octagon"/>
+<via x="86.25" y="13.5" extent="1-16" drill="3.26" shape="octagon"/>
+<via x="86.25" y="81.5" extent="1-16" drill="3.26" shape="octagon"/>
+<via x="-5.25" y="81.5" extent="1-16" drill="3.26" shape="octagon"/>
+<contactref element="V2" pad="P$1"/>
+<wire x1="40.14814375" y1="24.693225" x2="42.193225" y2="24.693225" width="0.3" layer="1"/>
+<wire x1="42.193225" y1="24.693225" x2="46" y2="28.5" width="0.3" layer="1"/>
+<wire x1="46" y1="28.5" x2="46" y2="30.2" width="0.3" layer="1"/>
 </signal>
 <signal name="PD-OUT">
 <contactref element="PD" pad="C"/>
 <contactref element="V6" pad="P$1"/>
-<wire x1="37.78884375" y1="21.063603125" x2="38.806775" y2="22.081534375" width="0.3" layer="1"/>
-<wire x1="38.806775" y1="22.081534375" x2="38.806775" y2="25.00814375" width="0.3" layer="1"/>
+<wire x1="38.50814375" y1="24.693225" x2="31.918465625" y2="24.693225" width="0.3" layer="1"/>
+<wire x1="31.918465625" y1="24.693225" x2="31.28884375" y2="24.063603125" width="0.3" layer="1"/>
 </signal>
 <signal name="SDA">
 <contactref element="IR" pad="SDA"/>
 <contactref element="SDA" pad="P$1"/>
-<wire x1="42.52685625" y1="19.74306875" x2="43.001675" y2="19.74306875" width="0.3" layer="1"/>
-<wire x1="43.001675" y1="19.74306875" x2="46.5642875" y2="23.30568125" width="0.3" layer="1"/>
+<wire x1="37.28693125" y1="20.86685625" x2="38.86685625" y2="20.86685625" width="0.3" layer="1"/>
+<wire x1="38.86685625" y1="20.86685625" x2="40.69" y2="22.71" width="0.3" layer="1"/>
+<wire x1="40.69" y1="22.71" x2="45.96860625" y2="22.73" width="0.3" layer="1"/>
+<wire x1="45.96860625" y1="22.73" x2="46.5642875" y2="23.30568125" width="0.3" layer="1"/>
 </signal>
 <signal name="SCL">
 <contactref element="IR" pad="SCL"/>
 <contactref element="SCL" pad="P$1"/>
-<wire x1="48.8582875" y1="25.59868125" x2="44.167175" y2="25.59868125" width="0.3" layer="1"/>
-<wire x1="44.167175" y1="25.59868125" x2="42.5585125" y2="23.99001875" width="0.3" layer="1"/>
+<wire x1="48.8582875" y1="25.59868125" x2="44.09868125" y2="25.59868125" width="0.3" layer="1"/>
+<wire x1="44.09868125" y1="25.59868125" x2="42" y2="23.5" width="0.3" layer="1"/>
+<wire x1="42" y1="23.5" x2="35.91146875" y2="23.5" width="0.3" layer="1"/>
+<wire x1="35.91146875" y1="23.5" x2="32.52998125" y2="20.1185125" width="0.3" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="1D" pad="ANODE"/>
@@ -684,7 +693,7 @@ design rules under a new name.</description>
 <signal name="N$3">
 <contactref element="3D" pad="ANODE"/>
 <contactref element="3C" pad="CATHODE"/>
-<wire x1="39.472" y1="6.61" x2="47.578" y2="6.61" width="0.3" layer="1"/>
+<wire x1="38.972" y1="6.61" x2="47.578" y2="6.61" width="0.3" layer="1"/>
 <wire x1="47.578" y1="6.61" x2="52.838" y2="11.87" width="0.3" layer="1"/>
 </signal>
 <signal name="N$4">
@@ -723,8 +732,8 @@ design rules under a new name.</description>
 <signal name="N$7">
 <contactref element="1B" pad="ANODE"/>
 <contactref element="1A" pad="CATHODE"/>
-<wire x1="19.53" y1="69.57" x2="12.072" y2="77.028" width="0.3" layer="1"/>
-<wire x1="12.072" y1="77.028" x2="12.072" y2="80.17" width="0.3" layer="1"/>
+<wire x1="19.53" y1="69.57" x2="11.072" y2="78.028" width="0.3" layer="1"/>
+<wire x1="11.072" y1="78.028" x2="11.072" y2="80.17" width="0.3" layer="1"/>
 </signal>
 <signal name="N$8">
 <contactref element="2B" pad="ANODE"/>
@@ -737,9 +746,9 @@ design rules under a new name.</description>
 <contactref element="3B" pad="ANODE"/>
 <contactref element="3A" pad="CATHODE"/>
 <wire x1="19.428" y1="5.25" x2="7.75" y2="5.25" width="0.3" layer="1"/>
-<wire x1="7.75" y1="5.25" x2="3.5" y2="9.5" width="0.3" layer="1"/>
-<wire x1="3.5" y1="9.5" x2="3.5" y2="17.072" width="0.3" layer="1"/>
-<wire x1="3.5" y1="17.072" x2="3.362" y2="17.21" width="0.3" layer="1"/>
+<wire x1="7.75" y1="5.25" x2="2.5" y2="10.5" width="0.3" layer="1"/>
+<wire x1="2.5" y1="10.5" x2="2.5" y2="17.072" width="0.3" layer="1"/>
+<wire x1="2.5" y1="17.072" x2="2.362" y2="17.21" width="0.3" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="4B" pad="ANODE"/>
@@ -782,8 +791,8 @@ design rules under a new name.</description>
 <signal name="N$15">
 <contactref element="3C" pad="ANODE"/>
 <contactref element="3B" pad="CATHODE"/>
-<wire x1="12.672" y1="14.71" x2="24.562" y2="14.71" width="0.3" layer="1"/>
-<wire x1="24.562" y1="14.71" x2="30.162" y2="9.11" width="0.3" layer="1"/>
+<wire x1="11.672" y1="14.71" x2="24.062" y2="14.71" width="0.3" layer="1"/>
+<wire x1="24.062" y1="14.71" x2="29.662" y2="9.11" width="0.3" layer="1"/>
 </signal>
 <signal name="N$16">
 <contactref element="4C" pad="ANODE"/>
@@ -881,13 +890,13 @@ design rules under a new name.</description>
 <signal name="N$22">
 <contactref element="8D" pad="ANODE"/>
 <contactref element="8C" pad="CATHODE"/>
-<wire x1="40.64" y1="43.02" x2="41" y2="43.38" width="0.3" layer="1"/>
-<via x="41" y="48.5" extent="1-16" drill="0.35"/>
-<wire x1="41" y1="48.5" x2="42.5" y2="50" width="0.3" layer="16"/>
+<wire x1="40.44" y1="43.02" x2="40.5" y2="42.88" width="0.3" layer="1"/>
+<via x="40.5" y="48" extent="1-16" drill="0.35"/>
+<wire x1="40.5" y1="48" x2="42.5" y2="50" width="0.3" layer="16"/>
 <wire x1="42.5" y1="50" x2="44" y2="50" width="0.3" layer="16"/>
 <wire x1="44" y1="50" x2="49.93" y2="55.93" width="0.3" layer="16"/>
 <wire x1="49.93" y1="55.93" x2="50.74" y2="55.93" width="0.3" layer="16"/>
-<wire x1="41" y1="43.38" x2="41" y2="48.5" width="0.3" layer="1"/>
+<wire x1="40.5" y1="42.88" x2="40.5" y2="48" width="0.3" layer="1"/>
 </signal>
 <signal name="N$23">
 <contactref element="8B" pad="ANODE"/>
@@ -900,24 +909,20 @@ design rules under a new name.</description>
 <signal name="N$24">
 <contactref element="8C" pad="ANODE"/>
 <contactref element="8B" pad="CATHODE"/>
-<wire x1="32.44" y1="41.42" x2="33.02" y2="42" width="0.3" layer="1"/>
-<wire x1="33.02" y1="42" x2="35" y2="42" width="0.3" layer="1"/>
-<wire x1="35" y1="42" x2="37" y2="44" width="0.3" layer="1"/>
-<wire x1="37" y1="44" x2="37" y2="47.5" width="0.3" layer="1"/>
-<wire x1="37" y1="47.5" x2="41.83" y2="52.33" width="0.3" layer="1"/>
-<wire x1="41.83" y1="52.33" x2="43.14" y2="52.33" width="0.3" layer="1"/>
+<wire x1="32.44" y1="41.42" x2="34.92" y2="41.42" width="0.3" layer="1"/>
+<wire x1="34.92" y1="41.42" x2="35" y2="41.5" width="0.3" layer="1"/>
+<via x="35" y="41.5" extent="1-16" drill="0.35"/>
+<wire x1="35" y1="41.5" x2="35" y2="44.19" width="0.3" layer="16"/>
+<wire x1="35" y1="44.19" x2="42.94" y2="52.33" width="0.3" layer="16"/>
 </signal>
 <signal name="3V3-IR">
 <contactref element="IR" pad="VDD"/>
 <contactref element="C1" pad="2"/>
 <contactref element="V3" pad="P$1"/>
-<wire x1="48.8582875" y1="21.01268125" x2="54.4642625" y2="21.01268125" width="0.3" layer="16"/>
-<wire x1="54.4642625" y1="21.01268125" x2="54.572765625" y2="20.904178125" width="0.3" layer="16"/>
-<wire x1="54.572765625" y1="20.904178125" x2="54.572765625" y2="24.072765625" width="0.3" layer="16"/>
-<wire x1="54.572765625" y1="24.072765625" x2="56" y2="25.5" width="0.3" layer="16"/>
-<wire x1="56" y1="25.5" x2="56" y2="26" width="0.3" layer="16"/>
-<wire x1="56" y1="26" x2="54.47139375" y2="26" width="0.3" layer="16"/>
-<wire x1="54.47139375" y1="26" x2="54.39635625" y2="25.9249625" width="0.3" layer="16"/>
+<wire x1="42.072765625" y1="20.904178125" x2="48.749784375" y2="20.904178125" width="0.3" layer="16"/>
+<wire x1="48.749784375" y1="20.904178125" x2="48.8582875" y2="21.01268125" width="0.3" layer="16"/>
+<wire x1="48.8582875" y1="21.01268125" x2="49.29593125" y2="20.5750375" width="0.3" layer="16"/>
+<wire x1="49.29593125" y1="20.5750375" x2="51.60364375" y2="20.5750375" width="0.3" layer="16"/>
 </signal>
 <signal name="N$25">
 <wire x1="90" y1="85.068" x2="90" y2="7" width="0.25" layer="1"/>
