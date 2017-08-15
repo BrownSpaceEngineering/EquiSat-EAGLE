@@ -155,10 +155,22 @@
 <wire x1="99.5" y1="0" x2="99.5" y2="82.5" width="0" layer="20"/>
 <wire x1="99.5" y1="82.5" x2="0" y2="82.5" width="0" layer="20"/>
 <wire x1="0" y1="82.5" x2="0" y2="0" width="0" layer="20"/>
+<text x="47.34" y="15.522" size="1.524" layer="22" rot="MR0">SDA</text>
+<text x="55.056" y="19.372" size="1.524" layer="22" rot="MR0">SCL</text>
+<text x="47.298" y="6.976" size="1.524" layer="22" rot="MR0">3V3</text>
+<text x="53.958" y="25.072" size="1.524" layer="22" rot="MR0">GND</text>
+<text x="47.298" y="8.476" size="1.524" layer="21" rot="R180">3V3</text>
+<text x="51.402" y="19.26" size="1.524" layer="21">SCL</text>
+<text x="43.37" y="15.49" size="1.524" layer="21">SDA</text>
+<text x="49.712" y="25.08" size="1.524" layer="21">GND</text>
 <text x="61.944" y="67.326" size="1.778" layer="22" rot="MR0">Brown Space Engineering
 EQUiSat: Side Solar Panel V5
 August 2017
 Caelan Ritter</text>
+<text x="43.192" y="21.336" size="1.4224" layer="21" rot="R90">PWR-OUT</text>
+<text x="43.192" y="21.59" size="1.4224" layer="22" rot="MR0">PWR-OUT</text>
+<text x="50.558" y="3.556" size="1.4224" layer="21" rot="R180">PD-OUT</text>
+<text x="43.446" y="3.556" size="1.4224" layer="22" rot="MR180">PD-OUT</text>
 <text x="97.744" y="34.995" size="1.4224" layer="21" rot="R90">EQUiSat: Side Solar Panel V5</text>
 <polygon width="0.1524" layer="21">
 <vertex x="89.702" y="6.35"/>
@@ -182,8 +194,6 @@ Caelan Ritter</text>
 <text x="6.25" y="73.5" size="2.54" layer="21" rot="R180">-Z</text>
 <text x="10.75" y="49" size="2.54" layer="22" rot="MR180">-Z</text>
 <text x="89.75" y="45" size="2.54" layer="22" rot="MR0">+Z</text>
-<text x="90.5" y="4.25" size="0.7" layer="21" rot="R90">SN:</text>
-<text x="64" y="64.25" size="0.7" layer="22" rot="MR0">SN:</text>
 </plain>
 <libraries>
 <library name="CNTRL_BOARD">
@@ -268,11 +278,6 @@ Caelan Ritter</text>
 <wire x1="14.63" y1="-0.54" x2="14.63" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="14.63" y1="-2.54" x2="12.43" y2="-2.54" width="0.127" layer="21"/>
 </package>
-<package name="VIA-60MIL">
-<pad name="P$1" x="0" y="0" drill="1.524"/>
-<text x="-1.27" y="1.27" size="0.762" layer="27">&gt;VALUE</text>
-<text x="2.54" y="1.27" size="0.762" layer="28" rot="MR0">&gt;VALUE</text>
-</package>
 <package name="PWRDI-123">
 <smd name="C" x="-1.1" y="0" dx="2.2" dy="1.4" layer="1"/>
 <smd name="A" x="1.45" y="0" dx="0.9" dy="1.4" layer="1"/>
@@ -301,6 +306,11 @@ Caelan Ritter</text>
 <wire x1="1.6" y1="-1.3" x2="-1.6" y2="-1.3" width="0.127" layer="21"/>
 <wire x1="-1.6" y1="-1.3" x2="-1.6" y2="1.3" width="0.127" layer="21"/>
 <text x="-1.7" y="1.5" size="0.8" layer="25">&gt;NAME</text>
+</package>
+<package name="VIA-60MIL">
+<pad name="P$1" x="0" y="0" drill="1.524"/>
+<text x="-1.27" y="1.27" size="0.762" layer="27">&gt;VALUE</text>
+<text x="2.54" y="1.27" size="0.762" layer="28" rot="MR0">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -497,7 +507,8 @@ design rules under a new name.</description>
 <attribute name="NAME" x="53.465" y="8.7385" size="0.635" layer="26" rot="MR180"/>
 </element>
 <element name="IR" library="CNTRL_BOARD" package="MXL90620" value="MXL90620" x="51.8304" y="13.988" smashed="yes" rot="R90">
-<attribute name="NAME" x="47.06" y="11.2384" size="0.6096" layer="21" rot="R180"/>
+<attribute name="NAME" x="48.31" y="10.4884" size="0.6096" layer="21" rot="R180"/>
+<attribute name="VALUE" x="47.873" y="11.3054" size="0.6096" layer="21" rot="R180"/>
 </element>
 <element name="PD" library="Solar Panel Parts" package="PHOTODECTORDEVICE2" value="PHOTODETECTOR" x="55.296" y="7.896" smashed="yes" rot="R90"/>
 <element name="1D" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="6.362" y="26.924" smashed="yes" rot="R90">
@@ -604,15 +615,15 @@ design rules under a new name.</description>
 <element name="8C" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="67.322" y="16.51" rot="R270"/>
 <element name="8B" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="75.196" y="16.51" rot="R270"/>
 <element name="8A" library="BrownSpaceEngineering" package="TRISOLX-V3" value="SOLARCELLV3" x="83.07" y="16.51" rot="R270"/>
-<element name="SCL" library="BrownSpaceEngineering" package="VIA-60MIL" value="SCL" x="49.3" y="20.566"/>
-<element name="SDA" library="BrownSpaceEngineering" package="VIA-60MIL" value="SDA" x="45.478" y="13.97"/>
-<element name="PD-OUT" library="BrownSpaceEngineering" package="VIA-60MIL" value="PD-OUT" x="52.082" y="3.048"/>
-<element name="3V3" library="BrownSpaceEngineering" package="VIA-60MIL" value="3V3" x="48.78" y="7.874"/>
-<element name="PWR-OUT" library="BrownSpaceEngineering" package="VIA-60MIL" value="SP-PWR-OUT" x="44.894" y="22.216" smashed="yes" rot="R90">
-<attribute name="VALUE" x="43.624" y="19.676" size="1" layer="27" rot="R90"/>
+<element name="SCL" library="BrownSpaceEngineering" package="VIA-60MIL" value="" x="50.05" y="20.066"/>
+<element name="SDA" library="BrownSpaceEngineering" package="VIA-60MIL" value="" x="45.478" y="13.97"/>
+<element name="PD-OUT" library="BrownSpaceEngineering" package="VIA-60MIL" value="" x="52.082" y="3.048"/>
+<element name="3V3" library="BrownSpaceEngineering" package="VIA-60MIL" value="" x="48.78" y="7.874"/>
+<element name="PWR-OUT" library="BrownSpaceEngineering" package="VIA-60MIL" value="" x="44.716" y="22.606" smashed="yes">
+<attribute name="VALUE" x="42.176" y="23.876" size="1" layer="27"/>
 </element>
-<element name="GND" library="BrownSpaceEngineering" package="VIA-60MIL" value="GND" x="53.078" y="23.872" smashed="yes">
-<attribute name="VALUE" x="50.538" y="25.142" size="1" layer="27"/>
+<element name="GND" library="BrownSpaceEngineering" package="VIA-60MIL" value="" x="51.828" y="23.622" smashed="yes">
+<attribute name="VALUE" x="49.288" y="24.892" size="1" layer="27"/>
 </element>
 <element name="D1" library="BrownSpaceEngineering" package="PWRDI-123" value="DFLS130L" x="43.192" y="27.432" smashed="yes" rot="MR90">
 <attribute name="NAME" x="42.1" y="28.624" size="0.7" layer="26" rot="MR270"/>
@@ -620,6 +631,10 @@ design rules under a new name.</description>
 <element name="R1" library="BrownSpaceEngineering" package="1210" value="0R" x="47.002" y="27.686" smashed="yes" rot="MR270">
 <attribute name="NAME" x="48.502" y="27.002" size="0.8" layer="26" rot="MR90"/>
 </element>
+<element name="V1" library="BrownSpaceEngineering" package="VIA-60MIL" value="LION-IN" x="3.75" y="-22"/>
+<element name="V2" library="BrownSpaceEngineering" package="VIA-60MIL" value="LION-IN" x="3.75" y="-45"/>
+<element name="V3" library="BrownSpaceEngineering" package="VIA-60MIL" value="LION-OUT" x="3.75" y="-68"/>
+<element name="V4" library="BrownSpaceEngineering" package="VIA-60MIL" value="LION-OUT" x="3.75" y="-91"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -658,7 +673,7 @@ design rules under a new name.</description>
 <contactref element="IR" pad="SCL"/>
 <contactref element="SCL" pad="P$1"/>
 <wire x1="51.8304" y1="16.281" x2="51.8304" y2="18.2856" width="0.508" layer="1"/>
-<wire x1="51.8304" y1="18.2856" x2="49.3" y2="20.566" width="0.508" layer="1"/>
+<wire x1="51.8304" y1="18.2856" x2="50.05" y2="20.066" width="0.508" layer="1"/>
 </signal>
 <signal name="3V3">
 <contactref element="IR" pad="VDD"/>
@@ -669,7 +684,7 @@ design rules under a new name.</description>
 <wire x1="48.78" y1="7.874" x2="48.78" y2="8.6446" width="0.508" layer="1"/>
 <wire x1="48.78" y1="8.6446" x2="51.8304" y2="11.695" width="0.508" layer="1"/>
 </signal>
-<signal name="SP-PWR">
+<signal name="CELL-OUT">
 <polygon width="0.4064" layer="1" isolate="0.3048" thermals="no">
 <vertex x="-7.62" y="107.95"/>
 <vertex x="132.08" y="107.95"/>
@@ -863,14 +878,24 @@ design rules under a new name.</description>
 <wire x1="83.25" y1="7" x2="77.676" y2="7" width="0.508" layer="1"/>
 <wire x1="77.676" y1="7" x2="73.656" y2="2.98" width="0.508" layer="1"/>
 </signal>
-<signal name="SP-PWR-OUT">
+<signal name="PWR-OUT">
 <contactref element="R1" pad="P$2"/>
 <contactref element="D1" pad="C"/>
 <contactref element="PWR-OUT" pad="P$1"/>
 <wire x1="43.192" y1="26.332" x2="43.192" y2="24.13" width="0.8128" layer="16"/>
-<wire x1="44.894" y1="22.216" x2="43.192" y2="24.13" width="0.8128" layer="16"/>
+<wire x1="44.716" y1="22.606" x2="43.192" y2="24.13" width="0.8128" layer="16"/>
 <wire x1="47.002" y1="25.976" x2="47.002" y2="24.892" width="0.8128" layer="16"/>
-<wire x1="47.002" y1="24.892" x2="44.894" y2="22.216" width="0.8128" layer="16"/>
+<wire x1="47.002" y1="24.892" x2="44.716" y2="22.606" width="0.8128" layer="16"/>
+</signal>
+<signal name="LION-IN">
+<contactref element="V1" pad="P$1"/>
+<contactref element="V2" pad="P$1"/>
+<wire x1="3.75" y1="-22" x2="3.75" y2="-45" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LION-OUT">
+<contactref element="V3" pad="P$1"/>
+<contactref element="V4" pad="P$1"/>
+<wire x1="3.75" y1="-68" x2="3.75" y2="-91" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

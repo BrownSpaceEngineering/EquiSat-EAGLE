@@ -879,14 +879,18 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="8C" library="BrownSpaceEngineering" deviceset="SOLARCELLV3" device=""/>
 <part name="8B" library="BrownSpaceEngineering" deviceset="SOLARCELLV3" device=""/>
 <part name="8A" library="BrownSpaceEngineering" deviceset="SOLARCELLV3" device=""/>
-<part name="SCL" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="SCL"/>
-<part name="SDA" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="SDA"/>
-<part name="PD-OUT" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="PD-OUT"/>
-<part name="3V3" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="3V3"/>
-<part name="PWR-OUT" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="SP-PWR-OUT"/>
-<part name="GND" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="GND"/>
+<part name="SCL" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL"/>
+<part name="SDA" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL"/>
+<part name="PD-OUT" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL"/>
+<part name="3V3" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL"/>
+<part name="PWR-OUT" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL"/>
+<part name="GND" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL"/>
 <part name="D1" library="BrownSpaceEngineering" deviceset="DFLS130L" device="" value="DFLS130L"/>
 <part name="R1" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
+<part name="V1" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LION-IN"/>
+<part name="V2" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LION-IN"/>
+<part name="V3" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LION-OUT"/>
+<part name="V4" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LION-OUT"/>
 </parts>
 <sheets>
 <sheet>
@@ -930,14 +934,18 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="8A" gate="G$1" x="-20.32" y="-22.86"/>
 <instance part="SCL" gate="G$1" x="-109.22" y="106.68"/>
 <instance part="SDA" gate="G$1" x="-109.22" y="101.6"/>
-<instance part="PD-OUT" gate="G$1" x="2.54" y="106.68" rot="R180"/>
+<instance part="PD-OUT" gate="G$1" x="-7.62" y="106.68" rot="R180"/>
 <instance part="3V3" gate="G$1" x="-60.96" y="88.9" rot="R90"/>
-<instance part="PWR-OUT" gate="G$1" x="-144.78" y="119.38" smashed="yes" rot="R270">
-<attribute name="VALUE" x="-147.32" y="117.602" size="1.778" layer="96" rot="R270"/>
+<instance part="PWR-OUT" gate="G$1" x="-144.78" y="101.6" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-147.32" y="99.822" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND" gate="G$1" x="-144.78" y="-53.34" rot="R90"/>
 <instance part="D1" gate="G$1" x="-139.7" y="76.2" rot="R90"/>
 <instance part="R1" gate="R$1" x="-149.86" y="76.2" rot="R90"/>
+<instance part="V1" gate="G$1" x="-144.78" y="142.24"/>
+<instance part="V2" gate="G$1" x="-144.78" y="132.08"/>
+<instance part="V3" gate="G$1" x="-53.34" y="142.24" rot="R180"/>
+<instance part="V4" gate="G$1" x="-53.34" y="132.08" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -1022,7 +1030,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <net name="PD-OUT" class="0">
 <segment>
 <pinref part="PD" gate="G$1" pin="C"/>
-<wire x1="-22.86" y1="106.68" x2="-2.54" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="106.68" x2="-12.7" y2="106.68" width="0.1524" layer="91"/>
 <label x="-20.32" y="106.68" size="1.778" layer="95"/>
 <pinref part="PD-OUT" gate="G$1" pin="P$1"/>
 </segment>
@@ -1195,7 +1203,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="-20.32" y1="-10.16" x2="-20.32" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SP-PWR" class="0">
+<net name="CELL-OUT" class="0">
 <segment>
 <pinref part="7D" gate="G$1" pin="C"/>
 <wire x1="-38.1" y1="55.88" x2="-38.1" y2="63.5" width="0.1524" layer="91"/>
@@ -1238,7 +1246,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <label x="-142.24" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SP-PWR-OUT" class="0">
+<net name="PWR-OUT" class="0">
 <segment>
 <pinref part="R1" gate="R$1" pin="2"/>
 <wire x1="-149.86" y1="81.28" x2="-149.86" y2="83.82" width="0.1524" layer="91"/>
@@ -1247,9 +1255,45 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="-139.7" y1="83.82" x2="-144.78" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="PWR-OUT" gate="G$1" pin="P$1"/>
 <wire x1="-144.78" y1="83.82" x2="-149.86" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-144.78" y1="83.82" x2="-144.78" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="-144.78" y1="83.82" x2="-144.78" y2="96.52" width="0.1524" layer="91"/>
 <junction x="-144.78" y="83.82"/>
 <label x="-144.78" y="86.36" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="LION-IN" class="0">
+<segment>
+<pinref part="V1" gate="G$1" pin="P$1"/>
+<wire x1="-139.7" y1="142.24" x2="-129.54" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="V2" gate="G$1" pin="P$1"/>
+<wire x1="-139.7" y1="132.08" x2="-129.54" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="132.08" x2="-129.54" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="137.16" x2="-129.54" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="137.16" x2="-116.84" y2="137.16" width="0.1524" layer="91"/>
+<junction x="-129.54" y="137.16"/>
+<wire x1="-116.84" y1="137.16" x2="-116.84" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="142.24" x2="-114.3" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="137.16" x2="-116.84" y2="132.08" width="0.1524" layer="91"/>
+<junction x="-116.84" y="137.16"/>
+<wire x1="-116.84" y1="132.08" x2="-114.3" y2="132.08" width="0.1524" layer="91"/>
+<label x="-127" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LION-OUT" class="0">
+<segment>
+<pinref part="V3" gate="G$1" pin="P$1"/>
+<wire x1="-58.42" y1="142.24" x2="-68.58" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="142.24" x2="-68.58" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="V4" gate="G$1" pin="P$1"/>
+<wire x1="-68.58" y1="137.16" x2="-68.58" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="132.08" x2="-58.42" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="137.16" x2="-83.82" y2="137.16" width="0.1524" layer="91"/>
+<junction x="-68.58" y="137.16"/>
+<wire x1="-83.82" y1="137.16" x2="-83.82" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="142.24" x2="-86.36" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="137.16" x2="-83.82" y2="132.08" width="0.1524" layer="91"/>
+<junction x="-83.82" y="137.16"/>
+<wire x1="-83.82" y1="132.08" x2="-86.36" y2="132.08" width="0.1524" layer="91"/>
+<label x="-81.28" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
