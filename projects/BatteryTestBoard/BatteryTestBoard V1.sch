@@ -182,8 +182,8 @@
 <smd name="P$6" x="-0.25" y="-1.3" dx="0.25" dy="0.7" layer="1"/>
 <smd name="P$7" x="0.25" y="-1.3" dx="0.25" dy="0.7" layer="1"/>
 <smd name="P$8" x="0.75" y="-1.3" dx="0.25" dy="0.7" layer="1"/>
-<smd name="P$9" x="1.3" y="-0.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
-<smd name="P$10" x="1.3" y="-0.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="P$10" x="1.3" y="-0.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="P$9" x="1.3" y="-0.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
 <smd name="P$11" x="1.3" y="0.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
 <smd name="P$12" x="1.3" y="0.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
 <smd name="P$13" x="0.75" y="1.3" dx="0.25" dy="0.7" layer="1" rot="R180"/>
@@ -814,8 +814,7 @@
 <wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
 <smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
 <smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<text x="-1.27" y="1.143" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.397" y="-1.524" size="0.4064" layer="27">&gt;VALUE</text>
+<text x="-2.54" y="1.143" size="0.9" layer="25">&gt;NAME</text>
 <rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
 <rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
@@ -1185,10 +1184,10 @@ TS-005</description>
 <part name="C16" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="22nF"/>
 <part name="C17" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="10uF"/>
 <part name="L3" library="BrownSpaceEngineering" deviceset="IND" device="" technology="1812" value="47uH"/>
-<part name="V16" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIFE2"/>
-<part name="V17" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIFE1"/>
+<part name="V16" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LifePo cell 2"/>
+<part name="V17" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LifePo cell 1"/>
 <part name="C18" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="22uF"/>
-<part name="U$3" library="BrownSpaceEngineering" deviceset="VNS3NV04DP-E" device=""/>
+<part name="U7" library="BrownSpaceEngineering" deviceset="VNS3NV04DP-E" device=""/>
 <part name="R54" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="34.8R@1W"/>
 <part name="R55" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="34.8R@1W"/>
 <part name="R56" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
@@ -1205,19 +1204,19 @@ TS-005</description>
 <part name="C24" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="10nF"/>
 <part name="C25" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="150nF"/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
-<part name="V20" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_OUTEN"/>
-<part name="V31" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_OSNS"/>
+<part name="V20" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LifePo output enable"/>
+<part name="V31" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LifePo output sense"/>
 <part name="V26" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL" value="LF_B1"/>
-<part name="V58" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF1_REF"/>
-<part name="V59" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF2_REF"/>
+<part name="V58" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LifePo cell 1"/>
+<part name="V59" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LifePo cell 2"/>
 <part name="U1" library="BrownSpaceEngineering" deviceset="LTC4121-4.2" device=""/>
 <part name="V5" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
 <part name="V6" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
 <part name="V7" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
 <part name="V8" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
 <part name="V13" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_ISNS"/>
-<part name="V29" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_TT"/>
-<part name="V32" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_BT"/>
+<part name="V29" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="TT"/>
+<part name="V32" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="BT"/>
 <part name="V34" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LION_IN"/>
 <part name="V35" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LION_IN"/>
 <part name="C1" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="100nF"/>
@@ -1245,18 +1244,18 @@ TS-005</description>
 <part name="V52" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="!FAULT"/>
 <part name="V53" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="RUN"/>
 <part name="V55" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="INTVCC"/>
-<part name="V54" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPOBOOST"/>
-<part name="V57" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPOSW"/>
-<part name="V60" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPOMPPT"/>
-<part name="V61" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPOCHGSNS"/>
-<part name="V62" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPOFREQ"/>
-<part name="V63" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPOBAT"/>
-<part name="V65" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPOPROG"/>
-<part name="V66" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPOCHRG"/>
-<part name="V67" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPOFAULT"/>
-<part name="V68" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPORUN"/>
-<part name="V69" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPOINTVCC"/>
-<part name="V70" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPOFB"/>
+<part name="V54" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="BOOST"/>
+<part name="V57" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="SW"/>
+<part name="V60" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="MPPT"/>
+<part name="V61" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="CHGSNS"/>
+<part name="V62" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="FREQ"/>
+<part name="V63" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="BAT"/>
+<part name="V65" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="PROG"/>
+<part name="V66" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="!CHRG"/>
+<part name="V67" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="!FAULT"/>
+<part name="V68" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="RUN"/>
+<part name="V69" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="INTVCC"/>
+<part name="V70" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="FB"/>
 <part name="U2" library="BattBoard" deviceset="AD8418" device=""/>
 <part name="U3" library="BattBoard" deviceset="AD8418" device=""/>
 <part name="U6" library="BattBoard" deviceset="AP9211SA-AG-HAC-7" device=""/>
@@ -1289,7 +1288,7 @@ TS-005</description>
 <part name="V41" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
 <part name="R22" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
 <part name="V9" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPO_IN"/>
-<part name="V2" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="FUSE_OUT"/>
+<part name="V2" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="Fuse output"/>
 <part name="M1" library="BrownSpaceEngineering" deviceset="AON7522E" device=""/>
 <part name="M2" library="BattBoard" deviceset="IPB120P04P4L03ATMA1" device=""/>
 <part name="D2" library="BattBoard" deviceset="SMBJ5343B" device=""/>
@@ -1398,7 +1397,7 @@ load protection</text>
 <instance part="V16" gate="G$1" x="66.04" y="-63.5"/>
 <instance part="V17" gate="G$1" x="66.04" y="-50.8"/>
 <instance part="C18" gate="G$1" x="25.4" y="-53.34"/>
-<instance part="U$3" gate="G$1" x="40.64" y="-73.66"/>
+<instance part="U7" gate="G$1" x="40.64" y="-73.66"/>
 <instance part="R54" gate="R$1" x="58.42" y="-55.88" smashed="yes" rot="R90">
 <attribute name="NAME" x="57.404" y="-58.42" size="1.905" layer="95" rot="R90"/>
 <attribute name="VALUE" x="61.214" y="-63.5" size="1.905" layer="96" rot="R90"/>
@@ -1623,7 +1622,7 @@ load protection</text>
 <pinref part="R50" gate="R$1" pin="1"/>
 <wire x1="106.68" y1="-104.14" x2="106.68" y2="-63.5" width="0.1524" layer="91"/>
 <junction x="106.68" y="-104.14"/>
-<pinref part="U$3" gate="G$1" pin="S2"/>
+<pinref part="U7" gate="G$1" pin="S2"/>
 <wire x1="50.8" y1="-78.74" x2="66.04" y2="-78.74" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="-78.74" x2="66.04" y2="-104.14" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="-104.14" x2="81.28" y2="-104.14" width="0.1524" layer="91"/>
@@ -2063,7 +2062,7 @@ load protection</text>
 <pinref part="V16" gate="G$1" pin="P$1"/>
 <wire x1="71.12" y1="-63.5" x2="81.28" y2="-63.5" width="0.1524" layer="91"/>
 <junction x="81.28" y="-63.5"/>
-<pinref part="U$3" gate="G$1" pin="S1"/>
+<pinref part="U7" gate="G$1" pin="S1"/>
 <wire x1="50.8" y1="-71.12" x2="73.66" y2="-71.12" width="0.1524" layer="91"/>
 <junction x="81.28" y="-71.12"/>
 <pinref part="R55" gate="R$1" pin="1"/>
@@ -2315,7 +2314,7 @@ load protection</text>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="D1"/>
+<pinref part="U7" gate="G$1" pin="D1"/>
 <pinref part="R54" gate="R$1" pin="1"/>
 <wire x1="50.8" y1="-66.04" x2="58.42" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="-66.04" x2="58.42" y2="-60.96" width="0.1524" layer="91"/>
@@ -2324,13 +2323,13 @@ load protection</text>
 <net name="N$25" class="0">
 <segment>
 <pinref part="R55" gate="R$1" pin="2"/>
-<pinref part="U$3" gate="G$1" pin="D2"/>
+<pinref part="U7" gate="G$1" pin="D2"/>
 <wire x1="58.42" y1="-73.66" x2="50.8" y2="-73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LF_B1_BT" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="G2"/>
+<pinref part="U7" gate="G$1" pin="G2"/>
 <pinref part="R57" gate="R$1" pin="2"/>
 <wire x1="33.02" y1="-76.2" x2="20.32" y2="-76.2" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="-76.2" x2="20.32" y2="-78.74" width="0.1524" layer="91"/>
@@ -2346,7 +2345,7 @@ load protection</text>
 </net>
 <net name="LF_B1_TT" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="G1"/>
+<pinref part="U7" gate="G$1" pin="G1"/>
 <wire x1="33.02" y1="-68.58" x2="10.16" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="R56" gate="R$1" pin="2"/>
 <wire x1="10.16" y1="-68.58" x2="10.16" y2="-78.74" width="0.1524" layer="91"/>
