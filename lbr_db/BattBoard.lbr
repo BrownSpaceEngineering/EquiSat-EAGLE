@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -2010,15 +2010,15 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <smd name="VSS" x="0.2" y="-1.35" dx="0.4" dy="0.5" layer="1"/>
 <smd name="S1" x="-0.57" y="-1.35" dx="0.75" dy="0.5" layer="1"/>
 <smd name="P$7" x="0" y="0" dx="1.8" dy="1.8" layer="1"/>
-<wire x1="-1.06" y1="1.72" x2="-1.06" y2="0" width="0.127" layer="21"/>
-<wire x1="-1.06" y1="0" x2="-1.06" y2="-0.02" width="0.127" layer="21"/>
-<wire x1="-1.06" y1="-0.02" x2="-1.06" y2="-1.72" width="0.127" layer="21"/>
-<wire x1="-1.06" y1="-1.72" x2="1.12" y2="-1.72" width="0.127" layer="21"/>
-<wire x1="1.12" y1="-1.72" x2="1.12" y2="1.72" width="0.127" layer="21"/>
-<wire x1="1.12" y1="1.72" x2="-1.06" y2="1.72" width="0.127" layer="21"/>
-<wire x1="-1.06" y1="0" x2="-1.06" y2="-0.02" width="0.127" layer="21" curve="-354.7448"/>
+<wire x1="-1.1616" y1="1.8216" x2="-1.1616" y2="0.0254" width="0.127" layer="21"/>
+<wire x1="-1.1616" y1="0.0254" x2="-1.1616" y2="-0.02" width="0.127" layer="21"/>
+<wire x1="-1.1616" y1="-0.02" x2="-1.1616" y2="-1.8216" width="0.127" layer="21"/>
+<wire x1="-1.1616" y1="-1.8216" x2="1.2216" y2="-1.8216" width="0.127" layer="21"/>
+<wire x1="1.2216" y1="-1.8216" x2="1.2216" y2="1.8216" width="0.127" layer="21"/>
+<wire x1="1.2216" y1="1.8216" x2="-1.1616" y2="1.8216" width="0.127" layer="21"/>
 <text x="-3.02" y="2.07" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.02" y="-3.43" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-0.6096" y="-1.27" radius="0.1626375" width="0.127" layer="21"/>
 </package>
 <package name="MSOP-8">
 <smd name="P$1" x="0" y="0" dx="0.42" dy="0.89" layer="1"/>
@@ -2077,18 +2077,19 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <package name="WDFN6">
 <smd name="PAD1" x="-0.54" y="0" dx="1.42" dy="2.5" layer="1"/>
 <smd name="PAD2" x="0.85" y="0" dx="2.5" dy="0.62" layer="1" rot="R90"/>
-<smd name="CS" x="-0.01" y="1.91" dx="0.4" dy="0.4" layer="1"/>
-<smd name="TST" x="0.64" y="1.91" dx="0.4" dy="0.4" layer="1"/>
-<smd name="S2" x="-0.66" y="1.91" dx="0.4" dy="0.4" layer="1"/>
-<smd name="VCC" x="-0.01" y="-1.89" dx="0.4" dy="0.4" layer="1"/>
-<smd name="VSS" x="0.64" y="-1.89" dx="0.4" dy="0.4" layer="1"/>
-<smd name="S1" x="-0.66" y="-1.89" dx="0.4" dy="0.4" layer="1"/>
+<smd name="P$5" x="-0.01" y="1.91" dx="0.4" dy="0.4" layer="1"/>
+<smd name="P$4" x="0.64" y="1.91" dx="0.4" dy="0.4" layer="1"/>
+<smd name="P$6" x="-0.66" y="1.91" dx="0.4" dy="0.4" layer="1"/>
+<smd name="P$2" x="-0.01" y="-1.89" dx="0.4" dy="0.4" layer="1"/>
+<smd name="P$3" x="0.64" y="-1.89" dx="0.4" dy="0.4" layer="1"/>
+<smd name="P$1" x="-0.66" y="-1.89" dx="0.4" dy="0.4" layer="1"/>
 <text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 <text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 <wire x1="-1.52" y1="2.39" x2="1.47" y2="2.39" width="0.127" layer="21"/>
 <wire x1="1.47" y1="2.39" x2="1.47" y2="-2.34" width="0.127" layer="21"/>
 <wire x1="1.47" y1="-2.34" x2="-1.53" y2="-2.34" width="0.127" layer="21"/>
 <wire x1="-1.53" y1="-2.34" x2="-1.52" y2="2.39" width="0.127" layer="21"/>
+<circle x="-1.0414" y="-1.8796" radius="0.1545" width="0.127" layer="21"/>
 </package>
 <package name="TO263">
 <description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;&lt;p&gt;
@@ -3244,12 +3245,12 @@ TS-005</description>
 <devices>
 <device name="" package="WDFN6">
 <connects>
-<connect gate="G$1" pin="CS" pad="CS"/>
-<connect gate="G$1" pin="S1" pad="S1"/>
-<connect gate="G$1" pin="S2" pad="S2"/>
-<connect gate="G$1" pin="TST" pad="TST"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-<connect gate="G$1" pin="VSS" pad="VSS"/>
+<connect gate="G$1" pin="CS" pad="P$2"/>
+<connect gate="G$1" pin="S1" pad="P$6"/>
+<connect gate="G$1" pin="S2" pad="P$1"/>
+<connect gate="G$1" pin="TST" pad="P$3"/>
+<connect gate="G$1" pin="VCC" pad="P$5"/>
+<connect gate="G$1" pin="VSS" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
