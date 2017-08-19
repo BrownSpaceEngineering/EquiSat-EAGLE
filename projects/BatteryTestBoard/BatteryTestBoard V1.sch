@@ -827,15 +827,15 @@
 <smd name="VSS" x="0.2" y="-1.35" dx="0.4" dy="0.5" layer="1"/>
 <smd name="S1" x="-0.57" y="-1.35" dx="0.75" dy="0.5" layer="1"/>
 <smd name="P$7" x="0" y="0" dx="1.8" dy="1.8" layer="1"/>
-<wire x1="-1.06" y1="1.72" x2="-1.06" y2="0" width="0.127" layer="21"/>
-<wire x1="-1.06" y1="0" x2="-1.06" y2="-0.02" width="0.127" layer="21"/>
-<wire x1="-1.06" y1="-0.02" x2="-1.06" y2="-1.72" width="0.127" layer="21"/>
-<wire x1="-1.06" y1="-1.72" x2="1.12" y2="-1.72" width="0.127" layer="21"/>
-<wire x1="1.12" y1="-1.72" x2="1.12" y2="1.72" width="0.127" layer="21"/>
-<wire x1="1.12" y1="1.72" x2="-1.06" y2="1.72" width="0.127" layer="21"/>
-<wire x1="-1.06" y1="0" x2="-1.06" y2="-0.02" width="0.127" layer="21" curve="-354.7448"/>
+<wire x1="-1.1616" y1="1.8216" x2="-1.1616" y2="0.0254" width="0.127" layer="21"/>
+<wire x1="-1.1616" y1="0.0254" x2="-1.1616" y2="-0.02" width="0.127" layer="21"/>
+<wire x1="-1.1616" y1="-0.02" x2="-1.1616" y2="-1.8216" width="0.127" layer="21"/>
+<wire x1="-1.1616" y1="-1.8216" x2="1.2216" y2="-1.8216" width="0.127" layer="21"/>
+<wire x1="1.2216" y1="-1.8216" x2="1.2216" y2="1.8216" width="0.127" layer="21"/>
+<wire x1="1.2216" y1="1.8216" x2="-1.1616" y2="1.8216" width="0.127" layer="21"/>
 <text x="-3.02" y="2.07" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.02" y="-3.43" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-0.6096" y="-1.27" radius="0.1626375" width="0.127" layer="21"/>
 </package>
 <package name="DO214AA">
 <description>&lt;b&gt;DIODE&lt;/b&gt;</description>
@@ -857,18 +857,19 @@
 <package name="WDFN6">
 <smd name="PAD1" x="-0.54" y="0" dx="1.42" dy="2.5" layer="1"/>
 <smd name="PAD2" x="0.85" y="0" dx="2.5" dy="0.62" layer="1" rot="R90"/>
-<smd name="CS" x="-0.01" y="1.91" dx="0.4" dy="0.4" layer="1"/>
-<smd name="TST" x="0.64" y="1.91" dx="0.4" dy="0.4" layer="1"/>
-<smd name="S2" x="-0.66" y="1.91" dx="0.4" dy="0.4" layer="1"/>
-<smd name="VCC" x="-0.01" y="-1.89" dx="0.4" dy="0.4" layer="1"/>
-<smd name="VSS" x="0.64" y="-1.89" dx="0.4" dy="0.4" layer="1"/>
-<smd name="S1" x="-0.66" y="-1.89" dx="0.4" dy="0.4" layer="1"/>
+<smd name="P$5" x="-0.01" y="1.91" dx="0.4" dy="0.4" layer="1"/>
+<smd name="P$4" x="0.64" y="1.91" dx="0.4" dy="0.4" layer="1"/>
+<smd name="P$6" x="-0.66" y="1.91" dx="0.4" dy="0.4" layer="1"/>
+<smd name="P$2" x="-0.01" y="-1.89" dx="0.4" dy="0.4" layer="1"/>
+<smd name="P$3" x="0.64" y="-1.89" dx="0.4" dy="0.4" layer="1"/>
+<smd name="P$1" x="-0.66" y="-1.89" dx="0.4" dy="0.4" layer="1"/>
 <text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 <text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 <wire x1="-1.52" y1="2.39" x2="1.47" y2="2.39" width="0.127" layer="21"/>
 <wire x1="1.47" y1="2.39" x2="1.47" y2="-2.34" width="0.127" layer="21"/>
 <wire x1="1.47" y1="-2.34" x2="-1.53" y2="-2.34" width="0.127" layer="21"/>
 <wire x1="-1.53" y1="-2.34" x2="-1.52" y2="2.39" width="0.127" layer="21"/>
+<circle x="-1.0414" y="-1.8796" radius="0.1545" width="0.127" layer="21"/>
 </package>
 <package name="TO263">
 <description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;&lt;p&gt;
@@ -1099,12 +1100,12 @@ TS-005</description>
 <devices>
 <device name="" package="WDFN6">
 <connects>
-<connect gate="G$1" pin="CS" pad="CS"/>
-<connect gate="G$1" pin="S1" pad="S1"/>
-<connect gate="G$1" pin="S2" pad="S2"/>
-<connect gate="G$1" pin="TST" pad="TST"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-<connect gate="G$1" pin="VSS" pad="VSS"/>
+<connect gate="G$1" pin="CS" pad="P$2"/>
+<connect gate="G$1" pin="S1" pad="P$6"/>
+<connect gate="G$1" pin="S2" pad="P$1"/>
+<connect gate="G$1" pin="TST" pad="P$3"/>
+<connect gate="G$1" pin="VCC" pad="P$5"/>
+<connect gate="G$1" pin="VSS" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1159,7 +1160,7 @@ TS-005</description>
 <part name="LI-ION" library="BrownSpaceEngineering" deviceset="LI-ION" device="" value="~4.1V"/>
 <part name="R33" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="150K"/>
 <part name="R34" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
-<part name="V43" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="Current sense"/>
+<part name="V43" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LION_ISNS"/>
 <part name="V44" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="Li-ion reference"/>
 <part name="U5" library="BrownSpaceEngineering" deviceset="LTC4121" device=""/>
 <part name="LIFEPO1" library="BrownSpaceEngineering" deviceset="LIFEPO4" device="VA" value="~3.5V"/>
@@ -1185,7 +1186,6 @@ TS-005</description>
 <part name="C17" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="10uF"/>
 <part name="L3" library="BrownSpaceEngineering" deviceset="IND" device="" technology="1812" value="47uH"/>
 <part name="V16" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LifePo cell 2"/>
-<part name="V17" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LifePo cell 1"/>
 <part name="C18" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="22uF"/>
 <part name="U7" library="BrownSpaceEngineering" deviceset="VNS3NV04DP-E" device=""/>
 <part name="R54" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="34.8R@1W"/>
@@ -1193,7 +1193,7 @@ TS-005</description>
 <part name="R56" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
 <part name="R57" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
-<part name="V21" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL" value="LF_B1"/>
+<part name="V21" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL" value="LIFEPO_OUT"/>
 <part name="R58" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="1K"/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="SW1" library="BrownSpaceEngineering" deviceset="BTS50015-1TAD" device=""/>
@@ -1206,9 +1206,9 @@ TS-005</description>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
 <part name="V20" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LifePo output enable"/>
 <part name="V31" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LifePo output sense"/>
-<part name="V26" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL" value="LF_B1"/>
-<part name="V58" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LifePo cell 1"/>
-<part name="V59" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LifePo cell 2"/>
+<part name="V26" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL" value="LIFEPO_OUT"/>
+<part name="V58" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LifePo Ref 1"/>
+<part name="V59" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LifePo Ref 2"/>
 <part name="U1" library="BrownSpaceEngineering" deviceset="LTC4121-4.2" device=""/>
 <part name="V5" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
 <part name="V6" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
@@ -1217,14 +1217,14 @@ TS-005</description>
 <part name="V13" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_ISNS"/>
 <part name="V29" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="TT"/>
 <part name="V32" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="BT"/>
-<part name="V34" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LION_IN"/>
-<part name="V35" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LION_IN"/>
+<part name="V34" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LION_CHARGER_IN"/>
+<part name="V35" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LION_CHARGER_IN"/>
 <part name="C1" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="100nF"/>
 <part name="R1" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="390R"/>
 <part name="R2" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="2.7K"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="R6" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
-<part name="R7" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
+<part name="R6" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="0R"/>
+<part name="R7" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="0R"/>
 <part name="R8" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0.025R"/>
 <part name="R9" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="220K"/>
 <part name="R10" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
@@ -1269,25 +1269,25 @@ TS-005</description>
 <part name="R14" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
 <part name="R16" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="V75" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPO_IN"/>
+<part name="V75" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPO_CHARGER_IN"/>
 <part name="D1" library="BattBoard" deviceset="SMBJ5343B" device=""/>
 <part name="R3" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
-<part name="R19" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="0.00083333R"/>
+<part name="R19" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0.00083333R"/>
 <part name="R20" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="680R"/>
 <part name="C2" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="100nF"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="R21" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="1K"/>
 <part name="U4" library="BattBoard" deviceset="LC05111C13MTTTG" device=""/>
-<part name="V1" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL" value="LION1"/>
-<part name="V37" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL" value="LION1"/>
-<part name="R4" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
-<part name="R5" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
+<part name="V1" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL" value="LION_OUTPUT"/>
+<part name="V37" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL" value="LION_OUTPUT"/>
+<part name="R4" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="0R"/>
+<part name="R5" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="0R"/>
 <part name="V3" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
 <part name="V4" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
 <part name="V10" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
 <part name="V41" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
 <part name="R22" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
-<part name="V9" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPO_IN"/>
+<part name="V9" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPO_CHARGER_IN"/>
 <part name="V2" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="Fuse output"/>
 <part name="M1" library="BrownSpaceEngineering" deviceset="AON7522E" device=""/>
 <part name="M2" library="BattBoard" deviceset="IPB120P04P4L03ATMA1" device=""/>
@@ -1296,7 +1296,7 @@ TS-005</description>
 <part name="R23" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="3.3K"/>
 <part name="R24" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
 <part name="V11" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFPOISNSREF"/>
-<part name="V12" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="Current sense"/>
+<part name="V12" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIONISNSREF"/>
 </parts>
 <sheets>
 <sheet>
@@ -1306,7 +1306,7 @@ TS-005</description>
 <text x="157.48" y="114.3" size="1.778" layer="97">R25 sets Ichg=100mA</text>
 <text x="167.64" y="109.22" size="1.778" layer="97">R21 &amp; R22 set Vflt=4.1V</text>
 <text x="43.18" y="93.98" size="1.778" layer="97">R27 &amp; R28 set Vmp</text>
-<text x="-7.62" y="104.14" size="1.778" layer="97">Place C3 near U3</text>
+<text x="-7.62" y="99.06" size="1.778" layer="97">Place C3 near U3</text>
 <text x="45.72" y="127" size="1.778" layer="97">Place L1 near SW pin</text>
 <text x="53.34" y="152.4" size="1.778" layer="97">Place GND vias under U3 and U4.
  Connect all caps to ground plane.
@@ -1329,7 +1329,7 @@ R78 &amp; R79 provide µC protection
 R58 senses current</text>
 <text x="327.66" y="66.04" size="1.778" layer="97">Divider sets VREF1 + VREF2 ~ 1V</text>
 <text x="177.8" y="-142.24" size="1.778" layer="97">Divider sets VREF1 + VREF2 ~ 1V</text>
-<text x="218.44" y="25.4" size="1.778" layer="97">Do not place</text>
+<text x="210.82" y="27.94" size="1.778" layer="97">Do not place</text>
 <text x="172.72" y="86.36" size="1.778" layer="97">Only one of U4 and U6 to be soldered</text>
 <text x="243.84" y="124.46" size="1.778" layer="97">Either R22 and R13 or the PTC fuse to be soldered</text>
 <text x="114.3" y="104.14" size="1.778" layer="97">Connect BATSNS close to battery terminal</text>
@@ -1395,7 +1395,6 @@ load protection</text>
 <instance part="C17" gate="G$1" x="-73.66" y="-63.5" rot="R180"/>
 <instance part="L3" gate="G$1" x="-40.64" y="-22.86"/>
 <instance part="V16" gate="G$1" x="66.04" y="-63.5"/>
-<instance part="V17" gate="G$1" x="66.04" y="-50.8"/>
 <instance part="C18" gate="G$1" x="25.4" y="-53.34"/>
 <instance part="U7" gate="G$1" x="40.64" y="-73.66"/>
 <instance part="R54" gate="R$1" x="58.42" y="-55.88" smashed="yes" rot="R90">
@@ -1485,7 +1484,7 @@ load protection</text>
 <instance part="R14" gate="R$1" x="147.32" y="-30.48"/>
 <instance part="R16" gate="R$1" x="147.32" y="-35.56"/>
 <instance part="GND4" gate="1" x="38.1" y="-58.42"/>
-<instance part="V75" gate="G$1" x="-101.6" y="-33.02"/>
+<instance part="V75" gate="G$1" x="-111.76" y="-33.02"/>
 <instance part="D1" gate="G$1" x="38.1" y="-50.8" rot="R90"/>
 <instance part="R3" gate="R$1" x="236.22" y="27.94" rot="R90"/>
 <instance part="R19" gate="R$1" x="81.28" y="-96.52" rot="R90"/>
@@ -1494,8 +1493,8 @@ load protection</text>
 <instance part="GND5" gate="1" x="167.64" y="33.02"/>
 <instance part="R21" gate="R$1" x="172.72" y="45.72" rot="R90"/>
 <instance part="U4" gate="G$1" x="195.58" y="53.34"/>
-<instance part="V1" gate="G$1" x="322.58" y="101.6" rot="R180"/>
-<instance part="V37" gate="G$1" x="322.58" y="93.98" rot="R180"/>
+<instance part="V1" gate="G$1" x="332.74" y="101.6" rot="R180"/>
+<instance part="V37" gate="G$1" x="332.74" y="93.98" rot="R180"/>
 <instance part="R4" gate="R$1" x="50.8" y="81.28" rot="R90"/>
 <instance part="R5" gate="R$1" x="40.64" y="88.9" rot="R180"/>
 <instance part="V3" gate="G$1" x="248.92" y="2.54" rot="R180"/>
@@ -1505,7 +1504,7 @@ load protection</text>
 <instance part="R22" gate="R$1" x="269.24" y="119.38" smashed="yes">
 <attribute name="NAME" x="266.7" y="120.396" size="1.905" layer="95"/>
 </instance>
-<instance part="V9" gate="G$1" x="-101.6" y="-38.1"/>
+<instance part="V9" gate="G$1" x="-111.76" y="-38.1"/>
 <instance part="V2" gate="G$1" x="172.72" y="-30.48" rot="R270"/>
 <instance part="M1" gate="G$1" x="238.76" y="-71.12"/>
 <instance part="M2" gate="G$1" x="243.84" y="-50.8" smashed="yes" rot="R90">
@@ -1687,8 +1686,9 @@ load protection</text>
 <pinref part="R2" gate="R$1" pin="2"/>
 <wire x1="167.64" y1="78.74" x2="165.1" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="78.74" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="73.66" x2="182.88" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="73.66" x2="172.72" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="172.72" y1="73.66" x2="182.88" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="73.66" x2="165.1" y2="71.12" width="0.1524" layer="91"/>
 <junction x="165.1" y="73.66"/>
 <pinref part="R34" gate="R$1" pin="1"/>
@@ -1731,10 +1731,14 @@ load protection</text>
 <junction x="236.22" y="2.54"/>
 <pinref part="R24" gate="R$1" pin="1"/>
 <junction x="228.6" y="22.86"/>
+<pinref part="U6" gate="G$1" pin="VSS"/>
+<wire x1="208.28" y1="76.2" x2="213.36" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="76.2" x2="213.36" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="68.58" x2="172.72" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="68.58" x2="172.72" y2="73.66" width="0.1524" layer="91"/>
+<junction x="172.72" y="73.66"/>
 </segment>
 <segment>
-<wire x1="264.16" y1="81.28" x2="256.54" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="81.28" x2="256.54" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="256.54" y1="76.2" x2="256.54" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="45.72" x2="320.04" y2="45.72" width="0.1524" layer="91"/>
@@ -1743,9 +1747,7 @@ load protection</text>
 <wire x1="320.04" y1="55.88" x2="320.04" y2="45.72" width="0.1524" layer="91"/>
 <junction x="320.04" y="45.72"/>
 <wire x1="264.16" y1="76.2" x2="256.54" y2="76.2" width="0.1524" layer="91"/>
-<junction x="256.54" y="76.2"/>
 <pinref part="U2" gate="G$1" pin="GND"/>
-<pinref part="U2" gate="G$1" pin="-IN"/>
 </segment>
 <segment>
 <wire x1="114.3" y1="-124.46" x2="106.68" y2="-124.46" width="0.1524" layer="91"/>
@@ -1835,6 +1837,10 @@ load protection</text>
 <junction x="167.64" y="38.1"/>
 <pinref part="U4" gate="G$1" pin="S2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
+<pinref part="U4" gate="G$1" pin="VSS"/>
+<wire x1="208.28" y1="50.8" x2="208.28" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="38.1" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
+<junction x="172.72" y="38.1"/>
 </segment>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
@@ -2093,8 +2099,6 @@ load protection</text>
 <wire x1="50.8" y1="-40.64" x2="53.34" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="-40.64" x2="53.34" y2="-45.72" width="0.1524" layer="91"/>
 <junction x="53.34" y="-45.72"/>
-<pinref part="V17" gate="G$1" pin="P$1"/>
-<wire x1="71.12" y1="-50.8" x2="81.28" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="C18" gate="G$1" pin="P$1"/>
 <wire x1="25.4" y1="-45.72" x2="25.4" y2="-48.26" width="0.1524" layer="91"/>
 <junction x="25.4" y="-45.72"/>
@@ -2534,8 +2538,8 @@ load protection</text>
 </net>
 <net name="N$3" class="0">
 <segment>
-<wire x1="317.5" y1="101.6" x2="304.8" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="317.5" y1="93.98" x2="304.8" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="101.6" x2="304.8" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="93.98" x2="304.8" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="93.98" x2="304.8" y2="101.6" width="0.1524" layer="91"/>
 <junction x="304.8" y="101.6"/>
 <wire x1="304.8" y1="101.6" x2="279.4" y2="101.6" width="0.1524" layer="91"/>
@@ -2568,8 +2572,8 @@ load protection</text>
 <pinref part="V75" gate="G$1" pin="P$1"/>
 <wire x1="-73.66" y1="-33.02" x2="-83.82" y2="-33.02" width="0.1524" layer="91"/>
 <pinref part="V9" gate="G$1" pin="P$1"/>
-<wire x1="-83.82" y1="-33.02" x2="-96.52" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="-96.52" y1="-38.1" x2="-83.82" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="-33.02" x2="-106.68" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="-38.1" x2="-83.82" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="-38.1" x2="-83.82" y2="-33.02" width="0.1524" layer="91"/>
 <junction x="-83.82" y="-33.02"/>
 </segment>
@@ -2648,50 +2652,6 @@ load protection</text>
 <wire x1="254" y1="-45.72" x2="254" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<wire x1="213.36" y1="55.88" x2="208.28" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="55.88" x2="213.36" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="P$2"/>
-<wire x1="223.52" y1="73.66" x2="223.52" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="U6" gate="G$1" pin="VSS"/>
-<wire x1="208.28" y1="76.2" x2="215.9" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="76.2" x2="215.9" y2="73.66" width="0.1524" layer="91"/>
-<junction x="215.9" y="73.66"/>
-<wire x1="215.9" y1="73.66" x2="223.52" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="73.66" x2="215.9" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U6" gate="G$1" pin="S1"/>
-<wire x1="236.22" y1="76.2" x2="236.22" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="R8" gate="R$1" pin="1"/>
-<pinref part="R3" gate="R$1" pin="2"/>
-<wire x1="236.22" y1="73.66" x2="236.22" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="35.56" x2="236.22" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="73.66" x2="236.22" y2="73.66" width="0.1524" layer="91"/>
-<junction x="223.52" y="73.66"/>
-<junction x="236.22" y="73.66"/>
-<pinref part="C2" gate="G$1" pin="P$2"/>
-<wire x1="220.98" y1="38.1" x2="220.98" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="35.56" x2="228.6" y2="35.56" width="0.1524" layer="91"/>
-<junction x="236.22" y="35.56"/>
-<wire x1="228.6" y1="35.56" x2="236.22" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="35.56" x2="220.98" y2="35.56" width="0.1524" layer="91"/>
-<junction x="220.98" y="35.56"/>
-<wire x1="208.28" y1="50.8" x2="210.82" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="50.8" x2="210.82" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="35.56" x2="213.36" y2="35.56" width="0.1524" layer="91"/>
-<junction x="213.36" y="35.56"/>
-<wire x1="182.88" y1="50.8" x2="177.8" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="50.8" x2="177.8" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="35.56" x2="210.82" y2="35.56" width="0.1524" layer="91"/>
-<junction x="210.82" y="35.56"/>
-<pinref part="U4" gate="G$1" pin="TST"/>
-<pinref part="U4" gate="G$1" pin="S1"/>
-<pinref part="U4" gate="G$1" pin="VSS"/>
-<pinref part="R24" gate="R$1" pin="2"/>
-<wire x1="228.6" y1="33.02" x2="228.6" y2="35.56" width="0.1524" layer="91"/>
-<junction x="228.6" y="35.56"/>
-</segment>
-</net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="P$1"/>
@@ -2734,6 +2694,44 @@ load protection</text>
 <wire x1="243.84" y1="-58.42" x2="243.84" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="-58.42" x2="243.84" y2="-58.42" width="0.1524" layer="91"/>
 <junction x="243.84" y="-58.42"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="-IN"/>
+<wire x1="264.16" y1="81.28" x2="246.38" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="81.28" x2="246.38" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="55.88" x2="208.28" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="55.88" x2="213.36" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="P$2"/>
+<wire x1="223.52" y1="73.66" x2="223.52" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="73.66" x2="223.52" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U6" gate="G$1" pin="S1"/>
+<wire x1="236.22" y1="76.2" x2="236.22" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="R8" gate="R$1" pin="1"/>
+<pinref part="R3" gate="R$1" pin="2"/>
+<wire x1="236.22" y1="73.66" x2="236.22" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="35.56" x2="236.22" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="73.66" x2="236.22" y2="73.66" width="0.1524" layer="91"/>
+<junction x="223.52" y="73.66"/>
+<junction x="236.22" y="73.66"/>
+<pinref part="C2" gate="G$1" pin="P$2"/>
+<wire x1="220.98" y1="38.1" x2="220.98" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="35.56" x2="228.6" y2="35.56" width="0.1524" layer="91"/>
+<junction x="236.22" y="35.56"/>
+<wire x1="228.6" y1="35.56" x2="236.22" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="35.56" x2="220.98" y2="35.56" width="0.1524" layer="91"/>
+<junction x="220.98" y="35.56"/>
+<junction x="213.36" y="35.56"/>
+<wire x1="182.88" y1="50.8" x2="177.8" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="50.8" x2="177.8" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="35.56" x2="213.36" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="TST"/>
+<pinref part="U4" gate="G$1" pin="S1"/>
+<pinref part="R24" gate="R$1" pin="2"/>
+<wire x1="228.6" y1="33.02" x2="228.6" y2="35.56" width="0.1524" layer="91"/>
+<junction x="228.6" y="35.56"/>
+<wire x1="246.38" y1="73.66" x2="236.22" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
