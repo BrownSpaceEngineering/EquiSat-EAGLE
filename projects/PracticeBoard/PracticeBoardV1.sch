@@ -228,6 +228,28 @@
 <pad name="P$1" x="0" y="0" drill="1.524" shape="square"/>
 <text x="-2.54" y="1.27" size="1" layer="27">&gt;VALUE</text>
 </package>
+<package name="14-TSSOP">
+<wire x1="-2.5" y1="2.2" x2="2.5" y2="2.2" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.2" x2="-2.5" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.2" x2="2.5" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.2" x2="2.5" y2="2.2" width="0.127" layer="21"/>
+<smd name="P1" x="-1.95" y="-2.8" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P2" x="-1.3" y="-2.8" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P3" x="-0.65" y="-2.8" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P4" x="0" y="-2.8" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P5" x="0.65" y="-2.8" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P6" x="1.3" y="-2.8" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P7" x="1.95" y="-2.8" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P8" x="1.95" y="2.8" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P9" x="1.3" y="2.8" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P10" x="0.65" y="2.8" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P11" x="0" y="2.8" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P12" x="-0.65" y="2.8" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P13" x="-1.3" y="2.8" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P14" x="-1.95" y="2.8" dx="0.35" dy="1.6" layer="1"/>
+<circle x="-1.95" y="-1.3" radius="0.399246875" width="0.12" layer="21"/>
+<text x="-2.75" y="-3" size="1.27" layer="49" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -302,6 +324,29 @@
 <pin name="P$1" x="5.08" y="0" visible="off" length="middle" rot="R180"/>
 <text x="1.778" y="0.762" size="1.778" layer="95">VIA</text>
 <text x="1.778" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="SN74LV04-HEX-INVERTER-PW">
+<pin name="1A" x="0" y="17.78" length="short"/>
+<pin name="1Y" x="0" y="15.24" length="short"/>
+<pin name="2A" x="0" y="12.7" length="short"/>
+<pin name="2Y" x="0" y="10.16" length="short"/>
+<pin name="3A" x="0" y="7.62" length="short"/>
+<pin name="3Y" x="0" y="5.08" length="short"/>
+<pin name="GND" x="0" y="2.54" length="short"/>
+<pin name="4Y" x="17.78" y="2.54" length="short" rot="R180"/>
+<pin name="4A" x="17.78" y="5.08" length="short" rot="R180"/>
+<pin name="5Y" x="17.78" y="7.62" length="short" rot="R180"/>
+<pin name="5A" x="17.78" y="10.16" length="short" rot="R180"/>
+<pin name="6Y" x="17.78" y="12.7" length="short" rot="R180"/>
+<pin name="6A" x="17.78" y="15.24" length="short" rot="R180"/>
+<pin name="VCC" x="17.78" y="17.78" length="short" rot="R180"/>
+<wire x1="2.54" y1="20.32" x2="15.24" y2="20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="20.32" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="20.32" width="0.254" layer="94"/>
+<text x="8.89" y="21.59" size="2.54" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="8.89" y="-2.54" size="1.27" layer="95" align="center">SN74LV04A
+HEX-INVERTER-PW</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -412,6 +457,34 @@
 <device name="60MIL-SQ" package="VIA-60MIL-SQ">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN74LV04A-HEX-INVERTER" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SN74LV04-HEX-INVERTER-PW" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="14-TSSOP">
+<connects>
+<connect gate="G$1" pin="1A" pad="P1"/>
+<connect gate="G$1" pin="1Y" pad="P2"/>
+<connect gate="G$1" pin="2A" pad="P3"/>
+<connect gate="G$1" pin="2Y" pad="P4"/>
+<connect gate="G$1" pin="3A" pad="P5"/>
+<connect gate="G$1" pin="3Y" pad="P6"/>
+<connect gate="G$1" pin="4A" pad="P9"/>
+<connect gate="G$1" pin="4Y" pad="P8"/>
+<connect gate="G$1" pin="5A" pad="P11"/>
+<connect gate="G$1" pin="5Y" pad="P10"/>
+<connect gate="G$1" pin="6A" pad="P13"/>
+<connect gate="G$1" pin="6Y" pad="P12"/>
+<connect gate="G$1" pin="GND" pad="P7"/>
+<connect gate="G$1" pin="VCC" pad="P14"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2750,7 +2823,7 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="L2" library="resistor" deviceset="L-US" device="L3225M" value="2.2uH"/>
-<part name="+3V31" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="C1" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="10uF"/>
 <part name="C3" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="10uF"/>
 <part name="R1" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100R"/>
@@ -2760,7 +2833,10 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <part name="D1" library="BrownSpaceEngineering" deviceset="TVS" device="" technology="MSP" value="MSP3V3"/>
 <part name="D2" library="BrownSpaceEngineering" deviceset="LED" device="" technology="0805"/>
 <part name="R2" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="330R"/>
-<part name="V1" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="3V3"/>
+<part name="V1" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="+3V3"/>
+<part name="U2" library="BrownSpaceEngineering" deviceset="SN74LV04A-HEX-INVERTER" device=""/>
+<part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2779,7 +2855,7 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <attribute name="NAME" x="50.8" y="59.69" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="50.8" y="64.77" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="+3V31" gate="G$1" x="78.74" y="63.5"/>
+<instance part="+3V1" gate="G$1" x="78.74" y="63.5"/>
 <instance part="C1" gate="G$1" x="10.16" y="33.02"/>
 <instance part="C3" gate="G$1" x="78.74" y="35.56"/>
 <instance part="R1" gate="R$1" x="17.78" y="38.1" rot="R90"/>
@@ -2790,6 +2866,9 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <instance part="D2" gate="G$1" x="88.9" y="15.24"/>
 <instance part="R2" gate="R$1" x="88.9" y="30.48" rot="R90"/>
 <instance part="V1" gate="G$1" x="106.68" y="55.88" rot="R180"/>
+<instance part="U2" gate="G$1" x="15.24" y="-33.02"/>
+<instance part="GND3" gate="1" x="10.16" y="-40.64"/>
+<instance part="+3V2" gate="G$1" x="38.1" y="-5.08"/>
 </instances>
 <busses>
 </busses>
@@ -2815,7 +2894,7 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <net name="+3V3" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="VOUT"/>
-<pinref part="+3V31" gate="G$1" pin="+3V3"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <wire x1="60.96" y1="45.72" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="45.72" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="45.72" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
@@ -2843,6 +2922,12 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <pinref part="V1" gate="G$1" pin="P$1"/>
 <wire x1="101.6" y1="55.88" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
 <junction x="78.74" y="55.88"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="VCC"/>
+<pinref part="+3V2" gate="G$1" pin="+3V3"/>
+<wire x1="33.02" y1="-15.24" x2="38.1" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-15.24" x2="38.1" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -2920,6 +3005,12 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="88.9" y1="10.16" x2="78.74" y2="10.16" width="0.1524" layer="91"/>
 <junction x="78.74" y="10.16"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="GND"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="15.24" y1="-30.48" x2="10.16" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="-30.48" x2="10.16" y2="-38.1" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="3V3REF" class="0">
 <segment>
@@ -2944,4 +3035,10 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
