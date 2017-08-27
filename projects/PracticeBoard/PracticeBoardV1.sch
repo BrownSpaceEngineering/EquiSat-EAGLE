@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.1">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -308,6 +308,38 @@
 <circle x="-1.95" y="-1.3" radius="0.399246875" width="0.12" layer="21"/>
 <text x="-2.75" y="-3" size="1.27" layer="49" rot="R90">&gt;NAME</text>
 </package>
+<package name="SOD-523F">
+<smd name="C" x="0" y="1" dx="0.5" dy="0.8" layer="1"/>
+<smd name="A" x="0" y="-1" dx="0.5" dy="0.8" layer="1"/>
+<wire x1="-0.4" y1="0.6" x2="0.4" y2="0.6" width="0.127" layer="21"/>
+<wire x1="0.4" y1="0.6" x2="0.4" y2="0.4" width="0.127" layer="21"/>
+<wire x1="0.4" y1="0.3" x2="0.4" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-0.6" x2="-0.4" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-0.4" y1="-0.6" x2="-0.4" y2="0.3" width="0.127" layer="21"/>
+<wire x1="-0.4" y1="0.4" x2="-0.4" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-0.4" y1="0.4" x2="0.4" y2="0.4" width="0.127" layer="21"/>
+<wire x1="0.4" y1="0.4" x2="0.4" y2="0.3" width="0.127" layer="21"/>
+<wire x1="0.4" y1="0.3" x2="-0.4" y2="0.3" width="0.127" layer="21"/>
+<wire x1="-0.4" y1="0.3" x2="-0.4" y2="0.4" width="0.127" layer="21"/>
+<text x="-0.2255" y="1.824" size="0.7" layer="21">C</text>
+<text x="-0.6" y="-1.3" size="0.7" layer="21" rot="R90">&gt;NAME</text>
+</package>
+<package name="SOIC-8">
+<wire x1="-2.45" y1="1.95" x2="2.45" y2="1.95" width="0.127" layer="21"/>
+<wire x1="2.45" y1="1.95" x2="2.45" y2="-1.95" width="0.127" layer="21"/>
+<wire x1="2.45" y1="-1.95" x2="-2.45" y2="-1.95" width="0.127" layer="21"/>
+<wire x1="-2.45" y1="-1.95" x2="-2.45" y2="1.95" width="0.127" layer="21"/>
+<smd name="P6" x="0.635" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="P7" x="-0.635" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="P5" x="1.905" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="P8" x="-1.905" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="P3" x="0.635" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="P2" x="-0.635" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="P4" x="1.905" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="P1" x="-1.905" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<text x="-3" y="-2" size="0.8128" layer="49" rot="R90">&gt;NAME</text>
+<circle x="-2" y="-1.45" radius="0.3" width="0.15" layer="49"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -457,6 +489,101 @@ QUAD 2IN AND</text>
 <text x="8.89" y="21.59" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
 <text x="8.89" y="-2.54" size="1.27" layer="96" align="center">SN74LV32A
 QUAD 2IN OR</text>
+</symbol>
+<symbol name="DIODE">
+<pin name="A" x="-2.54" y="0" visible="off" length="short"/>
+<pin name="C" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<text x="0" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="SN74LV00A-QUAD-2IN-NAND">
+<pin name="1A" x="0" y="17.78" length="short"/>
+<pin name="1B" x="0" y="15.24" length="short"/>
+<pin name="1Y" x="0" y="12.7" length="short"/>
+<pin name="2A" x="0" y="10.16" length="short"/>
+<pin name="2B" x="0" y="7.62" length="short"/>
+<pin name="2Y" x="0" y="5.08" length="short"/>
+<pin name="GND" x="0" y="2.54" length="short"/>
+<pin name="VCC" x="17.78" y="17.78" length="short" rot="R180"/>
+<pin name="4B" x="17.78" y="15.24" length="short" rot="R180"/>
+<pin name="4A" x="17.78" y="12.7" length="short" rot="R180"/>
+<pin name="4Y" x="17.78" y="10.16" length="short" rot="R180"/>
+<pin name="3B" x="17.78" y="7.62" length="short" rot="R180"/>
+<pin name="3A" x="17.78" y="5.08" length="short" rot="R180"/>
+<pin name="3Y" x="17.78" y="2.54" length="short" rot="R180"/>
+<wire x1="2.54" y1="20.32" x2="15.24" y2="20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="20.32" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="20.32" width="0.254" layer="94"/>
+<text x="8.89" y="21.59" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="8.89" y="-2.54" size="1.27" layer="96" align="center">SN74LV00A
+QUAD 2IN NAND</text>
+</symbol>
+<symbol name="SN74LV04-HEX-INVERTER">
+<pin name="1A" x="0" y="17.78" length="short"/>
+<pin name="1Y" x="0" y="15.24" length="short"/>
+<pin name="2A" x="0" y="12.7" length="short"/>
+<pin name="2Y" x="0" y="10.16" length="short"/>
+<pin name="3A" x="0" y="7.62" length="short"/>
+<pin name="3Y" x="0" y="5.08" length="short"/>
+<pin name="GND" x="0" y="2.54" length="short"/>
+<pin name="4Y" x="17.78" y="2.54" length="short" rot="R180"/>
+<pin name="4A" x="17.78" y="5.08" length="short" rot="R180"/>
+<pin name="5Y" x="17.78" y="7.62" length="short" rot="R180"/>
+<pin name="5A" x="17.78" y="10.16" length="short" rot="R180"/>
+<pin name="6Y" x="17.78" y="12.7" length="short" rot="R180"/>
+<pin name="6A" x="17.78" y="15.24" length="short" rot="R180"/>
+<pin name="VCC" x="17.78" y="17.78" length="short" rot="R180"/>
+<wire x1="2.54" y1="20.32" x2="15.24" y2="20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="20.32" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="20.32" width="0.254" layer="94"/>
+<text x="8.89" y="21.59" size="2.54" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="8.89" y="-2.54" size="1.27" layer="96" align="center">SN74LV04A
+HEX INVERTER</text>
+</symbol>
+<symbol name="SNX4LV86A-QUAD-2IN-XOR">
+<pin name="1A" x="0" y="17.78" length="short"/>
+<pin name="1B" x="0" y="15.24" length="short"/>
+<pin name="1Y" x="0" y="12.7" length="short"/>
+<pin name="2A" x="0" y="10.16" length="short"/>
+<pin name="2B" x="0" y="7.62" length="short"/>
+<pin name="2Y" x="0" y="5.08" length="short"/>
+<pin name="GND" x="0" y="2.54" length="short"/>
+<pin name="VCC" x="17.78" y="17.78" length="short" rot="R180"/>
+<pin name="4B" x="17.78" y="15.24" length="short" rot="R180"/>
+<pin name="4A" x="17.78" y="12.7" length="short" rot="R180"/>
+<pin name="4Y" x="17.78" y="10.16" length="short" rot="R180"/>
+<pin name="3B" x="17.78" y="7.62" length="short" rot="R180"/>
+<pin name="3A" x="17.78" y="5.08" length="short" rot="R180"/>
+<pin name="3Y" x="17.78" y="2.54" length="short" rot="R180"/>
+<wire x1="2.54" y1="20.32" x2="15.24" y2="20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="20.32" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="20.32" width="0.254" layer="94"/>
+<text x="8.89" y="21.59" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="8.89" y="-2.54" size="1.27" layer="96" align="center">SNx4LV86A
+QUAD 2IN XOR</text>
+</symbol>
+<symbol name="UA741-OP-AMP">
+<pin name="OFFSETN1" x="0" y="10.16" length="short"/>
+<pin name="IN-" x="0" y="7.62" length="short"/>
+<pin name="IN+" x="0" y="5.08" length="short"/>
+<pin name="VCC-" x="0" y="2.54" length="short"/>
+<pin name="OFFSETN2" x="25.4" y="2.54" length="short" rot="R180"/>
+<pin name="OUT" x="25.4" y="5.08" length="short" rot="R180"/>
+<pin name="VCC+" x="25.4" y="7.62" length="short" rot="R180"/>
+<pin name="NC" x="25.4" y="10.16" length="short" direction="nc" rot="R180"/>
+<wire x1="2.54" y1="12.7" x2="22.86" y2="12.7" width="0.254" layer="94"/>
+<wire x1="22.86" y1="12.7" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="12.7" width="0.254" layer="94"/>
+<text x="12.7" y="13.97" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="12.7" y="-1.27" size="1.778" layer="95" align="top-center">UA741 OP AMP</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -661,6 +788,128 @@ QUAD 2IN OR</text>
 <connect gate="G$1" pin="4Y" pad="P11"/>
 <connect gate="G$1" pin="GND" pad="P7"/>
 <connect gate="G$1" pin="VCC" pad="P14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1N4148" prefix="D">
+<gates>
+<gate name="G$1" symbol="DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD-523F">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="SOD-523F"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN74LV00A-QUAD-2IN-NAND" prefix="U">
+<gates>
+<gate name="G$1" symbol="SN74LV00A-QUAD-2IN-NAND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSSOP-14">
+<connects>
+<connect gate="G$1" pin="1A" pad="P1"/>
+<connect gate="G$1" pin="1B" pad="P2"/>
+<connect gate="G$1" pin="1Y" pad="P3"/>
+<connect gate="G$1" pin="2A" pad="P4"/>
+<connect gate="G$1" pin="2B" pad="P5"/>
+<connect gate="G$1" pin="2Y" pad="P6"/>
+<connect gate="G$1" pin="3A" pad="P9"/>
+<connect gate="G$1" pin="3B" pad="P10"/>
+<connect gate="G$1" pin="3Y" pad="P8"/>
+<connect gate="G$1" pin="4A" pad="P12"/>
+<connect gate="G$1" pin="4B" pad="P13"/>
+<connect gate="G$1" pin="4Y" pad="P11"/>
+<connect gate="G$1" pin="GND" pad="P7"/>
+<connect gate="G$1" pin="VCC" pad="P14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN74LV04A-HEX-INVERTER" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SN74LV04-HEX-INVERTER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSSOP-14">
+<connects>
+<connect gate="G$1" pin="1A" pad="P1"/>
+<connect gate="G$1" pin="1Y" pad="P2"/>
+<connect gate="G$1" pin="2A" pad="P3"/>
+<connect gate="G$1" pin="2Y" pad="P4"/>
+<connect gate="G$1" pin="3A" pad="P5"/>
+<connect gate="G$1" pin="3Y" pad="P6"/>
+<connect gate="G$1" pin="4A" pad="P9"/>
+<connect gate="G$1" pin="4Y" pad="P8"/>
+<connect gate="G$1" pin="5A" pad="P11"/>
+<connect gate="G$1" pin="5Y" pad="P10"/>
+<connect gate="G$1" pin="6A" pad="P13"/>
+<connect gate="G$1" pin="6Y" pad="P12"/>
+<connect gate="G$1" pin="GND" pad="P7"/>
+<connect gate="G$1" pin="VCC" pad="P14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SNX4LV86A-QUAD-2IN-XOR" prefix="U">
+<gates>
+<gate name="G$1" symbol="SNX4LV86A-QUAD-2IN-XOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSSOP-14">
+<connects>
+<connect gate="G$1" pin="1A" pad="P1"/>
+<connect gate="G$1" pin="1B" pad="P2"/>
+<connect gate="G$1" pin="1Y" pad="P3"/>
+<connect gate="G$1" pin="2A" pad="P4"/>
+<connect gate="G$1" pin="2B" pad="P5"/>
+<connect gate="G$1" pin="2Y" pad="P6"/>
+<connect gate="G$1" pin="3A" pad="P9"/>
+<connect gate="G$1" pin="3B" pad="P10"/>
+<connect gate="G$1" pin="3Y" pad="P8"/>
+<connect gate="G$1" pin="4A" pad="P12"/>
+<connect gate="G$1" pin="4B" pad="P13"/>
+<connect gate="G$1" pin="4Y" pad="P11"/>
+<connect gate="G$1" pin="GND" pad="P7"/>
+<connect gate="G$1" pin="VCC" pad="P14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="UA741-OP-AMP" prefix="U">
+<gates>
+<gate name="G$1" symbol="UA741-OP-AMP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-8">
+<connects>
+<connect gate="G$1" pin="IN+" pad="P3"/>
+<connect gate="G$1" pin="IN-" pad="P2"/>
+<connect gate="G$1" pin="NC" pad="P8"/>
+<connect gate="G$1" pin="OFFSETN1" pad="P1"/>
+<connect gate="G$1" pin="OFFSETN2" pad="P5"/>
+<connect gate="G$1" pin="OUT" pad="P6"/>
+<connect gate="G$1" pin="VCC+" pad="P7"/>
+<connect gate="G$1" pin="VCC-" pad="P4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3015,7 +3264,7 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <part name="U2" library="BrownSpaceEngineering" deviceset="TLC555" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="R7" library="BrownSpaceEngineering" deviceset="RES" device="0805"/>
+<part name="R5" library="BrownSpaceEngineering" deviceset="RES" device="0805"/>
 <part name="C4" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="0.01uF"/>
 <part name="C5" library="BrownSpaceEngineering" deviceset="CAP" device="0805"/>
 <part name="D3" library="BrownSpaceEngineering" deviceset="LED" device="" technology="0805"/>
@@ -3034,7 +3283,26 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <part name="V7" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="OUT3"/>
 <part name="D4" library="BrownSpaceEngineering" deviceset="LED" device="" technology="0805"/>
 <part name="D5" library="BrownSpaceEngineering" deviceset="LED" device="" technology="0805"/>
-<part name="R5" library="BrownSpaceEngineering" deviceset="RES" device="1210"/>
+<part name="U5" library="BrownSpaceEngineering" deviceset="TLC555" device=""/>
+<part name="GND22" library="supply1" deviceset="GND" device=""/>
+<part name="C26" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="1uF"/>
+<part name="C27" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="0.01uF"/>
+<part name="C28" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="0.01uF"/>
+<part name="R23" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="91K"/>
+<part name="R24" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
+<part name="R25" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
+<part name="D6" library="BrownSpaceEngineering" deviceset="1N4148" device="" technology="SOD-523F"/>
+<part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
+<part name="V8" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="IN4"/>
+<part name="V9" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="OUT4"/>
+<part name="R6" library="BrownSpaceEngineering" deviceset="RES" device="0805"/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="D7" library="BrownSpaceEngineering" deviceset="LED" device="" technology="0805"/>
+<part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="U6" library="BrownSpaceEngineering" deviceset="SN74LV00A-QUAD-2IN-NAND" device=""/>
+<part name="U7" library="BrownSpaceEngineering" deviceset="SN74LV04A-HEX-INVERTER" device=""/>
+<part name="U8" library="BrownSpaceEngineering" deviceset="SNX4LV86A-QUAD-2IN-XOR" device=""/>
+<part name="U9" library="BrownSpaceEngineering" deviceset="UA741-OP-AMP" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3060,6 +3328,21 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="378.46" y1="-7.62" x2="251.46" y2="-7.62" width="0.1524" layer="97" style="longdash"/>
 <wire x1="251.46" y1="-7.62" x2="251.46" y2="76.2" width="0.1524" layer="97" style="longdash"/>
 <text x="299.72" y="78.74" size="1.778" layer="97">3-input AND and 3-input OR</text>
+<wire x1="388.62" y1="-2.54" x2="388.62" y2="76.2" width="0.1524" layer="97" style="longdash"/>
+<wire x1="388.62" y1="76.2" x2="556.26" y2="76.2" width="0.1524" layer="97" style="longdash"/>
+<wire x1="556.26" y1="76.2" x2="556.26" y2="-2.54" width="0.1524" layer="97" style="longdash"/>
+<wire x1="556.26" y1="-2.54" x2="388.62" y2="-2.54" width="0.1524" layer="97" style="longdash"/>
+<text x="464.82" y="78.74" size="1.778" layer="97">LED Enable Circuit</text>
+<wire x1="568.96" y1="50.8" x2="568.96" y2="5.08" width="0.1524" layer="97" style="longdash"/>
+<wire x1="568.96" y1="5.08" x2="703.58" y2="5.08" width="0.1524" layer="97" style="longdash"/>
+<wire x1="703.58" y1="5.08" x2="703.58" y2="50.8" width="0.1524" layer="97" style="longdash"/>
+<wire x1="703.58" y1="50.8" x2="568.96" y2="50.8" width="0.1524" layer="97" style="longdash"/>
+<text x="607.06" y="53.34" size="1.778" layer="97">Nonfunctional Components</text>
+<wire x1="-68.58" y1="53.34" x2="-68.58" y2="12.7" width="0.1524" layer="97" style="longdash"/>
+<wire x1="-68.58" y1="12.7" x2="-5.08" y2="12.7" width="0.1524" layer="97" style="longdash"/>
+<wire x1="-5.08" y1="12.7" x2="-5.08" y2="53.34" width="0.1524" layer="97" style="longdash"/>
+<wire x1="-5.08" y1="53.34" x2="-68.58" y2="53.34" width="0.1524" layer="97" style="longdash"/>
+<text x="-38.1" y="55.88" size="1.778" layer="97">Power Supply</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="35.56" y="22.86"/>
@@ -3085,7 +3368,7 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <instance part="U2" gate="G$1" x="193.04" y="33.02"/>
 <instance part="+3V2" gate="G$1" x="218.44" y="58.42"/>
 <instance part="GND4" gate="1" x="193.04" y="7.62"/>
-<instance part="R7" gate="R$1" x="218.44" y="43.18" rot="R90"/>
+<instance part="R5" gate="R$1" x="218.44" y="43.18" rot="R90"/>
 <instance part="C4" gate="G$1" x="210.82" y="20.32"/>
 <instance part="C5" gate="G$1" x="223.52" y="20.32"/>
 <instance part="D3" gate="G$1" x="149.86" y="20.32"/>
@@ -3104,7 +3387,29 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <instance part="V7" gate="G$1" x="271.78" y="30.48"/>
 <instance part="D4" gate="G$1" x="302.26" y="15.24"/>
 <instance part="D5" gate="G$1" x="342.9" y="15.24"/>
-<instance part="R5" gate="R$1" x="38.1" y="-27.94"/>
+<instance part="U5" gate="G$1" x="505.46" y="35.56"/>
+<instance part="GND22" gate="1" x="505.46" y="5.08"/>
+<instance part="C26" gate="G$1" x="538.48" y="17.78"/>
+<instance part="C27" gate="G$1" x="525.78" y="17.78"/>
+<instance part="C28" gate="G$1" x="454.66" y="38.1" rot="R90"/>
+<instance part="R23" gate="R$1" x="538.48" y="48.26" rot="R270"/>
+<instance part="R24" gate="R$1" x="462.28" y="48.26" rot="R270"/>
+<instance part="R25" gate="R$1" x="441.96" y="48.26" rot="R270"/>
+<instance part="D6" gate="G$1" x="472.44" y="48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="469.9" y="48.26" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="477.52" y="40.64" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="+3V4" gate="G$1" x="396.24" y="68.58"/>
+<instance part="V8" gate="G$1" x="403.86" y="38.1" rot="R180"/>
+<instance part="V9" gate="G$1" x="408.94" y="38.1"/>
+<instance part="R6" gate="R$1" x="441.96" y="30.48" rot="R90"/>
+<instance part="GND7" gate="1" x="441.96" y="20.32"/>
+<instance part="D7" gate="G$1" x="474.98" y="22.86"/>
+<instance part="GND8" gate="1" x="474.98" y="15.24"/>
+<instance part="U6" gate="G$1" x="589.28" y="20.32"/>
+<instance part="U7" gate="G$1" x="612.14" y="20.32"/>
+<instance part="U8" gate="G$1" x="635" y="20.32"/>
+<instance part="U9" gate="G$1" x="662.94" y="25.4"/>
 </instances>
 <busses>
 </busses>
@@ -3160,7 +3465,7 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <junction x="78.74" y="55.88"/>
 </segment>
 <segment>
-<pinref part="R7" gate="R$1" pin="2"/>
+<pinref part="R5" gate="R$1" pin="2"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 <wire x1="218.44" y1="55.88" x2="218.44" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="RST"/>
@@ -3193,6 +3498,38 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="325.12" y1="63.5" x2="370.84" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="63.5" x2="370.84" y2="45.72" width="0.1524" layer="91"/>
 <junction x="325.12" y="63.5"/>
+</segment>
+<segment>
+<pinref part="+3V4" gate="G$1" pin="+3V3"/>
+<pinref part="V8" gate="G$1" pin="P$1"/>
+<wire x1="396.24" y1="66.04" x2="396.24" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="60.96" x2="396.24" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="38.1" x2="398.78" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="VCC"/>
+<wire x1="508" y1="53.34" x2="508" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="RST"/>
+<wire x1="508" y1="58.42" x2="508" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="502.92" y1="53.34" x2="502.92" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="502.92" y1="58.42" x2="508" y2="58.42" width="0.1524" layer="91"/>
+<junction x="508" y="58.42"/>
+<pinref part="R24" gate="R$1" pin="1"/>
+<wire x1="462.28" y1="53.34" x2="462.28" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="462.28" y1="60.96" x2="472.44" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="472.44" y1="60.96" x2="508" y2="60.96" width="0.1524" layer="91"/>
+<junction x="508" y="60.96"/>
+<wire x1="462.28" y1="60.96" x2="441.96" y2="60.96" width="0.1524" layer="91"/>
+<junction x="462.28" y="60.96"/>
+<pinref part="R25" gate="R$1" pin="1"/>
+<wire x1="441.96" y1="60.96" x2="441.96" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="D6" gate="G$1" pin="C"/>
+<wire x1="472.44" y1="53.34" x2="472.44" y2="60.96" width="0.1524" layer="91"/>
+<junction x="472.44" y="60.96"/>
+<wire x1="396.24" y1="60.96" x2="441.96" y2="60.96" width="0.1524" layer="91"/>
+<junction x="441.96" y="60.96"/>
+<junction x="396.24" y="60.96"/>
+<pinref part="R23" gate="R$1" pin="1"/>
+<wire x1="538.48" y1="53.34" x2="538.48" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="538.48" y1="60.96" x2="508" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -3320,6 +3657,30 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <junction x="330.2" y="10.16"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="GND"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+<wire x1="505.46" y1="17.78" x2="505.46" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="505.46" y1="10.16" x2="505.46" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="505.46" y1="10.16" x2="525.78" y2="10.16" width="0.1524" layer="91"/>
+<junction x="505.46" y="10.16"/>
+<pinref part="C26" gate="G$1" pin="P$2"/>
+<wire x1="525.78" y1="10.16" x2="538.48" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="538.48" y1="10.16" x2="538.48" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="C27" gate="G$1" pin="P$2"/>
+<wire x1="525.78" y1="15.24" x2="525.78" y2="10.16" width="0.1524" layer="91"/>
+<junction x="525.78" y="10.16"/>
+</segment>
+<segment>
+<pinref part="R6" gate="R$1" pin="1"/>
+<wire x1="441.96" y1="25.4" x2="441.96" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="D7" gate="G$1" pin="C"/>
+<wire x1="474.98" y1="20.32" x2="474.98" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="3V3REF" class="0">
 <segment>
@@ -3348,7 +3709,7 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="R7" gate="R$1" pin="1"/>
+<pinref part="R5" gate="R$1" pin="1"/>
 <wire x1="218.44" y1="38.1" x2="218.44" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="DISG"/>
 <wire x1="208.28" y1="35.56" x2="218.44" y2="35.56" width="0.1524" layer="91"/>
@@ -3460,6 +3821,68 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="353.06" y1="33.02" x2="342.9" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="342.9" y1="33.02" x2="342.9" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="D5" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="R23" gate="R$1" pin="2"/>
+<wire x1="538.48" y1="43.18" x2="538.48" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="DISG"/>
+<wire x1="538.48" y1="38.1" x2="520.7" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="THRSH"/>
+<wire x1="520.7" y1="33.02" x2="538.48" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="538.48" y1="33.02" x2="538.48" y2="38.1" width="0.1524" layer="91"/>
+<junction x="538.48" y="38.1"/>
+<junction x="538.48" y="33.02"/>
+<pinref part="C26" gate="G$1" pin="P$1"/>
+<wire x1="538.48" y1="33.02" x2="538.48" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="C27" gate="G$1" pin="P$1"/>
+<wire x1="525.78" y1="22.86" x2="525.78" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="CV"/>
+<wire x1="525.78" y1="27.94" x2="520.7" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TRIG" class="0">
+<segment>
+<pinref part="C28" gate="G$1" pin="P$2"/>
+<pinref part="U5" gate="G$1" pin="TRIG"/>
+<wire x1="457.2" y1="38.1" x2="462.28" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="R24" gate="R$1" pin="2"/>
+<wire x1="462.28" y1="38.1" x2="472.44" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="472.44" y1="38.1" x2="490.22" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="462.28" y1="38.1" x2="462.28" y2="43.18" width="0.1524" layer="91"/>
+<junction x="462.28" y="38.1"/>
+<label x="480.06" y="38.1" size="1.778" layer="95"/>
+<pinref part="D6" gate="G$1" pin="A"/>
+<wire x1="472.44" y1="45.72" x2="472.44" y2="38.1" width="0.1524" layer="91"/>
+<junction x="472.44" y="38.1"/>
+</segment>
+</net>
+<net name="!LED_CMD!" class="0">
+<segment>
+<pinref part="R25" gate="R$1" pin="2"/>
+<wire x1="441.96" y1="43.18" x2="441.96" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="C28" gate="G$1" pin="P$1"/>
+<wire x1="441.96" y1="38.1" x2="449.58" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="441.96" y1="38.1" x2="414.02" y2="38.1" width="0.1524" layer="91"/>
+<junction x="441.96" y="38.1"/>
+<label x="426.72" y="38.1" size="1.778" layer="95"/>
+<pinref part="V9" gate="G$1" pin="P$1"/>
+<wire x1="441.96" y1="38.1" x2="441.96" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="R6" gate="R$1" pin="2"/>
+</segment>
+</net>
+<net name="LED_SHDN" class="0">
+<segment>
+<pinref part="U5" gate="G$1" pin="OUT"/>
+<wire x1="490.22" y1="30.48" x2="474.98" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="D7" gate="G$1" pin="A"/>
+<wire x1="474.98" y1="30.48" x2="474.98" y2="27.94" width="0.1524" layer="91"/>
+<label x="474.98" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
