@@ -1445,6 +1445,35 @@
 <text x="0" y="6" size="1.27" layer="21" rot="R180" align="center">&gt;NAME</text>
 <text x="0" y="-6" size="1.27" layer="21" align="center">COIN BATTERY HOLDER</text>
 </package>
+<package name="P160KN">
+<pad name="P2" x="0" y="0" drill="1.2" diameter="1.8"/>
+<pad name="P1" x="-5" y="0" drill="1.2" diameter="1.8"/>
+<pad name="P3" x="5" y="0" drill="1.2" diameter="1.8"/>
+<text x="-3" y="6" size="1.27" layer="21">&gt;NAME</text>
+<wire x1="-8.5" y1="-3.8" x2="-8.5" y2="5.7" width="0.127" layer="21"/>
+<wire x1="-8.5" y1="5.7" x2="8.5" y2="5.7" width="0.127" layer="21"/>
+<wire x1="8.5" y1="5.7" x2="8.5" y2="-3.8" width="0.127" layer="21"/>
+<wire x1="8.5" y1="-3.8" x2="-8.5" y2="-3.8" width="0.127" layer="21"/>
+<wire x1="0" y1="-2" x2="0" y2="-3" width="0.127" layer="21"/>
+<wire x1="0" y1="-3" x2="-0.2" y2="-2.8" width="0.127" layer="21"/>
+<wire x1="0" y1="-3" x2="0.2" y2="-2.8" width="0.127" layer="21"/>
+</package>
+<package name="1N914BTR">
+<pad name="A" x="-6" y="0" drill="0.8"/>
+<pad name="C" x="6" y="0" drill="0.8"/>
+<text x="1" y="2" size="1.016" layer="21" align="center-left">C</text>
+<wire x1="-2.28" y1="1" x2="1.6" y2="1" width="0.127" layer="21"/>
+<wire x1="1.6" y1="1" x2="2.28" y2="1" width="0.127" layer="21"/>
+<wire x1="2.28" y1="1" x2="2.28" y2="0" width="0.127" layer="21"/>
+<wire x1="2.28" y1="0" x2="2.28" y2="-1" width="0.127" layer="21"/>
+<wire x1="2.28" y1="-1" x2="1.6" y2="-1" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-1" x2="-2.28" y2="-1" width="0.127" layer="21"/>
+<wire x1="-2.28" y1="-1" x2="-2.28" y2="0" width="0.127" layer="21"/>
+<wire x1="-2.28" y1="0" x2="-2.28" y2="1" width="0.127" layer="21"/>
+<wire x1="1.6" y1="1" x2="1.6" y2="-1" width="0.127" layer="21"/>
+<wire x1="-6" y1="0" x2="-2.28" y2="0" width="0.127" layer="21"/>
+<wire x1="2.28" y1="0" x2="6" y2="0" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -2523,6 +2552,27 @@ QUAD 2IN NAND</text>
 <text x="-5.08" y="5.08" size="1.778" layer="97">&gt;NAME</text>
 <text x="-5.08" y="-7.62" size="0.8128" layer="97">BC-2003
 Coin Batt. Holder</text>
+</symbol>
+<symbol name="POT">
+<pin name="1" x="-2.54" y="0" visible="off" length="short"/>
+<pin name="2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
+<text x="-2.54" y="2.54" size="1.905" layer="95">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.905" layer="96">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="0.254" y2="0.762" width="0.1778" layer="94"/>
+<wire x1="0.254" y1="0.762" x2="0.762" y2="-0.762" width="0.1778" layer="94"/>
+<wire x1="0.762" y1="-0.762" x2="1.27" y2="0.762" width="0.1778" layer="94"/>
+<wire x1="1.27" y1="0.762" x2="1.778" y2="-0.762" width="0.1778" layer="94"/>
+<wire x1="1.778" y1="-0.762" x2="2.286" y2="0.762" width="0.1778" layer="94"/>
+<wire x1="2.286" y1="0.762" x2="2.794" y2="-0.762" width="0.1778" layer="94"/>
+<wire x1="2.794" y1="-0.762" x2="3.302" y2="0.762" width="0.1778" layer="94"/>
+<wire x1="3.302" y1="0.762" x2="3.81" y2="-0.762" width="0.1778" layer="94"/>
+<wire x1="3.81" y1="-0.762" x2="4.318" y2="0.762" width="0.1778" layer="94"/>
+<wire x1="4.318" y1="0.762" x2="4.826" y2="-0.762" width="0.1778" layer="94"/>
+<wire x1="4.826" y1="-0.762" x2="5.08" y2="0" width="0.1778" layer="94"/>
+<pin name="P$1" x="2.54" y="5.08" visible="off" length="short" rot="R270"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.016" x2="2.032" y2="1.778" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.016" x2="3.048" y2="1.778" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3969,6 +4019,39 @@ Coin Batt. Holder</text>
 <connects>
 <connect gate="G$1" pin="GND" pad="-"/>
 <connect gate="G$1" pin="PWR" pad="+(1) +(2)"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="P160KN-0QC15B20K-POTENTIOMETER" prefix="R">
+<gates>
+<gate name="G$1" symbol="POT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="P160KN">
+<connects>
+<connect gate="G$1" pin="1" pad="P1"/>
+<connect gate="G$1" pin="2" pad="P2"/>
+<connect gate="G$1" pin="P$1" pad="P3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1N914BTR-DIODE" prefix="D">
+<gates>
+<gate name="G$1" symbol="DIODE" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="1N914BTR">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
