@@ -698,6 +698,46 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="-1.6" y1="-1.3" x2="-1.6" y2="1.3" width="0.127" layer="21"/>
 <text x="-1.7" y="1.5" size="0.8" layer="25">&gt;NAME</text>
 </package>
+<package name="D2F-L-A">
+<pad name="P$1" x="0" y="0" drill="1.2"/>
+<pad name="P$2" x="5.08" y="0" drill="1.2"/>
+<pad name="P$3" x="10.16" y="0" drill="1.2"/>
+<hole x="1.83" y="4.3" drill="2"/>
+<hole x="8.33" y="4.3" drill="2"/>
+<wire x1="-1.4" y1="-1.2" x2="-1.4" y2="2.7" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="2.7" x2="-1.4" y2="9.5" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="9.5" x2="11.5" y2="9.5" width="0.127" layer="21"/>
+<wire x1="11.5" y1="9.5" x2="11.5" y2="2.7" width="0.127" layer="21"/>
+<wire x1="11.5" y1="2.7" x2="11.5" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="11.5" y1="-1.2" x2="-1.4" y2="-1.2" width="0.127" layer="21"/>
+<polygon width="0.127" layer="39">
+<vertex x="-1.4" y="-1.2"/>
+<vertex x="11.5" y="-1.2"/>
+<vertex x="11.5" y="9.5"/>
+<vertex x="-1.4" y="9.5"/>
+</polygon>
+<wire x1="-1.4" y1="2.7" x2="0" y2="2.7" width="0.127" layer="21"/>
+<wire x1="0" y1="2.7" x2="5.08" y2="2.7" width="0.127" layer="21"/>
+<wire x1="5.08" y1="2.7" x2="10.16" y2="2.7" width="0.127" layer="21"/>
+<wire x1="10.16" y1="2.7" x2="11.5" y2="2.7" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="2.7" width="0.127" layer="21"/>
+<wire x1="5.08" y1="2.7" x2="5.08" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="10.16" y1="2.7" x2="10.16" y2="0" width="0.127" layer="21"/>
+<text x="-1.71" y="1.93" size="0.7" layer="21" font="vector" rot="R90">&gt;NAME</text>
+<wire x1="12.99" y1="9.6" x2="10.43" y2="14.3" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-0.5" y1="9.6" x2="12.99" y2="9.6" width="0.127" layer="21" style="shortdash"/>
+<wire x1="12.99" y1="9.6" x2="13" y2="9.6" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-0.5" y1="9.6" x2="10.4" y2="14.3" width="0.127" layer="21" style="shortdash"/>
+<polygon width="0.127" layer="39">
+<vertex x="-1.1" y="9.5"/>
+<vertex x="10.5" y="14.5"/>
+<vertex x="13.2" y="9.5"/>
+<vertex x="11.4" y="9.5"/>
+</polygon>
+<text x="1.778" y="-0.889" size="0.7" layer="21" font="vector" rot="R90">COMM</text>
+<text x="9.017" y="-0.381" size="0.7" layer="21" font="vector" rot="R90">NC</text>
+<text x="6.858" y="-0.381" size="0.7" layer="21" font="vector" rot="R90">NO</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SOLAR-CELL">
@@ -741,6 +781,21 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="1.27" y1="-0.762" x2="1.778" y2="0.762" width="0.1778" layer="94"/>
 <wire x1="1.778" y1="0.762" x2="2.286" y2="-0.762" width="0.1778" layer="94"/>
 <wire x1="2.286" y1="-0.762" x2="2.54" y2="0" width="0.1778" layer="94"/>
+</symbol>
+<symbol name="SPDT">
+<pin name="COMM" x="-10.16" y="0" length="middle"/>
+<pin name="NC" x="10.16" y="5.08" length="middle" rot="R180"/>
+<pin name="NO" x="10.16" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="0" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<circle x="-5.08" y="0" radius="0.508" width="0.254" layer="94"/>
+<circle x="5.08" y="5.08" radius="0.567959375" width="0.254" layer="94"/>
+<circle x="5.08" y="-5.08" radius="0.567959375" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-5.08" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -832,6 +887,24 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="D2F-L-A" prefix="SW">
+<description>NO, SPDT, RIGHT ANGLE, LEVER SWITCH</description>
+<gates>
+<gate name="G$1" symbol="SPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="D2F-L-A">
+<connects>
+<connect gate="G$1" pin="COMM" pad="P$1"/>
+<connect gate="G$1" pin="NC" pad="P$3"/>
+<connect gate="G$1" pin="NO" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -887,10 +960,16 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="V2" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LION-IN"/>
 <part name="V3" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LION-OUT"/>
 <part name="V4" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LION-OUT"/>
+<part name="SW1" library="BrownSpaceEngineering" deviceset="D2F-L-A" device=""/>
+<part name="SW2" library="BrownSpaceEngineering" deviceset="D2F-L-A" device=""/>
+<part name="R2" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10M"/>
+<part name="R3" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0R"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="-68.58" y="124.46" size="1.778" layer="97">R3 exists in case I switched which is NC and which is NO.</text>
+<text x="-68.58" y="121.92" size="1.778" layer="97">R2 exists to bleed to ground to ensure the NO pins are not left floating (in space!)</text>
 </plain>
 <instances>
 <instance part="IR" gate="G$1" x="-78.74" y="104.14"/>
@@ -938,6 +1017,10 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="V2" gate="G$1" x="-144.78" y="132.08"/>
 <instance part="V3" gate="G$1" x="-53.34" y="142.24" rot="R180"/>
 <instance part="V4" gate="G$1" x="-53.34" y="132.08" rot="R180"/>
+<instance part="SW1" gate="G$1" x="-101.6" y="144.78"/>
+<instance part="SW2" gate="G$1" x="-101.6" y="124.46"/>
+<instance part="R2" gate="R$1" x="-78.74" y="119.38"/>
+<instance part="R3" gate="R$1" x="-76.2" y="127"/>
 </instances>
 <busses>
 </busses>
@@ -945,13 +1028,18 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <net name="GND" class="0">
 <segment>
 <pinref part="IR" gate="G$1" pin="GND"/>
-<wire x1="-66.04" y1="106.68" x2="-55.88" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="106.68" x2="-58.42" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="106.68" x2="-55.88" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="106.68" x2="-43.18" y2="106.68" width="0.1524" layer="91"/>
 <junction x="-43.18" y="106.68"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <junction x="-55.88" y="106.68"/>
 <pinref part="PD" gate="G$1" pin="A"/>
 <label x="-50.8" y="106.68" size="1.778" layer="95"/>
+<pinref part="R2" gate="R$1" pin="2"/>
+<wire x1="-73.66" y1="119.38" x2="-58.42" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="119.38" x2="-58.42" y2="106.68" width="0.1524" layer="91"/>
+<junction x="-58.42" y="106.68"/>
 </segment>
 <segment>
 <pinref part="8A" gate="G$1" pin="A"/>
@@ -1233,12 +1321,14 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="-129.54" y1="137.16" x2="-129.54" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="-129.54" y1="137.16" x2="-116.84" y2="137.16" width="0.1524" layer="91"/>
 <junction x="-129.54" y="137.16"/>
-<wire x1="-116.84" y1="137.16" x2="-116.84" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="-116.84" y1="142.24" x2="-114.3" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="-116.84" y1="137.16" x2="-116.84" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="137.16" x2="-116.84" y2="144.78" width="0.1524" layer="91"/>
 <junction x="-116.84" y="137.16"/>
-<wire x1="-116.84" y1="132.08" x2="-114.3" y2="132.08" width="0.1524" layer="91"/>
 <label x="-127" y="137.16" size="1.778" layer="95"/>
+<pinref part="SW1" gate="G$1" pin="COMM"/>
+<wire x1="-111.76" y1="144.78" x2="-116.84" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="SW2" gate="G$1" pin="COMM"/>
+<wire x1="-111.76" y1="124.46" x2="-116.84" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="124.46" x2="-116.84" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LION-OUT" class="0">
@@ -1251,12 +1341,34 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="-68.58" y1="132.08" x2="-58.42" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="137.16" x2="-83.82" y2="137.16" width="0.1524" layer="91"/>
 <junction x="-68.58" y="137.16"/>
-<wire x1="-83.82" y1="137.16" x2="-83.82" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="-83.82" y1="142.24" x2="-86.36" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="-83.82" y1="137.16" x2="-83.82" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="137.16" x2="-83.82" y2="129.54" width="0.1524" layer="91"/>
 <junction x="-83.82" y="137.16"/>
-<wire x1="-83.82" y1="132.08" x2="-86.36" y2="132.08" width="0.1524" layer="91"/>
 <label x="-81.28" y="137.16" size="1.778" layer="95"/>
+<pinref part="SW2" gate="G$1" pin="NC"/>
+<wire x1="-91.44" y1="129.54" x2="-83.82" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$1" pin="NC"/>
+<wire x1="-91.44" y1="149.86" x2="-83.82" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="149.86" x2="-83.82" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="R3" gate="R$1" pin="2"/>
+<wire x1="-71.12" y1="127" x2="-68.58" y2="127" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="127" x2="-68.58" y2="132.08" width="0.1524" layer="91"/>
+<junction x="-68.58" y="132.08"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="SW2" gate="G$1" pin="NO"/>
+<pinref part="R2" gate="R$1" pin="1"/>
+<wire x1="-91.44" y1="119.38" x2="-86.36" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$1" pin="NO"/>
+<wire x1="-86.36" y1="119.38" x2="-83.82" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="139.7" x2="-86.36" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="-86.36" y1="139.7" x2="-86.36" y2="127" width="0.1524" layer="91"/>
+<junction x="-86.36" y="119.38"/>
+<pinref part="R3" gate="R$1" pin="1"/>
+<wire x1="-86.36" y1="127" x2="-86.36" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="127" x2="-86.36" y2="127" width="0.1524" layer="91"/>
+<junction x="-86.36" y="127"/>
 </segment>
 </net>
 </nets>
