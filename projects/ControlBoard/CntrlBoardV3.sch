@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.2">
+<eagle version="8.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -740,6 +741,23 @@
 <package name="VIA-60MIL-SQ">
 <pad name="P$1" x="0" y="0" drill="1.524" shape="square"/>
 <text x="-2.54" y="1.27" size="1" layer="27">&gt;VALUE</text>
+</package>
+<package name="1N4148">
+<pad name="A" x="-7" y="0" drill="1.53"/>
+<pad name="C" x="7" y="0" drill="1.53"/>
+<text x="1" y="2" size="1.016" layer="21" align="center-left">C</text>
+<wire x1="-2.28" y1="1" x2="1.6" y2="1" width="0.127" layer="21"/>
+<wire x1="1.6" y1="1" x2="2.28" y2="1" width="0.127" layer="21"/>
+<wire x1="2.28" y1="1" x2="2.28" y2="0" width="0.127" layer="21"/>
+<wire x1="2.28" y1="0" x2="2.28" y2="-1" width="0.127" layer="21"/>
+<wire x1="2.28" y1="-1" x2="1.6" y2="-1" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-1" x2="-2.28" y2="-1" width="0.127" layer="21"/>
+<wire x1="-2.28" y1="-1" x2="-2.28" y2="0" width="0.127" layer="21"/>
+<wire x1="-2.28" y1="0" x2="-2.28" y2="1" width="0.127" layer="21"/>
+<wire x1="1.6" y1="1" x2="1.6" y2="-1" width="0.127" layer="21"/>
+<wire x1="-7" y1="0" x2="-2.28" y2="0" width="0.127" layer="21"/>
+<wire x1="2.28" y1="0" x2="7" y2="0" width="0.127" layer="21"/>
+<text x="-3" y="-3" size="1.27" layer="21">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -1515,13 +1533,22 @@
 <gate name="G$1" symbol="DIODE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOD-523F">
+<device name="SMD" package="SOD-523F">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name="SOD-523F"/>
+</technologies>
+</device>
+<device name="THRU-HOLE" package="1N4148">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -4626,7 +4653,7 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <part name="R23" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="91K"/>
 <part name="R24" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
 <part name="R25" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
-<part name="D1" library="BrownSpaceEngineering" deviceset="1N4148" device="" technology="SOD-523F"/>
+<part name="D1" library="BrownSpaceEngineering" deviceset="1N4148" device="SMD" technology="SOD-523F"/>
 <part name="U7" library="BrownSpaceEngineering" deviceset="AD7991" device="-1"/>
 <part name="+3V19" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
@@ -4664,7 +4691,7 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <part name="R41" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="1K"/>
 <part name="C33" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="U11" library="BrownSpaceEngineering" deviceset="LT6016" device=""/>
-<part name="D2" library="BrownSpaceEngineering" deviceset="1N4148" device="" technology="SOD-523F"/>
+<part name="D2" library="BrownSpaceEngineering" deviceset="1N4148" device="SMD" technology="SOD-523F"/>
 <part name="+3V24" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
