@@ -1,42 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.1">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -45,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -54,19 +53,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -3144,8 +3143,8 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <part name="V8" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="IN4"/>
 <part name="V9" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="OUT4"/>
 <part name="D7" library="BrownSpaceEngineering" deviceset="LED" device="" technology="0805"/>
-<part name="V10" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="IN5"/>
-<part name="V11" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="OUT5"/>
+<part name="V10" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="BATT"/>
+<part name="V11" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="INPUT"/>
 <part name="R4" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
 <part name="B1" library="BrownSpaceEngineering" deviceset="BC-2003-COIN-BAT-HOLDER" device="" value="Use BR2032 - 3V (2V END POINT)"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
@@ -3158,6 +3157,10 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <part name="D8" library="BrownSpaceEngineering" deviceset="1N4148" device="THRU-HOLE"/>
 <part name="V12" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LED_SHDN"/>
 <part name="V13" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="ASTABLE_OUT"/>
+<part name="R10" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
+<part name="R11" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
+<part name="R12" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3172,9 +3175,9 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="246.38" y1="0" x2="132.08" y2="0" width="0.1524" layer="97" style="longdash"/>
 <text x="182.88" y="78.74" size="1.778" layer="97">Astable Timing Circuit</text>
 <wire x1="251.46" y1="76.2" x2="378.46" y2="76.2" width="0.1524" layer="97" style="longdash"/>
-<wire x1="378.46" y1="76.2" x2="378.46" y2="-7.62" width="0.1524" layer="97" style="longdash"/>
-<wire x1="378.46" y1="-7.62" x2="251.46" y2="-7.62" width="0.1524" layer="97" style="longdash"/>
-<wire x1="251.46" y1="-7.62" x2="251.46" y2="76.2" width="0.1524" layer="97" style="longdash"/>
+<wire x1="378.46" y1="76.2" x2="378.46" y2="-10.16" width="0.1524" layer="97" style="longdash"/>
+<wire x1="378.46" y1="-10.16" x2="251.46" y2="-10.16" width="0.1524" layer="97" style="longdash"/>
+<wire x1="251.46" y1="-10.16" x2="251.46" y2="76.2" width="0.1524" layer="97" style="longdash"/>
 <text x="299.72" y="78.74" size="1.778" layer="97">3-input AND and 3-input OR</text>
 <wire x1="388.62" y1="-2.54" x2="388.62" y2="76.2" width="0.1524" layer="97" style="longdash"/>
 <wire x1="388.62" y1="76.2" x2="556.26" y2="76.2" width="0.1524" layer="97" style="longdash"/>
@@ -3263,6 +3266,10 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </instance>
 <instance part="V12" gate="G$1" x="482.6" y="15.24" rot="R90"/>
 <instance part="V13" gate="G$1" x="139.7" y="27.94"/>
+<instance part="R10" gate="R$1" x="292.1" y="25.4" rot="R90"/>
+<instance part="R11" gate="R$1" x="284.48" y="17.78" rot="R90"/>
+<instance part="R12" gate="R$1" x="279.4" y="7.62" rot="R90"/>
+<instance part="GND5" gate="1" x="284.48" y="-5.08"/>
 </instances>
 <busses>
 </busses>
@@ -3550,6 +3557,21 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="462.28" y1="15.24" x2="462.28" y2="10.16" width="0.1524" layer="91"/>
 <junction x="462.28" y="10.16"/>
 </segment>
+<segment>
+<pinref part="GND5" gate="1" pin="GND"/>
+<pinref part="R11" gate="R$1" pin="1"/>
+<wire x1="284.48" y1="-2.54" x2="284.48" y2="0" width="0.1524" layer="91"/>
+<pinref part="R12" gate="R$1" pin="1"/>
+<wire x1="284.48" y1="0" x2="284.48" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="2.54" x2="284.48" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="2.54" x2="279.4" y2="0" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="0" x2="284.48" y2="0" width="0.1524" layer="91"/>
+<junction x="284.48" y="0"/>
+<pinref part="R10" gate="R$1" pin="1"/>
+<wire x1="292.1" y1="20.32" x2="292.1" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="2.54" x2="284.48" y2="2.54" width="0.1524" layer="91"/>
+<junction x="284.48" y="2.54"/>
+</segment>
 </net>
 <net name="N$31" class="0">
 <segment>
@@ -3740,14 +3762,18 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="276.86" y1="45.72" x2="279.4" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="45.72" x2="279.4" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="1A"/>
-<wire x1="279.4" y1="48.26" x2="297.18" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="48.26" x2="292.1" y2="48.26" width="0.1524" layer="91"/>
 <junction x="297.18" y="48.26"/>
+<wire x1="292.1" y1="48.26" x2="297.18" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="48.26" x2="312.42" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="48.26" x2="297.18" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="60.96" x2="347.98" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="1A"/>
 <wire x1="347.98" y1="60.96" x2="347.98" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="347.98" y1="48.26" x2="350.52" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="R10" gate="R$1" pin="2"/>
+<wire x1="292.1" y1="30.48" x2="292.1" y2="48.26" width="0.1524" layer="91"/>
+<junction x="292.1" y="48.26"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -3756,20 +3782,27 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="276.86" y1="38.1" x2="281.94" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="38.1" x2="281.94" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="1B"/>
-<wire x1="281.94" y1="45.72" x2="299.72" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="45.72" x2="287.02" y2="45.72" width="0.1524" layer="91"/>
 <junction x="299.72" y="45.72"/>
+<wire x1="287.02" y1="45.72" x2="299.72" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="45.72" x2="312.42" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="45.72" x2="299.72" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="58.42" x2="345.44" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="1B"/>
 <wire x1="345.44" y1="58.42" x2="345.44" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="345.44" y1="45.72" x2="350.52" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="R11" gate="R$1" pin="2"/>
+<wire x1="284.48" y1="22.86" x2="284.48" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="27.94" x2="287.02" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="27.94" x2="287.02" y2="45.72" width="0.1524" layer="91"/>
+<junction x="287.02" y="45.72"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="V7" gate="G$1" pin="P$1"/>
-<wire x1="276.86" y1="30.48" x2="284.48" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="30.48" x2="281.94" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="30.48" x2="284.48" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="30.48" x2="284.48" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="2B"/>
 <wire x1="284.48" y1="38.1" x2="302.26" y2="38.1" width="0.1524" layer="91"/>
@@ -3780,6 +3813,11 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <pinref part="U4" gate="G$1" pin="2B"/>
 <wire x1="342.9" y1="55.88" x2="342.9" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="342.9" y1="38.1" x2="350.52" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="R12" gate="R$1" pin="2"/>
+<wire x1="279.4" y1="12.7" x2="279.4" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="25.4" x2="281.94" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="25.4" x2="281.94" y2="30.48" width="0.1524" layer="91"/>
+<junction x="281.94" y="30.48"/>
 </segment>
 </net>
 <net name="N$14" class="0">
