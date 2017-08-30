@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -209,24 +210,6 @@
 <pad name="P$1" x="0" y="0" drill="1.524" shape="square"/>
 <text x="-2.54" y="1.27" size="1" layer="27">&gt;VALUE</text>
 </package>
-<package name="BC-2003-COIN-BATTERY-HOLDER">
-<smd name="-" x="0" y="0" dx="8" dy="5.56" layer="1"/>
-<smd name="+(1)" x="11.905" y="0" dx="2.6" dy="5.56" layer="1"/>
-<smd name="+(2)" x="-11.905" y="0" dx="2.6" dy="5.56" layer="1"/>
-<wire x1="-10.35" y1="4.765" x2="10.35" y2="4.765" width="0.127" layer="21"/>
-<wire x1="10.35" y1="4.765" x2="10.35" y2="2.525" width="0.127" layer="21"/>
-<wire x1="10.35" y1="2.525" x2="12.7" y2="2.525" width="0.127" layer="21"/>
-<wire x1="12.7" y1="2.525" x2="12.7" y2="-2.525" width="0.127" layer="21"/>
-<wire x1="12.7" y1="-2.525" x2="10.35" y2="-2.525" width="0.127" layer="21"/>
-<wire x1="10.35" y1="-2.525" x2="10.35" y2="-4.765" width="0.127" layer="21"/>
-<wire x1="10.35" y1="-4.765" x2="-10.35" y2="-4.765" width="0.127" layer="21"/>
-<wire x1="-10.35" y1="-4.765" x2="-10.35" y2="-2.525" width="0.127" layer="21"/>
-<wire x1="-10.35" y1="-2.525" x2="-12.7" y2="-2.525" width="0.127" layer="21"/>
-<wire x1="-12.7" y1="-2.525" x2="-12.7" y2="2.525" width="0.127" layer="21"/>
-<wire x1="-12.7" y1="2.525" x2="-10.35" y2="2.525" width="0.127" layer="21"/>
-<wire x1="-10.35" y1="2.525" x2="-10.35" y2="4.765" width="0.127" layer="21"/>
-<text x="0" y="6" size="1.27" layer="21" rot="R180" align="center">&gt;NAME</text>
-</package>
 <package name="SO-8">
 <smd name="P$1" x="-1.905" y="-2.9" dx="1.5" dy="0.7" layer="1" rot="R90"/>
 <smd name="P$2" x="-0.635" y="-2.9" dx="1.5" dy="0.7" layer="1" rot="R90"/>
@@ -356,6 +339,17 @@
 <circle x="-0.4" y="1.5" radius="0.25" width="0.5" layer="21"/>
 <text x="-1.3" y="1.1" size="0.8" layer="25" rot="R90">&gt;NAME</text>
 </package>
+<package name="BCAAPC-BATT-HOLDER">
+<pad name="PLUS" x="27.85" y="0" drill="1.2"/>
+<pad name="MINUS" x="-27.85" y="0" drill="1.2"/>
+<wire x1="-29.85" y1="8" x2="29.85" y2="8" width="0.127" layer="21"/>
+<wire x1="29.85" y1="8" x2="29.85" y2="-8" width="0.127" layer="21"/>
+<wire x1="29.85" y1="-8" x2="-29.85" y2="-8" width="0.127" layer="21"/>
+<wire x1="-29.85" y1="-8" x2="-29.85" y2="8" width="0.127" layer="21"/>
+<text x="-29.9" y="8.2" size="1.27" layer="21">&gt;NAME</text>
+<text x="-24.13" y="0.254" size="5.08" layer="21" align="center">-</text>
+<text x="24.13" y="0.136853125" size="3.81" layer="21" align="center">+</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -416,20 +410,6 @@
 <pin name="P$1" x="5.08" y="0" visible="off" length="middle" rot="R180"/>
 <text x="1.778" y="0.762" size="1.778" layer="95">VIA</text>
 <text x="1.778" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-<symbol name="BC-2003-COIN-BAT-HOLDER">
-<pin name="GND" x="-7.62" y="0" visible="off" length="short"/>
-<pin name="PWR" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
-<text x="3.81" y="1.524" size="1.778" layer="97" rot="R180" align="center">+</text>
-<text x="-6.35" y="1.27" size="1.778" layer="97" align="center">-</text>
-<text x="-5.08" y="5.08" size="1.778" layer="97">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="0.8128" layer="97">BC-2003
-Coin Batt. Holder</text>
-<text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="555-TIMER">
 <pin name="TRIG" x="-15.24" y="2.54" length="middle"/>
@@ -500,6 +480,14 @@ Coin Batt. Holder</text>
 <wire x1="2.54" y1="2.54" x2="2.54" y2="1.016" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="1.016" x2="2.032" y2="1.778" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="1.016" x2="3.048" y2="1.778" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="BATT">
+<pin name="PLUS" x="0" y="2.54" visible="off" length="short" direction="pwr" rot="R270"/>
+<pin name="MINUS" x="0" y="-5.08" visible="off" length="short" direction="pwr" rot="R90"/>
+<wire x1="-5.08" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<text x="2.54" y="0.762" size="1.778" layer="96">&gt;NAME</text>
+<text x="2.54" y="-4.572" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -594,22 +582,6 @@ Coin Batt. Holder</text>
 <device name="60MIL-SQ" package="VIA-60MIL-SQ">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="BC-2003-COIN-BAT-HOLDER">
-<gates>
-<gate name="G$1" symbol="BC-2003-COIN-BAT-HOLDER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="BC-2003-COIN-BATTERY-HOLDER">
-<connects>
-<connect gate="G$1" pin="GND" pad="-"/>
-<connect gate="G$1" pin="PWR" pad="+(1) +(2)"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -765,6 +737,22 @@ Coin Batt. Holder</text>
 <connect gate="G$1" pin="1" pad="P1"/>
 <connect gate="G$1" pin="2" pad="P2"/>
 <connect gate="G$1" pin="P$1" pad="P3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BCAAPC-BATT-HOLDER" prefix="B">
+<gates>
+<gate name="G$1" symbol="BATT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BCAAPC-BATT-HOLDER">
+<connects>
+<connect gate="G$1" pin="MINUS" pad="MINUS"/>
+<connect gate="G$1" pin="PLUS" pad="PLUS"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3143,10 +3131,9 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <part name="V8" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="IN4"/>
 <part name="V9" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="OUT4"/>
 <part name="D7" library="BrownSpaceEngineering" deviceset="LED" device="" technology="0805"/>
-<part name="V10" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="BATT"/>
-<part name="V11" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="INPUT"/>
+<part name="V10" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="PWR-"/>
+<part name="V11" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="PWR+"/>
 <part name="R4" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
-<part name="B1" library="BrownSpaceEngineering" deviceset="BC-2003-COIN-BAT-HOLDER" device="" value="Use BR2032 - 3V (2V END POINT)"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="R6" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="150R"/>
 <part name="R7" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="150R"/>
@@ -3161,6 +3148,10 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <part name="R11" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
 <part name="R12" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="B1" library="BrownSpaceEngineering" deviceset="BCAAPC-BATT-HOLDER" device="" value="1.5 V"/>
+<part name="B2" library="BrownSpaceEngineering" deviceset="BCAAPC-BATT-HOLDER" device="" value="1.5 V"/>
+<part name="V14" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="BATT"/>
+<part name="V15" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="INPUT"/>
 </parts>
 <sheets>
 <sheet>
@@ -3190,6 +3181,8 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="-5.08" y1="53.34" x2="-78.74" y2="53.34" width="0.1524" layer="97" style="longdash"/>
 <text x="-38.1" y="55.88" size="1.778" layer="97">Power Supply</text>
 <wire x1="132.08" y1="76.2" x2="132.08" y2="0" width="0.1524" layer="97" style="longdash"/>
+<text x="-40.64" y="22.86" size="1.778" layer="97">INPUT RANGE:
+1.8 - 5.5 V</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="35.56" y="22.86"/>
@@ -3242,13 +3235,9 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <instance part="V8" gate="G$1" x="408.94" y="38.1" rot="R180"/>
 <instance part="V9" gate="G$1" x="416.56" y="38.1"/>
 <instance part="D7" gate="G$1" x="467.36" y="30.48" rot="R270"/>
-<instance part="V10" gate="G$1" x="-27.94" y="38.1" rot="R180"/>
-<instance part="V11" gate="G$1" x="-22.86" y="38.1"/>
+<instance part="V10" gate="G$1" x="-35.56" y="33.02" rot="R180"/>
+<instance part="V11" gate="G$1" x="-27.94" y="33.02"/>
 <instance part="R4" gate="R$1" x="236.22" y="30.48" rot="R90"/>
-<instance part="B1" gate="G$1" x="-43.18" y="38.1" smashed="yes">
-<attribute name="NAME" x="-48.26" y="43.18" size="1.778" layer="97"/>
-<attribute name="VALUE" x="-58.42" y="27.94" size="1.778" layer="96"/>
-</instance>
 <instance part="GND7" gate="1" x="396.24" y="5.08"/>
 <instance part="R6" gate="R$1" x="462.28" y="20.32" rot="R270"/>
 <instance part="R7" gate="R$1" x="327.66" y="7.62"/>
@@ -3270,6 +3259,10 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <instance part="R11" gate="R$1" x="284.48" y="17.78" rot="R90"/>
 <instance part="R12" gate="R$1" x="279.4" y="7.62" rot="R90"/>
 <instance part="GND5" gate="1" x="284.48" y="-5.08"/>
+<instance part="B1" gate="G$1" x="-58.42" y="45.72" rot="R270"/>
+<instance part="B2" gate="G$1" x="-48.26" y="45.72" rot="R270"/>
+<instance part="V14" gate="G$1" x="-35.56" y="45.72" rot="R180"/>
+<instance part="V15" gate="G$1" x="-27.94" y="45.72"/>
 </instances>
 <busses>
 </busses>
@@ -3403,8 +3396,13 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </segment>
 <segment>
 <pinref part="V11" gate="G$1" pin="P$1"/>
-<wire x1="-17.78" y1="38.1" x2="-10.16" y2="38.1" width="0.1524" layer="91"/>
-<label x="-12.7" y="38.1" size="1.778" layer="95"/>
+<wire x1="-22.86" y1="33.02" x2="-17.78" y2="33.02" width="0.1524" layer="91"/>
+<label x="-12.7" y="33.02" size="1.778" layer="95"/>
+<pinref part="V15" gate="G$1" pin="P$1"/>
+<wire x1="-17.78" y1="33.02" x2="-10.16" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="45.72" x2="-17.78" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="45.72" x2="-17.78" y2="33.02" width="0.1524" layer="91"/>
+<junction x="-17.78" y="33.02"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -3459,11 +3457,15 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <junction x="78.74" y="10.16"/>
 </segment>
 <segment>
-<label x="-66.04" y="38.1" size="1.778" layer="95"/>
+<label x="-68.58" y="33.02" size="1.778" layer="95" rot="R90"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="-68.58" y1="38.1" x2="-68.58" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="B1" gate="G$1" pin="GND"/>
-<wire x1="-68.58" y1="38.1" x2="-50.8" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="33.02" x2="-68.58" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="33.02" x2="-40.64" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="V10" gate="G$1" pin="P$1"/>
+<wire x1="-68.58" y1="33.02" x2="-68.58" y2="45.72" width="0.1524" layer="91"/>
+<junction x="-68.58" y="33.02"/>
+<wire x1="-68.58" y1="45.72" x2="-63.5" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="B1" gate="G$1" pin="MINUS"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
@@ -3692,13 +3694,6 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="482.6" y1="30.48" x2="482.6" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="V10" gate="G$1" pin="P$1"/>
-<wire x1="-38.1" y1="38.1" x2="-33.02" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="B1" gate="G$1" pin="PWR"/>
-</segment>
-</net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="DISG"/>
@@ -3853,6 +3848,20 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="345.44" y1="35.56" x2="345.44" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="345.44" y1="7.62" x2="342.9" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="D5" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="PLUS"/>
+<pinref part="B2" gate="G$1" pin="MINUS"/>
+<wire x1="-55.88" y1="45.72" x2="-53.34" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="B2" gate="G$1" pin="PLUS"/>
+<wire x1="-45.72" y1="45.72" x2="-40.64" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="V14" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 </nets>
