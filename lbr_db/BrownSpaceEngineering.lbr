@@ -3969,7 +3969,7 @@ Coin Batt. Holder</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="QUAD-2IN-GATE">
+<deviceset name="QUAD-2IN-GATE" prefix="U">
 <gates>
 <gate name="G$1" symbol="QUAD-2IN-GATE" x="0" y="0"/>
 </gates>
