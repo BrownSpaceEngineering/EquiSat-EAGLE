@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.1">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -818,73 +817,23 @@
 <library name="CNTRL_BOARD">
 <packages>
 <package name="QFN10_POWERPAD">
-<rectangle x1="0" y1="0" x2="0.28" y2="0.71" layer="1"/>
-<circle x="0.14" y="0.71" radius="0.07" width="0.14" layer="1"/>
-<rectangle x1="-0.07" y1="-0.07" x2="0.35" y2="0.72" layer="29"/>
-<circle x="0.14" y="0.72" radius="0.1044" width="0.21" layer="29"/>
-<rectangle x1="0.5" y1="0" x2="0.78" y2="0.71" layer="1"/>
-<circle x="0.64" y="0.71" radius="0.07" width="0.14" layer="1"/>
-<rectangle x1="0.43" y1="-0.07" x2="0.85" y2="0.72" layer="29"/>
-<circle x="0.64" y="0.72" radius="0.1044" width="0.21" layer="29"/>
-<rectangle x1="1" y1="0" x2="1.28" y2="0.71" layer="1"/>
-<circle x="1.14" y="0.71" radius="0.07" width="0.14" layer="1"/>
-<rectangle x1="0.93" y1="-0.07" x2="1.35" y2="0.72" layer="29"/>
-<circle x="1.14" y="0.72" radius="0.1044" width="0.21" layer="29"/>
-<rectangle x1="1.5" y1="0" x2="1.78" y2="0.71" layer="1"/>
-<circle x="1.64" y="0.71" radius="0.07" width="0.14" layer="1"/>
-<rectangle x1="1.43" y1="-0.07" x2="1.85" y2="0.72" layer="29"/>
-<circle x="1.64" y="0.72" radius="0.1044" width="0.21" layer="29"/>
-<rectangle x1="2" y1="0" x2="2.28" y2="0.71" layer="1"/>
-<circle x="2.14" y="0.71" radius="0.07" width="0.14" layer="1"/>
-<rectangle x1="1.93" y1="-0.07" x2="2.35" y2="0.72" layer="29"/>
-<circle x="2.14" y="0.72" radius="0.1044" width="0.21" layer="29"/>
-<rectangle x1="2" y1="3.09" x2="2.28" y2="3.8" layer="1" rot="R180"/>
-<circle x="2.14" y="3.09" radius="0.07" width="0.14" layer="1"/>
-<rectangle x1="1.93" y1="3.08" x2="2.35" y2="3.87" layer="29" rot="R180"/>
-<circle x="2.14" y="3.08" radius="0.1044" width="0.21" layer="29"/>
-<rectangle x1="1.5" y1="3.09" x2="1.78" y2="3.8" layer="1" rot="R180"/>
-<circle x="1.64" y="3.09" radius="0.07" width="0.14" layer="1"/>
-<rectangle x1="1.43" y1="3.08" x2="1.85" y2="3.87" layer="29" rot="R180"/>
-<circle x="1.64" y="3.08" radius="0.1044" width="0.21" layer="29"/>
-<rectangle x1="1" y1="3.09" x2="1.28" y2="3.8" layer="1" rot="R180"/>
-<circle x="1.14" y="3.09" radius="0.07" width="0.14" layer="1"/>
-<rectangle x1="0.93" y1="3.08" x2="1.35" y2="3.87" layer="29" rot="R180"/>
-<circle x="1.14" y="3.08" radius="0.1044" width="0.21" layer="29"/>
-<rectangle x1="0.5" y1="3.09" x2="0.78" y2="3.8" layer="1" rot="R180"/>
-<circle x="0.64" y="3.09" radius="0.07" width="0.14" layer="1"/>
-<rectangle x1="0.43" y1="3.08" x2="0.85" y2="3.87" layer="29" rot="R180"/>
-<circle x="0.64" y="3.08" radius="0.1044" width="0.21" layer="29"/>
-<rectangle x1="0" y1="3.09" x2="0.28" y2="3.8" layer="1" rot="R180"/>
-<circle x="0.14" y="3.09" radius="0.07" width="0.14" layer="1"/>
-<rectangle x1="-0.07" y1="3.08" x2="0.35" y2="3.87" layer="29" rot="R180"/>
-<circle x="0.14" y="3.08" radius="0.1044" width="0.21" layer="29"/>
-<rectangle x1="-0.06" y1="1.075" x2="2.34" y2="2.725" layer="1"/>
-<rectangle x1="-0.76" y1="1.51" x2="1.51" y2="1.79" layer="1"/>
-<rectangle x1="-0.76" y1="2.01" x2="-0.06" y2="2.29" layer="1"/>
-<rectangle x1="2.34" y1="1.51" x2="3.04" y2="1.79" layer="1"/>
-<rectangle x1="2.34" y1="2.01" x2="3.04" y2="2.29" layer="1"/>
-<circle x="-0.2" y="0.9" radius="0.14141875" width="0.2" layer="25"/>
-<circle x="-0.2" y="0.9" radius="0.1" width="0.3" layer="25"/>
-<wire x1="-0.4" y1="1" x2="-0.2" y2="0.9" width="0.127" layer="25" curve="-180"/>
-<text x="-0.1" y="4" size="0.7112" layer="25">&gt;NAME</text>
-<smd name="P$10" x="0.139190625" y="3.55803125" dx="0.4064" dy="0.2032" layer="1" rot="R90"/>
-<smd name="P$9" x="0.6405875" y="3.5552375" dx="0.4064" dy="0.2032" layer="1" rot="R90"/>
-<smd name="P$8" x="1.139190625" y="3.5552375" dx="0.4064" dy="0.2032" layer="1" rot="R90"/>
-<smd name="P$7" x="1.639315625" y="3.559303125" dx="0.4064" dy="0.2032" layer="1" rot="R90"/>
-<smd name="P$6" x="2.140203125" y="3.559303125" dx="0.4064" dy="0.2032" layer="1" rot="R90"/>
-<smd name="P$1" x="0.139953125" y="0.2405375" dx="0.4064" dy="0.2032" layer="1" rot="R90"/>
-<smd name="P$2" x="0.6405875" y="0.2405375" dx="0.4064" dy="0.2032" layer="1" rot="R90"/>
-<smd name="P$3" x="1.141475" y="0.241809375" dx="0.4064" dy="0.2032" layer="1" rot="R90"/>
-<smd name="P$4" x="1.638553125" y="0.23850625" dx="0.4064" dy="0.2032" layer="1" rot="R90"/>
-<smd name="P$5" x="2.13868125" y="0.241809375" dx="0.4064" dy="0.2032" layer="1" rot="R90"/>
-<rectangle x1="-0.760475" y1="2.00786875" x2="3.04038125" y2="2.29108125" layer="29"/>
-<rectangle x1="-0.756665625" y1="1.505709375" x2="3.044190625" y2="1.788921875" layer="29"/>
-<rectangle x1="-0.0594375" y1="1.074675" x2="2.340609375" y2="2.726690625" layer="29"/>
-<smd name="PAD" x="1.154684375" y="1.898140625" dx="1.778" dy="0.9144" layer="1"/>
-<wire x1="-0.4" y1="0.4" x2="2.7" y2="0.4" width="0.127" layer="21"/>
-<wire x1="2.7" y1="0.4" x2="2.7" y2="3.4" width="0.127" layer="21"/>
-<wire x1="2.7" y1="3.4" x2="-0.4" y2="3.4" width="0.127" layer="21"/>
-<wire x1="-0.4" y1="3.4" x2="-0.4" y2="0.4" width="0.127" layer="21"/>
+<circle x="-1.1" y="0" radius="0.1" width="0.3" layer="25"/>
+<text x="-1.1" y="0.6" size="0.7112" layer="25" rot="R90">&gt;NAME</text>
+<smd name="P$10" x="0" y="2.95" dx="0.85" dy="0.28" layer="1" rot="R90"/>
+<smd name="P$9" x="0.5" y="2.95" dx="0.85" dy="0.28" layer="1" rot="R90"/>
+<smd name="P$8" x="1" y="2.95" dx="0.85" dy="0.28" layer="1" rot="R90"/>
+<smd name="P$7" x="1.5" y="2.95" dx="0.85" dy="0.28" layer="1" rot="R90"/>
+<smd name="P$6" x="2" y="2.95" dx="0.85" dy="0.28" layer="1" rot="R90"/>
+<smd name="P$1" x="0" y="0" dx="0.85" dy="0.28" layer="1" rot="R90"/>
+<smd name="P$2" x="0.5" y="0" dx="0.85" dy="0.28" layer="1" rot="R90"/>
+<smd name="P$3" x="1" y="0" dx="0.85" dy="0.28" layer="1" rot="R90"/>
+<smd name="P$4" x="1.5" y="0" dx="0.85" dy="0.28" layer="1" rot="R90"/>
+<smd name="P$5" x="2" y="0" dx="0.85" dy="0.28" layer="1" rot="R90"/>
+<smd name="PAD" x="1" y="1.475" dx="3" dy="1.6" layer="1"/>
+<wire x1="-0.7" y1="-0.1" x2="2.7" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="2.7" y1="-0.1" x2="2.7" y2="3.05" width="0.127" layer="21"/>
+<wire x1="2.7" y1="3.05" x2="-0.7" y2="3.05" width="0.127" layer="21"/>
+<wire x1="-0.7" y1="3.05" x2="-0.7" y2="-0.1" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -3084,6 +3033,7 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
+<clearance class="0" value="0.205"/>
 </class>
 </classes>
 <parts>
@@ -3091,7 +3041,6 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="L1" library="resistor" deviceset="L-US" device="L3225M" value="2.2uH"/>
-<part name="+3V31" library="supply1" deviceset="+3V3" device=""/>
 <part name="C1" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="10uF"/>
 <part name="C3" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="10uF"/>
 <part name="R1" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100R"/>
@@ -3152,6 +3101,8 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <part name="B2" library="BrownSpaceEngineering" deviceset="BCAAPC-BATT-HOLDER" device="" value="1.5 V"/>
 <part name="V1" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="BATT"/>
 <part name="V3" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="INPUT"/>
+<part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
+<part name="V16" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
 </parts>
 <sheets>
 <sheet>
@@ -3192,7 +3143,6 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <attribute name="NAME" x="50.8" y="59.69" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="50.8" y="64.77" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="+3V31" gate="G$1" x="78.74" y="63.5"/>
 <instance part="C1" gate="G$1" x="10.16" y="33.02"/>
 <instance part="C3" gate="G$1" x="78.74" y="35.56"/>
 <instance part="R1" gate="R$1" x="17.78" y="38.1" rot="R90"/>
@@ -3200,7 +3150,7 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <instance part="D1" gate="G$1" x="88.9" y="17.78"/>
 <instance part="R2" gate="R$1" x="88.9" y="33.02" rot="R90"/>
 <instance part="V5" gate="G$1" x="106.68" y="55.88" rot="R180"/>
-<instance part="GND1" gate="1" x="-68.58" y="27.94"/>
+<instance part="GND1" gate="1" x="-68.58" y="20.32"/>
 <instance part="U2" gate="G$1" x="193.04" y="33.02"/>
 <instance part="+3V32" gate="G$1" x="218.44" y="68.58"/>
 <instance part="GND4" gate="1" x="193.04" y="7.62"/>
@@ -3263,6 +3213,8 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <instance part="B2" gate="G$1" x="-48.26" y="45.72" rot="R270"/>
 <instance part="V1" gate="G$1" x="-35.56" y="45.72" rot="R180"/>
 <instance part="V3" gate="G$1" x="-27.94" y="45.72"/>
+<instance part="+3V1" gate="G$1" x="78.74" y="63.5"/>
+<instance part="V16" gate="G$1" x="-53.34" y="27.94" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -3286,31 +3238,6 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </segment>
 </net>
 <net name="+3V3" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="VOUT"/>
-<pinref part="+3V31" gate="G$1" pin="+3V3"/>
-<wire x1="60.96" y1="45.72" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="45.72" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="45.72" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
-<label x="71.12" y="45.72" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="FB"/>
-<wire x1="78.74" y1="48.26" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="55.88" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="38.1" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="38.1" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
-<junction x="66.04" y="45.72"/>
-<pinref part="C3" gate="G$1" pin="P$1"/>
-<wire x1="78.74" y1="40.64" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
-<junction x="78.74" y="45.72"/>
-<wire x1="78.74" y1="48.26" x2="88.9" y2="48.26" width="0.1524" layer="91"/>
-<junction x="78.74" y="48.26"/>
-<pinref part="R2" gate="R$1" pin="2"/>
-<wire x1="88.9" y1="38.1" x2="88.9" y2="48.26" width="0.1524" layer="91"/>
-<junction x="88.9" y="48.26"/>
-<pinref part="V5" gate="G$1" pin="P$1"/>
-<wire x1="101.6" y1="55.88" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
-<junction x="78.74" y="55.88"/>
-</segment>
 <segment>
 <pinref part="+3V32" gate="G$1" pin="+3V3"/>
 <wire x1="218.44" y1="66.04" x2="218.44" y2="63.5" width="0.1524" layer="91"/>
@@ -3378,6 +3305,31 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="538.48" y1="60.96" x2="508" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="+3V34" gate="G$1" pin="+3V3"/>
 <wire x1="441.96" y1="66.04" x2="441.96" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="VOUT"/>
+<wire x1="60.96" y1="45.72" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="45.72" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="45.72" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
+<label x="71.12" y="45.72" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="FB"/>
+<wire x1="78.74" y1="48.26" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="55.88" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="38.1" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="38.1" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
+<junction x="66.04" y="45.72"/>
+<pinref part="C3" gate="G$1" pin="P$1"/>
+<wire x1="78.74" y1="40.64" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
+<junction x="78.74" y="45.72"/>
+<wire x1="78.74" y1="48.26" x2="88.9" y2="48.26" width="0.1524" layer="91"/>
+<junction x="78.74" y="48.26"/>
+<pinref part="R2" gate="R$1" pin="2"/>
+<wire x1="88.9" y1="38.1" x2="88.9" y2="48.26" width="0.1524" layer="91"/>
+<junction x="88.9" y="48.26"/>
+<pinref part="V5" gate="G$1" pin="P$1"/>
+<wire x1="101.6" y1="55.88" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
+<junction x="78.74" y="55.88"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -3459,13 +3411,17 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <segment>
 <label x="-68.58" y="33.02" size="1.778" layer="95" rot="R90"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="-68.58" y1="33.02" x2="-68.58" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="33.02" x2="-68.58" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="27.94" x2="-68.58" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="33.02" x2="-40.64" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="V2" gate="G$1" pin="P$1"/>
 <wire x1="-68.58" y1="33.02" x2="-68.58" y2="45.72" width="0.1524" layer="91"/>
 <junction x="-68.58" y="33.02"/>
 <wire x1="-68.58" y1="45.72" x2="-63.5" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="MINUS"/>
+<pinref part="V16" gate="G$1" pin="P$1"/>
+<wire x1="-58.42" y1="27.94" x2="-68.58" y2="27.94" width="0.1524" layer="91"/>
+<junction x="-68.58" y="27.94"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
