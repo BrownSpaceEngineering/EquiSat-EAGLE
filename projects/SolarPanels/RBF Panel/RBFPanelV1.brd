@@ -156,7 +156,7 @@
 <wire x1="99.5" y1="82.5" x2="0" y2="82.5" width="0" layer="20"/>
 <wire x1="0" y1="82.5" x2="0" y2="0" width="0" layer="20"/>
 <text x="61.944" y="67.326" size="1.778" layer="22" rot="MR0">Brown Space Engineering
-EQUiSat: ABF Panel V1
+EQUiSat: RBF Panel V1
 August 2017
 Caelan Ritter</text>
 <text x="97.994" y="30.995" size="1.4224" layer="21" rot="R90">EQUiSat: RBF Panel V1</text>
