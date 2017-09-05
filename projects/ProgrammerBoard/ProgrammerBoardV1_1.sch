@@ -165,14 +165,12 @@
 <smd name="P6" x="2.54" y="1.95" dx="2.4" dy="0.74" layer="1" rot="R90"/>
 <smd name="P10" x="-2.54" y="1.95" dx="2.4" dy="0.74" layer="1" rot="R90" thermals="no"/>
 <smd name="P9" x="-1.27" y="1.95" dx="2.4" dy="0.74" layer="1" rot="R90" thermals="no"/>
-<wire x1="-3.325" y1="1.7" x2="3.325" y2="1.7" width="0.254" layer="21"/>
-<wire x1="3.325" y1="1.7" x2="3.325" y2="-1.7" width="0.254" layer="21"/>
-<wire x1="3.325" y1="-1.7" x2="-2.8" y2="-1.7" width="0.254" layer="21"/>
-<wire x1="-2.8" y1="-1.7" x2="-3.325" y2="-1.7" width="0.254" layer="21"/>
-<wire x1="-3.325" y1="-1.7" x2="-3.325" y2="1.7" width="0.254" layer="21"/>
-<wire x1="-3.3" y1="-1.2" x2="-2.8" y2="-1.7" width="0.254" layer="21"/>
-<text x="-4.445" y="-1.27" size="0.7112" layer="21" rot="R90">&gt;NAME</text>
-<circle x="-3.18135" y="-1.5113" radius="0.2413" width="1.27" layer="21"/>
+<wire x1="-3.225" y1="1.6" x2="3.225" y2="1.6" width="0.254" layer="21"/>
+<wire x1="3.225" y1="1.6" x2="3.225" y2="-1.5" width="0.254" layer="21"/>
+<wire x1="3.225" y1="-1.5" x2="-3.225" y2="-1.5" width="0.254" layer="21"/>
+<wire x1="-3.225" y1="-1.5" x2="-3.225" y2="1.6" width="0.254" layer="21"/>
+<text x="-3.645" y="-0.37" size="0.7112" layer="21" rot="R90">&gt;NAME</text>
+<circle x="-3.78135" y="-1.3113" radius="0.1" width="1.27" layer="21"/>
 </package>
 <package name="VIA-120MIL">
 <pad name="P$1" x="0" y="0" drill="3.048"/>
