@@ -1420,26 +1420,26 @@
 </package>
 <package name="VQFN-14">
 <smd name="PAD" x="0" y="0" dx="2.05" dy="2.05" layer="1"/>
-<smd name="P1" x="-1.725" y="0.75" dx="0.28" dy="0.85" layer="1" rot="R90"/>
-<smd name="P14" x="-1.725" y="-0.75" dx="0.28" dy="0.85" layer="1" rot="R90"/>
-<smd name="P7" x="1.725" y="0.75" dx="0.28" dy="0.85" layer="1" rot="R90"/>
-<smd name="P8" x="1.725" y="-0.75" dx="0.28" dy="0.85" layer="1" rot="R90"/>
-<smd name="P11" x="0" y="-1.725" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="P10" x="0.5" y="-1.725" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="P4" x="0" y="1.725" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="P5" x="0.5" y="1.725" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="P6" x="1" y="1.725" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="P2" x="-1" y="1.725" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="P3" x="-0.5" y="1.725" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="P12" x="-0.5" y="-1.725" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="P13" x="-1" y="-1.725" dx="0.28" dy="0.85" layer="1" rot="R180"/>
-<smd name="P9" x="1" y="-1.725" dx="0.28" dy="0.85" layer="1" rot="R180"/>
+<smd name="P14" x="-1.725" y="0.75" dx="0.28" dy="0.85" layer="1" rot="R90"/>
+<smd name="P1" x="-1.725" y="-0.75" dx="0.28" dy="0.85" layer="1" rot="R90"/>
+<smd name="P8" x="1.725" y="0.75" dx="0.28" dy="0.85" layer="1" rot="R90"/>
+<smd name="P7" x="1.725" y="-0.75" dx="0.28" dy="0.85" layer="1" rot="R90"/>
+<smd name="P4" x="0" y="-1.725" dx="0.28" dy="0.85" layer="1" rot="R180"/>
+<smd name="P5" x="0.5" y="-1.725" dx="0.28" dy="0.85" layer="1" rot="R180"/>
+<smd name="P11" x="0" y="1.725" dx="0.28" dy="0.85" layer="1" rot="R180"/>
+<smd name="P10" x="0.5" y="1.725" dx="0.28" dy="0.85" layer="1" rot="R180"/>
+<smd name="P9" x="1" y="1.725" dx="0.28" dy="0.85" layer="1" rot="R180"/>
+<smd name="P13" x="-1" y="1.725" dx="0.28" dy="0.85" layer="1" rot="R180"/>
+<smd name="P12" x="-0.5" y="1.725" dx="0.28" dy="0.85" layer="1" rot="R180"/>
+<smd name="P3" x="-0.5" y="-1.725" dx="0.28" dy="0.85" layer="1" rot="R180"/>
+<smd name="P2" x="-1" y="-1.725" dx="0.28" dy="0.85" layer="1" rot="R180"/>
+<smd name="P6" x="1" y="-1.725" dx="0.28" dy="0.85" layer="1" rot="R180"/>
 <text x="-2.5" y="-2" size="0.8128" layer="49" rot="R90">&gt;NAME</text>
 <wire x1="-2.2" y1="-2.2" x2="2.2" y2="-2.2" width="0.127" layer="21"/>
 <wire x1="2.2" y1="-2.2" x2="2.2" y2="2.2" width="0.127" layer="21"/>
 <wire x1="2.2" y1="2.2" x2="-2.2" y2="2.2" width="0.127" layer="21"/>
 <wire x1="-2.2" y1="2.2" x2="-2.2" y2="-2.2" width="0.127" layer="21"/>
-<circle x="-1.85" y="1.3" radius="0.2" width="0.15" layer="21"/>
+<circle x="-1.85" y="-1.367" radius="0.2" width="0.15" layer="21"/>
 </package>
 <package name="SOIC-8">
 <wire x1="-2.45" y1="1.95" x2="2.45" y2="1.95" width="0.127" layer="21"/>
