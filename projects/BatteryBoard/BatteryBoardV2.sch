@@ -256,9 +256,7 @@
 <wire x1="9.652" y1="-35.052" x2="12.7" y2="-35.052" width="0.127" layer="21"/>
 <wire x1="12.7" y1="-35.052" x2="12.7" y2="-29.21" width="0.127" layer="21"/>
 <wire x1="12.7" y1="-29.21" x2="9.652" y2="-29.21" width="0.127" layer="21"/>
-<wire x1="7.112" y1="35.052" x2="7.112" y2="-35.052" width="0.127" layer="21" style="shortdash"/>
 <wire x1="7.112" y1="-35.052" x2="-7.112" y2="-35.052" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-7.112" y1="-35.052" x2="-7.112" y2="35.052" width="0.127" layer="21" style="shortdash"/>
 <wire x1="-7.112" y1="35.052" x2="7.112" y2="35.052" width="0.127" layer="21" style="shortdash"/>
 <polygon width="0.127" layer="39">
 <vertex x="-7.1" y="-36.36"/>
@@ -286,9 +284,7 @@
 <wire x1="12.7" y1="-27.94" x2="12.7" y2="-20.32" width="0.127" layer="21"/>
 <wire x1="12.7" y1="-20.32" x2="9.525" y2="-20.32" width="0.127" layer="21"/>
 <wire x1="-7.112" y1="35.052" x2="7.112" y2="35.052" width="0.127" layer="21" style="shortdash"/>
-<wire x1="7.112" y1="35.052" x2="7.112" y2="-35.052" width="0.127" layer="21" style="shortdash"/>
 <wire x1="7.112" y1="-35.052" x2="-7.112" y2="-35.052" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-7.112" y1="-35.052" x2="-7.112" y2="35.052" width="0.127" layer="21" style="shortdash"/>
 <polygon width="0.127" layer="39">
 <vertex x="-7.1" y="37"/>
 <vertex x="-7.1" y="-37"/>
@@ -1457,14 +1453,14 @@
 <description>&lt;b&gt;DIODE&lt;/b&gt;</description>
 <smd name="C" x="-2.55" y="0" dx="1.8" dy="2.2" layer="1"/>
 <smd name="A" x="2.55" y="0" dx="1.8" dy="2.2" layer="1"/>
-<text x="-0.6588" y="-3.2122" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.5318" y="-2.5772" size="0.7" layer="25" ratio="10">&gt;NAME</text>
 <wire x1="-3.81" y1="1.4478" x2="-1.2446" y2="1.4478" width="0.3048" layer="21"/>
 <wire x1="-1.2446" y1="1.4478" x2="3.81" y2="1.4478" width="0.3048" layer="21"/>
 <wire x1="3.81" y1="1.4478" x2="3.81" y2="-1.4732" width="0.3048" layer="21"/>
 <wire x1="3.81" y1="-1.4732" x2="-1.2446" y2="-1.4732" width="0.3048" layer="21"/>
 <wire x1="-1.2446" y1="-1.4732" x2="-3.81" y2="-1.4732" width="0.3048" layer="21"/>
 <wire x1="-3.81" y1="-1.4732" x2="-3.81" y2="1.4478" width="0.3048" layer="21"/>
-<text x="-1.9812" y="1.7018" size="1.27" layer="21" rot="R90">C</text>
+<text x="-1.9812" y="1.7018" size="0.7" layer="21" rot="R90">C</text>
 <wire x1="-1.27" y1="2.54" x2="-1.27" y2="-2.54" width="0.254" layer="21"/>
 </package>
 </packages>
@@ -1651,7 +1647,7 @@
 <part name="V34" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL" value="L_OUT"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="SW1" library="BrownSpaceEngineering" deviceset="BTS50015-1TAD" device=""/>
-<part name="R77" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="1K"/>
+<part name="R77" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
 <part name="R78" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="4.7K"/>
 <part name="R79" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="4.7K"/>
 <part name="C30" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="10nF"/>
@@ -1664,7 +1660,7 @@
 <part name="R76" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="1K"/>
 <part name="GND45" library="supply1" deviceset="GND" device=""/>
 <part name="SW2" library="BrownSpaceEngineering" deviceset="BTS50015-1TAD" device=""/>
-<part name="R80" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="1K"/>
+<part name="R80" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
 <part name="R81" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="4.7K"/>
 <part name="R82" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="4.7K"/>
 <part name="C37" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="10nF"/>
@@ -1699,7 +1695,7 @@
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="C2" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="0.1uF"/>
-<part name="R84" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
+<part name="R84" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="1M"/>
 <part name="V3" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
 <part name="V4" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL" value="GND"/>
 <part name="R85" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="2.4K"/>
@@ -1854,6 +1850,8 @@ Dash-dot is taken care of on board through an ADC or GPIO</text>
 <wire x1="119.38" y1="63.5" x2="119.38" y2="35.56" width="0.1524" layer="97" style="dashdot"/>
 <wire x1="119.38" y1="35.56" x2="142.24" y2="35.56" width="0.1524" layer="97" style="dashdot"/>
 <text x="-93.98" y="83.82" size="1.778" layer="97">SCL and SDA pull-ups are shared with ADC</text>
+<text x="-93.98" y="86.36" size="1.778" layer="97">TCA9535 requires pullp-ups on Input Pins
+All digital inputs have pull-ups on other schematic pages</text>
 </plain>
 <instances>
 <instance part="GND2" gate="1" x="88.9" y="-35.56"/>
