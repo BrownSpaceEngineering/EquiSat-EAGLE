@@ -1535,7 +1535,7 @@
 <part name="C5" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="10uF"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="R15" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
+<part name="R15" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="40.9K"/>
 <part name="R17" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="470K"/>
 <part name="R18" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="470K"/>
 <part name="V19" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="UMB_CHG"/>
@@ -1601,8 +1601,8 @@
 <part name="V35" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B1_CHG"/>
 <part name="V39" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIFE2"/>
 <part name="V38" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIFE1"/>
-<part name="V36" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B1_CHGN"/>
-<part name="V37" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B1_FAULTN"/>
+<part name="V36" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_CHGN"/>
+<part name="V37" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_FAULTN"/>
 <part name="C28" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="22uF"/>
 <part name="U15" library="BrownSpaceEngineering" deviceset="VNS3NV04DP-E" device=""/>
 <part name="R54" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="34.8R@1W"/>
@@ -1675,7 +1675,6 @@
 <part name="V30" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="L2_DISG"/>
 <part name="V26" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="L1_FAULTN"/>
 <part name="V27" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="L1_CHGN"/>
-<part name="V28" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LION1_OUT"/>
 <part name="T1" library="BrownSpaceEngineering" deviceset="AD590" device="FLATPACK"/>
 <part name="T2" library="BrownSpaceEngineering" deviceset="AD590" device="FLATPACK"/>
 <part name="T3" library="BrownSpaceEngineering" deviceset="AD590" device="FLATPACK"/>
@@ -1748,7 +1747,7 @@
 <part name="C6" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="10uF"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="10K"/>
+<part name="R1" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="40.9K"/>
 <part name="R2" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="470K"/>
 <part name="R3" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="470K"/>
 <part name="C10" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="22nF"/>
@@ -1814,6 +1813,14 @@
 <part name="V44" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LFB2SNS"/>
 <part name="V33" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="L2_CHG"/>
 <part name="V31" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="L2_REF"/>
+<part name="R32" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
+<part name="GND55" library="supply1" deviceset="GND" device=""/>
+<part name="R35" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
+<part name="GND56" library="supply1" deviceset="GND" device=""/>
+<part name="R36" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
+<part name="GND57" library="supply1" deviceset="GND" device=""/>
+<part name="V32" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_CHG"/>
+<part name="V48" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="L1_CHG"/>
 </parts>
 <sheets>
 <sheet>
@@ -1888,6 +1895,8 @@ All digital inputs have pull-ups on other schematic pages</text>
 <instance part="MTG2" gate="G$1" x="162.56" y="-7.62"/>
 <instance part="MTG3" gate="G$1" x="175.26" y="-7.62"/>
 <instance part="MTG4" gate="G$1" x="187.96" y="-7.62"/>
+<instance part="R32" gate="R$1" x="-15.24" y="60.96" rot="R90"/>
+<instance part="GND55" gate="1" x="-15.24" y="48.26"/>
 </instances>
 <busses>
 </busses>
@@ -2227,6 +2236,11 @@ All digital inputs have pull-ups on other schematic pages</text>
 <wire x1="-104.14" y1="38.1" x2="-88.9" y2="38.1" width="0.1524" layer="91"/>
 <junction x="-88.9" y="38.1"/>
 </segment>
+<segment>
+<pinref part="R32" gate="R$1" pin="1"/>
+<pinref part="GND55" gate="1" pin="GND"/>
+<wire x1="-15.24" y1="55.88" x2="-15.24" y2="50.8" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="5V" class="2">
 <segment>
@@ -2464,6 +2478,14 @@ All digital inputs have pull-ups on other schematic pages</text>
 <wire x1="91.44" y1="22.86" x2="91.44" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="P03"/>
+<pinref part="R32" gate="R$1" pin="2"/>
+<wire x1="-48.26" y1="68.58" x2="-15.24" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="68.58" x2="-15.24" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -2670,7 +2692,7 @@ Voltage divider ratio: 0.1792V(in)/V(actual)</text>
 <text x="-58.42" y="33.02" size="1.778" layer="97">FREQ tied to GND to select 750kHz switching frequency</text>
 <text x="-58.42" y="40.64" size="1.778" layer="97">R21 sets Ichg=100mA</text>
 <text x="-58.42" y="25.4" size="1.778" layer="97">R27 &amp; R28 set Vmp=9V</text>
-<text x="-63.5" y="86.36" size="1.778" layer="98">Place C3 near U3</text>
+<text x="-60.96" y="88.9" size="1.778" layer="98">Place C5 near U3</text>
 <text x="-63.5" y="-53.34" size="1.778" layer="98">Place C5 near U4</text>
 <text x="-5.08" y="104.14" size="1.778" layer="98">Place L1 near SW pin</text>
 <text x="2.54" y="129.54" size="1.778" layer="97">Place GND vias under U3 and U4.
@@ -2699,6 +2721,7 @@ as close as possible to R31</text>
 <text x="121.92" y="-50.8" size="1.778" layer="98">Connect +In and -In
 as close as possible to R12</text>
 <text x="182.88" y="38.1" size="1.778" layer="97">AD8418 has 20V/V gain</text>
+<text x="-58.42" y="22.86" size="1.778" layer="97">Ven threshold is 2.45V. Resistor divider sets RUN high when Solar Panel Voltage is &gt;=6V.</text>
 </plain>
 <instances>
 <instance part="U4" gate="G$1" x="35.56" y="88.9"/>
@@ -2729,7 +2752,6 @@ as close as possible to R12</text>
 <instance part="V21" gate="G$1" x="55.88" y="53.34"/>
 <instance part="V26" gate="G$1" x="132.08" y="109.22" rot="R180"/>
 <instance part="V27" gate="G$1" x="132.08" y="101.6" rot="R180"/>
-<instance part="V28" gate="G$1" x="243.84" y="78.74" rot="R180"/>
 <instance part="GND13" gate="1" x="83.82" y="45.72"/>
 <instance part="V22" gate="G$1" x="91.44" y="40.64"/>
 <instance part="V23" gate="G$1" x="91.44" y="30.48"/>
@@ -2788,6 +2810,11 @@ as close as possible to R12</text>
 <instance part="F2" gate="G$1" x="175.26" y="-43.18"/>
 <instance part="V33" gate="G$1" x="43.18" y="-7.62"/>
 <instance part="V31" gate="G$1" x="63.5" y="-68.58"/>
+<instance part="R35" gate="R$1" x="-38.1" y="106.68" rot="R90"/>
+<instance part="GND56" gate="1" x="-38.1" y="96.52"/>
+<instance part="R36" gate="R$1" x="-40.64" y="-12.7" rot="R90"/>
+<instance part="GND57" gate="1" x="-40.64" y="-22.86"/>
+<instance part="V48" gate="G$1" x="10.16" y="114.3"/>
 </instances>
 <busses>
 </busses>
@@ -3047,6 +3074,16 @@ as close as possible to R12</text>
 <wire x1="121.92" y1="-106.68" x2="121.92" y2="-109.22" width="0.1524" layer="91"/>
 <junction x="121.92" y="-106.68"/>
 </segment>
+<segment>
+<pinref part="GND56" gate="1" pin="GND"/>
+<pinref part="R35" gate="R$1" pin="1"/>
+<wire x1="-38.1" y1="99.06" x2="-38.1" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND57" gate="1" pin="GND"/>
+<pinref part="R36" gate="R$1" pin="1"/>
+<wire x1="-40.64" y1="-20.32" x2="-40.64" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="L1_CHGN" class="1">
 <segment>
@@ -3081,13 +3118,25 @@ as close as possible to R12</text>
 <pinref part="U4" gate="G$1" pin="RUN"/>
 <wire x1="58.42" y1="96.52" x2="60.96" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="96.52" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="106.68" x2="-12.7" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="106.68" x2="33.02" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="R15" gate="R$1" pin="2"/>
 <label x="20.32" y="106.68" size="1.778" layer="95"/>
 <pinref part="V20" gate="G$1" pin="P$1"/>
+<wire x1="33.02" y1="106.68" x2="-7.62" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="106.68" x2="-12.7" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="114.3" x2="60.96" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="114.3" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
 <junction x="60.96" y="106.68"/>
+<wire x1="-7.62" y1="106.68" x2="-7.62" y2="114.3" width="0.1524" layer="91"/>
+<junction x="-7.62" y="106.68"/>
+<pinref part="R35" gate="R$1" pin="2"/>
+<wire x1="-7.62" y1="114.3" x2="-38.1" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="114.3" x2="-38.1" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="V48" gate="G$1" pin="P$1"/>
+<wire x1="15.24" y1="114.3" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="114.3" x2="33.02" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="114.3" x2="33.02" y2="106.68" width="0.1524" layer="91"/>
+<junction x="33.02" y="106.68"/>
 </segment>
 </net>
 <net name="L2_CHG" class="1">
@@ -3095,13 +3144,19 @@ as close as possible to R12</text>
 <pinref part="U5" gate="G$1" pin="RUN"/>
 <wire x1="58.42" y1="-25.4" x2="60.96" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="-25.4" x2="60.96" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="-15.24" x2="-12.7" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-15.24" x2="-5.08" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="R1" gate="R$1" pin="2"/>
 <label x="20.32" y="-15.24" size="1.778" layer="95"/>
+<wire x1="-5.08" y1="-15.24" x2="-12.7" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="-15.24" x2="60.96" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="60.96" y="-15.24"/>
 <pinref part="V33" gate="G$1" pin="P$1"/>
 <wire x1="60.96" y1="-7.62" x2="48.26" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="R36" gate="R$1" pin="2"/>
+<wire x1="-40.64" y1="-7.62" x2="-40.64" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="-5.08" x2="-5.08" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="-5.08" y="-15.24"/>
 </segment>
 </net>
 <net name="L2_FAULTN" class="1">
@@ -3355,7 +3410,6 @@ as close as possible to R12</text>
 <net name="LION1_OUT" class="3">
 <segment>
 <pinref part="F1" gate="G$1" pin="P$2"/>
-<pinref part="V28" gate="G$1" pin="P$1"/>
 <wire x1="180.34" y1="78.74" x2="238.76" y2="78.74" width="0.1524" layer="91"/>
 <label x="208.28" y="78.74" size="1.778" layer="95"/>
 </segment>
@@ -4011,6 +4065,7 @@ as close as possible to R31</text>
 <instance part="D4" gate="G$1" x="218.44" y="27.94" rot="R90"/>
 <instance part="GND52" gate="1" x="218.44" y="17.78"/>
 <instance part="V40" gate="G$1" x="276.86" y="-30.48" rot="R180"/>
+<instance part="V32" gate="G$1" x="53.34" y="76.2"/>
 </instances>
 <busses>
 </busses>
@@ -4280,8 +4335,13 @@ as close as possible to R31</text>
 <wire x1="78.74" y1="83.82" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
 <label x="78.74" y="83.82" size="1.778" layer="95"/>
 <pinref part="V35" gate="G$1" pin="P$1"/>
-<wire x1="58.42" y1="83.82" x2="78.74" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="83.82" x2="73.66" y2="83.82" width="0.1524" layer="91"/>
 <junction x="78.74" y="83.82"/>
+<pinref part="V32" gate="G$1" pin="P$1"/>
+<wire x1="73.66" y1="83.82" x2="78.74" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="76.2" x2="73.66" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="76.2" x2="73.66" y2="83.82" width="0.1524" layer="91"/>
+<junction x="73.66" y="83.82"/>
 </segment>
 </net>
 <net name="N$27" class="0">
