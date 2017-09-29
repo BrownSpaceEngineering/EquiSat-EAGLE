@@ -551,9 +551,9 @@
 <wire x1="9.6" y1="-35" x2="-9.6" y2="-35" width="0.127" layer="21"/>
 <wire x1="-9.6" y1="-35" x2="-9.6" y2="35" width="0.127" layer="21"/>
 <text x="-3.4" y="24.26" size="8" layer="21">+</text>
-<text x="-11.4" y="28.5" size="2" layer="21">+</text>
+<text x="-11.4" y="28.5" size="2" layer="21" font="vector">+</text>
 <text x="-4" y="-28.1" size="10" layer="21">_</text>
-<text x="10.127" y="-31.335" size="3" layer="21">-</text>
+<text x="10.127" y="-31.335" size="3" layer="21" font="vector">-</text>
 <pad name="MINUS" x="9.6" y="-32.6" drill="3.5"/>
 <pad name="PLUS" x="-9.6" y="32.6" drill="3.5"/>
 <text x="-10.3" y="20.86" size="1.4" layer="25" rot="R90">&gt;NAME</text>
@@ -1660,13 +1660,13 @@
 <wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
 <wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
-<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
+<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="21"/>
+<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="21"/>
 <smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
 <smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
 <text x="-2.54" y="1.143" size="0.9" layer="25">&gt;NAME</text>
-<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
-<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
+<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="21"/>
+<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="21"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
 <package name="2016">

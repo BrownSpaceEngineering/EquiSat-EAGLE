@@ -244,9 +244,9 @@
 <wire x1="9.6" y1="-35" x2="-9.6" y2="-35" width="0.127" layer="21"/>
 <wire x1="-9.6" y1="-35" x2="-9.6" y2="35" width="0.127" layer="21"/>
 <text x="-3.4" y="24.26" size="8" layer="21">+</text>
-<text x="-11.4" y="28.5" size="2" layer="21">+</text>
+<text x="-11.4" y="28.5" size="2" layer="21" font="vector">+</text>
 <text x="-4" y="-28.1" size="10" layer="21">_</text>
-<text x="10.127" y="-31.335" size="3" layer="21">-</text>
+<text x="10.127" y="-31.335" size="3" layer="21" font="vector">-</text>
 <pad name="MINUS" x="9.6" y="-32.6" drill="3.5"/>
 <pad name="PLUS" x="-9.6" y="32.6" drill="3.5"/>
 <text x="-10.3" y="20.86" size="1.4" layer="25" rot="R90">&gt;NAME</text>
@@ -467,13 +467,13 @@
 <wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
 <wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
-<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
+<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="21"/>
+<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="21"/>
 <smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
 <smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
 <text x="-2.54" y="1.143" size="0.9" layer="25">&gt;NAME</text>
-<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
-<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
+<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="21"/>
+<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="21"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
 <package name="2016">
@@ -1598,11 +1598,7 @@
 <part name="C27" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="22nF"/>
 <part name="C25" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="10uF"/>
 <part name="L3" library="BrownSpaceEngineering" deviceset="IND" device="" technology="1812" value="120uH"/>
-<part name="V35" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B1_CHG"/>
-<part name="V39" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIFE2"/>
-<part name="V38" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LIFE1"/>
-<part name="V36" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_CHGN"/>
-<part name="V37" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_FAULTN"/>
+<part name="V35" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LFB1_CHG"/>
 <part name="C28" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="22uF"/>
 <part name="U15" library="BrownSpaceEngineering" deviceset="VNS3NV04DP-E" device=""/>
 <part name="R54" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="34.8R@1W"/>
@@ -1654,8 +1650,8 @@
 <part name="C31" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="10nF"/>
 <part name="C29" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="150nF"/>
 <part name="GND37" library="supply1" deviceset="GND" device=""/>
-<part name="V43" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B1_OUTEN"/>
-<part name="V46" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B1_OSNS"/>
+<part name="V43" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LFB1_OUTEN"/>
+<part name="V46" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LFB1_OSNS"/>
 <part name="V53" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL" value="LF_B2"/>
 <part name="R76" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="1K"/>
 <part name="GND45" library="supply1" deviceset="GND" device=""/>
@@ -1699,13 +1695,13 @@
 <part name="V4" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL" value="GND"/>
 <part name="R85" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="2.4K"/>
 <part name="R86" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="2.4K"/>
-<part name="V51" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B2_OUTEN"/>
-<part name="V47" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B2_CHG"/>
+<part name="V51" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LFB2_OUTEN"/>
+<part name="V47" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LFB2_CHG"/>
 <part name="V41" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF1_REF"/>
 <part name="V42" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF2_REF"/>
 <part name="V50" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF4_REF"/>
 <part name="V49" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF3_REF"/>
-<part name="$6_188_$_2017-09-09_23-53-10" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LF_B2_OSNS"/>
+<part name="V99" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LFB2_OSNS"/>
 <part name="D3" library="BrownSpaceEngineering" deviceset="DFLS130L" device="" value="DFLS130L"/>
 <part name="U11" library="BrownSpaceEngineering" deviceset="LT1962" device="-3" value="LT1962-3"/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
@@ -1721,8 +1717,8 @@
 <part name="C19" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="0.01uF"/>
 <part name="C17" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="1uF"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="V22" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LION1_GND+"/>
-<part name="V23" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LION1_GND-"/>
+<part name="V22" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="L1_GND+"/>
+<part name="V23" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="L1_GND-"/>
 <part name="U8" library="BrownSpaceEngineering" deviceset="AD8418" device=""/>
 <part name="R4" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="220K"/>
 <part name="R6" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
@@ -1765,8 +1761,8 @@
 <part name="R16" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="150K"/>
 <part name="R19" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="V24" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LION2_GND+"/>
-<part name="V25" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="LION2_GND-"/>
+<part name="V24" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="L2_GND+"/>
+<part name="V25" library="BrownSpaceEngineering" deviceset="VIA" device="-60MIL" value="L2_GND-"/>
 <part name="U9" library="BrownSpaceEngineering" deviceset="AD8418" device=""/>
 <part name="R20" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="220K"/>
 <part name="R21" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
@@ -1819,8 +1815,10 @@
 <part name="GND56" library="supply1" deviceset="GND" device=""/>
 <part name="R36" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
 <part name="GND57" library="supply1" deviceset="GND" device=""/>
-<part name="V32" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LF_B1_CHG"/>
+<part name="V32" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="LFB1_CHG"/>
 <part name="V48" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="L1_CHG"/>
+<part name="V28" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
+<part name="V36" library="BrownSpaceEngineering" deviceset="VIA" device="60MIL-SQ" value="GND"/>
 </parts>
 <sheets>
 <sheet>
@@ -1861,7 +1859,7 @@ Dash-dot is taken care of on board through an ADC or GPIO</text>
 All digital inputs have pull-ups on other schematic pages</text>
 </plain>
 <instances>
-<instance part="GND2" gate="1" x="88.9" y="-35.56"/>
+<instance part="GND2" gate="1" x="88.9" y="-55.88"/>
 <instance part="V1" gate="G$1" x="111.76" y="-5.08" rot="R180"/>
 <instance part="V2" gate="G$1" x="111.76" y="-12.7" rot="R180"/>
 <instance part="T1" gate="G$1" x="218.44" y="27.94"/>
@@ -1897,6 +1895,8 @@ All digital inputs have pull-ups on other schematic pages</text>
 <instance part="MTG4" gate="G$1" x="187.96" y="-7.62"/>
 <instance part="R32" gate="R$1" x="-15.24" y="60.96" rot="R90"/>
 <instance part="GND55" gate="1" x="-15.24" y="48.26"/>
+<instance part="V28" gate="G$1" x="111.76" y="-35.56" rot="R180"/>
+<instance part="V36" gate="G$1" x="111.76" y="-43.18" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -2042,9 +2042,9 @@ All digital inputs have pull-ups on other schematic pages</text>
 <wire x1="7.62" y1="53.34" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="-48.26" y1="33.02" x2="-30.48" y2="33.02" width="0.1524" layer="91"/>
-<label x="-43.18" y="33.02" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="P17"/>
+<wire x1="-48.26" y1="35.56" x2="-30.48" y2="35.56" width="0.1524" layer="91"/>
+<label x="-43.18" y="35.56" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="P16"/>
 </segment>
 </net>
 <net name="LF_B1_CHGN" class="1">
@@ -2053,9 +2053,9 @@ All digital inputs have pull-ups on other schematic pages</text>
 <wire x1="7.62" y1="50.8" x2="27.94" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="-48.26" y1="35.56" x2="-30.48" y2="35.56" width="0.1524" layer="91"/>
-<label x="-43.18" y="35.56" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="P16"/>
+<wire x1="-48.26" y1="33.02" x2="-30.48" y2="33.02" width="0.1524" layer="91"/>
+<label x="-43.18" y="33.02" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="P17"/>
 </segment>
 </net>
 <net name="LF_B2_FAULTN" class="1">
@@ -2110,9 +2110,9 @@ All digital inputs have pull-ups on other schematic pages</text>
 <label x="121.92" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="-43.18" y="50.8" size="1.778" layer="95"/>
-<wire x1="-48.26" y1="50.8" x2="-27.94" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="P10"/>
+<wire x1="-48.26" y1="43.18" x2="-30.48" y2="43.18" width="0.1524" layer="91"/>
+<label x="-43.18" y="43.18" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="P13"/>
 </segment>
 </net>
 <net name="LF_B2_TT" class="1">
@@ -2121,9 +2121,9 @@ All digital inputs have pull-ups on other schematic pages</text>
 <label x="121.92" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-48.26" y1="45.72" x2="-30.48" y2="45.72" width="0.1524" layer="91"/>
-<label x="-43.18" y="45.72" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="P12"/>
+<label x="-43.18" y="48.26" size="1.778" layer="95"/>
+<wire x1="-48.26" y1="48.26" x2="-27.94" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="P11"/>
 </segment>
 </net>
 <net name="LF_B2_BT" class="1">
@@ -2132,9 +2132,9 @@ All digital inputs have pull-ups on other schematic pages</text>
 <label x="121.92" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-48.26" y1="43.18" x2="-30.48" y2="43.18" width="0.1524" layer="91"/>
-<label x="-43.18" y="43.18" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="P13"/>
+<label x="-43.18" y="50.8" size="1.778" layer="95"/>
+<wire x1="-48.26" y1="50.8" x2="-27.94" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="P10"/>
 </segment>
 </net>
 <net name="LF1_REF" class="2">
@@ -2189,7 +2189,9 @@ All digital inputs have pull-ups on other schematic pages</text>
 <wire x1="88.9" y1="-5.08" x2="88.9" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="-12.7" x2="88.9" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="-20.32" x2="88.9" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="-27.94" x2="88.9" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-27.94" x2="88.9" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-35.56" x2="88.9" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-43.18" x2="88.9" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="-5.08" x2="88.9" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="88.9" y="-5.08"/>
 <pinref part="V2" gate="G$1" pin="P$1"/>
@@ -2201,6 +2203,12 @@ All digital inputs have pull-ups on other schematic pages</text>
 <pinref part="V4" gate="G$1" pin="P$1"/>
 <wire x1="106.68" y1="-27.94" x2="88.9" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="88.9" y="-27.94"/>
+<pinref part="V28" gate="G$1" pin="P$1"/>
+<wire x1="106.68" y1="-35.56" x2="88.9" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="88.9" y="-35.56"/>
+<pinref part="V36" gate="G$1" pin="P$1"/>
+<wire x1="106.68" y1="-43.18" x2="88.9" y2="-43.18" width="0.1524" layer="91"/>
+<junction x="88.9" y="-43.18"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
@@ -2400,13 +2408,13 @@ All digital inputs have pull-ups on other schematic pages</text>
 </net>
 <net name="LF_B1_TT" class="1">
 <segment>
-<label x="-43.18" y="48.26" size="1.778" layer="95"/>
-<wire x1="-48.26" y1="48.26" x2="-27.94" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="P11"/>
-</segment>
-<segment>
 <wire x1="121.92" y1="53.34" x2="139.7" y2="53.34" width="0.1524" layer="91"/>
 <label x="121.92" y="53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-48.26" y1="45.72" x2="-30.48" y2="45.72" width="0.1524" layer="91"/>
+<label x="-43.18" y="45.72" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="P12"/>
 </segment>
 </net>
 <net name="LF_B1_SNS" class="2">
@@ -4019,10 +4027,6 @@ as close as possible to R31</text>
 <instance part="C25" gate="G$1" x="-2.54" y="40.64" rot="R180"/>
 <instance part="L3" gate="G$1" x="30.48" y="63.5"/>
 <instance part="V35" gate="G$1" x="53.34" y="83.82"/>
-<instance part="V39" gate="G$1" x="137.16" y="22.86"/>
-<instance part="V38" gate="G$1" x="137.16" y="35.56"/>
-<instance part="V36" gate="G$1" x="109.22" y="73.66"/>
-<instance part="V37" gate="G$1" x="109.22" y="66.04"/>
 <instance part="C28" gate="G$1" x="96.52" y="33.02"/>
 <instance part="U15" gate="G$1" x="111.76" y="12.7"/>
 <instance part="R54" gate="R$1" x="129.54" y="30.48" smashed="yes" rot="R90">
@@ -4238,9 +4242,6 @@ as close as possible to R31</text>
 <wire x1="152.4" y1="17.78" x2="162.56" y2="17.78" width="0.1524" layer="91"/>
 <junction x="152.4" y="17.78"/>
 <pinref part="R47" gate="R$1" pin="2"/>
-<pinref part="V39" gate="G$1" pin="P$1"/>
-<wire x1="142.24" y1="22.86" x2="152.4" y2="22.86" width="0.1524" layer="91"/>
-<junction x="152.4" y="22.86"/>
 <pinref part="U15" gate="G$1" pin="S1"/>
 <wire x1="121.92" y1="15.24" x2="144.78" y2="15.24" width="0.1524" layer="91"/>
 <junction x="152.4" y="15.24"/>
@@ -4261,13 +4262,10 @@ as close as possible to R31</text>
 <wire x1="129.54" y1="40.64" x2="124.46" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="40.64" x2="96.52" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="40.64" x2="86.36" y2="40.64" width="0.1524" layer="91"/>
-<junction x="152.4" y="35.56"/>
 <pinref part="R53" gate="R$1" pin="2"/>
 <wire x1="121.92" y1="45.72" x2="124.46" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="45.72" x2="124.46" y2="40.64" width="0.1524" layer="91"/>
 <junction x="124.46" y="40.64"/>
-<pinref part="V38" gate="G$1" pin="P$1"/>
-<wire x1="142.24" y1="35.56" x2="152.4" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="40.64" x2="162.56" y2="40.64" width="0.1524" layer="91"/>
 <junction x="152.4" y="40.64"/>
 <pinref part="C28" gate="G$1" pin="P$1"/>
@@ -4305,9 +4303,6 @@ as close as possible to R31</text>
 <wire x1="101.6" y1="55.88" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
 <junction x="101.6" y="55.88"/>
 <wire x1="101.6" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="55.88" x2="132.08" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="V37" gate="G$1" pin="P$1"/>
-<wire x1="132.08" y1="66.04" x2="114.3" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="U14" gate="U$1" pin="~FAULT"/>
 </segment>
 </net>
@@ -4319,9 +4314,6 @@ as close as possible to R31</text>
 <wire x1="93.98" y1="53.34" x2="93.98" y2="60.96" width="0.1524" layer="91"/>
 <junction x="93.98" y="53.34"/>
 <wire x1="93.98" y1="53.34" x2="134.62" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="53.34" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="V36" gate="G$1" pin="P$1"/>
-<wire x1="134.62" y1="73.66" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U14" gate="U$1" pin="~CHRG"/>
 </segment>
 </net>
@@ -4704,7 +4696,7 @@ as close as possible to R31</text>
 <instance part="V47" gate="G$1" x="10.16" y="83.82"/>
 <instance part="V50" gate="G$1" x="157.48" y="0" rot="R180"/>
 <instance part="V49" gate="G$1" x="147.32" y="35.56" rot="R180"/>
-<instance part="$6_188_$_2017-09-09_23-53-10" gate="G$1" x="332.74" y="25.4" rot="R180"/>
+<instance part="V99" gate="G$1" x="332.74" y="25.4" rot="R180"/>
 <instance part="+3V313" gate="G$1" x="53.34" y="78.74"/>
 <instance part="GND49" gate="1" x="187.96" y="-81.28"/>
 <instance part="U19" gate="G$1" x="180.34" y="-58.42"/>
@@ -5180,7 +5172,7 @@ as close as possible to R31</text>
 <junction x="294.64" y="25.4"/>
 <label x="297.18" y="25.4" size="1.778" layer="95"/>
 <wire x1="294.64" y1="25.4" x2="327.66" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="$6_188_$_2017-09-09_23-53-10" gate="G$1" pin="P$1"/>
+<pinref part="V99" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$451" class="0">
