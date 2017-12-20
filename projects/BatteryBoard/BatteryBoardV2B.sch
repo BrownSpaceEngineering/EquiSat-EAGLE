@@ -1519,7 +1519,7 @@
 <part name="L1" library="BrownSpaceEngineering" deviceset="IND" device="" technology="1812" value="56uH"/>
 <part name="LI-ION1" library="BrownSpaceEngineering" deviceset="LI-ION" device="" value="~4.1V"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
-<part name="R31" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0.13R@1W"/>
+<part name="R31" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0.025R@1W"/>
 <part name="R33" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="150K"/>
 <part name="R34" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
@@ -1709,7 +1709,7 @@
 <part name="L2" library="BrownSpaceEngineering" deviceset="IND" device="" technology="1812" value="56uH"/>
 <part name="LI-ION2" library="BrownSpaceEngineering" deviceset="LI-ION" device="" value="~4.1V"/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
-<part name="R12" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0.13R@1W"/>
+<part name="R12" library="BrownSpaceEngineering" deviceset="RES" device="1210" value="0.025R@1W"/>
 <part name="R16" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="150K"/>
 <part name="R19" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
