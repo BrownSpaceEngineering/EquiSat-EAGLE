@@ -28,16 +28,16 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -788,7 +788,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="29.0635" y="70.983" size="0.8" layer="25" rot="R270"/>
 </element>
 <element name="C27" library="BrownSpaceEngineering" package="0805" value="22nF" x="30" y="63.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="30.997" y="61.5745" size="0.8" layer="25" rot="R180"/>
+<attribute name="NAME" x="26.7745" y="64.003" size="0.8" layer="25" rot="R90"/>
 </element>
 <element name="C25" library="BrownSpaceEngineering" package="0805" value="10uF" x="27.8" y="61.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="26.7145" y="60.951" size="0.8" layer="25" rot="R90"/>
@@ -981,7 +981,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="22.44" y="7.008" size="0.762" layer="26" ratio="10" rot="MR270"/>
 </element>
 <element name="U13" library="BrownSpaceEngineering" package="TSOT23-5" value="LTC4411" x="14.9" y="6.1" smashed="yes" rot="R270">
-<attribute name="NAME" x="12.06" y="7.062" size="0.762" layer="25" ratio="10" rot="R270"/>
+<attribute name="NAME" x="13.64" y="5.938" size="0.762" layer="25" ratio="10" rot="R90"/>
 </element>
 <element name="U3" library="BrownSpaceEngineering" package="TSOT23-6" value="LTC4412MPS6" x="0.2" y="48.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="-1.412" y="48.2" size="0.8" layer="21" rot="R270"/>
@@ -1150,7 +1150,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="75.84" y="41.07" size="0.762" layer="28" rot="MR0"/>
 </element>
 <element name="V5" library="BrownSpaceEngineering" package="VIA-60MIL" value="SCL" x="33.5" y="50.2" smashed="yes">
-<attribute name="VALUE" x="30.03" y="49.87" size="0.762" layer="27"/>
+<attribute name="VALUE" x="30.33" y="50.27" size="0.762" layer="27"/>
 <attribute name="VALUE" x="34.34" y="51.67" size="0.762" layer="28" rot="MR0"/>
 </element>
 <element name="V6" library="BrownSpaceEngineering" package="VIA-60MIL" value="SDA" x="30.7" y="47.5" smashed="yes" rot="R180">
@@ -1167,7 +1167,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="26.3745" y="53.303" size="0.8" layer="25" rot="R90"/>
 </element>
 <element name="R84" library="BrownSpaceEngineering" package="0805" value="1M" x="36.1" y="46.9" smashed="yes" rot="R270">
-<attribute name="NAME" x="37.2255" y="48.597" size="0.8" layer="25" rot="R270"/>
+<attribute name="NAME" x="37.4255" y="47.997" size="0.8" layer="25" rot="R270"/>
 </element>
 <element name="V3" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="GND" x="14.3" y="59.9" smashed="yes">
 <attribute name="VALUE" x="16.13" y="63.06" size="1.27" layer="27" rot="R180"/>
@@ -1176,7 +1176,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="76.906" y="77.084" size="0.762" layer="27" rot="R90"/>
 </element>
 <element name="R85" library="BrownSpaceEngineering" package="0805" value="2.4K" x="36.2" y="52.7" smashed="yes" rot="R270">
-<attribute name="NAME" x="37.3255" y="54.397" size="0.8" layer="25" rot="R270"/>
+<attribute name="NAME" x="37.3255" y="53.797" size="0.8" layer="25" rot="R270"/>
 </element>
 <element name="R86" library="BrownSpaceEngineering" package="0805" value="2.4K" x="27.7" y="50.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="26.5445" y="49.505" size="0.8" layer="25" rot="R90"/>
@@ -1216,7 +1216,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="0.368340625" y="34.8308875" size="0.7" layer="25"/>
 </element>
 <element name="C18" library="BrownSpaceEngineering" package="0805" value="1uF" x="7.7" y="41.7" smashed="yes">
-<attribute name="NAME" x="6.768340625" y="39.9308875" size="0.7" layer="25"/>
+<attribute name="NAME" x="3.968340625" y="41.6308875" size="0.7" layer="25"/>
 </element>
 <element name="D2" library="BrownSpaceEngineering" package="PWRDI-123" value="DFLS130L" x="7.4" y="35.9" smashed="yes" rot="MR90">
 <attribute name="NAME" x="8.7" y="35.5" size="0.7" layer="26" rot="MR90"/>
@@ -1374,7 +1374,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="1.231659375" y="58.9308875" size="0.7" layer="26" rot="MR0"/>
 </element>
 <element name="D6" library="BrownSpaceEngineering" package="PWRDI-123" value="DFLS130L" x="27.8" y="22.7" smashed="yes" rot="R270">
-<attribute name="NAME" x="25.9" y="23.2" size="0.7" layer="25" rot="R270"/>
+<attribute name="NAME" x="27.4" y="21.1" size="0.7" layer="25" rot="R270"/>
 </element>
 <element name="D7" library="BrownSpaceEngineering" package="PWRDI-123" value="DFLS130L" x="-0.8" y="24.6"/>
 <element name="R5" library="BrownSpaceEngineering" package="0805" value="100K" x="35.8" y="5.8" rot="MR270"/>
