@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,19 +53,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -1810,6 +1810,10 @@
 <part name="C47" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="1uF"/>
 <part name="C48" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="1uF"/>
 <part name="C49" library="BrownSpaceEngineering" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="R55" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
+<part name="R56" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
+<part name="R57" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
+<part name="R72" library="BrownSpaceEngineering" deviceset="RES" device="0805" value="100K"/>
 </parts>
 <sheets>
 <sheet>
@@ -1845,8 +1849,8 @@ Dash-dot is taken care of on board through an ADC or GPIO</text>
 <wire x1="142.24" y1="63.5" x2="119.38" y2="63.5" width="0.1524" layer="97" style="dashdot"/>
 <wire x1="119.38" y1="63.5" x2="119.38" y2="35.56" width="0.1524" layer="97" style="dashdot"/>
 <wire x1="119.38" y1="35.56" x2="142.24" y2="35.56" width="0.1524" layer="97" style="dashdot"/>
-<text x="-93.98" y="83.82" size="1.778" layer="97">SCL and SDA pull-ups are shared with ADC</text>
-<text x="-93.98" y="86.36" size="1.778" layer="97">TCA9535 requires pullp-ups on Input Pins
+<text x="-121.92" y="96.52" size="1.778" layer="97">SCL and SDA pull-ups are shared with ADC</text>
+<text x="-121.92" y="99.06" size="1.778" layer="97">TCA9535 requires pullp-ups on Input Pins
 All digital inputs have pull-ups on other schematic pages</text>
 </plain>
 <instances>
@@ -1867,16 +1871,16 @@ All digital inputs have pull-ups on other schematic pages</text>
 <instance part="V12" gate="G$1" x="274.32" y="63.5" rot="R180"/>
 <instance part="V5" gate="G$1" x="162.56" y="66.04"/>
 <instance part="V6" gate="G$1" x="162.56" y="58.42"/>
-<instance part="U1" gate="G$1" x="-55.88" y="53.34"/>
-<instance part="GND1" gate="1" x="-88.9" y="25.4"/>
-<instance part="C1" gate="G$1" x="-104.14" y="48.26"/>
+<instance part="U1" gate="G$1" x="-83.82" y="66.04"/>
+<instance part="GND1" gate="1" x="-116.84" y="38.1"/>
+<instance part="C1" gate="G$1" x="-132.08" y="60.96"/>
 <instance part="C2" gate="G$1" x="261.62" y="55.88"/>
-<instance part="R84" gate="R$1" x="-109.22" y="71.12" rot="R90"/>
+<instance part="R84" gate="R$1" x="-137.16" y="83.82" rot="R90"/>
 <instance part="V3" gate="G$1" x="111.76" y="-20.32" rot="R180"/>
 <instance part="V4" gate="G$1" x="111.76" y="-27.94" rot="R180"/>
 <instance part="R85" gate="R$1" x="170.18" y="78.74" rot="R90"/>
 <instance part="R86" gate="R$1" x="180.34" y="78.74" rot="R90"/>
-<instance part="+3V31" gate="G$1" x="-104.14" y="83.82"/>
+<instance part="+3V31" gate="G$1" x="-132.08" y="96.52"/>
 <instance part="+3V32" gate="G$1" x="91.44" y="27.94"/>
 <instance part="+3V34" gate="G$1" x="248.92" y="71.12"/>
 <instance part="+3V33" gate="G$1" x="180.34" y="93.98"/>
@@ -1884,10 +1888,14 @@ All digital inputs have pull-ups on other schematic pages</text>
 <instance part="MTG2" gate="G$1" x="162.56" y="-7.62"/>
 <instance part="MTG3" gate="G$1" x="175.26" y="-7.62"/>
 <instance part="MTG4" gate="G$1" x="187.96" y="-7.62"/>
-<instance part="R32" gate="R$1" x="-15.24" y="60.96" rot="R90"/>
-<instance part="GND55" gate="1" x="-15.24" y="48.26"/>
+<instance part="R32" gate="R$1" x="-17.78" y="48.26" rot="R90"/>
+<instance part="GND55" gate="1" x="-17.78" y="35.56"/>
 <instance part="V28" gate="G$1" x="111.76" y="-35.56" rot="R180"/>
 <instance part="V36" gate="G$1" x="111.76" y="-43.18" rot="R180"/>
+<instance part="R55" gate="R$1" x="-48.26" y="48.26" rot="R90"/>
+<instance part="R56" gate="R$1" x="-40.64" y="48.26" rot="R90"/>
+<instance part="R57" gate="R$1" x="-33.02" y="48.26" rot="R90"/>
+<instance part="R72" gate="R$1" x="-25.4" y="48.26" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1898,8 +1906,8 @@ All digital inputs have pull-ups on other schematic pages</text>
 <label x="12.7" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="-43.18" y="71.12" size="1.778" layer="95"/>
-<wire x1="-48.26" y1="71.12" x2="-27.94" y2="71.12" width="0.1524" layer="91"/>
+<label x="-71.12" y="83.82" size="1.778" layer="95"/>
+<wire x1="-76.2" y1="83.82" x2="-55.88" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="P02"/>
 </segment>
 </net>
@@ -1921,8 +1929,8 @@ All digital inputs have pull-ups on other schematic pages</text>
 <wire x1="7.62" y1="73.66" x2="27.94" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="-48.26" y1="63.5" x2="-27.94" y2="63.5" width="0.1524" layer="91"/>
-<label x="-43.18" y="63.5" size="1.778" layer="95"/>
+<wire x1="-76.2" y1="76.2" x2="-55.88" y2="76.2" width="0.1524" layer="91"/>
+<label x="-71.12" y="76.2" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="P05"/>
 </segment>
 </net>
@@ -1932,8 +1940,8 @@ All digital inputs have pull-ups on other schematic pages</text>
 <wire x1="7.62" y1="71.12" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="-48.26" y1="66.04" x2="-27.94" y2="66.04" width="0.1524" layer="91"/>
-<label x="-43.18" y="66.04" size="1.778" layer="95"/>
+<wire x1="-76.2" y1="78.74" x2="-55.88" y2="78.74" width="0.1524" layer="91"/>
+<label x="-71.12" y="78.74" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="P04"/>
 </segment>
 </net>
@@ -1943,15 +1951,15 @@ All digital inputs have pull-ups on other schematic pages</text>
 <label x="12.7" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-48.26" y1="58.42" x2="-27.94" y2="58.42" width="0.1524" layer="91"/>
-<label x="-43.18" y="58.42" size="1.778" layer="95"/>
+<wire x1="-76.2" y1="71.12" x2="-55.88" y2="71.12" width="0.1524" layer="91"/>
+<label x="-71.12" y="71.12" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="P07"/>
 </segment>
 </net>
 <net name="L2_CHGN" class="2">
 <segment>
-<wire x1="-48.26" y1="60.96" x2="-27.94" y2="60.96" width="0.1524" layer="91"/>
-<label x="-43.18" y="60.96" size="1.778" layer="95"/>
+<wire x1="-76.2" y1="73.66" x2="-55.88" y2="73.66" width="0.1524" layer="91"/>
+<label x="-71.12" y="73.66" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="P06"/>
 </segment>
 <segment>
@@ -1966,8 +1974,8 @@ All digital inputs have pull-ups on other schematic pages</text>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="P01"/>
-<wire x1="-48.26" y1="73.66" x2="-30.48" y2="73.66" width="0.1524" layer="91"/>
-<label x="-43.18" y="73.66" size="1.778" layer="95"/>
+<wire x1="-76.2" y1="86.36" x2="-58.42" y2="86.36" width="0.1524" layer="91"/>
+<label x="-71.12" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="L2_ST" class="1">
@@ -1976,8 +1984,8 @@ All digital inputs have pull-ups on other schematic pages</text>
 <label x="12.7" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-48.26" y1="76.2" x2="-30.48" y2="76.2" width="0.1524" layer="91"/>
-<label x="-43.18" y="76.2" size="1.778" layer="95"/>
+<wire x1="-76.2" y1="88.9" x2="-58.42" y2="88.9" width="0.1524" layer="91"/>
+<label x="-71.12" y="88.9" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="P00"/>
 </segment>
 </net>
@@ -2035,8 +2043,8 @@ All digital inputs have pull-ups on other schematic pages</text>
 <wire x1="7.62" y1="53.34" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="-48.26" y1="35.56" x2="-30.48" y2="35.56" width="0.1524" layer="91"/>
-<label x="-43.18" y="35.56" size="1.778" layer="95"/>
+<wire x1="-76.2" y1="48.26" x2="-58.42" y2="48.26" width="0.1524" layer="91"/>
+<label x="-71.12" y="48.26" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="P16"/>
 </segment>
 </net>
@@ -2046,8 +2054,8 @@ All digital inputs have pull-ups on other schematic pages</text>
 <wire x1="7.62" y1="50.8" x2="27.94" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="-48.26" y1="33.02" x2="-30.48" y2="33.02" width="0.1524" layer="91"/>
-<label x="-43.18" y="33.02" size="1.778" layer="95"/>
+<wire x1="-76.2" y1="45.72" x2="-58.42" y2="45.72" width="0.1524" layer="91"/>
+<label x="-71.12" y="45.72" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="P17"/>
 </segment>
 </net>
@@ -2057,8 +2065,8 @@ All digital inputs have pull-ups on other schematic pages</text>
 <label x="12.7" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-48.26" y1="38.1" x2="-27.94" y2="38.1" width="0.1524" layer="91"/>
-<label x="-43.18" y="38.1" size="1.778" layer="95"/>
+<wire x1="-76.2" y1="50.8" x2="-55.88" y2="50.8" width="0.1524" layer="91"/>
+<label x="-71.12" y="50.8" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="P15"/>
 </segment>
 </net>
@@ -2068,8 +2076,8 @@ All digital inputs have pull-ups on other schematic pages</text>
 <label x="12.7" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-48.26" y1="40.64" x2="-27.94" y2="40.64" width="0.1524" layer="91"/>
-<label x="-43.18" y="40.64" size="1.778" layer="95"/>
+<wire x1="-76.2" y1="53.34" x2="-55.88" y2="53.34" width="0.1524" layer="91"/>
+<label x="-71.12" y="53.34" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="P14"/>
 </segment>
 </net>
@@ -2102,32 +2110,17 @@ All digital inputs have pull-ups on other schematic pages</text>
 <wire x1="121.92" y1="50.8" x2="139.7" y2="50.8" width="0.1524" layer="91"/>
 <label x="121.92" y="50.8" size="1.778" layer="95"/>
 </segment>
-<segment>
-<wire x1="-48.26" y1="43.18" x2="-30.48" y2="43.18" width="0.1524" layer="91"/>
-<label x="-43.18" y="43.18" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="P13"/>
-</segment>
 </net>
 <net name="LF_B2_TT" class="1">
 <segment>
 <wire x1="121.92" y1="45.72" x2="139.7" y2="45.72" width="0.1524" layer="91"/>
 <label x="121.92" y="45.72" size="1.778" layer="95"/>
 </segment>
-<segment>
-<label x="-43.18" y="48.26" size="1.778" layer="95"/>
-<wire x1="-48.26" y1="48.26" x2="-27.94" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="P11"/>
-</segment>
 </net>
 <net name="LF_B2_BT" class="1">
 <segment>
 <wire x1="121.92" y1="43.18" x2="139.7" y2="43.18" width="0.1524" layer="91"/>
 <label x="121.92" y="43.18" size="1.778" layer="95"/>
-</segment>
-<segment>
-<label x="-43.18" y="50.8" size="1.778" layer="95"/>
-<wire x1="-48.26" y1="50.8" x2="-27.94" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="P10"/>
 </segment>
 </net>
 <net name="LF1_REF" class="2">
@@ -2217,30 +2210,47 @@ All digital inputs have pull-ups on other schematic pages</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="-78.74" y1="33.02" x2="-88.9" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-88.9" y1="33.02" x2="-88.9" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="45.72" x2="-116.84" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="45.72" x2="-116.84" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="A1"/>
-<wire x1="-78.74" y1="43.18" x2="-88.9" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-88.9" y1="43.18" x2="-88.9" y2="40.64" width="0.1524" layer="91"/>
-<junction x="-88.9" y="33.02"/>
+<wire x1="-106.68" y1="55.88" x2="-116.84" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="55.88" x2="-116.84" y2="53.34" width="0.1524" layer="91"/>
+<junction x="-116.84" y="45.72"/>
 <pinref part="U1" gate="G$1" pin="A0"/>
-<wire x1="-88.9" y1="40.64" x2="-88.9" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="-88.9" y1="38.1" x2="-88.9" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="40.64" x2="-88.9" y2="40.64" width="0.1524" layer="91"/>
-<junction x="-88.9" y="40.64"/>
+<wire x1="-116.84" y1="53.34" x2="-116.84" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="50.8" x2="-116.84" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="53.34" x2="-116.84" y2="53.34" width="0.1524" layer="91"/>
+<junction x="-116.84" y="53.34"/>
 <pinref part="U1" gate="G$1" pin="A2"/>
-<wire x1="-78.74" y1="45.72" x2="-88.9" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="-88.9" y1="43.18" x2="-88.9" y2="45.72" width="0.1524" layer="91"/>
-<junction x="-88.9" y="43.18"/>
+<wire x1="-106.68" y1="58.42" x2="-116.84" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="55.88" x2="-116.84" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-116.84" y="55.88"/>
 <pinref part="C1" gate="G$1" pin="P$2"/>
-<wire x1="-104.14" y1="45.72" x2="-104.14" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="-104.14" y1="38.1" x2="-88.9" y2="38.1" width="0.1524" layer="91"/>
-<junction x="-88.9" y="38.1"/>
+<wire x1="-132.08" y1="58.42" x2="-132.08" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="50.8" x2="-116.84" y2="50.8" width="0.1524" layer="91"/>
+<junction x="-116.84" y="50.8"/>
 </segment>
 <segment>
 <pinref part="R32" gate="R$1" pin="1"/>
 <pinref part="GND55" gate="1" pin="GND"/>
-<wire x1="-15.24" y1="55.88" x2="-15.24" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="43.18" x2="-17.78" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="R55" gate="R$1" pin="1"/>
+<wire x1="-17.78" y1="40.64" x2="-17.78" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="43.18" x2="-48.26" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="40.64" x2="-40.64" y2="40.64" width="0.1524" layer="91"/>
+<junction x="-17.78" y="40.64"/>
+<pinref part="R72" gate="R$1" pin="1"/>
+<wire x1="-40.64" y1="40.64" x2="-33.02" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="40.64" x2="-25.4" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="40.64" x2="-17.78" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="43.18" x2="-25.4" y2="40.64" width="0.1524" layer="91"/>
+<junction x="-25.4" y="40.64"/>
+<pinref part="R57" gate="R$1" pin="1"/>
+<wire x1="-33.02" y1="43.18" x2="-33.02" y2="40.64" width="0.1524" layer="91"/>
+<junction x="-33.02" y="40.64"/>
+<pinref part="R56" gate="R$1" pin="1"/>
+<wire x1="-40.64" y1="43.18" x2="-40.64" y2="40.64" width="0.1524" layer="91"/>
+<junction x="-40.64" y="40.64"/>
 </segment>
 </net>
 <net name="5V" class="2">
@@ -2341,8 +2351,8 @@ All digital inputs have pull-ups on other schematic pages</text>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="SCL"/>
-<wire x1="-78.74" y1="66.04" x2="-93.98" y2="66.04" width="0.1524" layer="91"/>
-<label x="-88.9" y="66.04" size="1.778" layer="95"/>
+<wire x1="-106.68" y1="78.74" x2="-121.92" y2="78.74" width="0.1524" layer="91"/>
+<label x="-116.84" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="4">
@@ -2364,8 +2374,8 @@ All digital inputs have pull-ups on other schematic pages</text>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="SDA"/>
-<wire x1="-78.74" y1="68.58" x2="-93.98" y2="68.58" width="0.1524" layer="91"/>
-<label x="-88.9" y="68.58" size="1.778" layer="95"/>
+<wire x1="-106.68" y1="81.28" x2="-121.92" y2="81.28" width="0.1524" layer="91"/>
+<label x="-116.84" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="L1_SNS" class="2">
@@ -2395,21 +2405,16 @@ All digital inputs have pull-ups on other schematic pages</text>
 <net name="!BATT_INT!" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="!INT!"/>
-<wire x1="-78.74" y1="63.5" x2="-109.22" y2="63.5" width="0.1524" layer="91"/>
-<label x="-93.98" y="63.5" size="1.778" layer="95"/>
+<wire x1="-106.68" y1="76.2" x2="-137.16" y2="76.2" width="0.1524" layer="91"/>
+<label x="-121.92" y="76.2" size="1.778" layer="95"/>
 <pinref part="R84" gate="R$1" pin="1"/>
-<wire x1="-109.22" y1="66.04" x2="-109.22" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-137.16" y1="78.74" x2="-137.16" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LF_B1_TT" class="1">
 <segment>
 <wire x1="121.92" y1="53.34" x2="139.7" y2="53.34" width="0.1524" layer="91"/>
 <label x="121.92" y="53.34" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="-48.26" y1="45.72" x2="-30.48" y2="45.72" width="0.1524" layer="91"/>
-<label x="-43.18" y="45.72" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="P12"/>
 </segment>
 </net>
 <net name="LF_B1_SNS" class="2">
@@ -2439,17 +2444,17 @@ All digital inputs have pull-ups on other schematic pages</text>
 <net name="+3V3" class="6">
 <segment>
 <pinref part="U1" gate="G$1" pin="VCC"/>
-<wire x1="-78.74" y1="76.2" x2="-104.14" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="88.9" x2="-132.08" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="P$1"/>
-<wire x1="-104.14" y1="53.34" x2="-104.14" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="66.04" x2="-132.08" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R84" gate="R$1" pin="2"/>
-<wire x1="-109.22" y1="76.2" x2="-109.22" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="-109.22" y1="78.74" x2="-104.14" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="-104.14" y1="78.74" x2="-104.14" y2="76.2" width="0.1524" layer="91"/>
-<junction x="-104.14" y="76.2"/>
+<wire x1="-137.16" y1="88.9" x2="-137.16" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-137.16" y1="91.44" x2="-132.08" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="91.44" x2="-132.08" y2="88.9" width="0.1524" layer="91"/>
+<junction x="-132.08" y="88.9"/>
 <pinref part="+3V31" gate="G$1" pin="+3V3"/>
-<wire x1="-104.14" y1="81.28" x2="-104.14" y2="78.74" width="0.1524" layer="91"/>
-<junction x="-104.14" y="78.74"/>
+<wire x1="-132.08" y1="93.98" x2="-132.08" y2="91.44" width="0.1524" layer="91"/>
+<junction x="-132.08" y="91.44"/>
 </segment>
 <segment>
 <pinref part="R86" gate="R$1" pin="2"/>
@@ -2485,8 +2490,40 @@ All digital inputs have pull-ups on other schematic pages</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="P03"/>
 <pinref part="R32" gate="R$1" pin="2"/>
-<wire x1="-48.26" y1="68.58" x2="-15.24" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="68.58" x2="-15.24" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="81.28" x2="-17.78" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="81.28" x2="-17.78" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="P10"/>
+<pinref part="R72" gate="R$1" pin="2"/>
+<wire x1="-76.2" y1="63.5" x2="-25.4" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="63.5" x2="-25.4" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="P11"/>
+<pinref part="R57" gate="R$1" pin="2"/>
+<wire x1="-76.2" y1="60.96" x2="-33.02" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="60.96" x2="-33.02" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="P12"/>
+<pinref part="R56" gate="R$1" pin="2"/>
+<wire x1="-76.2" y1="58.42" x2="-40.64" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="58.42" x2="-40.64" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="P13"/>
+<pinref part="R55" gate="R$1" pin="2"/>
+<wire x1="-76.2" y1="55.88" x2="-48.26" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="55.88" x2="-48.26" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
