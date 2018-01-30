@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="dots" multiple="10" display="no" altdistance="0.01" altunitdist="mm" altunit="mm"/>
@@ -24,8 +25,8 @@
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
@@ -665,10 +666,9 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
-<param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -2179,7 +2179,7 @@ design rules under a new name.</description>
 <contactref element="C4" pad="1"/>
 <contactref element="D1" pad="C"/>
 <contactref element="R13" pad="2"/>
-<polygon width="0.2032" layer="1">
+<polygon width="0.2032" layer="1" rank="5">
 <vertex x="0.3" y="23.3"/>
 <vertex x="-0.1" y="23.7"/>
 <vertex x="-0.1" y="29.9"/>
@@ -4450,9 +4450,9 @@ design rules under a new name.</description>
 <wire x1="53.8" y1="52.85195" x2="53.8" y2="52.49" width="0.2" layer="1"/>
 <wire x1="50.8170875" y1="47.083" x2="51.517" y2="47.083" width="0.2" layer="1"/>
 <wire x1="51.517" y1="47.083" x2="53" y2="45.6" width="0.2" layer="1"/>
-<wire x1="54.69545" y1="46.3524" x2="55.9524" y2="46.3524" width="0.2" layer="1"/>
-<wire x1="53" y1="45.6" x2="53.94305" y2="45.6" width="0.2" layer="1"/>
-<wire x1="53.94305" y1="45.6" x2="54.69545" y2="46.3524" width="0.2" layer="1"/>
+<wire x1="54.39545" y1="46.3524" x2="55.9524" y2="46.3524" width="0.2" layer="1"/>
+<wire x1="53" y1="45.6" x2="53.64305" y2="45.6" width="0.2" layer="1"/>
+<wire x1="53.64305" y1="45.6" x2="54.39545" y2="46.3524" width="0.2" layer="1"/>
 <wire x1="60.255390625" y1="46.544609375" x2="64" y2="42.8" width="0.2032" layer="1"/>
 <wire x1="60.255390625" y1="46.544609375" x2="57.6" y2="49.2" width="0.2032" layer="1"/>
 <wire x1="55.640890625" y1="48.7476" x2="55.50455" y2="48.7476" width="0.2032" layer="1"/>
@@ -4541,7 +4541,7 @@ design rules under a new name.</description>
 <contactref element="U9" pad="P$8"/>
 <contactref element="R12" pad="P$2"/>
 <contactref element="LI-ION2" pad="MINUS"/>
-<polygon width="0.2032" layer="1">
+<polygon width="0.2032" layer="1" rank="2">
 <vertex x="25.8" y="78.4"/>
 <vertex x="17.3" y="78.4"/>
 <vertex x="15.5" y="80.2"/>
@@ -4569,7 +4569,7 @@ design rules under a new name.</description>
 <contactref element="U9" pad="P$1"/>
 <contactref element="V24" pad="P$1"/>
 <contactref element="R12" pad="P$1"/>
-<polygon width="0.2032" layer="1" rank="2">
+<polygon width="0.2032" layer="1" rank="3">
 <vertex x="8.9" y="80"/>
 <vertex x="11.8" y="80"/>
 <vertex x="11.8" y="84.4"/>
@@ -4881,7 +4881,7 @@ design rules under a new name.</description>
 <contactref element="R63" pad="2"/>
 <contactref element="C32" pad="2"/>
 <contactref element="D9" pad="C"/>
-<polygon width="0.2" layer="1">
+<polygon width="0.2" layer="1" rank="2">
 <vertex x="41.1" y="83.9"/>
 <vertex x="41.1" y="81.9"/>
 <vertex x="41.4" y="81.6"/>
@@ -5098,15 +5098,15 @@ design rules under a new name.</description>
 <approved hash="5,1,0ce81fc404b3d904"/>
 <approved hash="5,1,2ef4b293084e0836"/>
 <approved hash="5,1,cf55379acf3e6ad1"/>
-<approved hash="4,2,1d96d302ce9a7010"/>
-<approved hash="4,2,fb77f638cadb9c62"/>
-<approved hash="4,2,12128ba556758fc3"/>
-<approved hash="4,3,1d96d302ce9a7010"/>
-<approved hash="4,3,fb77f638cadb9c62"/>
-<approved hash="4,3,12128ba556758fc3"/>
-<approved hash="4,16,fb77f638cadb9c62"/>
-<approved hash="4,16,12128ba556758fc3"/>
-<approved hash="4,16,1d96d302ce9a7010"/>
+<approved hash="4 2 1d96d302ce9a7010"/>
+<approved hash="4 2 fb77f638cadb9c62"/>
+<approved hash="4 2 12128ba556758fc3"/>
+<approved hash="4 3 1d96d302ce9a7010"/>
+<approved hash="4 3 fb77f638cadb9c62"/>
+<approved hash="4 3 12128ba556758fc3"/>
+<approved hash="4 16 1d96d302ce9a7010"/>
+<approved hash="4 16 fb77f638cadb9c62"/>
+<approved hash="4 16 12128ba556758fc3"/>
 </errors>
 </board>
 </drawing>
