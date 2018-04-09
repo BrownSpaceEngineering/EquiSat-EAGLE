@@ -298,7 +298,7 @@
 <package name="0805">
 <smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
 <smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<text x="-1.531659375" y="1.0308875" size="0.8" layer="25">&gt;NAME</text>
+<text x="-1.531659375" y="1.0308875" size="0.7" layer="25">&gt;NAME</text>
 <wire x1="-1.56585625" y1="0.865571875" x2="-1.5657" y2="-0.866175" width="0.127" layer="21"/>
 <wire x1="-1.5657" y1="-0.866175" x2="1.565440625" y2="-0.8653375" width="0.127" layer="21"/>
 <wire x1="1.565440625" y1="-0.8653375" x2="1.566309375" y2="0.865740625" width="0.127" layer="21"/>
@@ -307,6 +307,23 @@
 <package name="VIA-60MIL-SQ">
 <pad name="P$1" x="0" y="0" drill="1.524" shape="square"/>
 <text x="-2.54" y="1.27" size="1" layer="27">&gt;VALUE</text>
+</package>
+<package name="TO-220-5">
+<pad name="P$3" x="0" y="0" drill="1.2" diameter="1.45" shape="long" rot="R90"/>
+<pad name="P$4" x="1.7" y="0" drill="1.2" diameter="1.45" shape="long" rot="R90"/>
+<pad name="P$5" x="3.4" y="0" drill="1.2" diameter="1.45" shape="long" rot="R90"/>
+<pad name="P$2" x="-1.7" y="0" drill="1.2" diameter="1.45" shape="long" rot="R90"/>
+<pad name="P$1" x="-3.4" y="0" drill="1.2" diameter="1.45" shape="long" rot="R270"/>
+<wire x1="-4.6" y1="1.9" x2="4.6" y2="1.9" width="0.127" layer="21"/>
+<wire x1="4.6" y1="1.9" x2="4.6" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="4.6" y1="-1.9" x2="-4.6" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="-4.6" y1="-1.9" x2="-4.6" y2="1.9" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-4.6" y="-1.5" curve="90"/>
+<vertex x="-5" y="-1.9" curve="90"/>
+<vertex x="-4.6" y="-2.3" curve="90"/>
+<vertex x="-4.2" y="-1.9" curve="90"/>
+</polygon>
 </package>
 </packages>
 </library>
@@ -1395,8 +1412,8 @@ molded</description>
 <wire x1="1.651" y1="0.94" x2="1.651" y2="-0.94" width="0.1524" layer="51"/>
 <smd name="1" x="-1.4" y="0" dx="1.6" dy="2.2" layer="1"/>
 <smd name="2" x="1.4" y="0" dx="1.6" dy="2.2" layer="1"/>
-<text x="-1.905" y="-2.54" size="0.762" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.3" y1="-1" x2="0.3" y2="1" layer="35"/>
+<text x="-1.27" y="1.905" size="0.7112" layer="25">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -1635,6 +1652,7 @@ design rules under a new name.</description>
 <element name="V4" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="GND" x="-31.75" y="27.94"/>
 <element name="V5" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="3V6" x="-36.83" y="27.94"/>
 <element name="V6" library="BrownSpaceEngineering" package="VIA-60MIL-SQ" value="3V6-EN" x="-16.51" y="27.94"/>
+<element name="U$1" library="BrownSpaceEngineering" package="TO-220-5" value="LM2576" x="-40" y="-9"/>
 </elements>
 <signals>
 <signal name="P12">
