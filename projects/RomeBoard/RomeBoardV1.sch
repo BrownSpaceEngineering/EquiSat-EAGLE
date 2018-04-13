@@ -544,7 +544,7 @@
 <wire x1="-3.556" y1="0" x2="-2.794" y2="0" width="0.127" layer="21"/>
 <wire x1="-3.175" y1="-0.381" x2="-3.175" y2="0.381" width="0.127" layer="21"/>
 </package>
-<package name="TO-923">
+<package name="TO-923-MOS">
 <pad name="1" x="-2.54" y="0" drill="1.016" diameter="1.9304" rot="R90"/>
 <pad name="2" x="0" y="0" drill="1.016" diameter="1.9304" rot="R90"/>
 <pad name="3" x="2.54" y="0" drill="1.016" diameter="1.9304" rot="R90"/>
@@ -568,9 +568,9 @@
 <vertex x="3.81" y="-1.27"/>
 <vertex x="3.81" y="1.27"/>
 </polygon>
-<text x="1.98" y="-2.8" size="1.27" layer="21">E</text>
-<text x="-0.5" y="-2.8" size="1.27" layer="21">B</text>
-<text x="-3.08" y="-2.8" size="1.27" layer="21">C</text>
+<text x="1.98" y="-2.8" size="1.27" layer="21">S</text>
+<text x="-0.5" y="-2.8" size="1.27" layer="21">G</text>
+<text x="-3.08" y="-2.8" size="1.27" layer="21">D</text>
 </package>
 </packages>
 <symbols>
@@ -768,23 +768,29 @@
 <vertex x="-2.413" y="-0.381"/>
 </polygon>
 </symbol>
-<symbol name="NPN">
-<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
-<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
-<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
-<text x="5.08" y="0" size="1.778" layer="95" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="7.62" y="0" size="1.778" layer="96" rot="R90" align="bottom-center">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
-<pin name="2" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="3" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
-<pin name="1" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+<symbol name="NMOS">
+<pin name="G" x="-2.54" y="0" visible="off" length="short"/>
+<pin name="D" x="5.08" y="5.08" visible="off" length="point" rot="R270"/>
+<pin name="S" x="5.08" y="-5.08" visible="off" length="point" rot="R90"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<text x="6.35" y="1.778" size="1.778" layer="97">D</text>
+<text x="6.35" y="-2.54" size="1.778" layer="97">S</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="97">G</text>
+<text x="-2.54" y="2.54" size="1.778" layer="97">&gt;NAME</text>
+<text x="-5.08" y="-5.08" size="1.778" layer="97">&gt;VALUE</text>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="3.302" y2="0" width="0.254" layer="94"/>
+<wire x1="3.302" y1="0" x2="3.302" y2="0.508" width="0.254" layer="94"/>
+<wire x1="3.302" y1="0" x2="3.302" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="3.302" y1="-0.508" x2="4.064" y2="0" width="0.254" layer="94"/>
+<wire x1="4.064" y1="0" x2="3.302" y2="0.508" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="4.064" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -997,16 +1003,16 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="2N4401" prefix="Q">
+<deviceset name="2N7000" prefix="M">
 <gates>
-<gate name="G$1" symbol="NPN" x="0" y="0"/>
+<gate name="G$1" symbol="NMOS" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO-923">
+<device name="" package="TO-923-MOS">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="D" pad="1"/>
+<connect gate="G$1" pin="G" pad="2"/>
+<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7894,16 +7900,16 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <part name="D4" library="BrownSpaceEngineering" deviceset="LED" device="THRU-HOLE-CONNECTOR"/>
 <part name="D5" library="BrownSpaceEngineering" deviceset="LED" device="THRU-HOLE-CONNECTOR"/>
 <part name="D6" library="BrownSpaceEngineering" deviceset="LED" device="THRU-HOLE-CONNECTOR"/>
-<part name="R3" library="passives" deviceset="RESISTOR" device="-PTH0.4" value="100"/>
-<part name="R4" library="passives" deviceset="RESISTOR" device="-PTH0.4" value="75"/>
+<part name="R3" library="passives" deviceset="RESISTOR" device="-PTH0.4" value="100R"/>
+<part name="R4" library="passives" deviceset="RESISTOR" device="-PTH0.4" value="75R"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="Q1" library="BrownSpaceEngineering" deviceset="2N4401" device=""/>
-<part name="Q2" library="BrownSpaceEngineering" deviceset="2N4401" device=""/>
-<part name="Q3" library="BrownSpaceEngineering" deviceset="2N4401" device=""/>
-<part name="R5" library="passives" deviceset="RESISTOR" device="-PTH0.4" value="89R"/>
-<part name="R6" library="passives" deviceset="RESISTOR" device="-PTH0.4" value="89R"/>
-<part name="R7" library="passives" deviceset="RESISTOR" device="-PTH0.4" value="89R"/>
+<part name="R5" library="passives" deviceset="RESISTOR" device="-PTH0.4" value="147R"/>
+<part name="R6" library="passives" deviceset="RESISTOR" device="-PTH0.4" value="147R"/>
+<part name="R7" library="passives" deviceset="RESISTOR" device="-PTH0.4" value="147R"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
+<part name="M1" library="BrownSpaceEngineering" deviceset="2N7000" device=""/>
+<part name="M2" library="BrownSpaceEngineering" deviceset="2N7000" device=""/>
+<part name="M3" library="BrownSpaceEngineering" deviceset="2N7000" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8265,13 +8271,13 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <instance part="D4" gate="G$1" x="162.56" y="60.96" smashed="yes">
 <attribute name="NAME" x="165.608" y="65.024" size="1.778" layer="95"/>
 </instance>
-<instance part="Q1" gate="G$1" x="88.9" y="48.26"/>
-<instance part="Q2" gate="G$1" x="124.46" y="48.26"/>
-<instance part="Q3" gate="G$1" x="160.02" y="48.26"/>
-<instance part="R5" gate="G$1" x="91.44" y="30.48" rot="R90"/>
-<instance part="R6" gate="G$1" x="127" y="30.48" rot="R90"/>
-<instance part="R7" gate="G$1" x="162.56" y="30.48" rot="R90"/>
+<instance part="R5" gate="G$1" x="91.44" y="48.26" rot="R90"/>
+<instance part="R6" gate="G$1" x="127" y="48.26" rot="R90"/>
+<instance part="R7" gate="G$1" x="162.56" y="48.26" rot="R90"/>
 <instance part="GND6" gate="1" x="127" y="17.78"/>
+<instance part="M1" gate="G$1" x="86.36" y="33.02"/>
+<instance part="M2" gate="G$1" x="121.92" y="33.02"/>
+<instance part="M3" gate="G$1" x="157.48" y="33.02"/>
 </instances>
 <busses>
 </busses>
@@ -8288,17 +8294,17 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <junction x="55.88" y="48.26"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="25.4" x2="91.44" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="91.44" y1="22.86" x2="127" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="127" y1="22.86" x2="127" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="127" y1="25.4" x2="127" y2="22.86" width="0.1524" layer="91"/>
 <junction x="127" y="22.86"/>
-<pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="127" y1="22.86" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="22.86" x2="162.56" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="M1" gate="G$1" pin="S"/>
+<wire x1="91.44" y1="27.94" x2="91.44" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="M2" gate="G$1" pin="S"/>
+<wire x1="127" y1="27.94" x2="127" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="M3" gate="G$1" pin="S"/>
+<wire x1="162.56" y1="27.94" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -8343,64 +8349,67 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <wire x1="33.02" y1="48.26" x2="40.64" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="Q1" gate="G$1" pin="3"/>
-<wire x1="91.44" y1="35.56" x2="91.44" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="Q2" gate="G$1" pin="3"/>
-<wire x1="127" y1="35.56" x2="127" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="Q3" gate="G$1" pin="3"/>
-<wire x1="162.56" y1="35.56" x2="162.56" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="D4" gate="G$1" pin="C"/>
-<pinref part="Q3" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="58.42" x2="162.56" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="D3" gate="G$1" pin="C"/>
-<pinref part="Q2" gate="G$1" pin="1"/>
 <wire x1="127" y1="58.42" x2="127" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="D2" gate="G$1" pin="C"/>
-<pinref part="Q1" gate="G$1" pin="1"/>
 <wire x1="91.44" y1="58.42" x2="91.44" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="M1" gate="G$1" pin="D"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="38.1" x2="91.44" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="M2" gate="G$1" pin="D"/>
+<wire x1="127" y1="43.18" x2="127" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="M3" gate="G$1" pin="D"/>
+<wire x1="162.56" y1="43.18" x2="162.56" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TX_L" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="48.26" x2="76.2" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="M1" gate="G$1" pin="G"/>
+<wire x1="83.82" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
+<label x="73.66" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX_L" class="0">
 <segment>
-<pinref part="Q2" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="48.26" x2="114.3" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="M2" gate="G$1" pin="G"/>
+<wire x1="119.38" y1="33.02" x2="111.76" y2="33.02" width="0.1524" layer="91"/>
+<label x="111.76" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWR_L" class="0">
 <segment>
-<pinref part="Q3" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="48.26" x2="149.86" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="M3" gate="G$1" pin="G"/>
+<wire x1="154.94" y1="33.02" x2="147.32" y2="33.02" width="0.1524" layer="91"/>
+<label x="147.32" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
