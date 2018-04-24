@@ -156,8 +156,8 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="110" y2="-0.5" width="0" layer="20"/>
-<wire x1="110" y1="-0.5" x2="110" y2="135" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="110" y2="0" width="0" layer="20"/>
+<wire x1="110" y1="0" x2="110" y2="135" width="0" layer="20"/>
 <wire x1="110" y1="135" x2="0" y2="135" width="0" layer="20"/>
 <wire x1="0" y1="135" x2="0" y2="0" width="0" layer="20"/>
 <hole x="25.5" y="124.5" drill="2.75"/>
