@@ -366,18 +366,22 @@
 </polygon>
 </package>
 <package name="DO-201AD">
-<pad name="P$1" x="-5" y="0" drill="1.5"/>
-<pad name="P$2" x="5" y="0" drill="1.5"/>
+<pad name="P$1" x="-6.5" y="0" drill="1.5" diameter="3"/>
+<pad name="P$2" x="6.5" y="0" drill="1.5" diameter="3"/>
 <text x="-3" y="-4.9" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.4" y="3.3" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="-3.6" y1="0" x2="1" y2="0" width="0.127" layer="21"/>
-<wire x1="1" y1="0" x2="3.6" y2="0" width="0.127" layer="21"/>
+<wire x1="-4.8" y1="0" x2="1" y2="0" width="0.127" layer="21"/>
+<wire x1="1" y1="0" x2="4.8" y2="0" width="0.127" layer="21"/>
 <wire x1="-1" y1="1.5" x2="-1" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-1" y1="-1.5" x2="1" y2="0" width="0.127" layer="21"/>
 <wire x1="-1" y1="1.5" x2="1" y2="0" width="0.127" layer="21"/>
 <wire x1="1" y1="1.5" x2="1" y2="0" width="0.127" layer="21"/>
 <text x="1.6" y="0.7" size="1.27" layer="21">C</text>
 <wire x1="1" y1="0" x2="1" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-8.2" y1="2.5" x2="8.2" y2="2.5" width="0.127" layer="21"/>
+<wire x1="8.2" y1="2.5" x2="8.2" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="8.2" y1="-2.6" x2="-8.2" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="-8.2" y1="-2.6" x2="-8.2" y2="2.5" width="0.127" layer="21"/>
 </package>
 <package name="HEADER-20X02">
 <pad name="P2" x="1.27" y="24.13" drill="1.016" diameter="1.9304"/>
@@ -583,8 +587,8 @@
 <wire x1="8.255" y1="5.715" x2="8.255" y2="-5.715" width="0.127" layer="21"/>
 <wire x1="8.255" y1="-5.715" x2="-8.255" y2="-5.715" width="0.127" layer="21"/>
 <wire x1="-8.255" y1="-5.715" x2="-8.255" y2="5.715" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="3.81" drill="0.889"/>
-<pad name="P$2" x="0" y="-3.81" drill="0.889"/>
+<pad name="P$1" x="0" y="3.81" drill="0.889" diameter="3"/>
+<pad name="P$2" x="0" y="-3.81" drill="0.889" diameter="3"/>
 <polygon width="0.127" layer="39">
 <vertex x="-8.25" y="5.64"/>
 <vertex x="-8.25" y="-5.71"/>
@@ -7917,7 +7921,7 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="resistor" deviceset="CPOL-EU" device="E5-10.5" value="680uF"/>
-<part name="C2" library="resistor" deviceset="CPOL-EU" device="E3.5-10" value="100uF"/>
+<part name="C2" library="resistor" deviceset="CPOL-EU" device="E5-10.5" value="100uF"/>
 <part name="LM2576" library="BrownSpaceEngineering" deviceset="LM2576" device="HEATSINK" value="LM2576HEATSINK"/>
 <part name="D1" library="BrownSpaceEngineering" deviceset="1N5820" device=""/>
 <part name="R1" library="passives" deviceset="RESISTOR" device="-PTH0.4" value="5.76K"/>
