@@ -5089,9 +5089,9 @@ design rules under a new name.</description>
 <element name="R5" library="passives" package="AXIAL-0.4" value="147R" x="32" y="58" rot="R270"/>
 <element name="R6" library="passives" package="AXIAL-0.4" value="147R" x="5" y="46" rot="R270"/>
 <element name="R7" library="passives" package="AXIAL-0.4" value="147R" x="32" y="34" rot="R270"/>
-<element name="M1" library="BrownSpaceEngineering" package="TO-923-MOS" value="2N7000" x="26" y="63" rot="R270"/>
-<element name="M2" library="BrownSpaceEngineering" package="TO-923-MOS" value="2N7000" x="12" y="51" rot="R270"/>
-<element name="M3" library="BrownSpaceEngineering" package="TO-923-MOS" value="2N7000" x="26" y="39" rot="R270"/>
+<element name="M1" library="BrownSpaceEngineering" package="TO-923-MOS" value="ZVN4424A" x="26" y="63" rot="R270"/>
+<element name="M2" library="BrownSpaceEngineering" package="TO-923-MOS" value="ZVN4424A" x="12" y="51" rot="R270"/>
+<element name="M3" library="BrownSpaceEngineering" package="TO-923-MOS" value="ZVN4424A" x="26" y="39" rot="R270"/>
 <element name="R8" library="passives" package="AXIAL-0.4" value="10K" x="105" y="78" rot="R270"/>
 <element name="U1" library="BrownSpaceEngineering" package="TO-220-507302B00000G" value="LM1084IT-ADJ" x="80" y="11.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="81.31" y="17.14" size="1.27" layer="25" rot="R180"/>
@@ -5376,12 +5376,12 @@ design rules under a new name.</description>
 <vertex x="36" y="6"/>
 <vertex x="51.5" y="6" curve="90"/>
 <vertex x="52" y="6.5"/>
-<vertex x="52" y="14.5" curve="-90"/>
-<vertex x="52.5" y="15"/>
-<vertex x="67.5" y="15" curve="-90"/>
-<vertex x="68" y="14.5"/>
-<vertex x="68" y="10.5" curve="90"/>
-<vertex x="68.5" y="10"/>
+<vertex x="52" y="15" curve="-90"/>
+<vertex x="52.5" y="15.5"/>
+<vertex x="67.5" y="15.5" curve="-90"/>
+<vertex x="68.5" y="15"/>
+<vertex x="68.5" y="10.5" curve="90"/>
+<vertex x="69" y="10"/>
 <vertex x="82.5" y="10" curve="90"/>
 <vertex x="83" y="10.5"/>
 <vertex x="83" y="12" curve="90"/>
@@ -5441,8 +5441,8 @@ design rules under a new name.</description>
 <wire x1="93.8" y1="22" x2="101.8" y2="14" width="1.27" layer="16"/>
 <polygon width="0.254" layer="1" isolate="0.3048" thermals="no">
 <vertex x="94.5" y="21.5"/>
-<vertex x="94.5" y="19.5" curve="-90"/>
-<vertex x="94" y="19"/>
+<vertex x="94.5" y="21" curve="-90"/>
+<vertex x="92.5" y="19"/>
 <vertex x="77" y="19" curve="90"/>
 <vertex x="76.5" y="18.5"/>
 <vertex x="76.5" y="14.5" curve="90"/>
@@ -5451,16 +5451,15 @@ design rules under a new name.</description>
 <vertex x="84" y="13.5"/>
 <vertex x="84" y="14" curve="-90"/>
 <vertex x="84.5" y="14.5"/>
-<vertex x="96" y="14.5" curve="-90"/>
-<vertex x="96.5" y="14"/>
-<vertex x="96.5" y="11" curve="90"/>
-<vertex x="97" y="10.5"/>
-<vertex x="104" y="10.5" curve="90"/>
-<vertex x="104.5" y="11"/>
-<vertex x="104.5" y="17" curve="90"/>
-<vertex x="104" y="17.5"/>
-<vertex x="102" y="17.5" curve="-90"/>
-<vertex x="101.5" y="18"/>
+<vertex x="94" y="14.5" curve="-90"/>
+<vertex x="96.5" y="12.5"/>
+<vertex x="96.5" y="12" curve="90"/>
+<vertex x="98" y="10.5"/>
+<vertex x="103" y="10.5" curve="90"/>
+<vertex x="104.5" y="12"/>
+<vertex x="104.5" y="16.5" curve="90"/>
+<vertex x="103.5" y="17.5" curve="-90"/>
+<vertex x="101.5" y="20"/>
 <vertex x="101.5" y="21" curve="90"/>
 <vertex x="101" y="21.5"/>
 </polygon>

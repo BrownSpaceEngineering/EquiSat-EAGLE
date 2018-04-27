@@ -888,7 +888,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="2N7000" prefix="M">
+<deviceset name="ZVN4424A" prefix="M">
 <gates>
 <gate name="G$1" symbol="NMOS" x="0" y="0"/>
 </gates>
@@ -8796,9 +8796,9 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <part name="R6" library="passives" deviceset="RESISTOR" device="-PTH0.4" value="147R"/>
 <part name="R7" library="passives" deviceset="RESISTOR" device="-PTH0.4" value="147R"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="M1" library="BrownSpaceEngineering" deviceset="2N7000" device=""/>
-<part name="M2" library="BrownSpaceEngineering" deviceset="2N7000" device=""/>
-<part name="M3" library="BrownSpaceEngineering" deviceset="2N7000" device=""/>
+<part name="M1" library="BrownSpaceEngineering" deviceset="ZVN4424A" device=""/>
+<part name="M2" library="BrownSpaceEngineering" deviceset="ZVN4424A" device=""/>
+<part name="M3" library="BrownSpaceEngineering" deviceset="ZVN4424A" device=""/>
 <part name="R8" library="passives" deviceset="RESISTOR" device="-PTH0.4" value="10K"/>
 <part name="U1" library="BrownSpaceEngineering" deviceset="LM1084IT-ADJ" device=""/>
 <part name="R2" library="passives" deviceset="RESISTOR" device="-PTH0.4" value="450R"/>
@@ -9193,9 +9193,18 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <instance part="R6" gate="G$1" x="127" y="48.26" rot="R90"/>
 <instance part="R7" gate="G$1" x="162.56" y="48.26" rot="R90"/>
 <instance part="GND6" gate="1" x="127" y="17.78"/>
-<instance part="M1" gate="G$1" x="86.36" y="33.02"/>
-<instance part="M2" gate="G$1" x="121.92" y="33.02"/>
-<instance part="M3" gate="G$1" x="157.48" y="33.02"/>
+<instance part="M1" gate="G$1" x="86.36" y="33.02" smashed="yes">
+<attribute name="NAME" x="83.82" y="35.56" size="1.778" layer="97"/>
+<attribute name="VALUE" x="78.74" y="27.94" size="1.778" layer="97"/>
+</instance>
+<instance part="M2" gate="G$1" x="121.92" y="33.02" smashed="yes">
+<attribute name="NAME" x="119.38" y="35.56" size="1.778" layer="97"/>
+<attribute name="VALUE" x="114.3" y="27.94" size="1.778" layer="97"/>
+</instance>
+<instance part="M3" gate="G$1" x="157.48" y="33.02" smashed="yes">
+<attribute name="NAME" x="154.94" y="35.56" size="1.778" layer="97"/>
+<attribute name="VALUE" x="149.86" y="27.94" size="1.778" layer="97"/>
+</instance>
 </instances>
 <busses>
 </busses>
