@@ -55,7 +55,7 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -184,13 +184,15 @@
 <hole x="115" y="135" drill="2.844"/>
 <text x="17" y="134" size="3.2" layer="51" font="vector" ratio="19">BROWN SPACE ENGINEERING GROUND STATION</text>
 <text x="99.5" y="130.5" size="1.27" layer="51" font="vector" ratio="13">Pi Power</text>
-<text x="106.5" y="103.5" size="2" layer="51" font="vector" ratio="13" align="center">Brown U.
+<text x="106.5" y="105" size="2.2" layer="51" font="vector" ratio="14" align="center">Brown U.
 Providence, R.I.
 U.S.A.
 
 V1.1
 April 2018</text>
-<text x="98" y="86" size="1.4224" layer="51" font="vector" ratio="13">Viviana Arrunategui
+<text x="98" y="83" size="1.4224" layer="51" font="vector" ratio="13">Viviana Arrunategui
+Mckenna Cisler
+Tyler Fox
 Manav Kohli
 Caelan Ritter</text>
 <text x="17.5" y="59.5" size="1.6764" layer="51" font="vector" ratio="13">TX</text>
@@ -198,7 +200,7 @@ Caelan Ritter</text>
 <text x="8.5" y="35.5" size="1.6764" layer="51" font="vector" ratio="13">Radio Power</text>
 <text x="16.5" y="11.5" size="1.6764" layer="51" font="vector" ratio="13">3.6V</text>
 <text x="17.5" y="23.5" size="1.6764" layer="51" font="vector" ratio="13">5V</text>
-<text x="107" y="77.5" size="2.5" layer="51" font="vector" ratio="13" rot="R30" align="center">Che piacere
+<text x="110" y="77.5" size="2.5" layer="51" font="vector" ratio="13" rot="R30" align="center">Che piacere
 vederti!</text>
 <circle x="115" y="135" radius="3.7" width="0.254" layer="20"/>
 <circle x="5" y="135" radius="3.7" width="0.254" layer="20"/>
@@ -3459,6 +3461,7 @@ vederti!</text>
 <rectangle x1="94.639690625" y1="125.46175" x2="94.784465625" y2="125.51000625" layer="51"/>
 <rectangle x1="94.398390625" y1="125.510009375" x2="94.687946875" y2="125.558265625" layer="51"/>
 <text x="47" y="24" size="1.4224" layer="51" font="vector" ratio="13" rot="R90">XDL Micro: 435.55MHz</text>
+<text x="2" y="71" size="1.4224" layer="48" font="vector" ratio="13">Raspberry Pi 3 Model B</text>
 </plain>
 <libraries>
 <library name="CNTRL_BOARD">
@@ -5167,6 +5170,12 @@ design rules under a new name.</description>
 <attribute name="NAME" x="39.849" y="34" size="1.016" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="37.508" y="34" size="1.016" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 </element>
+<element name="V1" library="BrownSpaceEngineering" package="VIA-120MIL" value="TX_D" x="5" y="66" smashed="yes">
+<attribute name="VALUE" x="3.46" y="62.54" size="1.016" layer="27" font="vector" ratio="13"/>
+</element>
+<element name="V2" library="BrownSpaceEngineering" package="VIA-120MIL" value="RX_D" x="5" y="58.5" smashed="yes">
+<attribute name="VALUE" x="3.46" y="55.04" size="1.016" layer="27" font="vector" ratio="13"/>
+</element>
 </elements>
 <signals>
 <signal name="RX_D">
@@ -5179,7 +5188,20 @@ design rules under a new name.</description>
 <wire x1="44.5" y1="46.5" x2="43.5" y2="47.5" width="0.254" layer="16"/>
 <wire x1="43.5" y1="47.5" x2="43.5" y2="51" width="0.254" layer="16"/>
 <wire x1="67.73" y1="75.23" x2="68.47" y2="75.23" width="0.254" layer="16"/>
-<wire x1="43.5" y1="51" x2="67.73" y2="75.23" width="0.254" layer="16"/>
+<wire x1="43.5" y1="51" x2="62.25" y2="69.75" width="0.254" layer="16"/>
+<contactref element="V2" pad="P$1"/>
+<wire x1="62.25" y1="69.75" x2="67.73" y2="75.23" width="0.254" layer="16"/>
+<wire x1="5" y1="58.5" x2="5" y2="61" width="0.254" layer="1"/>
+<wire x1="9.5" y1="65.5" x2="9.5" y2="68" width="0.254" layer="1"/>
+<wire x1="11" y1="69.5" x2="9.5" y2="68" width="0.254" layer="1"/>
+<wire x1="62.25" y1="69.75" x2="50.75" y2="69.75" width="0.254" layer="16"/>
+<wire x1="5" y1="61" x2="9.5" y2="65.5" width="0.254" layer="1"/>
+<wire x1="27.3412" y1="69.5" x2="11" y2="69.5" width="0.254" layer="1"/>
+<wire x1="50.75" y1="69.75" x2="46" y2="65" width="0.254" layer="16"/>
+<wire x1="46" y1="65" x2="32" y2="65" width="0.254" layer="16"/>
+<wire x1="32" y1="65" x2="27.5" y2="69.5" width="0.254" layer="16"/>
+<wire x1="27.5" y1="69.5" x2="27.3412" y2="69.5" width="0.254" layer="16"/>
+<via x="27.3412" y="69.5" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="!SHDN">
 <contactref element="AVX" pad="P29"/>
@@ -5206,6 +5228,21 @@ design rules under a new name.</description>
 <wire x1="54.1306" y1="49.7606" x2="55.22573125" y2="49.7606" width="0.254" layer="1"/>
 <wire x1="55.22573125" y1="49.7606" x2="71.01" y2="65.54486875" width="0.254" layer="1"/>
 <wire x1="71.01" y1="65.54486875" x2="71.01" y2="75.23" width="0.254" layer="1"/>
+<contactref element="V1" pad="P$1"/>
+<wire x1="5" y1="66" x2="9.5" y2="70.5" width="0.254" layer="1"/>
+<wire x1="28" y1="70.5" x2="29.5" y2="72" width="0.254" layer="1"/>
+<wire x1="29.5" y1="72" x2="47.5" y2="72" width="0.254" layer="1"/>
+<via x="47.5" y="72" extent="1-16" drill="0.35"/>
+<wire x1="47.5" y1="72" x2="54.30013125" y2="72" width="0.254" layer="16"/>
+<wire x1="54.30013125" y1="72" x2="57.0146" y2="74.71446875" width="0.254" layer="16"/>
+<wire x1="57.0146" y1="79.0146" x2="58" y2="80" width="0.254" layer="16"/>
+<wire x1="58" y1="80" x2="68.5" y2="80" width="0.254" layer="16"/>
+<wire x1="68.5" y1="80" x2="69.7654" y2="78.7346" width="0.254" layer="16"/>
+<wire x1="71.01" y1="76.00986875" x2="71.01" y2="75.23" width="0.254" layer="16"/>
+<wire x1="69.7654" y1="78.7346" x2="69.7654" y2="77.25446875" width="0.254" layer="16"/>
+<wire x1="69.7654" y1="77.25446875" x2="71.01" y2="76.00986875" width="0.254" layer="16"/>
+<wire x1="9.5" y1="70.5" x2="28" y2="70.5" width="0.254" layer="1"/>
+<wire x1="57.0146" y1="74.71446875" x2="57.0146" y2="79.0146" width="0.254" layer="16"/>
 </signal>
 <signal name="GND">
 <contactref element="AVX" pad="P1"/>
@@ -5251,46 +5288,46 @@ design rules under a new name.</description>
 <vertex x="120" y="140"/>
 <vertex x="0" y="140"/>
 </polygon>
-<via x="3" y="69.5" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="3" y="68" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="3" y="66.5" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="3" y="65" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="3" y="63.5" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="3" y="62" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="3" y="60.5" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="3" y="59" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="3" y="57.5" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="3" y="56" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="4.5" y="56" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="4.5" y="57.5" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="4.5" y="59" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="4.5" y="60.5" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="4.5" y="62" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="4.5" y="63.5" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="4.5" y="65" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="4.5" y="66.5" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="4.5" y="68" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="4.5" y="69.5" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="6" y="69.5" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="6" y="68" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="6" y="66.5" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="6" y="65" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="6" y="63.5" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="6" y="62" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="6" y="60.5" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="6" y="59" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="6" y="57.5" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="6" y="56" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="7.5" y="56" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="7.5" y="57.5" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="7.5" y="59" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="7.5" y="60.5" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="7.5" y="62" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="7.5" y="63.5" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="7.5" y="65" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="7.5" y="66.5" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="7.5" y="68" extent="1-16" drill="0.5" diameter="1.1"/>
-<via x="7.5" y="69.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="32" y="66.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="33.5" y="66.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="35" y="66.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="36.5" y="66.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="38" y="66.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="39.5" y="66.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="41" y="66.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="42.5" y="66.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="44" y="66.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="45.5" y="66.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="45.5" y="68" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="44" y="68" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="42.5" y="68" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="41" y="68" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="39.5" y="68" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="38" y="68" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="36.5" y="68" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="35" y="68" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="33.5" y="68" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="32" y="68" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="32" y="69.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="33.5" y="69.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="35" y="69.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="36.5" y="69.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="38" y="69.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="39.5" y="69.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="41" y="69.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="42.5" y="69.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="44" y="69.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="45.5" y="69.5" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="45.5" y="71" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="44" y="71" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="42.5" y="71" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="41" y="71" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="39.5" y="71" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="38" y="71" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="36.5" y="71" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="35" y="71" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="33.5" y="71" extent="1-16" drill="0.5" diameter="1.1"/>
+<via x="32" y="71" extent="1-16" drill="0.5" diameter="1.1"/>
 <via x="24" y="25" extent="1-16" drill="0.5" diameter="1.1"/>
 <via x="25.5" y="25" extent="1-16" drill="0.5" diameter="1.1"/>
 <via x="27" y="25" extent="1-16" drill="0.5" diameter="1.1"/>
@@ -5363,6 +5400,27 @@ design rules under a new name.</description>
 <contactref element="R10" pad="1"/>
 <contactref element="R9" pad="1"/>
 <contactref element="R11" pad="1"/>
+<polygon width="0.254" layer="1" thermals="no">
+<vertex x="16.5" y="8"/>
+<vertex x="12" y="8" curve="90"/>
+<vertex x="11.5" y="7"/>
+<vertex x="11.5" y="2.5" curve="90"/>
+<vertex x="12" y="2"/>
+<vertex x="16.5" y="2" curve="90"/>
+<vertex x="17" y="2.5"/>
+<vertex x="17" y="7.5" curve="90"/>
+</polygon>
+<polygon width="0.254" layer="16" thermals="no">
+<vertex x="14" y="8"/>
+<vertex x="16.5" y="8" curve="-90"/>
+<vertex x="17" y="7.5"/>
+<vertex x="17" y="2.5" curve="-90"/>
+<vertex x="16.5" y="2"/>
+<vertex x="12" y="2" curve="-90"/>
+<vertex x="11.5" y="2.5"/>
+<vertex x="11.5" y="7.5" curve="-90"/>
+<vertex x="12" y="8"/>
+</polygon>
 </signal>
 <signal name="3V6">
 <contactref element="AVX" pad="P27"/>

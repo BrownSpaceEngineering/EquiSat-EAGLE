@@ -8935,6 +8935,8 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <part name="R9" library="passives" deviceset="RESISTOR" device="-PTH0.4" value="10K"/>
 <part name="R10" library="passives" deviceset="RESISTOR" device="-PTH0.4" value="10K"/>
 <part name="R11" library="passives" deviceset="RESISTOR" device="-PTH0.4" value="10K"/>
+<part name="V1" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL" value="TX_D"/>
+<part name="V2" library="BrownSpaceEngineering" deviceset="VIA" device="-120MIL" value="RX_D"/>
 </parts>
 <sheets>
 <sheet>
@@ -9050,6 +9052,8 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <instance part="GND3" gate="1" x="182.88" y="7.62"/>
 <instance part="GND4" gate="1" x="220.98" y="-10.16"/>
 <instance part="R8" gate="G$1" x="104.14" y="50.8" rot="R90"/>
+<instance part="V1" gate="G$1" x="264.16" y="45.72" rot="R180"/>
+<instance part="V2" gate="G$1" x="264.16" y="38.1" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -9062,8 +9066,12 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="P10"/>
-<wire x1="233.68" y1="40.64" x2="241.3" y2="40.64" width="0.1524" layer="91"/>
 <label x="236.22" y="40.64" size="1.778" layer="95"/>
+<wire x1="233.68" y1="40.64" x2="254" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="254" y1="40.64" x2="254" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="254" y1="38.1" x2="256.54" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="38.1" x2="259.08" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="V2" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="!SHDN" class="0">
@@ -9088,8 +9096,11 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="P8"/>
-<wire x1="233.68" y1="43.18" x2="241.3" y2="43.18" width="0.1524" layer="91"/>
 <label x="236.22" y="43.18" size="1.778" layer="95"/>
+<wire x1="233.68" y1="43.18" x2="254" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="254" y1="43.18" x2="254" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="254" y1="45.72" x2="259.08" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="V1" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="GND" class="0">
