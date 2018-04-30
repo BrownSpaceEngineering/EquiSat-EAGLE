@@ -182,7 +182,7 @@
 <hole x="115" y="5" drill="2.844"/>
 <hole x="5" y="135" drill="2.844"/>
 <hole x="115" y="135" drill="2.844"/>
-<text x="16" y="133.5" size="3.2" layer="51" font="vector" ratio="19">BROWN SPACE ENGINEERING GROUND STATION</text>
+<text x="17" y="134" size="3.2" layer="51" font="vector" ratio="19">BROWN SPACE ENGINEERING GROUND STATION</text>
 <text x="99.5" y="130.5" size="1.27" layer="51" font="vector" ratio="13">Pi Power</text>
 <text x="106.5" y="103.5" size="2" layer="51" font="vector" ratio="13" align="center">Brown U.
 Providence, R.I.
@@ -198,7 +198,7 @@ Caelan Ritter</text>
 <text x="8.5" y="35.5" size="1.6764" layer="51" font="vector" ratio="13">Radio Power</text>
 <text x="16.5" y="11.5" size="1.6764" layer="51" font="vector" ratio="13">3.6V</text>
 <text x="17.5" y="23.5" size="1.6764" layer="51" font="vector" ratio="13">5V</text>
-<text x="107" y="79" size="2.5" layer="51" font="vector" ratio="13" rot="R30" align="center">Che piacere
+<text x="107" y="77.5" size="2.5" layer="51" font="vector" ratio="13" rot="R30" align="center">Che piacere
 vederti!</text>
 <circle x="115" y="135" radius="3.7" width="0.254" layer="20"/>
 <circle x="5" y="135" radius="3.7" width="0.254" layer="20"/>
@@ -3458,6 +3458,7 @@ vederti!</text>
 <rectangle x1="94.30186875" y1="125.46175" x2="94.3983875" y2="125.51000625" layer="51"/>
 <rectangle x1="94.639690625" y1="125.46175" x2="94.784465625" y2="125.51000625" layer="51"/>
 <rectangle x1="94.398390625" y1="125.510009375" x2="94.687946875" y2="125.558265625" layer="51"/>
+<text x="47" y="24" size="1.4224" layer="51" font="vector" ratio="13" rot="R90">XDL Micro: 435.55MHz</text>
 </plain>
 <libraries>
 <library name="CNTRL_BOARD">
@@ -5086,7 +5087,9 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="AVX" library="CNTRL_BOARD" package="AVX-24-5046-630-829" value="AVX-24-5046-030-630-829" x="51.71" y="46.74" rot="R270"/>
+<element name="AVX" library="CNTRL_BOARD" package="AVX-24-5046-630-829" value="AVX-24-5046-030-630-829" x="51.71" y="46.74" smashed="yes" rot="R270">
+<attribute name="NAME" x="50.26" y="38.17" size="1.27" layer="21"/>
+</element>
 <element name="V4" library="BrownSpaceEngineering" package="VIA-120MIL" value="GND" x="14.25" y="4.94" smashed="yes">
 <attribute name="VALUE" x="16.21" y="6.98" size="1.016" layer="27" font="vector" ratio="13"/>
 </element>
@@ -5094,7 +5097,9 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="23.63" y="6.98" size="1.016" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="U$2" library="BrownSpaceEngineering" package="PJ-002A" value="PJ-002A" x="110" y="11" rot="R270"/>
-<element name="J2" library="BrownSpaceEngineering" package="HEADER-20X02" value="RASPBERRY-PI-HEADER" x="54.5" y="76.5" rot="R270"/>
+<element name="J2" library="BrownSpaceEngineering" package="HEADER-20X02" value="RASPBERRY-PI-HEADER" x="54.5" y="76.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="81" y="73.8064" size="1.016" layer="25" font="vector" ratio="20" align="bottom-center"/>
+</element>
 <element name="J1" library="BrownSpaceEngineering" package="HEADER-05" value="HEADER-5" x="103" y="128.5" rot="R180"/>
 <element name="D2" library="BrownSpaceEngineering" package="1X2-POL" value="LEDTHRU-HOLE-CONNECTOR" x="19" y="63" smashed="yes">
 <attribute name="NAME" x="19" y="64.397" size="1.016" layer="25" font="vector" ratio="20" align="bottom-center"/>
@@ -5155,6 +5160,12 @@ design rules under a new name.</description>
 <element name="C5" library="BrownSpaceEngineering" package="C050-025X075" value="0.1uF" x="91.5" y="91.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="89.929" y="89.849" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="95.429" y="89.794" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R9" library="passives" package="AXIAL-0.4" value="10K" x="37" y="58" rot="R270"/>
+<element name="R10" library="passives" package="AXIAL-0.4" value="10K" x="12" y="63" rot="R270"/>
+<element name="R11" library="passives" package="AXIAL-0.4" value="10K" x="37" y="34" smashed="yes" rot="R90">
+<attribute name="NAME" x="39.849" y="34" size="1.016" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="37.508" y="34" size="1.016" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 </element>
 </elements>
 <signals>
@@ -5338,7 +5349,6 @@ design rules under a new name.</description>
 <contactref element="C2" pad="-"/>
 <contactref element="C1" pad="-"/>
 <contactref element="C3" pad="-"/>
-<wire x1="49.36" y1="45.69" x2="49.36" y2="45.19" width="0.254" layer="1"/>
 <via x="52" y="49.5" extent="1-16" drill="0.35"/>
 <via x="51.5" y="48.5" extent="1-16" drill="0.35"/>
 <via x="52" y="47.5" extent="1-16" drill="0.35"/>
@@ -5347,7 +5357,12 @@ design rules under a new name.</description>
 <contactref element="C4" pad="2"/>
 <contactref element="C5" pad="2"/>
 <contactref element="FAN2" pad="2"/>
-<wire x1="49.36" y1="45.19" x2="49.36" y2="43.19" width="0" layer="19" extent="1-1"/>
+<wire x1="49.36" y1="45.19" x2="49.36" y2="45.69" width="0.254" layer="1"/>
+<wire x1="49.36" y1="43.19" x2="49.36" y2="42.64" width="0.254" layer="1"/>
+<wire x1="49.36" y1="42.64" x2="49.5" y2="42.5" width="0.254" layer="1"/>
+<contactref element="R10" pad="1"/>
+<contactref element="R9" pad="1"/>
+<contactref element="R11" pad="1"/>
 </signal>
 <signal name="3V6">
 <contactref element="AVX" pad="P27"/>
@@ -5379,18 +5394,18 @@ design rules under a new name.</description>
 <vertex x="47.5" y="11"/>
 <vertex x="47.5" y="17.5" curve="90"/>
 <vertex x="47" y="18"/>
-<vertex x="38" y="18" curve="-90"/>
-<vertex x="37.5" y="18.5"/>
-<vertex x="37.5" y="44.5" curve="-90"/>
-<vertex x="38" y="45"/>
+<vertex x="39.5" y="18" curve="-90"/>
+<vertex x="39" y="18.5"/>
+<vertex x="39" y="44.5" curve="-90"/>
+<vertex x="39.5" y="45"/>
 <vertex x="57.5" y="45" curve="-90"/>
 <vertex x="58" y="44.5"/>
 <vertex x="58" y="44" curve="-90"/>
 <vertex x="57.5" y="43.5"/>
-<vertex x="48" y="43.5" curve="90"/>
-<vertex x="47.5" y="43"/>
-<vertex x="47.5" y="24" curve="90"/>
-<vertex x="48" y="23.5"/>
+<vertex x="48.5" y="43.5" curve="90"/>
+<vertex x="48" y="43"/>
+<vertex x="48" y="24" curve="90"/>
+<vertex x="48.5" y="23.5"/>
 <vertex x="76" y="23.5" curve="-90"/>
 <vertex x="76.5" y="23"/>
 <vertex x="76.5" y="13.5" curve="90"/>
@@ -5544,21 +5559,28 @@ design rules under a new name.</description>
 <contactref element="AVX" pad="P2"/>
 <contactref element="J2" pad="P11"/>
 <contactref element="M1" pad="2"/>
-<wire x1="49.36" y1="50.19" x2="38.81" y2="50.19" width="0.254" layer="1"/>
-<wire x1="38.81" y1="50.19" x2="26" y2="63" width="0.254" layer="1"/>
+<wire x1="49.36" y1="50.19" x2="40.5" y2="50.19" width="0.254" layer="1"/>
 <wire x1="49.36" y1="50.19" x2="49.5" y2="50.33" width="0.254" layer="1"/>
 <wire x1="64.6346" y1="74.71446875" x2="64.6346" y2="76.1346" width="0.254" layer="1"/>
 <wire x1="49.5" y1="59.57986875" x2="64.6346" y2="74.71446875" width="0.254" layer="1"/>
 <wire x1="49.5" y1="50.33" x2="49.5" y2="59.57986875" width="0.254" layer="1"/>
 <wire x1="65.93" y1="77.43" x2="65.93" y2="77.77" width="0.254" layer="1"/>
 <wire x1="64.6346" y1="76.1346" x2="65.93" y2="77.43" width="0.254" layer="1"/>
+<contactref element="R9" pad="2"/>
+<wire x1="26" y1="63" x2="34.5" y2="54.5" width="0.254" layer="1"/>
+<wire x1="34.5" y1="54.5" x2="34.5" y2="52" width="0.254" layer="1"/>
+<wire x1="34.5" y1="52" x2="36.31" y2="50.19" width="0.254" layer="1"/>
+<wire x1="36.31" y1="50.19" x2="39.73" y2="50.19" width="0.254" layer="1"/>
+<wire x1="37" y1="52.92" x2="39.73" y2="50.19" width="0.254" layer="1"/>
+<wire x1="39.73" y1="50.19" x2="40.5" y2="50.19" width="0.254" layer="1"/>
 </signal>
 <signal name="RX_L">
 <contactref element="AVX" pad="P4"/>
 <contactref element="J2" pad="P13"/>
 <contactref element="M2" pad="2"/>
 <wire x1="13.31" y1="49.69" x2="12" y2="51" width="0.254" layer="1"/>
-<wire x1="49.36" y1="49.69" x2="13.31" y2="49.69" width="0.254" layer="1"/>
+<wire x1="49.36" y1="49.69" x2="15.5" y2="49.69" width="0.254" layer="1"/>
+<wire x1="15.5" y1="49.69" x2="13.31" y2="49.69" width="0.254" layer="1"/>
 <wire x1="49.36" y1="49.69" x2="50.69" y2="49.69" width="0.254" layer="1"/>
 <wire x1="50.69" y1="49.69" x2="51" y2="50" width="0.254" layer="1"/>
 <wire x1="51" y1="50" x2="51" y2="50.5" width="0.254" layer="1"/>
@@ -5570,12 +5592,21 @@ design rules under a new name.</description>
 <wire x1="62.1454" y1="75.74553125" x2="63.39" y2="76.99013125" width="0.254" layer="16"/>
 <wire x1="62" y1="71" x2="62.1454" y2="71.1454" width="0.254" layer="16"/>
 <wire x1="62.1454" y1="71.1454" x2="62.1454" y2="75.74553125" width="0.254" layer="16"/>
+<contactref element="R10" pad="2"/>
+<wire x1="15.5" y1="49.69" x2="14.19" y2="51" width="0.254" layer="1"/>
+<wire x1="14.19" y1="51" x2="14" y2="51" width="0.254" layer="1"/>
+<wire x1="14" y1="55.92" x2="12" y2="57.92" width="0.254" layer="1"/>
+<wire x1="14" y1="51" x2="14" y2="55.92" width="0.254" layer="1"/>
 </signal>
 <signal name="PWR_L">
 <contactref element="AVX" pad="P12"/>
 <contactref element="M3" pad="2"/>
-<wire x1="49.36" y1="47.69" x2="34.69" y2="47.69" width="0.254" layer="1"/>
+<wire x1="49.36" y1="47.69" x2="40" y2="47.69" width="0.254" layer="1"/>
+<wire x1="40" y1="47.69" x2="34.69" y2="47.69" width="0.254" layer="1"/>
 <wire x1="34.69" y1="47.69" x2="26" y2="39" width="0.254" layer="1"/>
+<contactref element="R11" pad="2"/>
+<wire x1="40" y1="47.69" x2="37" y2="44.69" width="0.254" layer="1"/>
+<wire x1="37" y1="44.69" x2="37" y2="39.08" width="0.254" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R3" pad="2"/>
