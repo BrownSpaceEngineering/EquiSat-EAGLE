@@ -55,7 +55,7 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -178,7 +178,7 @@
 <wire x1="48.15" y1="23.5" x2="118" y2="23.5" width="0.5" layer="21"/>
 <wire x1="118" y1="23.5" x2="118" y2="70.11" width="0.5" layer="21"/>
 <text x="72" y="44.5" size="5.08" layer="21" font="vector" ratio="13">XDL Micro</text>
-<hole x="4" y="4" drill="2.844"/>
+<hole x="5" y="5" drill="2.844"/>
 <hole x="115" y="5" drill="2.844"/>
 <hole x="5" y="135" drill="2.844"/>
 <hole x="115" y="135" drill="2.844"/>
@@ -205,7 +205,7 @@ vederti!</text>
 <circle x="115" y="135" radius="3.7" width="0.254" layer="20"/>
 <circle x="5" y="135" radius="3.7" width="0.254" layer="20"/>
 <circle x="115" y="5" radius="3.7" width="0.254" layer="20"/>
-<circle x="4" y="4" radius="3.7" width="0.254" layer="20"/>
+<circle x="5" y="5" radius="3.7" width="0.254" layer="20"/>
 <text x="109.5" y="16" size="2.1844" layer="51" font="vector" ratio="13">5V in</text>
 <rectangle x1="94.398390625" y1="114.072390625" x2="94.687946875" y2="114.120646875" layer="51"/>
 <rectangle x1="94.30186875" y1="114.12065" x2="94.3983875" y2="114.16890625" layer="51"/>
@@ -3460,8 +3460,8 @@ vederti!</text>
 <rectangle x1="94.30186875" y1="125.46175" x2="94.3983875" y2="125.51000625" layer="51"/>
 <rectangle x1="94.639690625" y1="125.46175" x2="94.784465625" y2="125.51000625" layer="51"/>
 <rectangle x1="94.398390625" y1="125.510009375" x2="94.687946875" y2="125.558265625" layer="51"/>
-<text x="47" y="24" size="1.4224" layer="51" font="vector" ratio="13" rot="R90">XDL Micro: 435.55MHz</text>
-<text x="2" y="71" size="1.4224" layer="48" font="vector" ratio="13">Raspberry Pi 3 Model B</text>
+<text x="47.5" y="24" size="1.4224" layer="51" font="vector" ratio="13" rot="R90">XDL Micro: 435.55MHz</text>
+<text x="2" y="71" size="1.4224" layer="51" font="vector" ratio="13">Raspberry Pi 3 Model B</text>
 </plain>
 <libraries>
 <library name="CNTRL_BOARD">
