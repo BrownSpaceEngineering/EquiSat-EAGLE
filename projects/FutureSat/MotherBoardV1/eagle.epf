@@ -1,0 +1,30 @@
+[Eagle]
+Version="09 03 00"
+Platform="Windows"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="C:/Users/Caelan/Documents/GitHub/EquiSat-EAGLE/libraries/BattBoard.lbr"
+UsedLibrary="C:/Users/Caelan/Documents/GitHub/EquiSat-EAGLE/libraries/BrownSpaceEngineering.lbr"
+UsedLibrary="C:/Users/Caelan/Documents/GitHub/EquiSat-EAGLE/libraries/CNTRL_BOARD.lbr"
+UsedLibrary="C:/Users/Caelan/Documents/GitHub/EquiSat-EAGLE/libraries/FutureSat.lbr"
+UsedLibrary="C:/Users/Caelan/Documents/GitHub/EquiSat-EAGLE/libraries/LED_Driver_Board.lbr"
+UsedLibrary="C:/Users/Caelan/Documents/GitHub/EquiSat-EAGLE/libraries/SAMD21J.lbr"
+UsedLibrary="C:/Users/Caelan/Documents/GitHub/EquiSat-EAGLE/libraries/Solar Panel Parts.lbr"
+UsedLibrary="C:/Users/Caelan/Documents/GitHub/EquiSat-EAGLE/libraries/SolarCell.lbr"
+UsedLibrary="C:/Users/Caelan/Documents/GitHub/EquiSat-EAGLE/libraries/SolarCellTASCMirror.lbr"
+UsedLibrary="C:/Users/Caelan/Documents/GitHub/EquiSat-EAGLE/libraries/chm27.lbr"
+UsedLibrary="C:/Users/Caelan/Documents/GitHub/EquiSat-EAGLE/libraries/mram.lbr"
+UsedLibrary="C:/Users/Caelan/Documents/GitHub/EquiSat-EAGLE/libraries/rdio_deploy.lbr"
+UsedLibrary="C:/Users/Caelan/Documents/GitHub/EquiSat-EAGLE/libraries/resistor.lbr"
+UsedLibrary="C:/Users/Caelan/Documents/GitHub/EquiSat-EAGLE/libraries/supply1.lbr"
+
+[Win_1]
+Type="Control Panel"
+Number=0
+
+[Desktop]
+Screen="1280 720"
+Window="Win_1"
